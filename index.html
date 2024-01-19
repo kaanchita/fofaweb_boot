@@ -7,6 +7,9 @@
     <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="./src/style.css" rel="stylesheet">
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@200;300;400;500;600;700;800;900&display=swap');
@@ -14,8 +17,24 @@
 
 </head>
 <body>
+  
+    
+  <div class="d-flex justify-content-end mt-3">
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Language
+      </button>
+      <div class="dropdown-menu" aria-labelledby="languageDropdown">
+        <a class="dropdown-item" href="#" onclick="changeLanguage('thai')">ไทย</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#" onclick="changeLanguage('english')">English</a>
+      </div>
+    </div>
+  </div>
+
+  
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
+        <div class="container">
           <a class="navbar-brand" href="./index.html"><img src="./images/logo.png" class="img-fluid" style="max-width: 80px;" alt="logo"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -65,7 +84,7 @@
           </div>
         </div>
       </nav>
-      
+  </div>
       <h1>Hi EIEIEI</h1>
 
       <footer class="bg-body-tertiary text-center text-lg-start">
@@ -76,5 +95,7 @@
         </div>
         <!-- Copyright -->
       </footer>
+
+      <script src="./js/script.js"></script>
 </body>
 </html>

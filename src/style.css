@@ -5,7 +5,7 @@ body {
 
 /* footer */
 .footer {
-    background:#232a34;
+    background:#734B34;
 	padding-bottom: 50px;
 	padding-top: 80px;
 }
@@ -45,7 +45,7 @@ display: inline-block;
 .footer_profile ul li a img{width:60px;}
 
 .footer_profile ul li a {
-	background: #554c86;
+	background: #fff;
 	width: 40px;
 	height: 40px;
 	display: block;
@@ -57,7 +57,7 @@ display: inline-block;
 	text-decoration: none;
 	-webkit-transition: .3s;
 	transition: .3s;
-	color: #fff;
+	color: #734B34;
 }
 .footer_copyright {
     margin-bottom: 20px;

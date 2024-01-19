@@ -3,6 +3,12 @@ body {
     font-family: 'Noto Sans Thai', sans-serif;
 }
 
+
+.position-relative {
+    color:#fff;
+    
+}
+
 /* footer */
 .footer {
     background:#734B34;

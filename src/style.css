@@ -3,6 +3,10 @@ body {
     font-family: 'Noto Sans Thai', sans-serif;
 }
 
+.navbar-nav .nav-item.dropdown:hover > .dropdown-menu {
+	display: block;
+  }
+
 /* footer */
 .footer {
     background:#734B34;

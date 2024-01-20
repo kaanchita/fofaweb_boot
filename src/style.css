@@ -1,4 +1,5 @@
 body {
+    /* margin-top:20px; */
     font-family: 'Noto Sans Thai', sans-serif;
 }
 
@@ -7,6 +8,33 @@ body {
   }
 
 
+/* main content */
+section {
+    position: relative;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .text-container {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-80%, -50%);
+    color: white;
+    /* text-align: center; */
+  }
+  
+
+  @media (max-width: 768px) {
+    /* Add responsive styles for smaller screens here */
+    .text-container {
+      top: 50%;
+      right: 4%;
+    }
+  }
 
 /* footer */
 .footer {
@@ -72,9 +100,5 @@ display: inline-block;
     font-weight: 600;
     color: #fff;
 }
-
-
-
-
 
 

@@ -21,8 +21,8 @@ section {
   .text-container {
     position: absolute;
     top: 40%;
-    left: 50%;
-    transform: translate(-80%, -50%);
+    left: 95%;
+    transform: translate(-90%, -40%);
     color: white;
     /* text-align: center; */
   }

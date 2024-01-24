@@ -17,30 +17,15 @@
 
 </head>
 <body>
-  <header class="sticky-top bg-body-tertiary" >
-    <div class="container">
-      <div class="d-flex justify-content-end ">
-      <div class="dropdown">
-        <button class="btn dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <img src="./images/thaiflag.png" class="img-fluid m-2" style="max-width: 20px;">
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
-          <li><a class="dropdown-item" href="#"><img src="./images/thaiflag.png" class="img-fluid m-2" style="max-width: 20px;">ไทย</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="#"><img src="./images/engflag.png" class="img-fluid m-2" style="max-width: 20px;">English</a></li>
-        </ul>
-        </div>
-      </div>
-    </div>
-    
-    <nav class="navbar navbar-expand-lg">
+  <header class="sticky-top" >
+    <nav class="navbar navbar-expand-lg shadow">
       <div class="container">
         <a class="navbar-brand" href="./index.html"><img src="./images/logo.png" class="img-fluid" style="max-width: 80px;" alt="logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav ml-auto mb-2 mb-lg-0 ">
             <li class="nav-item">
               <a class="nav-link" href="./index.html">หน้าหลัก</a>
             </li>
@@ -80,7 +65,20 @@
             <li class="nav-item">
               <a class="nav-link" href="mailto:fofaswu@g.swu.ac.th">ติดต่อสอบถาม</a>
             </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="./performance.html">
+                <img src="./images/thaiflag.png" class="img-fluid m-2" style="max-width: 20px;">
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#"><img src="./images/thaiflag.png" class="img-fluid m-2" style="max-width: 20px;">ไทย</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#"><img src="./images/engflag.png" class="img-fluid m-2" style="max-width: 20px;">English</a></li>
+              </ul>
+            </li>
+           
           </ul>
+            </div>
         </div>
       </div>
     </nav>

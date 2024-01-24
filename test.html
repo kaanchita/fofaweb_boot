@@ -84,93 +84,73 @@
 
 </head>
 <body>
-  <header class="sticky-top bg-body-tertiary" >
-    <div class="container">
-      <div class="d-flex justify-content-end ">
-      <div class="dropdown">
-        <button class="btn dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <img src="./images/thaiflag.png" class="img-fluid m-2" style="max-width: 20px;">
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
-          <li><a class="dropdown-item" href="#"><img src="./images/thaiflag.png" class="img-fluid m-2" style="max-width: 20px;">ไทย</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="#"><img src="./images/engflag.png" class="img-fluid m-2" style="max-width: 20px;">English</a></li>
-        </ul>
-        </div>
-      </div>
-    </div>
+    <header class="sticky-top" >
+        <nav class="navbar navbar-expand-lg shadow">
+          <div class="container">
+            <a class="navbar-brand" href="./index.html"><img src="./images/logo.png" class="img-fluid" style="max-width: 80px;" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto mb-2 mb-lg-0 ">
+                <li class="nav-item">
+                  <a class="nav-link" href="./index.html">หน้าหลัก</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./project.html">โครงการ</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="./detail.html" >
+                    รูปแบบผลงานและรายละเอียด
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">ทัศนศิลป์</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">ดนตรี</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">นาฏศิลป์</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./register.html">ลงทะเบียนส่งผลงาน</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./announce.html">ประกาศรายชื่อผู้ได้รับคัดเลือก</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="./performance.html">
+                    ผลงานสร้างสรรค์
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="performance.html#section1">ทัศนศิลป์</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="performance.html#section2">ดนตรี</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="performance.html#section3">นาฏศิลป์</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="mailto:fofaswu@g.swu.ac.th">ติดต่อสอบถาม</a>
+                </li>
     
-    <nav class="navbar navbar-expand-lg">
-      <div class="container">
-        <a class="navbar-brand" href="./index.html"><img src="./images/logo.png" class="img-fluid" style="max-width: 80px;" alt="logo"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="./index.html">หน้าหลัก</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./project.html">โครงการ</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="./detail.html" >
-                รูปแบบผลงานและรายละเอียด
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">ทัศนศิลป์</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">ดนตรี</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">นาฏศิลป์</a></li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="./performance.html">
+                    <img src="./images/thaiflag.png" class="img-fluid m-2" style="max-width: 20px;">
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"><img src="./images/thaiflag.png" class="img-fluid m-2" style="max-width: 20px;">ไทย</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#"><img src="./images/engflag.png" class="img-fluid m-2" style="max-width: 20px;">English</a></li>
+                  </ul>
+                </li>
+               
               </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./register.html">ลงทะเบียนส่งผลงาน</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./announce.html">ประกาศรายชื่อผู้ได้รับคัดเลือก</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="./performance.html">
-                ผลงานสร้างสรรค์
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="performance.html#section1">ทัศนศิลป์</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="performance.html#section2">ดนตรี</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="performance.html#section3">นาฏศิลป์</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="mailto:fofaswu@g.swu.ac.th">ติดต่อสอบถาม</a>
-            </li>
-          </ul>
+                </div>
+            </div>
+          </div>
+        </nav>
         </div>
-      </div>
-    </nav>
-    </div>
-  </header>
-      
-  <!-- content -->
-
-  <!-- <section class="d-flex mt-2 ms-5">
-    <div class="text-container justify-content-center mt-4 text-center ms-5" style="color: rgb(138, 74, 56);">
-        <p>โครงการนําเสนอผลงานสร้างสรรค์ทางศิลปะระดับนานาชาติ</p>
-        <p>มหกรรมศิลปะ ดนตรี และการแสดงนานาชาติ</p>
-        <p>ครั้งที่ 11 วันที่ 16 มิถุนายน 2567</p>
-          
-          <a href="./register.html" class="btn custom-btn d-flex  justify-content-center mt-3">ลงทะเบียน</a>
-          
-          <p style="font-size: 16px;" class="detail mt-3">รายละเอียดเพิ่มเติม: <a href="./detail.html">คลิกที่นี่</a></p>
-    </div>
-    
-    <div class="image-container justify-content-end ms-5 mt-4 ">
-        <img class="responsive-image " src="./images/brand3.png" >
-    </div>
-</section> -->
+      </header>
 <section class="d-flex mt-2 ms-5">
     <div class="text-container justify-content-center mt-4 text-center ms-5" style="color: rgb(138, 74, 56);">
       <p>โครงการนําเสนอผลงานสร้างสรรค์ทางศิลปะระดับนานาชาติ</p>

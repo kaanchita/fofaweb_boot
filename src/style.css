@@ -9,31 +9,31 @@ body {
 
 
 /* main content */
-section {
+/* section {
     position: relative;
   }
 
-  img {
-    width: 100%;
-    height: auto;
+  .custom-image {
+    width: 50%; 
+    height: 75%; 
   }
 
   .text-container {
     position: absolute;
-    top: 40%;
-    left: 95%;
-    transform: translate(-90%, -40%);
-    color: white;
+    top: 30%;
+    left: 50%;
+    transform: translate(-70%, -90%);
+    color: white; */
     /* text-align: center; */
-  }
+  /* } */
   
 
   @media (max-width: 768px) {
     /* Add responsive styles for smaller screens here */
-    .text-container {
-      top: 50%;
-      right: 4%;
-    }
+    /* .text-container {
+      top: 100%;
+      right: 1%;
+    } */
   }
 
 /* footer */

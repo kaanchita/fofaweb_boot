@@ -9,10 +9,39 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
    
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@200;300;400;500;600;700;800;900&display=swap');
     
+    </style>
+    <style>
+      .custom-image-container {
+        position: relative;
+        overflow: hidden;
+        border-radius: 20px;
+      }
+    
+      .custom-image-container img {
+        max-width: 100%;
+        height: auto;
+        transition: transform 0.3s;
+      }
+    
+      .custom-image-container:hover img {
+        transform: scale(1.1);
+      }
+    
+      .position-absolute-center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 100%;
+      }
     </style>
 
 </head>
@@ -86,21 +115,110 @@
   </header>
       
   <!-- content -->
-  <section class="d-flex mt-2 ms-5">
-    <div class="text-container justify-content-center mt-4 text-center ms-5" style="color: rgb(138, 74, 56);">
+  <section class="d-flex justify-content-center mt-5 ms-5 pt-3" data-aos="fade-up" data-aos-duration="1000">
+    <div class=" text-container justify-content-center mt-5 text-center ms-5 h-75" style="color: rgb(138, 74, 56); font-size: 30px; padding: 30px; border: solid 1px rgb(138, 74, 56); border-radius: 15px;  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);">
       <p>โครงการนําเสนอผลงานสร้างสรรค์ทางศิลปะระดับนานาชาติ</p>
       <p>มหกรรมศิลปะ ดนตรี และการแสดงนานาชาติ</p>
       <p>ครั้งที่ 11 วันที่ 16 มิถุนายน 2567</p>
-  
       <div class="d-flex align-items-center justify-content-center">
         <a href="./register.html" class="btn custom-btn d-flex align-items-center justify-content-center mt-3 registration-btn">ลงทะเบียน</a>
         <a href="./detail.html" class="btn custom-btn d-flex align-items-center justify-content-center mt-3 details-btn">รายละเอียด</a>
       </div>
-
     </div>
-  
-    <div class="image-container justify-content-end ms-5 mt-4">
+
+    <!-- <div class="row d-flex justify-content-center mt-3">
+      <img src="./images/logoswu.png" alt="Logo 1" class="col-2 mx-2" style="max-width: 100px;">
+      <img src="./images/logo.png" alt="Logo 2" class="col-2 mx-2" style="max-width: 100px;">
+      <img src="./images/logo3.jpg" alt="Logo 3" class="col-2 mx-2" style="max-width: 100px;">
+    </div> -->
+
+    <div class="image-container  ms-5 mt-4">
       <img class="responsive-image" src="./images/brand3.png">
+    </div>
+    
+  </section>
+
+   <!-- ตำแหน่งวาง logo -->
+
+  <hr class="mx-auto mb-5 w-75 justify-content-center pt-5" style="color: rgb(138, 74, 56); margin-top: 20px;">
+  
+  <section class="row justify-content-center " style="padding-top: 30px;" data-aos="fade-up" data-aos-duration="1000">
+    <div class="col-5 ">
+      <div class="custom-image-container">
+        <img src="./images/brand6.png" class="mx-auto d-block">
+      </div>
+    </div>
+
+    <div class="col-7">
+      <div class="row d-flex mx-auto justify-content-center">
+        <!-- Repeat this block for each image -->
+        <div class="col-md-4 mb-4 d-flex align-items-center justify-content-center mx-auto d-block position-relative custom-image-container">
+          <img src="./images/exam3.jpeg" class="img-fluid" style="max-width: 90%; border-radius: 20px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); opacity: 0.6;">
+          <div class="position-absolute-center">
+              <p style="color: rgb(138, 74, 56); font-size: 40px; font-weight: 500px;">เกียรติบัตร</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4 d-flex align-items-center justify-content-center mx-auto d-block position-relative custom-image-container">
+          <img src="./images/exam3.jpeg" class="img-fluid" style="max-width: 90%; border-radius: 20px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); opacity: 0.6;">
+          <div class="position-absolute-center">
+              <p style="color: rgb(138, 74, 56); font-size: 40px; font-weight: 500px;">สูจิบัตร</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4 d-flex align-items-center justify-content-center mx-auto d-block position-relative custom-image-container">
+          <img src="./images/exam3.jpeg" class="img-fluid" style="max-width: 90%; border-radius: 20px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); opacity: 0.6;">
+          <div class="position-absolute-center">
+              <p style="color: rgb(138, 74, 56); font-size: 40px; font-weight: 500px;">กำหนดการ</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4 d-flex align-items-center justify-content-center mx-auto d-block position-relative custom-image-container">
+          <img src="./images/exam3.jpeg" class="img-fluid" style="max-width: 90%; border-radius: 20px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); opacity: 0.6;">
+          <div class="position-absolute-center">
+              <p style="color: rgb(138, 74, 56); font-size: 40px; font-weight: 500px;">KEYNOTE</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4 d-flex align-items-center justify-content-center mx-auto d-block position-relative custom-image-container">
+          <img src="./images/exam3.jpeg" class="img-fluid" style="max-width: 90%; border-radius: 20px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); opacity: 0.6;">
+          <div class="position-absolute-center">
+              <p style="color: rgb(138, 74, 56); font-size: 40px; font-weight: 500px;">บรรยากาศงาน</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4 d-flex align-items-center justify-content-center mx-auto d-block position-relative custom-image-container">
+          <img src="./images/exam3.jpeg" class="img-fluid" style="max-width: 90%; border-radius: 20px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); opacity: 0.6;">
+          <div class="position-absolute-center">
+              <p style="color: rgb(138, 74, 56); font-size: 40px; font-weight: 500px;">ชมไลฟ์สด</p>
+          </div>
+        </div>
+        <!-- Repeat end -->
+      </div>
+    </div>
+</section>
+
+
+  <hr class="mx-auto mb-5 w-75 justify-content-center" style="color: rgb(138, 74, 56)">
+
+  <section class="mt-5 px-5 mb-5" style="text-align: center; margin-bottom: 30px;" data-aos="fade-up" data-aos-duration="1000">
+    <p class="mt-3 fs-2">แผนผังพื้นที่จัดงาน</p>
+    <img src="./images/map.jpg" class="map">
+    
+
+  </section>
+
+  <hr class="mx-auto w-75 justify-content-center mt-5" style="color: rgb(138, 74, 56)">
+
+   <!-- live -->
+   <section class="text-center mt-5" style="margin-top: 30px; margin-bottom: 20px; " data-aos="fade-up" data-aos-duration="1000">
+    <div class="row">
+      <div class="col">
+        <p style="font-size: 30px;color: rgb(138, 74, 56) ">การถ่ายทอดสด (ตัวอย่าง)</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" width="650" height="520" src="https://www.youtube.com/embed/G5IkwooS-to?si=lPg7b9wirU7FxFhD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -120,7 +238,7 @@
             </ul>
            </div>      
            <div class="footer_copyright">
-                 <p style=" font-family: 'Noto Sans Thai', sans-serif; font-size: 12px; font-weight: 400;">มหกรรมศิลปะ ดนตรีและการแสดงนานาชาติ ครั้งที่ 11 วันที่ 17 มิถุนายน 2567</p>
+                 <p style=" font-family: 'Noto Sans Thai', sans-serif; font-size: 12px; font-weight: 400;">มหกรรมศิลปะ ดนตรีและการแสดงนานาชาติ ครั้งที่ 11 วันที่ 16 มิถุนายน 2567</p>
             <p>© 2024 Fine Of Arts.</p>
            </div> 
            <div class="footer_profile">
@@ -142,6 +260,9 @@
          </div><!--- END ROW -->     
         </div><!--- END CONTAINER -->
        </div>
+       <script>
+        AOS.init();
+      </script>
       <script src="./js/script.js"></script>
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>

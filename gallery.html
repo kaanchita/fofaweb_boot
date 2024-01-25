@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>บรรยากาศงาน</title>
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./src/style.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@200;300;400;500;600;700;800;900&display=swap');
+
+    </style>
+
+</head>
+<body>
+  <header class="sticky-top bg-body-tertiary" >
+    <div class="container">
+      <div class="d-flex justify-content-end ">
+      <div class="dropdown">
+        <button class="btn dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <img src="./images/thaiflag.png" class="img-fluid m-2" style="max-width: 20px;">
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+          <li><a class="dropdown-item" href="#"><img src="./images/thaiflag.png" class="img-fluid m-2" style="max-width: 20px;">ไทย</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#"><img src="./images/engflag.png" class="img-fluid m-2" style="max-width: 20px;">English</a></li>
+        </ul>
+        </div>
+      </div>
+    </div>
+    
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html"><img src="./images/logo.png" class="img-fluid" style="max-width: 80px;" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">หน้าหลัก</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./project.html">โครงการ</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="./detail.html" >
+                รูปแบบผลงานและรายละเอียด
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">ทัศนศิลป์</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">ดนตรี</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">นาฏศิลป์</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./register.html">ลงทะเบียนส่งผลงาน</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./announce.html">ประกาศรายชื่อผู้ได้รับคัดเลือก</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="./performance.html">
+                ผลงานสร้างสรรค์
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="performance.html#section1">ทัศนศิลป์</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="performance.html#section2">ดนตรี</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="performance.html#section3">นาฏศิลป์</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mailto:fofaswu@g.swu.ac.th">ติดต่อสอบถาม</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    </div>
+  </header>
+      
+  <div class="container mt-5 mb-5">
+    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+      <ol class="breadcrumb p-2 justify-content-center"> 
+        <li class="breadcrumb-item"><a href="./index.html">หน้าหลัก</a></li>
+        <li class="breadcrumb-item active" aria-current="page">บรรยากาศงาน</li>
+      </ol>
+    </nav>
+    </div>
+ 
+    <div class="container">
+        <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">รูปภาพ</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">วิดีโอ</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                <div class="wrapper">
+
+                    <div class="item">
+                      <div class="polaroid"><img src="./images/exam2.jpeg">
+                      </div>
+                    </div>
+                  
+                    <div class="item">
+                      <div class="polaroid"><img src="./images/exam1.jpeg">
+                      </div>
+                    </div>
+                  
+                    <div class="item">
+                      <div class="polaroid"><img src="./images/exam3.jpeg">
+                      </div>
+                    </div>
+                  
+                    <div class="item">
+                      <div class="polaroid"><img src="./images/exam4.jpeg">
+                      </div>
+                    </div>
+                    
+                    <div class="item">
+                      <div class="polaroid"><img src="./images/exam5.jpeg">
+                      </div>
+                    </div>
+                  
+                    <div class="item">
+                        <div class="polaroid"><img src="./images/exam3.jpeg">
+                        </div>
+                      </div>
+                    
+                    <div class="item">
+                        <div class="polaroid"><img src="./images/exam2.jpeg">
+                        </div>
+                        </div>
+                    <div class="item">
+                        <div class="polaroid"><img src="./images/exam4.jpeg">
+                        </div>
+                        </div>
+                  </div>
+            </div>
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <iframe width="300" height="200" src="https://www.youtube.com/embed/3lp8KIs42go" title="Cozy Art Video / Studio Ghibli Painting / Landscape Painting with Gouache / Paint with Me ✨" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                  </div>
+            </div>
+
+
+            <!-- Pagination -->
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+          </div>
+        
+          
+      <div class="footer">
+        <div class="container">  
+         <div class="row text-center">      
+          <div class="col-lg-12 col-sm-12 col-xs-12">
+           <div class="footer_menu">
+            <ul>
+             <li><a href="index.html">หน้าแรก</a></li>
+             <li><a href="project.html">โครงการ</a></li>
+             <li><a href="#">ลงทะเบียนส่งผลงาน</a></li>
+             <li><a href="performance.html">ผลงานสร้างสรรค์</a></li>
+             <li><a href="mailto:fofaswu@g.swu.ac.th">ติดต่อสอบถาม</a></li>
+            </ul>
+           </div>   
+
+           <div class="footer_copyright">
+                 <p style=" font-family: 'Noto Sans Thai', sans-serif; font-size: 12px; font-weight: 400;">มหกรรมศิลปะ ดนตรีและการแสดงนานาชาติ ครั้งที่ 11 วันที่ 17 มิถุนายน 2567</p>
+            <p>© 2024 Fine Of Arts.</p>
+           </div> 
+           <div class="footer_profile">
+            <ul>
+             <li>
+                     <a href="https://www.facebook.com/swufofa?mibextid=LQQJ4d">
+                       <i class="fa fa-facebook"></i>
+                     </a>
+                   </li>
+             <li data-bs-toggle="tooltip" data-bs-placement="top" title="0 2260 0123">
+                     <a href="#" >
+                       <i class="fa fa-phone" ></i>
+                     </a>
+                   </li>
+             <li><a href="https://www.instagram.com/fofahouse.swu?igsh=MWo4MWxkcDh6eXFrNA=="><i class="fa fa-instagram"></i></a></li>
+            </ul>
+           </div>      
+          </div><!--- END COL -->       
+         </div><!--- END ROW -->     
+        </div><!--- END CONTAINER -->
+       </div>
+      <script src="./js/script.js"></script>
+
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

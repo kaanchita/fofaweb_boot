@@ -12,7 +12,8 @@
     
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-   
+    <!-- Include Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@200;300;400;500;600;700;800;900&display=swap');
     
@@ -91,9 +92,28 @@
                 <li><a class="dropdown-item" href="performance.html#section3">นาฏศิลป์</a></li>
               </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="mailto:fofaswu@g.swu.ac.th">ติดต่อสอบถาม</a>
+             <li class="nav-item">
+              <a class="nav-link" href="#" onclick="openContactModal()">ติดต่อสอบถาม</a>
             </li>
+            <div id="contactModal" class="modal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title">ติดต่อสอบถาม</h4>
+                    <button type="button" class="close" onclick="closeContactModal()">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                    <i class="fas fa-phone"></i> <p>091-825-5866</p>
+                    <i class="fas fa-envelope"></i><p>fofafest@g.swu.ac.th</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            
+            
+        
+
 
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="./performance.html">

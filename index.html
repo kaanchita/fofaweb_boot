@@ -14,6 +14,9 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Include Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@200;300;400;500;600;700;800;900&display=swap');
     
@@ -92,27 +95,28 @@
                 <li><a class="dropdown-item" href="performance.html#section3">นาฏศิลป์</a></li>
               </ul>
             </li>
+
              <li class="nav-item">
               <a class="nav-link" href="#" onclick="openContactModal()">ติดต่อสอบถาม</a>
             </li>
-            <div id="contactModal" class="modal">
+            <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h4 class="modal-title">ติดต่อสอบถาม</h4>
-                    <button type="button" class="close" onclick="closeContactModal()">&times;</button>
+                    <h5 class="modal-title" id="contactModalLabel">ข้อมูลติดต่อ</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
-                    <i class="fas fa-phone"></i> <p>091-825-5866</p>
-                    <i class="fas fa-envelope"></i><p>fofafest@g.swu.ac.th</p>
+                    <p>เบอร์โทร: 091-825-5866</p>
+                    <p>อีเมล: fofafest@g.swu.ac.th</p>
                   </div>
                 </div>
               </div>
             </div>
-            
-            
-            
-        
+            <!-- เพิ่ม Bootstrap JavaScript -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 
 
             <li class="nav-item dropdown">
@@ -283,9 +287,9 @@
        <script>
         AOS.init();
       </script>
-      <script src="./js/script.js"></script>
+       <script src="js/script.js"></script>
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
 </body>
 </html>

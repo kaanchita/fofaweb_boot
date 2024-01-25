@@ -1,7 +1,4 @@
 function openContactModal() {
-    $('#contactModal').modal('show');
-  }
-
-  function closeContactModal() {
-    $('#contactModal').modal('hide');
-  }
+  // เปิด Modal
+  $('#contactModal').modal('show');
+}

@@ -178,6 +178,30 @@ body {
         }
   }
 
+/* text performance */
+  .texttitle {
+    position: relative;
+    color: #fff;
+    font-weight: 100 !important;
+    font-size: 120px;
+    -webkit-text-stroke: 9px #9b1e2e;
+    letter-spacing: 20px;
+    -webkit-filter: drop-shadow(10px 11px 0 #cad3d7);
+    
+    text-align: center;
+    line-height: 1.2;
+    margin: rem auto;
+    z-index: 2;
+    transition: filter 0.6s; /* เพิ่ม transition ในการเปลี่ยนแปลง filter */
+}
+
+.texttitle:hover {
+    color: #fff;
+    -webkit-text-stroke: 9px #cad3d7;
+    -webkit-filter: drop-shadow(10px 11px 0 #9b1e2e);
+}
+/* text performance End */
+
 /* footer */
 .footer {
     background:rgb(135, 74, 56);;

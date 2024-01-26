@@ -187,7 +187,6 @@ body {
     -webkit-text-stroke: 9px #9b1e2e;
     letter-spacing: 20px;
     -webkit-filter: drop-shadow(10px 11px 0 #cad3d7);
-    
     text-align: center;
     line-height: 1.2;
     margin: rem auto;
@@ -199,6 +198,15 @@ body {
     color: #fff;
     -webkit-text-stroke: 9px #cad3d7;
     -webkit-filter: drop-shadow(10px 11px 0 #9b1e2e);
+}
+
+@media (max-width: 768px) {
+  .texttitle {
+      font-size: 60px; /* ปรับขนาดตัวอักษรเล็กลง */
+      -webkit-text-stroke: 4px #9b1e2e; /* ปรับขนาดเส้นขอบ */
+      letter-spacing: 10px; /* ปรับระยะห่างระหว่างตัวอักษร */
+      margin: 2rem auto; /* ปรับระยะขอบ */
+  }
 }
 /* text performance End */
 

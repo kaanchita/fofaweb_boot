@@ -9,7 +9,7 @@ body {
 }
 
 .navbar .nav-link {
-  color:  rgb(202, 220, 215) !important;
+  color:#cad3d7!important;
 }
 
 
@@ -22,7 +22,7 @@ body {
   }
 
 .navbar-nav .dropdown-item {
-    color:  rgb(202, 220, 215) !important;
+    color:#cad3d7 !important;
   }
 
 .breadcrumb {
@@ -232,7 +232,7 @@ display: inline-block;
 	text-decoration: none;
 	-webkit-transition: .3s;
 	transition: .3s;
-	color: rgb(135, 74, 56);
+	color: #8a4a38;
 }
 .footer_copyright {
     margin-bottom: 20px;

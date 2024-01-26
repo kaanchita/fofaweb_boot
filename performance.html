@@ -16,6 +16,32 @@
 
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@200;300;400;500;600;700;800;900&display=swap');
+      
+
+      .texttitle {
+    position: relative;
+    color: #fff;
+    font-weight: 100 !important;
+    font-size: 120px;
+    -webkit-text-stroke: 9px #9b1e2e;
+    letter-spacing: 20px;
+    -webkit-filter: drop-shadow(10px 11px 0 #cad3d7);
+    
+    text-align: center;
+    line-height: 1.2;
+    margin: rem auto;
+    z-index: 2;
+    transition: filter 0.6s; /* เพิ่ม transition ในการเปลี่ยนแปลง filter */
+}
+
+.texttitle:hover {
+    color: #fff;
+    -webkit-text-stroke: 9px #cad3d7;
+    -webkit-filter: drop-shadow(10px 11px 0 #9b1e2e);
+    
+  
+}
+
     </style>
 
 </head>
@@ -98,63 +124,21 @@
         </div>
       
 
-<div data-aos="fade-up" id="section1" >
+<div data-aos="fade-up"  data-aos-duration="1000" id="section1" >
 <!-- Art -->
 <div class="container mb-5 ">
-  <div class="row" >
-  <h1 >ทัศนศิลป์</h1>
-
-  <div class="card mb-3 mt-3 shadow" style="max-width: 540px;">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="./images/Starry-Night-canvas-Vincent-van-Gogh-New-1889.webp" class="img-fluid  m-1 p-1" alt="...">
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-      </div>
+ 
+  <div class="row">
+    <div class="col-6 col-sm-4 order-sm-1"> 
+        <h1 class="texttitle">ทัศนศิลป์</h1>
     </div>
+    <div class="col-6 col-sm-4 order-sm-2">
+      <img src="./images/exam3.jpeg" class="img-fluid">
   </div>
-
-  <div class="row justify-content-end">
-      <div class="card mb-3 shadow" style="max-width: 540px;">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img src="./images/Starry-Night-canvas-Vincent-van-Gogh-New-1889.webp" class="img-fluid  m-1 p-1" alt="...">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row ">
-          <div class="card mb-3 shadow" style="max-width: 540px;">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="./images/Starry-Night-canvas-Vincent-van-Gogh-New-1889.webp" class="img-fluid  m-1 p-1" alt="...">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-      </div>
 </div>
 
+  </div>
+</div>
 
         <hr class="mx-auto" style="color:#734B34; width: 90%;">
 

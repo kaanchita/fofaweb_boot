@@ -100,39 +100,75 @@
     <!-- content -->
     <section>
       <!-- ทัศนศิลป์ -->
-      
-        <!-- <div class="row">
-          <div class="half-circle-container">
-            <div class="half-circle">
-              <img src="images/detail2.jpg" alt="Image 1" style="opacity: 90%;"> -->
-              <!-- <div class="overlay-text">ทัศนศิลป์</div> -->
-              <!-- <p class="overlay-text" style="left: 35%;"> ทัศนศิลป์</p>
-              <p class="overlay-text" style="top: 52%; left: 33%; color: #CAD3D7 ; text-shadow: 5px 5px 5px rgba(10, 10, 10, 0.6) ;" > ทัศนศิลป์</p>
-              <p class="overlay-text" style="top: 59%; left: 31%;"> ทัศนศิลป์</p>
-            </div>
-          </div>
-        </div> -->
-
         <div class="container">
           <div class="row">
             <div class="col-sm-12 col-md-6">
               <div class="half-circle-container">
                 <div class="half-circle">
-                  <img src="images/detail2.jpg" alt="Image 1" class="img-fluid" style="opacity: 90%;">
+                  <img src="images/detail2.jpg" alt="Image 1" class="img-fluid" style="opacity: 90%;" id="enlargeImage">
                   <p class="overlay-text" style="left: 35%;">ทัศนศิลป์</p>
-                  <p class="overlay-text" style="top: 52%; left: 33%; color: #CAD3D7; text-shadow: 5px 5px 5px rgba(10, 10, 10, 0.6);">ทัศนศิลป์</p>
-                  <p class="overlay-text" style="top: 59%; left: 31%;">ทัศนศิลป์</p>
+                  <p class="overlay-text2" style="top: 52%; left: 33%; text-shadow: 5px 5px 5px rgba(10, 10, 10, 0.6);">ทัศนศิลป์</p>
+                  <p class="overlay-text" style="top: 59%; left: 31%;" >ทัศนศิลป์</p>
                 </div>
               </div>
             </div>
+
+            <div class="col-sm-12 col-md-6">
+              <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                     <strong>ประเภทผลงาน </strong>  
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                      <p><strong>ผลงานสร้างสรรค์ด้านออกแบบผลิตภัณฑ์ </strong> : ออกแบบเครื่องประดับ ออกแบบแฟชั่นสิ่งทอ ออกแบบบรรจุภัณฑ์ </p>
+                      <p><strong>ผลงานสร้างสรรค์ด้านออกแบบสื่อสาร</strong> : ออกแบบชุดตัวอักษร ออกแบบกราฟิกบนบรรจุภัณฑ์ ออกแบบป้ายสัญลักษณ์ ออกแบบลวดลาย ออกแบบอัตลักษณ์องค์กร ออกแบบคาแรคเตอร์ ออกแบบสื่อสิ่งพิมพ์</p>
+                      <p><strong>ผลงานสร้างสรรค์ด้านทัศนศิลป์</strong> : งาน 2-3 มิติ งานทัศนศิลป์สื่อร่วมสมัย</p>  
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                     <strong>รูปแบบงานที่ใช้นำเสนอ</strong> 
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      <p>1. ภาพนิ่ง </p>
+                      <p>2. Video Art</p>
+                      <!-- <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow. -->
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                      <strong>สิ่งที่ต้องส่ง</strong>
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                     <p>1. Concept Paper(ตามฟอร์มของงาน) </p>
+                     <p>2. ไฟล์รูปผลงานนำลงสูจิบัตร ขนาด 16:9 ความละเอียดไม่ต่ำกว่า 720p (รูปแนวนอน)</p>
+                      <p>3. ไฟล์รูปผู้สร้างสรรค์ผลงาน ขนาด4:3 ความละเอียดไม่ต่ำกว่า 720p (รูปแนวตั้ง) ข้อความอธิบายผลงานไม่เกิน 250 คำ</p>
+                      <p>4. ผลงานที่สร้างสรรค์โดยมีรายละเอียดดังนี้</p>
+                      <p style="text-indent: 2.5em;"><strong> - ออกแบบผลิตภัณฑ์ เครื่องประดับ แฟชั่นสิ่งทอ ออกแบบบรรจุภัณฑ์ การออกแบบสื่อสาร งานทัศนศิลป์2-3 มิติ </strong> : ภาพผลงาน 3-5ภาพ  ความละเอียด720-1080p </p>
+                      <p style="text-indent: 2.5em;"><strong> - งานทัศนศิลป์แบบสื่อร่วมสมัย </strong> : Video Art ขนาด 16:9 สกุลไฟล์ MP4 ความละเอียด 720-1080p ระยะเวลา 3-10 นาที </p>
+                      <p><strong style="color: brown;">หมายเหตุ.</strong> <p style="text-indent: 2.5em;"> ** ยกเว้นงานประเภทวัสดุ วัสดุตั้งต้นหรือการคิดค้นวัสดุ (Raw Material or Synthetic Material)</p> <p style="text-indent: 2.5em;">**ผลงานสร้างสรรค์จะต้องเป็นงานที่ไม่ละเมิดลิขสิทธิ์ของผู้อื่น และไม่ละเมิดทรัพย์สินทางปัญญา จะต้องเป็นงานสร้างสรรค์ที่เกิดขึ้นจากกระบวนการสร้างสรรค์ของตนเองเท่านั้น</p> </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
           </div>
         </div>
-        
-
-       
-        
-     
        <!-- ทัศนศิลป์ -->
+       <hr class="mx-auto w-75 justify-content-center mt-5" style="color: rgb(138, 74, 56)">
 
        <!-- ดนตรี -->
        <div class="row">

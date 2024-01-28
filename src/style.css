@@ -100,8 +100,6 @@ body {
   }
 
 /* icon nav */
-
-
 .breadcrumb {
   border: solid 1px  rgb( 15, 13, 13)  ;
  
@@ -127,15 +125,14 @@ body {
 /* performance */
 .text-title {
   position: relative;
-  color: #fff;
-  font-weight: 100 !important;
-  font-size: 100px;
-  -webkit-text-stroke: 7px #9B1E2E;
+  color: transparent;
+  font-weight: 500 !important;
+  -webkit-text-stroke: 3px #9B1E2E;
   letter-spacing: 15px;
-  -webkit-filter: drop-shadow(9px 11px 0 #CAD3D7);
-  text-align: center;
+  /* -webkit-filter: drop-shadow(9px 11px 0 #CAD3D7); */
+  /* text-align: center; */
   line-height: 1.2;
-  margin: 4rem auto;
+  margin: 3; /* ลบ margin ที่อาจจะมีอยู่ */
   z-index: 2;
 }
 /* performance */

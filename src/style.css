@@ -536,6 +536,26 @@ transition: background-color 0.3s, color 0.3s, border-color 0.3s;
   border-color: #9B1E2E;
 }
 
+/* download icon */
+
+/* .image-link {
+  display: inline-block;
+ 
+  width: 250px;
+  height: 150px;
+ 
+  background-image: url('images/download.png');
+  background-size: cover;
+
+  transition: background-image 0.3s ease-in-out;
+}
+
+
+.image-link:hover {
+  background-image: url('images/download2.png');
+} */
+
+
 
 /* accordian-music */
 .music .accordion-item  {
@@ -546,14 +566,13 @@ transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
 .music .accordion-button {
-  background-color: #dfb037; /* สีพื้นหลังของปุ่ม accordion-button */
-  color: rgb(137, 95, 160);
-  /* rgb(137, 95, 160);  */
+  background-color: #9B1E2E; /* สีพื้นหลังของปุ่ม accordion-button */
+  color: #dfb037
 }
 
 .music .accordion-button:hover {
-  background-color: #9B1E2E; 
-  color: #ddd;
+  background-color: #dfb037; 
+  color: #000000;
 }
 
 .music .accordion-body {

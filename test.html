@@ -85,24 +85,47 @@
     </div>
   </header>
 
-  <div class="container">
-    <div class="row">
-      <!-- Row แรก -->
-      <div class="col-md-6 order-md-1">
-        <img src="your-left-image.jpg" class="img-fluid" alt="Left Image">
-        <p>Your Left Text</p>
-      </div>
+  <h1 id="greeting">Hello, World!</h1>
+  <h2 id="performance">performance</h2>
+  <button onclick="changeLanguage()">Change Language</button>
+
+  <script src="https://cdn.jsdelivr.net/npm/i18next/dist/umd/i18next.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector/dist/umd/i18nextBrowserLanguageDetector.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/i18next-xhr-backend/dist/umd/i18nextXHRBackend.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/i18next-sprintf-postprocessor/dist/umd/i18nextSprintfPostProcessor.js"></script>
+
+  <script>
+    function changeLanguage() {
+      const newLanguage = (i18next.language === 'en') ? 'th' : 'en'; // Toggle between English and Thai
+      i18next.changeLanguage(newLanguage, (err, t) => {
+        if (err) return console.log('Error loading translation files:', err);
+        
+        // Refresh the displayed greeting text
+        document.getElementById('greeting').textContent = t('greeting');
+        document.getElementById('performance').textContent = t('performance');
+      });
+    }
+
+    i18next.use(i18nextBrowserLanguageDetector)
+      .use(i18nextXHRBackend)
+      .use(i18nextSprintfPostProcessor)
+      .init({
+        debug: true,
+        fallbackLng: 'en',
+        backend: {
+          loadPath: '/locales/{{lng}}.json'
+        },
+        interpolation: {
+          escapeValue: false
+        }
+      }, (err, t) => {
+        if (err) return console.log('Error initializing i18next:', err);
+
+        document.getElementById('greeting').textContent = t('greeting');
+      });
+  </script>
+
   
-      <!-- Row ที่สอง -->
-      <div class="col-md-6 order-md-2 d-flex align-items-center">
-        <div class="text-right">
-          <img src="your-right-image.jpg" class="img-fluid" alt="Right Image">
-          <p class="position-absolute text-white">Your Overlapping Text</p>
-          <p>Your Right Text</p>
-        </div>
-      </div>
-    </div>
-  </div>
   
       
 

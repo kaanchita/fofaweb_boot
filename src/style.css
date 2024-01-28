@@ -26,9 +26,9 @@ body {
   }
 
 .breadcrumb {
-  border: solid 1px  rgb( 15, 13, 13)  ;
-  border-radius: 25px;
-  width: 25%;
+  border: solid 1px  rgb( 15, 13, 13);
+
+ 
 }
 
 .breadcrumb-item a {
@@ -145,12 +145,24 @@ body {
   box-shadow: 0 1rem 3rem rgba(0,0,0,0.2);
   transition: all 0.35s;
 }
-
-
-
-
-
 /* GALLERY */
+
+
+/* Performance */
+.text-title {
+  position: relative;
+  color: #fff;
+  font-weight: 100 !important;
+  font-size: 150px;
+  -webkit-text-stroke: 7px #FD3A58;
+  letter-spacing: 15px;
+  -webkit-filter: drop-shadow(9px 11px 0 #98B5CC);
+  width: 1000px;
+  text-align: center;
+  line-height: 1.2;
+  margin: 4rem auto;
+  z-index: 2;
+}
 
 /* main content */
 
@@ -164,7 +176,6 @@ body {
         margin-right: 0;
       } */
     .breadcrumb {
-      width: 40%;
       font-size: 9px;
     }
     .custom-btn {

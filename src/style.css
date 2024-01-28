@@ -27,8 +27,8 @@ body {
 
 .breadcrumb {
   border: solid 1px  rgb( 15, 13, 13)  ;
-  border-radius: 25px;
-  width: 25%;
+ 
+  
 }
 
 .breadcrumb-item a {
@@ -164,7 +164,6 @@ body {
         margin-right: 0;
       } */
     .breadcrumb {
-      width: 40%;
       font-size: 9px;
     }
     .custom-btn {

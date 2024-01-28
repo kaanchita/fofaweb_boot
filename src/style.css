@@ -324,36 +324,182 @@ margin-right: 10px;
   height: 100%;
 }
 
- .overlay-text {
+/* art/dance text detail page */
+.overlay-text{
   position: absolute;
-  top: 45%;
-  left: 25%;
+  margin-top: 7%; 
+    
   transform: translate(-50%, -50%); 
   z-index: 2; 
-   /* color: rgb(202, 211, 215);  */
-   color: #9B1E2E;
+  color: #dfb037;
   font-size: 60px;
   font-weight: bold;
-  text-shadow: 5px 5px 5px rgba(123, 117, 117, 0.5);
+  text-shadow: 5px 5px 5px rgba(10, 10, 10, 0.6);
+
 }
-.overlay-text2 {
+.overlay-text2{
   position: absolute;
-  top: 45%;
-  left: 25%;
+  margin-top: 11%;
+
   transform: translate(-50%, -50%); 
   z-index: 2; 
-   color: rgb(202, 211, 215); 
-   /* color: #9B1E2E; */
+  color: #dfb037;
   font-size: 60px;
   font-weight: bold;
-  text-shadow: 5px 5px 5px rgba(123, 117, 117, 0.5);
+  text-shadow: 5px 5px 5px rgba(10, 10, 10, 0.6);
+
 }
+.overlay-text3{
+  position: absolute;
+  margin-top: 15%;
+  transform: translate(-50%, -50%); 
+  z-index: 2; 
+  color: #dfb037;
+  font-size: 60px;
+  font-weight: bold;
+  text-shadow: 5px 5px 5px rgba(10, 10, 10, 0.6);
+
+}
+.col-sm-12 .overlay-text {
+  position: absolute;
+  top: 18%;
+  left: 34%;
+  transform: translate(-50%, -50%); 
+  z-index: 2; 
+  color: #dfb037;
+  font-size: 60px;
+  font-weight: bold;
+  text-shadow: 5px 5px 5px rgba(10, 10, 10, 0.6);
+
+}
+
+.col-sm-12 .overlay-text2 {
+  position: absolute;
+  top: 25%;
+  left: 34%;
+  transform: translate(-50%, -50%); 
+  z-index: 2; 
+  color: #dfb037;
+  font-size: 60px;
+  font-weight: bold;
+  text-shadow: 5px 5px 5px rgba(10, 10, 10, 0.6);
+
+}
+.col-sm-12 .overlay-text3 {
+  position: absolute;
+  top: 32%;
+  left: 34%;
+  transform: translate(-50%, -50%); 
+  z-index: 2; 
+  color: #dfb037;
+  font-size: 60px;
+  font-weight: bold;
+  text-shadow: 5px 5px 5px rgba(10, 10, 10, 0.6);
+
+}
+
 .overlay-text:hover {
-  color: #8A4A38; /* สีที่ต้องการเมื่อ hover */
+  color: #9B1E2E; 
 }
 .overlay-text2:hover {
-  color: #8A4A38; /* สีที่ต้องการเมื่อ hover */
+  color: #9B1E2E; 
 }
+.overlay-text3:hover {
+  color: #9B1E2E; 
+}
+/* art/dance text detail page */
+
+/* music text detail page */
+.overlay-text-m {
+  position: absolute;
+   /* top: 40%; 
+   left: 60%;  */
+   margin-left: 35%;
+   margin-top: -8%;
+  transform: translate(-50%, -50%); 
+  z-index: 2; 
+  color: #dfb037;
+  font-size: 60px;
+  font-weight: bold;
+  text-shadow: 5px 5px 5px rgba(10, 10, 10, 0.6);
+
+}
+.overlay-text-m2{
+  position: absolute;
+  margin-left: 35%;
+   margin-top: -5%;
+
+  transform: translate(-50%, -50%); 
+  z-index: 2; 
+  color: #dfb037;
+  font-size: 60px;
+  font-weight: bold;
+  text-shadow: 5px 5px 5px rgba(10, 10, 10, 0.6);
+
+}
+.overlay-text-m3{
+  position: absolute;
+  margin-left: 35%;
+   margin-top: -2%;
+
+  transform: translate(-50%, -50%); 
+  z-index: 2; 
+  color: #dfb037;
+  font-size: 60px;
+  font-weight: bold;
+  text-shadow: 5px 5px 5px rgba(10, 10, 10, 0.6);
+
+}
+.col-sm-12 .overlay-text-m {
+  position: absolute;
+  top: 58%;
+  left: 30%;
+  transform: translate(-50%, -50%); 
+  z-index: 2; 
+  color: #dfb037;
+  font-size: 60px;
+  font-weight: bold;
+  text-shadow: 5px 5px 5px rgba(10, 10, 10, 0.6);
+
+}
+
+.col-sm-12 .overlay-text-m2 {
+  position: absolute;
+  top: 66%;
+  left: 30%;
+  transform: translate(-50%, -50%); 
+  z-index: 2; 
+  color: #dfb037;
+  font-size: 60px;
+  font-weight: bold;
+  text-shadow: 5px 5px 5px rgba(10, 10, 10, 0.6);
+
+}
+.col-sm-12 .overlay-text-m3 {
+  position: absolute;
+  top: 74%;
+  left: 30%;
+  transform: translate(-50%, -50%); 
+  z-index: 2; 
+  color: #dfb037;
+  font-size: 60px;
+  font-weight: bold;
+  text-shadow: 5px 5px 5px rgba(10, 10, 10, 0.6);
+
+}
+
+.overlay-text-m:hover {
+  color: #9B1E2E; 
+}
+.overlay-text-m2:hover {
+  color: #9B1E2E; 
+}
+.overlay-text-m3:hover {
+  color: #9B1E2E; 
+}
+
+/* music text detail page */
+
 
 #enlargeImage:hover {
   transform: scale(1.1);
@@ -362,5 +508,58 @@ margin-right: 10px;
 
 
 
+/* template paper  */
+.template-text {
+  font-size: 40px;
+  margin-left: 10%;
+  margin-bottom: 3%;
+}
 
+.template {
+font-size: 20px;
+width: 85%;
+height: 90%;
+display: inline-block;
+padding: 20px 20px;
+margin: 10px;
+text-align: center;
+text-decoration: none;
+color: #8A4A38;
+border: 2px solid #8A4A38;
+border-radius: 5px;
+transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.template:hover {
+  background-color: #9B1E2E;
+  color: white;
+  border-color: #9B1E2E;
+}
+
+
+/* accordian-music */
+.music .accordion-item  {
+  background-color: #f8f9fa; /* สีพื้นหลังของแต่ละ accordion-item */
+  border: 1px solid #dee2e6; /* เส้นขอบของแต่ละ accordion-item */
+  border-radius: 5px; /* มุมของแต่ละ accordion-item */
+  margin-bottom: 5px; /* ระยะห่างระหว่าง accordion-item */
+}
+
+.music .accordion-button {
+  background-color: #dfb037; /* สีพื้นหลังของปุ่ม accordion-button */
+  color: rgb(137, 95, 160);
+  /* rgb(137, 95, 160);  */
+}
+
+.music .accordion-button:hover {
+  background-color: #9B1E2E; 
+  color: #ddd;
+}
+
+.music .accordion-body {
+  background-color: #fff; /* สีพื้นหลังของ accordion-body */
+  border-top: 1px solid #dee2e6; /* เส้นขอบด้านบนของ accordion-body */
+  border-bottom: 1px solid #dee2e6; /* เส้นขอบด้านล่างของ accordion-body */
+}
+/* accordian-music */
   

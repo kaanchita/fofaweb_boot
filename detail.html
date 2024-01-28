@@ -9,7 +9,9 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@200;300;400;500;600;700;800;900&display=swap');
@@ -100,15 +102,15 @@
     <!-- content -->
     <section>
       <!-- ทัศนศิลป์ -->
-        <div class="container">
+        <div class="container"data-aos="fade-up" data-aos-duration="1000">
           <div class="row">
             <div class="col-sm-12 col-md-6">
-              <div class="half-circle-container">
-                <div class="half-circle">
-                  <img src="images/detail2.jpg" alt="Image 1" class="img-fluid" style="opacity: 90%;" id="enlargeImage">
-                  <p class="overlay-text" style="left: 35%;">ทัศนศิลป์</p>
-                  <p class="overlay-text2" style="top: 52%; left: 33%; text-shadow: 5px 5px 5px rgba(10, 10, 10, 0.6);">ทัศนศิลป์</p>
-                  <p class="overlay-text" style="top: 59%; left: 31%;" >ทัศนศิลป์</p>
+              <div class="half-circle-container ">
+                <div class="half-circle mt-5">
+                  <img src="images/detail9.jpg" alt="Image 1" class="img-fluid" style="opacity: 60%;" id="enlargeImage">
+                  <p class="overlay-text">ทัศนศิลป์</p>
+                  <p class="overlay-text2" >ทัศนศิลป์</p>
+                  <p class="overlay-text3"  >ทัศนศิลป์</p>
                 </div>
               </div>
             </div>
@@ -118,7 +120,7 @@
                 <div class="accordion-item">
                   <h2 class="accordion-header">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                     <strong>ประเภทผลงาน </strong>  
+                     <strong style="font-size: 20px;">ประเภทผลงานทัศนศิลป์และการออกแบบ </strong>  
                     </button>
                   </h2>
                   <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
@@ -133,28 +135,27 @@
                 <div class="accordion-item">
                   <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                     <strong>รูปแบบงานที่ใช้นำเสนอ</strong> 
+                     <strong style="font-size: 20px;">รูปแบบงานที่ใช้นำเสนอ</strong> 
                     </button>
                   </h2>
                   <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
                     <div class="accordion-body">
                       <p>1. ภาพนิ่ง </p>
                       <p>2. Video Art</p>
-                      <!-- <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow. -->
                     </div>
                   </div>
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                      <strong>สิ่งที่ต้องส่ง</strong>
+                      <strong style="font-size: 20px;">สิ่งที่ต้องส่ง</strong>
                     </button>
                   </h2>
                   <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
                     <div class="accordion-body">
                      <p>1. Concept Paper(ตามฟอร์มของงาน) </p>
                      <p>2. ไฟล์รูปผลงานนำลงสูจิบัตร ขนาด 16:9 ความละเอียดไม่ต่ำกว่า 720p (รูปแนวนอน)</p>
-                      <p>3. ไฟล์รูปผู้สร้างสรรค์ผลงาน ขนาด4:3 ความละเอียดไม่ต่ำกว่า 720p (รูปแนวตั้ง) ข้อความอธิบายผลงานไม่เกิน 250 คำ</p>
+                      <p>3. ไฟล์รูปผู้สร้างสรรค์ผลงาน ขนาด 4:3 ความละเอียดไม่ต่ำกว่า 720p (รูปแนวตั้ง) ข้อความอธิบายผลงานไม่เกิน 250 คำ</p>
                       <p>4. ผลงานที่สร้างสรรค์โดยมีรายละเอียดดังนี้</p>
                       <p style="text-indent: 2.5em;"><strong> - ออกแบบผลิตภัณฑ์ เครื่องประดับ แฟชั่นสิ่งทอ ออกแบบบรรจุภัณฑ์ การออกแบบสื่อสาร งานทัศนศิลป์2-3 มิติ </strong> : ภาพผลงาน 3-5ภาพ  ความละเอียด720-1080p </p>
                       <p style="text-indent: 2.5em;"><strong> - งานทัศนศิลป์แบบสื่อร่วมสมัย </strong> : Video Art ขนาด 16:9 สกุลไฟล์ MP4 ความละเอียด 720-1080p ระยะเวลา 3-10 นาที </p>
@@ -167,23 +168,181 @@
             </div>
           </div>
         </div>
+
        <!-- ทัศนศิลป์ -->
-       <hr class="mx-auto w-75 justify-content-center mt-5" style="color: rgb(138, 74, 56)">
+       <hr class="mx-auto w-75 justify-content-center mt-5 mb-5 " style="color: rgb(138, 74, 56)">
 
        <!-- ดนตรี -->
-       <div class="row">
+       <div class="container" data-aos="fade-up" data-aos-duration="1000">
+        <div class="row mt-3 mb-5" >
 
-       </div>
+          <div class="col-sm-12 col-md-6 ">
+            <div class="accordion musi align-items-center mx-auto mt-5" id="accordionPanelsStayOpenExample" >
+              <div class="accordion-item music">
+                <h2 class="accordion-header">
+                  <button class="accordion-button music" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                   <strong style="font-size: 20px;">ประเภทผลงานดนตรี </strong>  
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                  <div class="accordion-body music">
+                    <p><strong>ผลงานสร้างสรรค์ด้านดนตรี </strong></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item music">
+                <h2 class="accordion-header">
+                  <button class="accordion-button music collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                   <strong style="font-size: 20px;">รูปแบบงานที่ใช้นำเสนอ</strong> 
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                  <div class="accordion-body music">
+                    <p><strong>วิดีโอ </strong></p>
+                    <p style="text-indent: 2.5em;">1. ถ่ายทอดผ่านรูปแบบเสียงที่มาจากการบรรเลงดนตรีสด หรือเป็นรูปแบบอิเล็กทรอนิกส์
+                      (เสียงสังเคราะห์) โดยบันทึกเป็นวีดีโอ
+                      </p>
+                      <p style="text-indent: 2.5em;"> 2. งานสร้างสรรค์ต้องเป็นงานประพันธ์ใหม่ ดนตรีเดิมให้มีส่วนของการสร้างสรรค์มากกว่าของเดิม
+                        โดยไม่ใช่การเรียบเรียงใหม่ หรือ ดัดแปลง หรือ ต้องไม่ใช่การบรรเลงเพลงเดิมโดยเครื่องมือใหม่
+                      </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item music">
+                <h2 class="accordion-header">
+                  <button class="accordion-button music collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    <strong style="font-size: 20px;">สิ่งที่ต้องส่ง</strong>
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                  <div class="accordion-body music">
+                   <p>1. Concept Paper(ตามฟอร์มของงาน) </p>
+                   <p>2. ไฟล์รูปภาพ <p style="text-indent: 2.5em;"><strong>- ผลงานสร้างสรรค์ : </strong> ภาพตัวอย่างโน้ตดนตรีที่ประพันธ์/ร่องรอยของผลงานสร้างสรรค์ เช่น โน้ต รูปภาพ เมโลดี้สกอ (แสดงให้เห็นความเกี่ยวข้องของงานสร้างสรรค์) ขนาด 16:9 ความละเอียด ไม่ต่ำกว่า 720p แนวนอน </p><p style="text-indent: 2.5em;"><strong>- รูปผู้สร้างสรรค์ผลงาน : </strong>ขนาด 4:3 ความละเอียด ไม่ต่ำกว่า 720p แนวตั้ง</p></p>
+                    <p>3. วีดีโอผลงาน</p>
+                    <p style="text-indent: 2.5em;"><strong>ขนาด :</strong> (16:9)</p>
+                    <p style="text-indent: 2.5em;"><strong>สกุลไฟล์ :</strong> (MP4)</p>
+                    <p style="text-indent: 2.5em;"><strong>ความละเอียด :</strong> (720 – 1080p)</p>
+                    <p style="text-indent: 2.5em;"><strong>ระยะเวลา :</strong> ไม่เกิน 10 นาที (ผลงานสร้างสรรค์ 5 - 7 นาที ผู้สร้างสรรค์นำเสนอ 3 นาที) </p>
+                    <p><strong style="color: brown;">หมายเหตุ.</strong> <p style="text-indent: 2.5em;"> **ผลงานสร้างสรรค์จะต้องเป็นงานที่ไม่ละเมิดลิขสิทธิ์ของผู้อื่น และไม่ละเมิดทรัพย์สินทางปัญญา จะต้องเป็นงานสร้างสรรค์ที่เกิดขึ้นจากกระบวนการสร้างสรรค์ของตนเองเท่านั้น</p> </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-sm-12 col-md-6">
+            <div class="half-circle-container ">
+              <div class="half-circle mt-5">
+                <img src="images/detail5.jpg" alt="Image 1" class="img-fluid" style="opacity: 60%;" id="enlargeImage">
+                
+                  <p class="overlay-text-m" >ดนตรี</p>
+                  <p class="overlay-text-m2"  >ดนตรี</p>
+                  <p class="overlay-text-m3"  >ดนตรี</p>
+                
+              </div>
+            </div>
+            
+          </div>
+          
+        </div>
+      </div>
        <!-- ดนตรี -->
+
+       <hr class="mx-auto w-75 justify-content-center mt-5 mb-5 " style="color: rgb(138, 74, 56)">
+
 
        <!-- นาฏศิลป์ -->
-       <div class="row">
+       <div class="container" data-aos="fade-up" data-aos-duration="1000">
+        <div class="row">
+          <div class="col-sm-12 col-md-6" style="background-color: cadetblue;">
+            <div class="half-circle-container ">
+              <div class="half-circle mt-5">
+                <img src="images/detail10.jpg" alt="Image 1" class="img-fluid" style="opacity: 90%;" id="enlargeImage">
+                <p class="overlay-text">นาฏศิลป์</p>
+                <p class="overlay-text2">นาฏศิลป์</p>
+                <p class="overlay-text3" >นาฏศิลป์</p>
+              </div>
+            </div>
+          </div>
 
-       </div>
+          <div class="col-sm-12 col-md-6" style="background-color: rgb(145, 168, 69);">
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                   <strong style="font-size: 20px;">ประเภทผลงานศิลปะการแสดง และนาฏศิลป์ </strong>  
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                  <div class="accordion-body">
+                    <p><strong>ผลงานสร้างสรรค์ด้านศิลปะการแสดง และนาฏศิลป์ </strong></p>
+                     
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                   <strong style="font-size: 20px;">รูปแบบงานที่ใช้นำเสนอ</strong> 
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <p><strong>วิดีโอ </strong></p>
+                    <p style="text-indent: 2.5em;"><strong>ขนาด :</strong> 16:9 </p>
+                    <p style="text-indent: 2.5em;"><strong>สกุลไฟล์ :</strong> MP4 </p>
+                    <p style="text-indent: 2.5em;"><strong>ความละเอียด :</strong> 720 – 1080p </p>
+                    <p style="text-indent: 2.5em;"><strong>ระยะเวลา :</strong> ไม่เกิน 15 นาที (ผลงานสร้างสรรค์ 7-12 นาที + ผู้สร้างสรรค์นำเสนอ 3 นาที) </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    <strong style="font-size: 20px;">สิ่งที่ต้องส่ง</strong>
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                   <p>1. Concept Paper(ตามฟอร์มของงาน) </p>
+                   <p>2. ไฟล์รูปผลงานนำลงสูจิบัตร ขนาด 16:9 ความละเอียดไม่ต่ำกว่า 720p (รูปแนวนอน)</p>
+                    <p>3. ไฟล์รูปผู้สร้างสรรค์ผลงาน ขนาด4:3 ความละเอียดไม่ต่ำกว่า 720p (รูปแนวตั้ง)</p>
+                    <p>4. วีดีโอผลงานสร้างสรรค์ </p>
+                    <p><strong style="color: brown;">หมายเหตุ.</strong> <p style="text-indent: 2.5em;"> ** ดนตรีหรือเพลงประกอบการแสดงจะต้องเป็นงานที่ไม่ละเมิดลิขสิทธิ์ของผู้อื่น และไม่ละเมิดทรัพย์สินทางปัญญาจะต้องเป็นงานสร้างสรรค์ที่เกิดขึ้นจากกระบวนการสร้างสรรค์ของตนเองเท่านั้น</p></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
         <!-- นาฏศิลป์ -->
 
+        <hr class="mx-auto w-75 justify-content-center mt-5 mb-5 " style="color: rgb(138, 74, 56)">
+
         <!-- paper -->
-        <div class="row">
+        <div class="row mt-5 mb-5" data-aos="fade-up" data-aos-duration="1000">
+          <div class="row">
+            <h2 class="template-text">Template Concept Paper</h2>
+
+          </div>
+          <div class="row mx-auto text-center justify-content-center" >
+            <div class="col-sm-12 col-md-3 text-center">
+              <a class="template"> ทัศนศิลป์และการออกแบบ </a>
+            </div>
+            <div class="col-sm-12 col-md-3 "><a class="template"> ดนตรี</a></div>
+            <div class="col-sm-12 col-md-3"><a class="template"> ศิลปะการแสดง และนาฏศิลป์</a></div>
+
+          </div>
+          
+          
+          
 
         </div>
         <!-- paper -->
@@ -233,8 +392,10 @@
          </div><!--- END ROW -->     
         </div><!--- END CONTAINER -->
        </div>
+       <script>
+        AOS.init();
+      </script>
       <script src="./js/script.js"></script>
-
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

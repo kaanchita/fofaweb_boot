@@ -34,7 +34,12 @@
           <div class="container">
             <a class="navbar-brand" href="./index.html"><img src="./images/logo.png" class="img-fluid" style="max-width: 80px;" alt="logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+              <div id="nav-icon3">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto mb-2 mb-lg-0 ">
@@ -99,7 +104,7 @@
       
       <div class="container mt-5 mb-5">
         <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb" class="d-flex align-items-center">
-          <ol class="breadcrumb p-3 d-flex align-items-center justify-content-center"> 
+          <ol class="breadcrumb p-2 d-flex align-items-center justify-content-center"> 
             <li class="breadcrumb-item"><a href="./index.html"><img src="./images/home.png" style="max-width:24px;" class="img-fluid"></a></li>
             <li class="breadcrumb-item active" aria-current="page">ผลงานสร้างสรรค์</li>
           </ol>
@@ -108,27 +113,33 @@
       
       
 
-<div data-aos="fade-up" id="section1" >
-<!-- Art -->
-<div class="container mb-5 ">
-  <div class="row" >
-  <h1 >ทัศนศิลป์</h1>
+      <div class="container mb-5">
+        <h1 class="text-title">
+          ผลงานสร้างสรรค์
+      </h1>
+      </div>
 
-  <div class="card mb-3 mt-3 shadow" style="max-width: 540px;">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="./images/Starry-Night-canvas-Vincent-van-Gogh-New-1889.webp" class="img-fluid  m-1 p-1" alt="...">
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      <div data-aos="fade-up" id="section1" >
+      <!-- Art -->
+      <div class="container mb-5 ">
+        <div class="row" >
+        <h1 >ทัศนศิลป์</h1>
+
+      <div class="card mb-3 mt-3 shadow" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./images/Starry-Night-canvas-Vincent-van-Gogh-New-1889.webp" class="img-fluid  m-1 p-1" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
 
   <div class="row justify-content-end">
       <div class="card mb-3 shadow" style="max-width: 540px;">
@@ -311,12 +322,13 @@
         AOS.init();
       </script>
   
-      <script src="./js/script.js"></script>
+      
     
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
+      
+      <script src="./js/script.js"></script>
 
 </body>
 </html>

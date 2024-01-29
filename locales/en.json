@@ -1,5 +1,17 @@
 {
-    "greeting": "Hello, World!",
-    "welcome": "Welcome!",
-    "performance": "performance"
+    "Home": "Home",
+    "Project": "Project",
+    "Detail": "Detail",
+    "Register": "Register",
+    "Announce": "Announce",
+    "Performance" : "Performance",
+    "Contact":"Contact",
+
+    "Visual Art": "Visual Art",
+    "Music":"Music",
+    "Performing Arts":"Performing Arts",
+
+    "Visual Art2": "Visual Art",
+    "Music2":"Music",
+    "Performing Arts2":"Performing Arts"
   }

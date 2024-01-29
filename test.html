@@ -3,193 +3,375 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ลงทะเบียนส่งผลงาน</title>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-R9D7VRKFN3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-R9D7VRKFN3');
-</script>
-
-    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="./src/style.css" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  
-  
+    <title>Document</title>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@200;300;400;500;600;700;800;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap');
+
+canvas {
+  position: fixed;
+  inset: 0;
+}
+
+:root {
+  --color-text: #3a0ca3;
+  --color-heading: #f72585;
+  --color-heading-shadow: #921850;
+  --color-button: cyan;
+  --color-button-active: rgba(255,255,255,0.6);
+}
+
+.dark:root {
+  --color-text: #a2d2ff;
+  --color-heading: #ffc8dd;
+  --color-heading-shadow: #9B6379;
+  --color-button: indigo;
+  --color-button-active: rgba(0,0,0,0.3);
+}
+
+.intro {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+  max-width: 60vw;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-family: "Cherry Bomb One", sans-serif;
+  font-size: 10vw;
+  color: var(--color-heading);
+  text-shadow:     0 1px 0 var(--color-heading-shadow),
+	                 0 2px 0 var(--color-heading-shadow),
+	                 0 3px 0 var(--color-heading-shadow),
+	                 0 4px 0 var(--color-heading-shadow),
+	                 0 5px 0 var(--color-heading-shadow),
+	                 0 6px 0 var(--color-heading-shadow),
+	                 0 7px 0 var(--color-heading-shadow),
+	                 0 8px 0 var(--color-heading-shadow),
+	
+	                 0 0 5px rgba(10,0,0,.05),
+	                0 1px 3px rgba(10,0,0,.2),
+	                0 3px 5px rgba(10,0,0,.2),
+	               0 5px 10px rgba(10,0,0,.2),
+	              0 10px 10px rgba(10,0,0,.2),
+	              0 20px 20px rgba(10,0,0,.3);
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: var(--color-text);
+}
+
+button {
+  background: var(--color-button);
+  border: 1px solid currentColor;
+  padding: 0.5em 1em;
+  border-radius: 2em;
+  color: var(--color-text);
+}
+
+button:hover, button:focus-visible {
+  background: var(--color-button-active);
+}
     </style>
 
+    
 </head>
 <body>
-    <header class="sticky-top" >
-        <nav class="navbar navbar-expand-lg shadow">
-         <div class="container">
-           <a class="navbar-brand" href="./index.html"><img src="./images/logo.png" class="img-fluid" style="max-width: 80px;" alt="logo"></a>
-           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-             <div id="nav-icon3">
-               <span></span>
-               <span></span>
-               <span></span>
-               <span></span>
-             </div>
-           </button>
-           <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-             <ul class="navbar-nav ml-auto mb-2 mb-lg-0 ">
-               <li class="nav-item">
-                 <a class="nav-link" id="Home" href="./index.html">หน้าหลัก</a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link" id="Project" href="./project.html">โครงการ</a>
-               </li>
-               <li class="nav-item dropdown">
-                 <a class="nav-link dropdown-toggle" id="Detail" href="./detail.html" >
-                   รูปแบบผลงานและรายละเอียด
-                 </a>
-                 <ul class="dropdown-menu">
-                   <li><a class="dropdown-item" id="Visual Art"  href="#">ทัศนศิลป์และการออกแบบ</a></li>
-                   <li><hr class="dropdown-divider"  ></li>
-                   <li><a class="dropdown-item"  id= "Music" href="#">ดนตรี</a></li>
-                   <li><hr class="dropdown-divider"></li>
-                   <li><a class="dropdown-item" id="Performing Arts" href="#">ศิลปะการแสดงและนาฏศิลป์</a></li>
-                 </ul>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link" id="Register" href="./register.html">ลงทะเบียนส่งผลงาน</a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link" id="Announce" href="./announce.html">ประกาศรายชื่อผู้ได้รับคัดเลือก</a>
-               </li>
-               <li class="nav-item dropdown">
-                 <a class="nav-link dropdown-toggle" id="Performance" href="./performance.html">
-                   ผลงานสร้างสรรค์
-                 </a>
-                 <ul class="dropdown-menu">
-                   <li><a class="dropdown-item" href="performance.html#section1">ทัศนศิลป์และการออกแบบ</a></li>
-                   <li><hr class="dropdown-divider"></li>
-                   <li><a class="dropdown-item"  href="performance.html#section2">ดนตรี</a></li>
-                   <li><hr class="dropdown-divider"></li>
-                   <li><a class="dropdown-item"  href="performance.html#section3">ศิลปะการแสดง และนาฏศิลป์</a></li>
-                 </ul>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link" id="Contact" href="mailto:fofaswu@g.swu.ac.th">ติดต่อสอบถาม</a>
-               </li>
-    
-               <!-- multi-langue -->
-               <li class="nav-item dropdown">
-                 <a class="nav-link dropdown-toggle"  href="">
-                   <img src="./images/thaiflag.png" class="img-fluid m-2" style="max-width: 20px;">
-                 </a>
-                 <ul class="dropdown-menu">
-                   <li><a class="dropdown-item" href="#" onclick="changeLanguage('th')"><img src="./images/thaiflag.png" class="img-fluid m-2" style="max-width: 20px;">ไทย</a></li>
-                   <li><hr class="dropdown-divider"></li>
-                   <li><a class="dropdown-item" href="#" onclick="changeLanguage('en')" ><img src="./images/engflag.png" class="img-fluid m-2" style="max-width: 20px;">English</a></li>
-                 </ul>
-               </li>
-               <!-- multi-langue -->
-              
-             </ul>
-               </div>
-           </div>
-         </div>
-       </nav>
-       </div>
-     </header>
-
-
-
+    <div class="intro">
+        <h1>Bubbles</h1>
+        <p>Could be rethemed as dust or other particles. The bubbles wrap as you scroll with a slight parallax effect and some inertia after stopping.</p>
+        <button id="toggle-theme">Toggle Color Theme</button>
+        <button id="toggle-motion">Toggle Motion Preference</button>
+      </div>
       
+      <!-- spacing to allow scroll -->
+      <div style="height:500vw;"></div>
+      <script>
+        import * as PIXI from "https://cdn.skypack.dev/pixi.js@7.2.1";
 
-      <div class="footer">
-        <div class="container">  
-         <div class="row text-center">      
-          <div class="col-lg-12 col-sm-12 col-xs-12">
-           <div class="footer_menu">
-            <ul>
-             <li><a href="index.html">หน้าหลัก</a></li>
-             <li><a href="project.html">โครงการ</a></li>
-             <li><a href="#">ลงทะเบียนส่งผลงาน</a></li>
-             <li><a href="performance.html">ผลงานสร้างสรรค์</a></li>
-             <li><a href="mailto:fofaswu@g.swu.ac.th">ติดต่อสอบถาม</a></li>
-            </ul>
-           </div>      
-           <div class="footer_copyright">
-                 <p style=" font-family: 'Noto Sans Thai', sans-serif; font-size: 12px; font-weight: 400;">มหกรรมศิลปะ ดนตรีและการแสดงนานาชาติ ครั้งที่ 11 วันที่ 17 มิถุนายน 2567</p>
-            <p>© 2024 Fine Of Arts.</p>
-           </div> 
-           <div class="footer_profile">
-            <ul>
-             <li>
-                     <a href="https://www.facebook.com/swufofa?mibextid=LQQJ4d">
-                       <i class="fa fa-facebook"></i>
-                     </a>
-                   </li>
-             <li data-bs-toggle="tooltip" data-bs-placement="top" title="0 2260 0123">
-                     <a href="#" >
-                       <i class="fa fa-phone" ></i>
-                     </a>
-                   </li>
-             <li><a href="https://www.instagram.com/fofahouse.swu?igsh=MWo4MWxkcDh6eXFrNA=="><i class="fa fa-instagram"></i></a></li>
-            </ul>
-           </div>      
-          </div><!--- END COL -->       
-         </div><!--- END ROW -->     
-        </div><!--- END CONTAINER -->
-       </div>
-      
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-      <script src="./js/script.js"></script>
+let THEME = "light";
+let MOTION_PREF = "allow";
 
-      <!-- multi-langue -->
-      <script src="https://cdn.jsdelivr.net/npm/i18next/dist/umd/i18next.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector/dist/umd/i18nextBrowserLanguageDetector.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/i18next-xhr-backend/dist/umd/i18nextXHRBackend.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/i18next-sprintf-postprocessor/dist/umd/i18nextSprintfPostProcessor.js"></script>
+const PARTICLE_COUNT = 40;
+const DARK_COLORS = ["0x4361ee", "0x3a0ca3", "0x7209b7", "0xf72585"];
+const LIGHT_COLORS = ["0xbde0fe", "0xa2d2ff", "0xffafcc", "0xffc8dd"];
 
-  <script>
-    function changeLanguage(newLanguage) {
-      i18next.changeLanguage(newLanguage, (err, t) => {
-        if (err) return console.log('Error loading translation files:', err);
-  
-        // Update textContent for each element
-        elementIds.forEach((elementId) => {
-          document.getElementById(elementId).textContent = t(elementId);
-        });
-      });
+// from: https://www.joshwcomeau.com/snippets/javascript/debounce/
+const debounce = (callback, wait) => {
+  let timeoutId = null;
+  return (...args) => {
+    window.clearTimeout(timeoutId);
+    timeoutId = window.setTimeout(() => {
+      callback.apply(null, args);
+    }, wait);
+  };
+};
+
+class Particle {
+  constructor(texture, radius, x, y, speed, bounds) {
+    this.radius = radius;
+    this.sprite = PIXI.Sprite.from(texture);
+    this.sprite.anchor.set(0.5);
+    this.sprite.direction = Math.random() * Math.PI * 2;
+    this.sprite.turnSpeed = Math.random() - 0.8;
+    this.sprite.scale.set(1 + Math.random() * 0.3);
+    this.sprite.original = new PIXI.Point();
+    this.sprite.original.copyFrom(this.sprite.scale);
+    this.sprite.x = x;
+    this.sprite.y = y;
+    this.sprite.speed = speed;
+    this.bounds = bounds;
+    this.interactive = true;
+    this.sprite.eventMode = "static";
+    this.sprite.inertia = 0;
+    this.scrollDelta = 0;
+  }
+
+  move(delta, count) {
+    this.sprite.direction += this.sprite.turnSpeed * 0.01;
+    this.sprite.x += Math.sin(this.sprite.direction) * this.sprite.speed;
+    this.sprite.y += Math.cos(this.sprite.direction) * this.sprite.speed;
+    this.sprite.rotation = -this.sprite.direction - Math.PI / 2;
+
+    if (this.sprite.inertia > 0) {
+      const depthShift =
+        (this.radius / 10) * this.scrollDelta * this.sprite.inertia;
+      this.sprite.y += depthShift;
+      this.sprite.inertia -= delta * 0.02;
     }
-  
-    const elementIds = ['Home', 'Project', 'Detail', 'Register', 'Announce', 'Performance', 'Contact', 'Visual Art', 'Music', 'Performing Arts', 'Visual Art2', 'Music2', 'Performing Arts2'];
-  
-    i18next.use(i18nextBrowserLanguageDetector)
-      .use(i18nextXHRBackend)
-      .use(i18nextSprintfPostProcessor)
-      .init({
-        debug: true,
-        fallbackLng: 'en',
-        backend: {
-          loadPath: '/locales/{{lng}}.json'
-        },
-        interpolation: {
-          escapeValue: false
-        }
-      }, (err, t) => {
-        if (err) return console.log('Error initializing i18next:', err);
-  
-        // Update textContent for each element
-        elementIds.forEach((elementId) => {
-          document.getElementById(elementId).textContent = t(elementId);
-        });
-      });
-  </script>
 
-  
-    </body>
+    if (this.sprite.x < this.bounds.x) {
+      this.sprite.x += this.bounds.width;
+    } else if (this.sprite.x > this.bounds.x + this.bounds.width) {
+      this.sprite.x -= this.bounds.width;
+    }
+
+    if (this.sprite.y < this.bounds.y) {
+      this.sprite.y += this.bounds.height;
+    } else if (this.sprite.y > this.bounds.y + this.bounds.height) {
+      this.sprite.y -= this.bounds.height;
+    }
+  }
+
+  shift(amount) {
+    const depthShift = (this.radius / 10) * amount;
+    this.sprite.y += depthShift;
+  }
+}
+
+export default class Bubbles {
+  constructor() {
+    this.setVars();
+    this.init();
+    this.createParticles();
+    this.bindEvents();
+  }
+
+  // these would be tied to getters for REAL system preferences, not the fake demo ones
+  get isLightTheme() {
+    return THEME === "light";
+  }
+
+  get motionPref() {
+    return MOTION_PREF === "allow";
+  }
+
+  setVars() {
+    this.particles = [];
+    this.particleTotal = PARTICLE_COUNT;
+    this.count = 0;
+    this.background = this.isLightTheme ? "cyan" : "indigo";
+    this.scrollY;
+    this.ticking = false;
+  }
+
+  init() {
+    this.pixi = new PIXI.Application({
+      background: this.background,
+      resizeTo: window
+    });
+    document.body.appendChild(this.pixi.view);
+    this.pixi.stage.eventMode = "dynamic";
+    this.pixi.stage.hitArea = this.pixi.screen;
+
+    this.container = new PIXI.Container();
+    this.pixi.stage.addChild(this.container);
+
+    this.padding = 50;
+    this.bounds = new PIXI.Rectangle(
+      -this.padding,
+      -this.padding,
+      this.pixi.screen.width + this.padding * 2,
+      this.pixi.screen.height + this.padding * 2
+    );
+
+    this.createParticles();
+    this.pixi.ticker.add((delta) => this.tick(delta));
+  }
+
+  bindEvents() {
+    window.addEventListener("themeSwitch", this.handleSwitch);
+    window.addEventListener("motionSwitch", this.handleMotion);
+    window.addEventListener("scroll", this.handleScroll);
+    this.pixi.renderer.on("resize", this.handleResize);
+  }
+
+  tick(delta) {
+    this.count += 0.2;
+    this.particles.forEach((particle) => {
+      particle.move(delta, this.count);
+    });
+  }
+
+  createParticles() {
+    if (this.particleContainer) {
+      return;
+    }
+
+    this.particleContainer = new PIXI.Container();
+    this.pixi.stage.addChild(this.particleContainer);
+
+    for (let i = 0; i < this.particleTotal; i++) {
+      const circle = new PIXI.Graphics();
+      const colorTotal = this.isLightTheme
+        ? LIGHT_COLORS.length
+        : DARK_COLORS.length;
+      const randomColor = Math.floor(Math.random() * colorTotal);
+      const x = Math.random() * this.pixi.screen.width;
+      const y = Math.random() * this.pixi.screen.height;
+      const radius = Math.random() * 10 + 4;
+      const color = this.isLightTheme
+        ? LIGHT_COLORS[randomColor]
+        : DARK_COLORS[randomColor];
+      const speed = this.motionPref ? Math.random() : 0;
+
+      circle.beginFill(color);
+      circle.drawCircle(0, 0, radius);
+      circle.endFill();
+
+      const circleTexture = this.pixi.renderer.generateTexture(circle);
+      const particle = new Particle(
+        circleTexture,
+        radius,
+        x,
+        y,
+        speed,
+        this.bounds
+      );
+
+      this.particles.push(particle);
+      this.particleContainer.addChild(particle.sprite);
+    }
+  }
+
+  handleResize = debounce((ev) => {
+    this.bounds.destroy;
+    this.bounds = null;
+    this.bounds = new PIXI.Rectangle(
+      -this.padding,
+      -this.padding,
+      this.pixi.screen.width + this.padding * 2,
+      this.pixi.screen.height + this.padding * 2
+    );
+
+    this.particleContainer.destroy();
+    this.particleContainer = null;
+    this.createParticles();
+  }, 250);
+
+  handleSwitch = () => {
+    this.pixi.renderer.background.color = this.isLightTheme
+      ? "0x00FFFF"
+      : "0x4B0082";
+    this.particleContainer.destroy();
+    this.particleContainer = null;
+    this.createParticles();
+  };
+
+  handleMotion = () => {
+    this.particles.forEach((particle) => {
+      const speed = this.motionPref ? Math.random() : 0;
+      particle.sprite.speed = speed;
+    });
+  };
+
+  handleScroll = (e) => {
+    if (!this.ticking) {
+      window.requestAnimationFrame(() => {
+        let newScroll = window.scrollY;
+        let scrollDelta = this.scrollY - newScroll;
+        let delta = Math.floor(scrollDelta) || 0;
+        this.scrollY = newScroll;
+        this.particles.forEach((particle) => {
+          // particle.shift(delta)
+          particle.sprite.inertia = 1;
+          particle.scrollDelta = delta;
+        });
+        this.ticking = false;
+      });
+
+      this.ticking = true;
+    }
+  };
+
+  // Remove listeners, stop audio, and halt progress tracking
+  cleanUp() {
+    window.addEventListener("themeSwitch", this.handleSwitch);
+    window.addEventListener("motionSwitch", this.handleMotion);
+    window.addEventListener("scroll", this.handleScroll);
+    document.body.removeChild(this.pixi.view);
+  }
+}
+
+const app = new Bubbles();
+
+// HELPER FUNCTIONS
+// for toggling theme and motion for demo purposes
+// this does not account for system preferences
+
+const toggleTheme = document.getElementById("toggle-theme");
+const toggleMotion = document.getElementById("toggle-motion");
+
+toggleTheme.addEventListener("click", () => {
+  let newTheme;
+  const root = document.documentElement;
+
+  if (THEME === "light") {
+    newTheme = "dark";
+  } else {
+    newTheme = "light";
+  }
+
+  THEME = newTheme;
+  const event = new CustomEvent("themeSwitch", { detail: newTheme });
+  window.dispatchEvent(event);
+
+  root.classList.remove("light", "dark");
+  root.classList.add(newTheme);
+});
+
+toggleMotion.addEventListener("click", () => {
+  let newPref;
+  if (MOTION_PREF === "allow") {
+    newPref = "reduced";
+  } else {
+    newPref = "allow";
+  }
+
+  MOTION_PREF = newPref;
+  const event = new CustomEvent("motionSwitch", { detail: newPref });
+  window.dispatchEvent(event);
+});
+</script>
+    
+</body>
 </html>

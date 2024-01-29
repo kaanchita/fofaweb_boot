@@ -71,56 +71,58 @@
        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
          <ul class="navbar-nav ml-auto mb-2 mb-lg-0 ">
            <li class="nav-item">
-             <a class="nav-link" href="./index.html">หน้าหลัก</a>
+             <a class="nav-link" id="Home" href="./index.html">หน้าหลัก</a>
            </li>
            <li class="nav-item">
-             <a class="nav-link" href="./project.html">โครงการ</a>
+             <a class="nav-link" id="Project" href="./project.html">โครงการ</a>
            </li>
            <li class="nav-item dropdown">
-             <a class="nav-link dropdown-toggle" href="./detail.html" >
+             <a class="nav-link dropdown-toggle" id="Detail" href="./detail.html" >
                รูปแบบผลงานและรายละเอียด
              </a>
              <ul class="dropdown-menu">
-               <li><a class="dropdown-item" href="#">ทัศนศิลป์</a></li>
+               <li><a class="dropdown-item" id="Visual Art"  href="#">ทัศนศิลป์และการออกแบบ</a></li>
+               <li><hr class="dropdown-divider"  ></li>
+               <li><a class="dropdown-item"  id= "Music" href="#">ดนตรี</a></li>
                <li><hr class="dropdown-divider"></li>
-               <li><a class="dropdown-item" href="#">ดนตรี</a></li>
-               <li><hr class="dropdown-divider"></li>
-               <li><a class="dropdown-item" href="#">นาฏศิลป์</a></li>
+               <li><a class="dropdown-item" id="Performing Arts" href="#">ศิลปะการแสดงและนาฏศิลป์</a></li>
              </ul>
            </li>
            <li class="nav-item">
-             <a class="nav-link" href="./register.html">ลงทะเบียนส่งผลงาน</a>
+             <a class="nav-link" id="Register" href="./register.html">ลงทะเบียนส่งผลงาน</a>
            </li>
            <li class="nav-item">
-             <a class="nav-link" href="./announce.html">ประกาศรายชื่อผู้ได้รับคัดเลือก</a>
+             <a class="nav-link" id="Announce" href="./announce.html">ประกาศรายชื่อผู้ได้รับคัดเลือก</a>
            </li>
            <li class="nav-item dropdown">
-             <a class="nav-link dropdown-toggle" href="./performance.html">
+             <a class="nav-link dropdown-toggle" id="Performance" href="./performance.html">
                ผลงานสร้างสรรค์
              </a>
              <ul class="dropdown-menu">
-               <li><a class="dropdown-item" href="performance.html#section1">ทัศนศิลป์</a></li>
+               <li><a class="dropdown-item" href="performance.html#section1">ทัศนศิลป์และการออกแบบ</a></li>
                <li><hr class="dropdown-divider"></li>
-               <li><a class="dropdown-item" href="performance.html#section2">ดนตรี</a></li>
+               <li><a class="dropdown-item"  href="performance.html#section2">ดนตรี</a></li>
                <li><hr class="dropdown-divider"></li>
-               <li><a class="dropdown-item" href="performance.html#section3">นาฏศิลป์</a></li>
+               <li><a class="dropdown-item"  href="performance.html#section3">ศิลปะการแสดง และนาฏศิลป์</a></li>
              </ul>
            </li>
            <li class="nav-item">
-             <a class="nav-link" href="mailto:fofaswu@g.swu.ac.th">ติดต่อสอบถาม</a>
+             <a class="nav-link" id="Contact" href="mailto:fofaswu@g.swu.ac.th">ติดต่อสอบถาม</a>
            </li>
 
+           <!-- multi-langue -->
            <li class="nav-item dropdown">
-             <a class="nav-link dropdown-toggle" href="./performance.html">
+             <a class="nav-link dropdown-toggle"  href="">
                <img src="./images/thaiflag.png" class="img-fluid m-2" style="max-width: 20px;">
              </a>
              <ul class="dropdown-menu">
-               <li><a class="dropdown-item" href="#"><img src="./images/thaiflag.png" class="img-fluid m-2" style="max-width: 20px;">ไทย</a></li>
+               <li><a class="dropdown-item" href="#" onclick="changeLanguage('th')"><img src="./images/thaiflag.png" class="img-fluid m-2" style="max-width: 20px;">ไทย</a></li>
                <li><hr class="dropdown-divider"></li>
-               <li><a class="dropdown-item" href="#"><img src="./images/engflag.png" class="img-fluid m-2" style="max-width: 20px;">English</a></li>
+               <li><a class="dropdown-item" href="#" onclick="changeLanguage('en')" ><img src="./images/engflag.png" class="img-fluid m-2" style="max-width: 20px;">English</a></li>
              </ul>
            </li>
-          
+           <!-- multi-langue -->
+        
          </ul>
            </div>
        </div>

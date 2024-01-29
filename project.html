@@ -44,55 +44,57 @@
        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
          <ul class="navbar-nav ml-auto mb-2 mb-lg-0 ">
            <li class="nav-item">
-             <a class="nav-link" href="./index.html">หน้าหลัก</a>
+             <a class="nav-link" id="Home" href="./index.html">หน้าหลัก</a>
            </li>
            <li class="nav-item">
-             <a class="nav-link" href="./project.html">โครงการ</a>
+             <a class="nav-link" id="Project" href="./project.html">โครงการ</a>
            </li>
            <li class="nav-item dropdown">
-             <a class="nav-link dropdown-toggle" href="./detail.html" >
+             <a class="nav-link dropdown-toggle" id="Detail" href="./detail.html" >
                รูปแบบผลงานและรายละเอียด
              </a>
              <ul class="dropdown-menu">
-               <li><a class="dropdown-item" href="#">ทัศนศิลป์</a></li>
+               <li><a class="dropdown-item" id="Visual Art"  href="#">ทัศนศิลป์และการออกแบบ</a></li>
+               <li><hr class="dropdown-divider"  ></li>
+               <li><a class="dropdown-item"  id= "Music" href="#">ดนตรี</a></li>
                <li><hr class="dropdown-divider"></li>
-               <li><a class="dropdown-item" href="#">ดนตรี</a></li>
-               <li><hr class="dropdown-divider"></li>
-               <li><a class="dropdown-item" href="#">นาฏศิลป์</a></li>
+               <li><a class="dropdown-item" id="Performing Arts" href="#">ศิลปะการแสดงและนาฏศิลป์</a></li>
              </ul>
            </li>
            <li class="nav-item">
-             <a class="nav-link" href="./register.html">ลงทะเบียนส่งผลงาน</a>
+             <a class="nav-link" id="Register" href="./register.html">ลงทะเบียนส่งผลงาน</a>
            </li>
            <li class="nav-item">
-             <a class="nav-link" href="./announce.html">ประกาศรายชื่อผู้ได้รับคัดเลือก</a>
+             <a class="nav-link" id="Announce" href="./announce.html">ประกาศรายชื่อผู้ได้รับคัดเลือก</a>
            </li>
            <li class="nav-item dropdown">
-             <a class="nav-link dropdown-toggle" href="./performance.html">
+             <a class="nav-link dropdown-toggle" id="Performance" href="./performance.html">
                ผลงานสร้างสรรค์
              </a>
              <ul class="dropdown-menu">
-               <li><a class="dropdown-item" href="performance.html#section1">ทัศนศิลป์</a></li>
+               <li><a class="dropdown-item" href="performance.html#section1">ทัศนศิลป์และการออกแบบ</a></li>
                <li><hr class="dropdown-divider"></li>
-               <li><a class="dropdown-item" href="performance.html#section2">ดนตรี</a></li>
+               <li><a class="dropdown-item"  href="performance.html#section2">ดนตรี</a></li>
                <li><hr class="dropdown-divider"></li>
-               <li><a class="dropdown-item" href="performance.html#section3">นาฏศิลป์</a></li>
+               <li><a class="dropdown-item"  href="performance.html#section3">ศิลปะการแสดง และนาฏศิลป์</a></li>
              </ul>
            </li>
            <li class="nav-item">
-             <a class="nav-link" href="mailto:fofaswu@g.swu.ac.th">ติดต่อสอบถาม</a>
+             <a class="nav-link" id="Contact" href="mailto:fofaswu@g.swu.ac.th">ติดต่อสอบถาม</a>
            </li>
 
+           <!-- multi-langue -->
            <li class="nav-item dropdown">
-             <a class="nav-link dropdown-toggle" href="./performance.html">
+             <a class="nav-link dropdown-toggle"  href="">
                <img src="./images/thaiflag.png" class="img-fluid m-2" style="max-width: 20px;">
              </a>
              <ul class="dropdown-menu">
-               <li><a class="dropdown-item" href="#"><img src="./images/thaiflag.png" class="img-fluid m-2" style="max-width: 20px;">ไทย</a></li>
+               <li><a class="dropdown-item" href="#" onclick="changeLanguage()"><img src="./images/thaiflag.png" class="img-fluid m-2" style="max-width: 20px;">ไทย</a></li>
                <li><hr class="dropdown-divider"></li>
-               <li><a class="dropdown-item" href="#"><img src="./images/engflag.png" class="img-fluid m-2" style="max-width: 20px;">English</a></li>
+               <li><a class="dropdown-item" href="#" onclick="changeLanguage()" ><img src="./images/engflag.png" class="img-fluid m-2" style="max-width: 20px;">English</a></li>
              </ul>
            </li>
+           <!-- multi-langue -->
           
          </ul>
            </div>
@@ -256,5 +258,69 @@
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script src="./js/script.js"></script>
+
+
+         <!-- multi-langue -->
+      <script src="https://cdn.jsdelivr.net/npm/i18next/dist/umd/i18next.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector/dist/umd/i18nextBrowserLanguageDetector.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/i18next-xhr-backend/dist/umd/i18nextXHRBackend.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/i18next-sprintf-postprocessor/dist/umd/i18nextSprintfPostProcessor.js"></script>
+    
+      <script>
+          function changeLanguage() {
+          const newLanguage = (i18next.language === 'en') ? 'th' : 'en'; // Toggle between English and Thai
+          i18next.changeLanguage(newLanguage, (err, t) => {
+            if (err) return console.log('Error loading translation files:', err);
+            
+            // Refresh the displayed greeting text
+            document.getElementById('Home').textContent = t('Home');
+            document.getElementById('Project').textContent = t('Project');
+            document.getElementById('Detail').textContent = t('Detail');
+            document.getElementById('Register').textContent = t('Register');
+            document.getElementById('Announce').textContent = t('Announce');
+            document.getElementById('Project').textContent = t('Project');
+            document.getElementById('Performance').textContent = t('Performance');
+            document.getElementById('Contact').textContent = t('Contact');
+            document.getElementById('Visual Art').textContent = t('Visual Art');
+            document.getElementById('Music').textContent = t('Music');
+            document.getElementById('Performing Arts').textContent = t('Performing Arts');
+            document.getElementById('Visual Art2').textContent = t('Visual Art2');
+            document.getElementById('Music2').textContent = t('Music2');
+            document.getElementById('Performing Arts2').textContent = t('Performing Arts2');
+          });
+        }
+    
+        i18next.use(i18nextBrowserLanguageDetector)
+          .use(i18nextXHRBackend)
+          .use(i18nextSprintfPostProcessor)
+          .init({
+            debug: true,
+            fallbackLng: 'en',
+            backend: {
+              loadPath: '/locales/{{lng}}.json'
+            },
+            interpolation: {
+              escapeValue: false
+            }
+          }, (err, t) => {
+            if (err) return console.log('Error initializing i18next:', err);
+    
+            document.getElementById('Home').textContent = t('Home');
+            document.getElementById('Project').textContent = t('Project');
+            document.getElementById('Detail').textContent = t('Detail');
+            document.getElementById('Register').textContent = t('Register');
+            document.getElementById('Announce').textContent = t('Announce');
+            document.getElementById('Project').textContent = t('Project');
+            document.getElementById('Performance').textContent = t('Performance');
+            document.getElementById('Contact').textContent = t('Contact');
+            document.getElementById('Visual Art').textContent = t('Visual Art');
+            document.getElementById('Music').textContent = t('Music');
+            document.getElementById('Performing Arts').textContent = t('Performing Arts');
+            document.getElementById('Visual Art2').textContent = t('Visual Art2');
+            document.getElementById('Music2').textContent = t('Music2');
+            document.getElementById('Performing Arts2').textContent = t('Performing Arts2');
+          });
+    
+      </script>
       </body>
 </html>

@@ -4,22 +4,13 @@
   }
 
   .swiper-slide {
-    margin-top: 50px;
     text-align: center;
+    font-size: 18px;
     background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 400px !important;
-   
-}
-
-    .card {
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); /* ตัวอย่าง shadow */
-        border: solid 1px #0f0D0D;
-        border-radius: 0;
-        
-    }
+  }
 
   .swiper-slide img {
     display: block;
@@ -27,6 +18,14 @@
     height: 100%;
     object-fit: cover;
   }
+.card {
+    margin-top: 50px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); /* ตัวอย่าง shadow */
+    border: solid 1px #0f0D0D;
+    border-radius: 0;
+        
+}
+
 
  
   

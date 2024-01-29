@@ -282,72 +282,6 @@ body {
         }
      
   }
-
-/* footer */
-.footer {
-  background: #8A4A38;
-	padding-bottom: 50px;
-	padding-top: 80px;
-}
-.footer_menu {
-	margin-bottom: 20px;
-}
-.footer_menu ul {
-	list-style: none;
-	text-align: center;
-}
-.footer_menu ul li{display: inline-block;}
-.footer_menu ul li a {
-	color:#fff;
-	padding: 0 10px;
-	-webkit-transition: 0.3s;
-	transition: 0.3s;
-    text-decoration: none;
-}
-.footer_menu ul li a:hover{
-    color:#554c86;
-    /* text-decoration: none; */
-}
-
-/*START FOOTER SOCIAL DESIGN*/
-.footer_profile{margin-bottom:40px;}
-.footer_profile ul{
-list-style: outside none none;
-margin: 0;
-padding: 0
-}
-.footer_profile ul li{
-display: inline-block;
-}
-@media only screen and (max-width:480px) { 
-.footer_profile ul li{margin:2px;}
-}
-.footer_profile ul li a img{width:60px;}
-
-.footer_profile ul li a {
-	background: #fff;
-	width: 40px;
-	height: 40px;
-	display: block;
-	text-align: center;
-	margin-right: 5px;
-	border-radius: 50%;
-	line-height: 40px;
-	box-sizing: border-box;
-	text-decoration: none;
-	-webkit-transition: .3s;
-	transition: .3s;
-	color: rgb(135, 74, 56);
-}
-.footer_copyright {
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    color: #fff;
-}
-
 .d-flex {
     display: flex;
     
@@ -358,10 +292,8 @@ display: inline-block;
     margin-right: 20px; 
 
   }
- 
   .image-container {
     max-width: 35%;
-   
   } 
   .image-container:hover {
     max-width: 38%; 
@@ -686,4 +618,79 @@ transition: background-color 0.3s, color 0.3s, border-color 0.3s;
   border-bottom: 1px solid #dee2e6; /* เส้นขอบด้านล่างของ accordion-body */
 }
 /* accordian-music */
+
+
+.text-decarate {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #0D0D0D;
+  margin: 10%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 200vh;
+
+}
+     
+
+/* .text-decarate .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 200vh;
+} */
+
+ .text  {
+  font-size: 60px;
+  letter-spacing: -.01em;
+  line-height: 100%;
+  margin: 0;
+  
+  width: 50%;
+  color: #8A4A38;
+  background: linear-gradient(to right, #b6b6b6, #b6b6b6) no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 0%;
+  transition: background-size cubic-bezier(.1,.5,.5,1) 0.5s;
+  
+
+  border-bottom: 1px solid #2F2B28;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+}
+
+ span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #9B1E2E;
+  color: #CAD3D7;
+  
+  clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
+  transform-origin: center;
+  transition: all cubic-bezier(.1,.5,.5,1) 0.4s;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+ .text:hover > span {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+ a {
+  text-decoration: none;
+  color: inherit;
+}
+    
   

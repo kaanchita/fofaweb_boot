@@ -12,6 +12,7 @@
     align-items: center;
   }
 
+
   .swiper-slide img {
     display: block;
     width: 100%;
@@ -66,7 +67,12 @@
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); /* ตัวอย่าง shadow */
     border: solid 1px #0f0D0D;
     border-radius: 0;
+    transition: transform 0.3s ease-in-out;
         
+}
+
+.card:hover {
+    transform: scale(1.1); /* หรือค่าที่คุณต้องการ */ 
 }
 
 

@@ -1,6 +1,7 @@
+
 body {
     /* margin-top:20px; */
-    font-family: 'Noto Sans Thai', sans-serif;
+    font-family: 'Kanit', sans-serif;
     background-color: #fff;
 }
 
@@ -126,23 +127,36 @@ body {
 .text-title {
   position: relative;
   color: transparent;
-  font-weight: 500 !important;
+  font-weight: bold;
+  font-family: 'Adam'; 
   font-size: 90px;
   -webkit-text-stroke: 3px #9B1E2E;
   letter-spacing: 15px;
-  /* -webkit-filter: drop-shadow(9px 11px 0 #CAD3D7); */
-  /* text-align: center; */
   line-height: 1.2;
   margin: 3; /* ลบ margin ที่อาจจะมีอยู่ */
   z-index: 2;
   display: flex;
   align-items: center;
-}
-
-.text-title:hover {
-  color: #9B1E2E;
+  animation: colorChange 5s infinite alternate; /* เพิ่ม animation */
   text-shadow: 5px 10px 4px rgba(0, 0, 0, 0.212); /* ปรับค่า shadow ตามที่ต้องการ */
 }
+
+@keyframes colorChange {
+  0% {
+    color: #9B1E2E;
+  }
+  50% {
+    color: #fff; /* สีที่ต้องการให้เปลี่ยนไป */
+  }
+  100% {
+    color: #9B1E2E;
+  }
+}
+.text-title span {
+  display: inline-block;
+  animation: colorChange 8s infinite alternate; /* เปลี่ยนจาก 5s เป็น 8s */
+}
+
 .text-title hr {
   flex: 1;
   height: 4px; /* ขนาดของเส้น */
@@ -151,14 +165,13 @@ body {
   border: none;
   background-color: #9B1E2E /* สีของเส้น */
 }
+
 @media (max-width: 768px) {
-  .text-title  {
+  .text-title {
     font-weight: 700 !important;
     font-size: 8vw; 
     letter-spacing: 5px;
     -webkit-text-stroke: 1px #9B1E2E;
-   
-    
   }
 }
 /* performance */

@@ -3,7 +3,7 @@ var artSwiper = new Swiper("#section1 .mySwiper", {
     slidesPerView: 3,
     spaceBetween: 30,
     autoplay: {
-      delay: 2500,
+      delay: 3000,
       disableOnInteraction: false,
     },
     navigation: {
@@ -35,7 +35,7 @@ var artSwiper = new Swiper("#section1 .mySwiper", {
     slidesPerView: 3,
     spaceBetween: 30,
     autoplay: {
-      delay: 2500,
+      delay: 3000,
       disableOnInteraction: false,
     },
     navigation: {
@@ -67,7 +67,7 @@ var artSwiper = new Swiper("#section1 .mySwiper", {
     slidesPerView: 3,
     spaceBetween: 30,
     autoplay: {
-      delay: 2500,
+      delay: 3000,
       disableOnInteraction: false,
     },
     navigation: {

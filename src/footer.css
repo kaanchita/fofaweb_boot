@@ -43,6 +43,8 @@ button {
   padding: 2rem;
   margin: 1rem 0;
 }
+
+
 .footer {
   position: relative;
   display: flex;
@@ -51,6 +53,7 @@ button {
   background-color: #0F0D0D;
   font-family: 'Adam';
 }
+
 .container {
   max-width: 1200px;
   width: 100%;
@@ -96,6 +99,7 @@ input::placeholder {
     width: 25%;
   }
 }
+
 form {
   position: relative;
 }

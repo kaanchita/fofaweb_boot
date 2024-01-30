@@ -38,8 +38,6 @@ button {
 
 .footer_inner {
   background-color: #ffffff;
-  border: 0.1px solid rgba(233, 232, 232, 0.208);
-  /* border-radius: 5px; */
   padding: 2rem;
   margin: 1rem 0;
 }
@@ -86,19 +84,33 @@ input:focus {
 input::placeholder {
   color: var(--dark);
 }
-@media (min-width: 675px) {
+
+
+@media (min-width: 768px) {
+ .footer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 40vh;
+        
+    }
+
   .layout {
     display: flex;
     flex-wrap: nowrap;
     column-gap: 2rem;
   }
   .w-50 {
-    width: 50%;
+    width:50%;
   }
   .w-25 {
     width: 25%;
   }
 }
+
+
+
+
 
 form {
   position: relative;
@@ -110,6 +122,8 @@ svg {
   margin-top: 3.5rem;
 }
 .footer_copyright {
+  display: flex; align-items: center; 
+  font-weight: bold;
   color: #0F0D0D;
   font-size: 12px;
 }

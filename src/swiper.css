@@ -18,6 +18,52 @@
     height: 100%;
     object-fit: cover;
   }
+
+
+/* Custom styles for Swiper navigation buttons */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #8a4a38bd !important; /* Change the color of the buttons */
+ 
+}
+@media (min-width: 1024px) {
+    .swiper-button-next,
+    .swiper-button-prev {
+      margin-left: 50px !important;
+      margin-right: 50px !important;
+    }
+  }
+  
+
+
+
+/* Optional: Hover effect */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #8A4A38 !important; /* Change the color on hover */
+}
+
+
+.swiper-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px; /* Adjust margin as needed */
+  }
+  
+  .swiper-pagination-bullet {
+    width: 20px !important; /* Adjust width as needed */
+    height: 5px !important; /* Adjust height as needed */
+    background-color: #8A4A38 !important; /* Change the color as desired */
+    margin: 0 5px;
+    border-radius: 3px !important;
+    cursor: pointer;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: #8A4A38 !important; /* Change the color for the active bullet */
+  }
+  
 .card {
     margin-top: 50px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); /* ตัวอย่าง shadow */

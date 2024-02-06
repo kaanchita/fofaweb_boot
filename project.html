@@ -131,7 +131,7 @@
       
         <div data-aos="fade-up" data-aos-duration="1000">
         <div class="row d-flex mx-auto">
-          <h3  style="color: rgb(15, 13, 13);">หลักการและเหตุผล</h3>
+          <h3  style="color: rgb(15, 13, 13);" id="Principles and Reasons">หลักการและเหตุผล</h3>
           <div class="col-md-4 mb-4 d-flex align-items-center justify-content-center">
             <img src="./images/exam3.jpeg" class="img-fluid" style="max-width: 90%; border-radius: 20px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);">
   
@@ -187,7 +187,7 @@
   
         <div data-aos="fade-up" data-aos-duration="1000">
         <div class="row d-flex mx-auto mt-5">
-          <h3  style="color: rgb(15, 13, 13);">วัตถุประสงค์ของโครงการ</h3>
+          <h3  style="color: rgb(15, 13, 13);" id="Project objectives">วัตถุประสงค์ของโครงการ</h3>
           <div class="col-md-4 mb-4 d-flex align-items-center justify-content-center">
               <img src="./images/exam5.jpeg" class="img-fluid" style="max-width: 90%; border-radius: 20px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);">
                 </div>
@@ -256,5 +256,49 @@
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script src="./js/script.js"></script>
+
+
+         <!-- multi-langue -->
+         <script src="https://cdn.jsdelivr.net/npm/i18next/dist/umd/i18next.js"></script>
+         <script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector/dist/umd/i18nextBrowserLanguageDetector.js"></script>
+         <script src="https://cdn.jsdelivr.net/npm/i18next-xhr-backend/dist/umd/i18nextXHRBackend.js"></script>
+         <script src="https://cdn.jsdelivr.net/npm/i18next-sprintf-postprocessor/dist/umd/i18nextSprintfPostProcessor.js"></script>
+       
+         <script>
+             function changeLanguage(newLanguage) {
+             i18next.changeLanguage(newLanguage, (err, t) => {
+               if (err) return console.log('Error loading translation files:', err);
+         
+               // Update textContent for each element
+               elementIds.forEach((elementId) => {
+                 document.getElementById(elementId).textContent = t(elementId);
+               });
+             });
+           }
+         
+           const elementIds = ['Home', 'Project', 'Detail', 'Register', 'Announce', 'Performance', 'Contact', 'Visual Art', 'Music', 'Performing Arts', 'Visual Art2', 'Music2', 'Performing Arts2','Principles and Reasons','Project objectives'];
+         
+           i18next.use(i18nextBrowserLanguageDetector)
+             .use(i18nextXHRBackend)
+             .use(i18nextSprintfPostProcessor)
+             .init({
+               debug: true,
+               fallbackLng: 'en',
+               backend: {
+                 loadPath: '/locales/{{lng}}.json'
+               },
+               interpolation: {
+                 escapeValue: false
+               }
+             }, (err, t) => {
+               if (err) return console.log('Error initializing i18next:', err);
+         
+               // Update textContent for each element
+               elementIds.forEach((elementId) => {
+                 document.getElementById(elementId).textContent = t(elementId);
+               });
+             });
+       
+         </script>
       </body>
 </html>

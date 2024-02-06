@@ -129,7 +129,7 @@
     <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb" class="d-flex align-items-center">
       <ol class="breadcrumb p-2 d-flex align-items-center justify-content-center"> 
         <li class="breadcrumb-item"><a href="./index.html"><img src="./images/home.png" style="max-width:24px;" class="img-fluid"></a></li>
-        <li class="breadcrumb-item active" aria-current="page">รูปแบบผลงานและรายละเอียด</li>
+        <li class="breadcrumb-item active" aria-current="page" id="dt">รูปแบบผลงานและรายละเอียด</li>
       </ol>
     </nav>
   </div>
@@ -445,5 +445,48 @@
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
       <script src="./js/script.js"></script>
+
+       <!-- multi-langue -->
+       <script src="https://cdn.jsdelivr.net/npm/i18next/dist/umd/i18next.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector/dist/umd/i18nextBrowserLanguageDetector.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/i18next-xhr-backend/dist/umd/i18nextXHRBackend.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/i18next-sprintf-postprocessor/dist/umd/i18nextSprintfPostProcessor.js"></script>
+     
+       <script>
+           function changeLanguage(newLanguage) {
+           i18next.changeLanguage(newLanguage, (err, t) => {
+             if (err) return console.log('Error loading translation files:', err);
+       
+             // Update textContent for each element
+             elementIds.forEach((elementId) => {
+               document.getElementById(elementId).textContent = t(elementId);
+             });
+           });
+         }
+       
+         const elementIds = ['Home', 'Project', 'Detail', 'Register', 'Announce', 'Performance', 'Contact', 'Visual Art', 'Music', 'Performing Arts', 'Visual Art2', 'Music2', 'Performing Arts2','dt'];
+       
+         i18next.use(i18nextBrowserLanguageDetector)
+           .use(i18nextXHRBackend)
+           .use(i18nextSprintfPostProcessor)
+           .init({
+             debug: true,
+             fallbackLng: 'en',
+             backend: {
+               loadPath: '/locales/{{lng}}.json'
+             },
+             interpolation: {
+               escapeValue: false
+             }
+           }, (err, t) => {
+             if (err) return console.log('Error initializing i18next:', err);
+       
+             // Update textContent for each element
+             elementIds.forEach((elementId) => {
+               document.getElementById(elementId).textContent = t(elementId);
+             });
+           });
+     
+       </script>
     </body>
 </html>

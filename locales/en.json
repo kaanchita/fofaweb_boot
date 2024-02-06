@@ -17,6 +17,19 @@
     "Music2":"Music",
     "Performing Arts2":"Performing Arts",
 
+    "va":"VISUAL ART",
+    "ms":"MUSIC",
+    "pma":"PERFORMING ARTS",
+
+    "pj":"Project",
+    "dt":"Detail",
+    "rst":"Register",
+    "anu":"Announce",
+    "pfm":"Performance",
+    "ct":"Contact",
+
+    "Topic Project":"The 11th International Festival of Arts (IFA:2024)",
+
     "Principles and Reasons" : "Principles and Reasons",
     "Project objectives" : "Project objectives",
 

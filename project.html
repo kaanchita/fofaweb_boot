@@ -54,7 +54,7 @@
   <header class="sticky-top" >
     <nav class="navbar navbar-expand-lg shadow">
      <div class="container">
-       <a class="navbar-brand" href="./index.html"><img src="./images/Asset_LogoIFA_Red.png" class="img-fluid" style="max-width: 64px;" alt="logo"></a>
+       <a class="navbar-brand" href="./index.html"><img src="./images/logo.png" class="img-fluid" style="max-width: 80px;" alt="logo"></a>
        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
          <div id="nav-icon3">
            <span></span>
@@ -94,11 +94,11 @@
                ผลงานสร้างสรรค์
              </a>
              <ul class="dropdown-menu">
-               <li><a class="dropdown-item" href="performance.html#section1">ทัศนศิลป์และการออกแบบ</a></li>
+               <li><a class="dropdown-item" href="performance.html#section1" id="Visual Art2">ทัศนศิลป์และการออกแบบ</a></li>
                <li><hr class="dropdown-divider"></li>
-               <li><a class="dropdown-item"  href="performance.html#section2">ดนตรี</a></li>
+               <li><a class="dropdown-item"  href="performance.html#section2" id= "Music2">ดนตรี</a></li>
                <li><hr class="dropdown-divider"></li>
-               <li><a class="dropdown-item"  href="performance.html#section3">ศิลปะการแสดง และนาฏศิลป์</a></li>
+               <li><a class="dropdown-item"  href="performance.html#section3" id="Performing Arts2">ศิลปะการแสดง และนาฏศิลป์</a></li>
              </ul>
            </li>
            <li class="nav-item">
@@ -232,6 +232,7 @@
         </div>
 
     </div>
+    
     <footer class="footer">
       <div class="container">
         <div class="footer_inner">
@@ -330,25 +331,6 @@
                 </ul>
               </div>
               <div class="layout_item w-25">
-                <!-- <ul class="flex">
-                  <li>
-                    <a href="#">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
-                        <path fill="none" d="M0 0h24v24H0z" />
-                        <path d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.989C18.343 21.129 22 16.99 22 12c0-5.523-4.477-10-10-10z" />
-                      </svg>
-                    </a>
-                  </li>
-                  
-                  <li>
-                    <a href="#">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
-                        <path fill="none" d="M0 0h24v24H0z" />
-                        <path d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.25a1.25 1.25 0 0 0-2.5 0 1.25 1.25 0 0 0 2.5 0zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z" />
-                      </svg>
-                    </a>
-                  </li>
-                </ul> -->
                 
               </div>
               <div class="footer_copyright">
@@ -369,5 +351,48 @@
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script src="./js/script.js"></script>
+
+         <!-- multi-langue -->
+         <script src="https://cdn.jsdelivr.net/npm/i18next/dist/umd/i18next.js"></script>
+         <script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector/dist/umd/i18nextBrowserLanguageDetector.js"></script>
+         <script src="https://cdn.jsdelivr.net/npm/i18next-xhr-backend/dist/umd/i18nextXHRBackend.js"></script>
+         <script src="https://cdn.jsdelivr.net/npm/i18next-sprintf-postprocessor/dist/umd/i18nextSprintfPostProcessor.js"></script>
+       
+         <script>
+             function changeLanguage(newLanguage) {
+             i18next.changeLanguage(newLanguage, (err, t) => {
+               if (err) return console.log('Error loading translation files:', err);
+         
+               // Update textContent for each element
+               elementIds.forEach((elementId) => {
+                 document.getElementById(elementId).textContent = t(elementId);
+               });
+             });
+           }
+         
+           const elementIds = ['Home', 'Project', 'Detail', 'Register', 'Announce', 'Performance', 'Contact', 'Visual Art', 'Music', 'Performing Arts', 'Visual Art2', 'Music2', 'Performing Arts2','Principles and Reasons','Project objectives','phrase1','phrase2','phrase3'];
+         
+           i18next.use(i18nextBrowserLanguageDetector)
+             .use(i18nextXHRBackend)
+             .use(i18nextSprintfPostProcessor)
+             .init({
+               debug: true,
+               fallbackLng: 'en',
+               backend: {
+                 loadPath: '/locales/{{lng}}.json'
+               },
+               interpolation: {
+                 escapeValue: false
+               }
+             }, (err, t) => {
+               if (err) return console.log('Error initializing i18next:', err);
+         
+               // Update textContent for each element
+               elementIds.forEach((elementId) => {
+                 document.getElementById(elementId).textContent = t(elementId);
+               });
+             });
+       
+         </script>
       </body>
 </html>

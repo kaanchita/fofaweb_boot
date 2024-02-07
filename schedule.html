@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>โครงการ</title>
+   <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R9D7VRKFN3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-R9D7VRKFN3');
+</script>
+
+<link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="./src/style.css" rel="stylesheet">
+
+<link href="./src/footer.css" rel="stylesheet">
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');     
+      @font-face {
+       font-family: 'Adam';
+       src: url('fonts/Adam-Bold.ttf');
+       font-weight: bold;
+       font-style: normal;
+     }
+     @font-face {
+       font-family: 'Adam';
+       src: url('fonts/Adam-Light.ttf');
+       font-weight: lighter;
+       font-style: normal;
+     }
+     @font-face {
+       font-family: 'Adam';
+       src: url('fonts/Adam-Medium.ttf');
+       font-weight: normal;
+       font-style: normal;
+     }
+   </style>
+
+</head>
+<body>
+  <header class="sticky-top" >
+    <nav class="navbar navbar-expand-lg shadow">
+     <div class="container">
+      <a class="navbar-brand" href="./index.html"><img src="./images/Asset_LogoIFA_Red.png" class="img-fluid" style="max-width: 64px;" alt="logo"></a>
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <div id="nav-icon3">
+           <span></span>
+           <span></span>
+           <span></span>
+           <span></span>
+         </div>
+       </button>
+       <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+         <ul class="navbar-nav ml-auto mb-2 mb-lg-0 ">
+           <li class="nav-item">
+             <a class="nav-link" id="Home" href="./index.html">หน้าหลัก</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" id="Project" href="./project.html">โครงการ</a>
+           </li>
+           <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle" id="Detail" href="./detail.html" >
+               รูปแบบผลงานและรายละเอียด
+             </a>
+             <ul class="dropdown-menu">
+               <li><a class="dropdown-item" id="Visual Art"  href="#">ทัศนศิลป์และการออกแบบ</a></li>
+               <li><hr class="dropdown-divider"  ></li>
+               <li><a class="dropdown-item"  id= "Music" href="#">ดนตรี</a></li>
+               <li><hr class="dropdown-divider"></li>
+               <li><a class="dropdown-item" id="Performing Arts" href="#">ศิลปะการแสดงและนาฏศิลป์</a></li>
+             </ul>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" id="Register" href="./register.html">ลงทะเบียนส่งผลงาน</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" id="Announce" href="./announce.html">ประกาศรายชื่อผู้ได้รับคัดเลือก</a>
+           </li>
+           <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle" id="Performance" href="./performance.html">
+               ผลงานสร้างสรรค์
+             </a>
+             <ul class="dropdown-menu">
+               <li><a class="dropdown-item" href="performance.html#section1" id="Visual Art2">ทัศนศิลป์และการออกแบบ</a></li>
+               <li><hr class="dropdown-divider"></li>
+               <li><a class="dropdown-item"  href="performance.html#section2" id= "Music2">ดนตรี</a></li>
+               <li><hr class="dropdown-divider"></li>
+               <li><a class="dropdown-item"  href="performance.html#section3" id="Performing Arts2">ศิลปะการแสดง และนาฏศิลป์</a></li>
+             </ul>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" id="Contact" href="mailto:fofaswu@g.swu.ac.th">ติดต่อสอบถาม</a>
+           </li>
+
+           <!-- multi-langue -->
+           <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle"  href="">
+               <img src="./images/thaiflag.png" class="img-fluid m-2" style="max-width: 20px;">
+             </a>
+             <ul class="dropdown-menu">
+               <li><a class="dropdown-item" href="#" onclick="changeLanguage('th')"><img src="./images/thaiflag.png" class="img-fluid m-2" style="max-width: 20px;">ไทย</a></li>
+               <li><hr class="dropdown-divider"></li>
+               <li><a class="dropdown-item" href="#" onclick="changeLanguage('en')" ><img src="./images/engflag.png" class="img-fluid m-2" style="max-width: 20px;">English</a></li>
+             </ul>
+           </li>
+           <!-- multi-langue -->
+        
+         </ul>
+           </div>
+       </div>
+     </div>
+   </nav>
+   </div>
+ </header>
+
+
+ <section>
+    <img src="images/img2.webp" class="d-block w-100"  alt="...">
+
+ </section>
+
+
+ 
+
+    
+    <footer class="footer">
+      <div class="container">
+        <div class="footer_inner">
+          <div class="c-footer">
+            <div class="layout">
+              <div class="layout_item w-50">
+                <hr class="mx-auto" style="color:#0F0D0D; width: 90%;">
+                <div class="newsletter">
+                  <h3 class="newsletter_title" style="font-weight: bold;">The 11th International Festival Of Arts and Culture (IFA:2024)</h3>
+                  <p style="text-indent: 1.5em; font-size: 14px;">Jun 16th,2024 at Music and Performing Arts Hall (4th Floor)</p>
+                  <p style="text-indent: 1.5em; font-size: 14px">Prof.Dr.Saroj Buasri SWU Innovation Building Srinakharinwirot University</p>
+                </div>
+                <hr class="mx-auto" style="color:#0F0D0D; width: 90%;">
+              </div>
+    
+              <div class="layout_item w-25">
+                <nav class="c-nav-tool">
+                  <h4 class="c-nav-tool_title" style="font-weight: bold;">Menu</h4>
+                  <ul class="c-nav-tool_list">
+                    <li>
+                      <a href="index.html" class="c-link">Home</a>
+                    </li>
+    
+                    <li>
+                      <a href="project.html" class="c-link">Project</a>
+                    </li>
+    
+                    <li>
+                      <a href="detail.html" class="c-link">Details</a>
+                    </li>
+                    <li>
+                      <a href="register.html" class="c-link">Register</a>
+                    </li>
+                    <li>
+                      <a href="announce.html" class="c-link">Announce</a>
+                    </li>
+                    <li>
+                      <a href="performance.html" class="c-link">performance</a>
+                    </li>
+                  </ul>
+                </nav>
+    
+              </div>
+    
+              <div class="layout_item w-25">
+                <nav class="c-nav-tool">
+                  <h4 class="c-nav-tool_title" style="font-weight: bold;">Contact</h4>
+                  <ul class="c-nav-tool_list">
+    
+                    <li class="c-nav-tool_item">
+                      <a href="" class="c-link"><p ><strong>Email :</strong> fofafest@g.swu.ac.th </p> </a>
+                    </li>
+    
+                    <li class="c-nav-tool_item">
+                      <a href="" class="c-link"><strong>Tel :</strong>091-825-5866</a>
+                    </li>               
+                  </ul>
+                  <ul class="flex">
+                    <li>
+                      <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
+                          <path fill="none" d="M0 0h24v24H0z" />
+                          <path d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.989C18.343 21.129 22 16.99 22 12c0-5.523-4.477-10-10-10z" />
+                        </svg>
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
+                          <path fill="none" d="M0 0h24v24H0z" />
+                          <path d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.25a1.25 1.25 0 0 0-2.5 0 1.25 1.25 0 0 0 2.5 0zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z" />
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+    
+              </div>
+            </div>
+            <div class="layout c-2">
+              <div class="layout_item w-50">
+                <ul style="display: flex; align-items: center; list-style-type: none; padding: 0;">
+                  <li style="margin-right: 10px;">
+                    <img src="./images/Srinakharinwirot_Logo_EN_Black.png" style="width: 64px;">
+                  </li>
+                  <li style="margin-right: 15px;">
+                    <img src="./images/LOGO-FOFA.png" style="width: 72px;">
+                  </li>
+                  <li style="margin-right: 10px;">
+                    <img src="./images/Asset 1@3x.png" style="width: 48px;">
+                  </li>
+                  <li style="margin-right: 10px;">
+                    <img src="./images/S__30532871.jpg" style="width: 64px;">
+                  </li>
+                </ul>
+              </div>
+              <div class="layout_item w-25">
+                
+              </div>
+              <div class="footer_copyright">
+                <p>&copy; 2024 FACULTY OF FINE ARTS.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </footer>
+  
+         <script>
+          AOS.init();
+        </script>
+    
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="./js/script.js"></script>
+
+         <!-- multi-langue -->
+         <script src="https://cdn.jsdelivr.net/npm/i18next/dist/umd/i18next.js"></script>
+         <script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector/dist/umd/i18nextBrowserLanguageDetector.js"></script>
+         <script src="https://cdn.jsdelivr.net/npm/i18next-xhr-backend/dist/umd/i18nextXHRBackend.js"></script>
+         <script src="https://cdn.jsdelivr.net/npm/i18next-sprintf-postprocessor/dist/umd/i18nextSprintfPostProcessor.js"></script>
+       
+         <script>
+             function changeLanguage(newLanguage) {
+             i18next.changeLanguage(newLanguage, (err, t) => {
+               if (err) return console.log('Error loading translation files:', err);
+         
+               // Update textContent for each element
+               elementIds.forEach((elementId) => {
+                 document.getElementById(elementId).textContent = t(elementId);
+               });
+             });
+           }
+         
+           const elementIds = ['Home', 'Project', 'Detail', 'Register', 'Announce', 'Performance', 'Contact', 'Visual Art', 'Music', 'Performing Arts', 'Visual Art2', 'Music2', 'Performing Arts2','Principles and Reasons','Project objectives','phrase1','phrase2','phrase3','objectives','Topic Project','pj'];
+         
+           i18next.use(i18nextBrowserLanguageDetector)
+             .use(i18nextXHRBackend)
+             .use(i18nextSprintfPostProcessor)
+             .init({
+               debug: true,
+               fallbackLng: 'en',
+               backend: {
+                 loadPath: '/locales/{{lng}}.json'
+               },
+               interpolation: {
+                 escapeValue: false
+               }
+             }, (err, t) => {
+               if (err) return console.log('Error initializing i18next:', err);
+         
+               // Update textContent for each element
+               elementIds.forEach((elementId) => {
+                 document.getElementById(elementId).textContent = t(elementId);
+               });
+             });
+       
+         </script>
+      </body>
+</html>

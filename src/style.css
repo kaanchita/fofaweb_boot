@@ -174,8 +174,20 @@ body {
     -webkit-text-stroke: 1px #9B1E2E;
   }
 }
+
+
 /* performance */
 
+
+
+
+@media (max-width: 575.98px) { 
+.btn {
+  font-size: 16px!important;
+  padding: 1.5rem!important;
+}
+
+ }
 
 
 /* GALLERY */
@@ -767,7 +779,8 @@ transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 .btn {
   cursor: pointer;
   position: relative;
-  padding: 50px 80px;
+  /* padding: 50px 80px; */
+  padding: 3rem;
   background: white;
   font-size: 28px;
   border-top-right-radius: 10px;

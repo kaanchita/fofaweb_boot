@@ -767,7 +767,7 @@ transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 .btn {
   cursor: pointer;
   position: relative;
-  padding: 10px 20px;
+  padding: 50px 80px;
   background: white;
   font-size: 28px;
   border-top-right-radius: 10px;

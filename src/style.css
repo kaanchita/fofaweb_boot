@@ -13,7 +13,6 @@ body {
   color:  rgb(202, 220, 215) !important;
 }
 
-
 .navbar-nav .nav-item.dropdown:hover > .dropdown-menu {
   background-color: rgb( 15, 13, 13);
  
@@ -25,7 +24,6 @@ body {
 .navbar-nav .dropdown-item {
     color:  rgb(202, 220, 215) !important;
   }
-
 
   /* icon nav */
   #nav-icon3 {
@@ -43,6 +41,7 @@ body {
     transition: .5s ease-in-out;
     cursor: pointer;
   }
+
   #nav-icon3 span {
     display: block;
     position: absolute;
@@ -104,7 +103,6 @@ body {
 .breadcrumb {
   border: solid 1px #0F0D0D;
  
-  
 }
 
 .breadcrumb-item a {
@@ -121,8 +119,9 @@ body {
 /* card */
 .card {
   border-radius: 20px;
- 
 }
+
+
 
 /* performance */
 .text-title {
@@ -175,21 +174,14 @@ body {
     -webkit-text-stroke: 1px #9B1E2E;
   }
 }
-
-
 /* performance */
-
-
-
 
 @media (max-width: 575.98px) { 
 .btn {
   font-size: 16px!important;
   padding: 1.5rem!important;
 }
-
  }
-
 
 /* GALLERY */
 .wrapper {
@@ -292,9 +284,7 @@ body {
 /* GALLERY */
 
 /* main content */
-
   @media (max-width: 768px) {
-   
     .breadcrumb {
       font-size: 9px;
     }
@@ -303,14 +293,10 @@ body {
         margin-top: 10px;
         margin-bottom: 10px;
         }
-        .detail {
+    .detail {
           font-size: 20px;
-        
         }
-     
   }
-
-
 
 .d-flex {
     display: flex;
@@ -370,6 +356,7 @@ margin-right: 10px;
   border-radius: 10px; 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
+
 
 /* element detail page */
 .half-circle-container { 
@@ -444,6 +431,7 @@ margin-right: 10px;
   color: #9B1E2E; 
 }
 /* art/dance text detail page */
+
 
 /* music text detail page */
 .overlay-text-m {
@@ -536,13 +524,10 @@ margin-right: 10px;
 
 /* music text detail page */
 
-
 #enlargeImage:hover {
   transform: scale(1.1);
   transition: transform 0.3s;
 }
-
-
 
 /* template paper  */
 .template-text {

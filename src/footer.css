@@ -19,9 +19,21 @@ a {
   display: inline-flex;
 }
 
-/* a:hover {
-  border-bottom: 1px solid var(--dark);
-} */
+.c-link {
+  text-decoration-color: #9B1E2E;
+}
+.c-link:hover {
+  text-decoration: underline;
+  text-decoration-color: #9B1E2E;
+  text-decoration-thickness: 2px; /* หรือค่าที่ต้องการ */
+  transform: scale(1.1); /* หรือค่าที่ต้องการ */
+}
+
+.c-nav-tool_item a:hover {
+  color: #9B1E2E;
+}
+
+
 
 ul {
   list-style-type: none;
@@ -39,7 +51,7 @@ button {
 .footer_inner {
   background-color: #ffffff;
   padding: 2rem;
-  margin: 1rem 0;
+  margin: 3rem 0;
 }
 
 
@@ -53,7 +65,7 @@ button {
 }
 
 .container {
-  max-width: 1200px;
+  /* max-width: 1200px; */
   width: 100%;
   margin: 0 auto;
   padding: 0 1rem;
@@ -85,6 +97,21 @@ input::placeholder {
   color: var(--dark);
 }
 
+form {
+  position: relative;
+}
+svg {
+  margin: 0.5rem;
+}
+.c-2 {
+  margin-top: 3.5rem;
+}
+.footer_copyright {
+  display: flex; align-items: center; 
+  font-weight: bold;
+  color: #0F0D0D;
+  font-size: 12px;
+}
 
 @media (min-width: 768px) {
  .footer {
@@ -109,21 +136,3 @@ input::placeholder {
 }
 
 
-
-
-
-form {
-  position: relative;
-}
-svg {
-  margin: 0.5rem;
-}
-.c-2 {
-  margin-top: 3.5rem;
-}
-.footer_copyright {
-  display: flex; align-items: center; 
-  font-weight: bold;
-  color: #0F0D0D;
-  font-size: 12px;
-}

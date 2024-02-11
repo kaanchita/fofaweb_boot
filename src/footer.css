@@ -28,7 +28,6 @@ a {
   text-decoration-thickness: 2px; /* หรือค่าที่ต้องการ */
   transform: scale(1.1); /* หรือค่าที่ต้องการ */
 }
-
 .c-nav-tool_item a:hover {
   color: #9B1E2E;
 }

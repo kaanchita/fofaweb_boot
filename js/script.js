@@ -21,3 +21,27 @@ $(document).ready(function(){
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   }
+
+  // navbar
+
+  var header = document.querySelector("header");
+  var lastScrollTop = 0;
+  // ให้ window เพิ่ม event listener เมื่อเลื่อนหน้าจอ
+  window.addEventListener("scroll", function() {
+    var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+    // ถ้าค่า scroll ปัจจุบันมากกว่าค่า scroll ก่อนหน้า
+    if (currentScroll > lastScrollTop) {
+      // เลื่อนลง
+      header.classList.add("hidden");
+    } else {
+      // เลื่อนขึ้น
+      header.classList.remove("hidden");
+    }
+    lastScrollTop = currentScroll;
+    
+  });
+
+
+
+  
+ 

@@ -24,11 +24,56 @@ body {
 
 .navbar-nav .dropdown-item {
     color:  rgb(202, 220, 215) !important;
+    
+  }
+  .navbar-nav .dropdown-item:hover {
+    color:  #9B1E2E  !important;
+    
   }
 
+  /* .sticky-top {
+    top: 0;
+    z-index: 999;
+    transition: top 0.5s ease-in-out;
+  } */
+  
+  .navbar-toggler {
+   color: transparent !important;
+  }
 
+  /* hover line menu */
+  .hoverelement > a{
+    position: relative;
+    text-decoration: none;
+  }
+  
+  .hoverelement > a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    margin-bottom: -2px;
+    background-color: #9B1E2E;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  
+  .hoverelement > a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  
+  .hoverelement:hover .dropdown-menu {
+    display: block;
+  }
 
-  /* icon nav */
+  /* burger */
   #nav-icon3 {
     width: 30px;
     height: 30px;
@@ -100,12 +145,10 @@ body {
     width: 0%;
     left: 50%;
   }
+/* burger */
 
-/* icon nav */
 .breadcrumb {
   border: solid 1px #0F0D0D;
- 
-  
 }
 
 .breadcrumb-item a {
@@ -179,10 +222,6 @@ body {
 
 
 /* performance */
-
-
-
-
 @media (max-width: 575.98px) { 
 .btn {
   font-size: 16px!important;
@@ -311,8 +350,6 @@ body {
      
   }
 
-
-
 .d-flex {
     display: flex;
     
@@ -395,149 +432,6 @@ margin-right: 10px;
   height: 100%;
 }
 
-/* art/dance text detail page */
-
-.col-sm-12 .overlay-text {
-  position: absolute;
-  top: 18%;
-  left: 34%;
-  transform: translate(-50%, -50%); 
-  z-index: 2; 
-  color: #dfb037;
-  font-size: 60px;
-  font-weight: bold;
-  text-shadow: 5px 5px 5px rgba(10, 10, 10, 0.6);
-
-}
-
-.col-sm-12 .overlay-text2 {
-  position: absolute;
-  top: 25%;
-  left: 34%;
-  transform: translate(-50%, -50%); 
-  z-index: 2; 
-  color: #dfb037;
-  font-size: 60px;
-  font-weight: bold;
-  text-shadow: 5px 5px 5px rgba(10, 10, 10, 0.6);
-
-}
-.col-sm-12 .overlay-text3 {
-  position: absolute;
-  top: 32%;
-  left: 34%;
-  transform: translate(-50%, -50%); 
-  z-index: 2; 
-  color: #dfb037;
-  font-size: 60px;
-  font-weight: bold;
-  text-shadow: 5px 5px 5px rgba(10, 10, 10, 0.6);
-
-}
-
-.overlay-text:hover {
-  color: #9B1E2E; 
-}
-.overlay-text2:hover {
-  color: #9B1E2E; 
-}
-.overlay-text3:hover {
-  color: #9B1E2E; 
-}
-/* art/dance text detail page */
-
-/* music text detail page */
-.overlay-text-m {
-  position: absolute;
-   /* top: 40%; 
-   left: 60%;  */
-   margin-left: 35%;
-   margin-top: -8%;
-  transform: translate(-50%, -50%); 
-  z-index: 2; 
-  color: #dfb037;
-  font-size: 60px;
-  font-weight: bold;
-  text-shadow: 5px 5px 5px rgba(10, 10, 10, 0.6);
-
-}
-.overlay-text-m2{
-  position: absolute;
-  margin-left: 35%;
-   margin-top: -5%;
-
-  transform: translate(-50%, -50%); 
-  z-index: 2; 
-  color: #dfb037;
-  font-size: 60px;
-  font-weight: bold;
-  text-shadow: 5px 5px 5px rgba(10, 10, 10, 0.6);
-
-}
-.overlay-text-m3{
-  position: absolute;
-  margin-left: 35%;
-   margin-top: -2%;
-
-  transform: translate(-50%, -50%); 
-  z-index: 2; 
-  color: #dfb037;
-  font-size: 60px;
-  font-weight: bold;
-  text-shadow: 5px 5px 5px rgba(10, 10, 10, 0.6);
-
-}
-.col-sm-12 .overlay-text-m {
-  position: absolute;
-  top: 58%;
-  left: 30%;
-  transform: translate(-50%, -50%); 
-  z-index: 2; 
-  color: #dfb037;
-  font-size: 60px;
-  font-weight: bold;
-  text-shadow: 5px 5px 5px rgba(10, 10, 10, 0.6);
-
-}
-
-.col-sm-12 .overlay-text-m2 {
-  position: absolute;
-  top: 66%;
-  left: 30%;
-  transform: translate(-50%, -50%); 
-  z-index: 2; 
-  color: #dfb037;
-  font-size: 60px;
-  font-weight: bold;
-  text-shadow: 5px 5px 5px rgba(10, 10, 10, 0.6);
-
-}
-.col-sm-12 .overlay-text-m3 {
-  position: absolute;
-  top: 74%;
-  left: 30%;
-  transform: translate(-50%, -50%); 
-  z-index: 2; 
-  color: #dfb037;
-  font-size: 60px;
-  font-weight: bold;
-  text-shadow: 5px 5px 5px rgba(10, 10, 10, 0.6);
-
-}
-
-.overlay-text-m:hover {
-  color: #9B1E2E; 
-}
-.overlay-text-m2:hover {
-  color: #9B1E2E; 
-}
-.overlay-text-m3:hover {
-  color: #9B1E2E; 
-}
-
-/* music text detail page */
-
-
 #enlargeImage:hover {
   transform: scale(1.1);
   transition: transform 0.3s;
@@ -572,27 +466,6 @@ transition: background-color 0.3s, color 0.3s, border-color 0.3s;
   color: white;
   border-color: #9B1E2E;
 }
-
-/* download icon */
-
-/* .image-link {
-  display: inline-block;
- 
-  width: 250px;
-  height: 150px;
- 
-  background-image: url('images/download.png');
-  background-size: cover;
-
-  transition: background-image 0.3s ease-in-out;
-}
-
-
-.image-link:hover {
-  background-image: url('images/download2.png');
-} */
-
-
 
 /* accordian-music */
 .music .accordion-item  {
@@ -719,3 +592,24 @@ transition: background-color 0.3s, color 0.3s, border-color 0.3s;
   width: 100%;
   height: 100%;
 }
+
+/* gototop */
+.go-to-top {
+  display: none; /* ซ่อนปุ่มเริ่มต้น */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border: none;
+  color: #8A4A38;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 25px;
+  padding: 10px;
+  z-index: 99;
+  transition: opacity 0.5s; /* เพิ่ม transition สำหรับ opacity */
+}
+.go-to-top  a{ 
+  color: #8A4A38;
+}
+
+/* End gototop */

@@ -7,7 +7,7 @@ body {
 
 .navbar {
   background-color: rgb( 15, 13, 13);
- 
+  
 }
 
 .navbar .nav-link {
@@ -17,7 +17,6 @@ body {
 
 .navbar-nav .nav-item.dropdown:hover > .dropdown-menu {
   background-color: rgb( 15, 13, 13);
- 
 	display: block;
   border: none !important;
   border-radius: 0;
@@ -26,6 +25,7 @@ body {
 .navbar-nav .dropdown-item {
     color:  rgb(202, 220, 215) !important;
   }
+
 
 
   /* icon nav */

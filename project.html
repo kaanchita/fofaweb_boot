@@ -357,23 +357,23 @@
        
          <script>
             function changeLanguage(newLanguage) {
-           i18next.changeLanguage(newLanguage, (err, t) => {
-             if (err) return console.log('Error loading translation files:', err);
-       
-             // Update textContent for each element
-             elementIds.forEach((elementId) => {
-               document.getElementById(elementId).textContent = t(elementId);
-             });
-
-             // Update flag image
-             const flagImage = document.getElementById('languageFlag');
-                  if (newLanguage === 'en') {
-                    flagImage.src = 'images/flags/engflag.png';
-                  } else {
-                    flagImage.src = 'images/flags/thaiflag.png';
-                  }
-           });
-         }
+              i18next.changeLanguage(newLanguage, (err, t) => {
+                if (err) return console.log('Error loading translation files:', err);
+                // Update textContent for each element
+                elementIds.forEach((elementId) => {
+                  document.getElementById(elementId).textContent = t(elementId);
+                });
+                // Update flag image
+                const flagImage = document.getElementById('languageFlag');
+                if (newLanguage === 'en') {
+                  flagImage.src = 'images/flags/engflag.png';
+                  document.body.style.fontFamily = "'Adam'"; 
+                } else {
+                  flagImage.src = 'images/flags/thaiflag.png';
+                  document.body.style.fontFamily = "'Kanit', sans-serif";
+                }
+              });
+            }  
          const elementIds = ['Home', 'Project', 'Detail', 'Register', 'Announce', 'Performance', 'Contact', 'Visual Art', 'Music', 'Performing Arts', 'Visual Art2', 'Music2', 'Performing Arts2','Principles and Reasons','Project objectives','phrase1','phrase2','phrase3','objectives','Topic Project','pj','objectives2','objectives3','objectives4'];
          i18next.use(i18nextBrowserLanguageDetector)
          .use(i18nextXHRBackend)

@@ -130,30 +130,6 @@
   <!-- content -->
 
  <!-- carousel -->
- <!-- <section>
-  <div id="carouselExampleFade" class="carousel slide carousel-fade">
-    <div class="carousel-inner ">
-      <div class="carousel-item active" >
-        <img src="images/elements/img9.jpg" class="d-block w-100" style=" margin-top: -400px;"  alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="images/elements/img7.jpg" class="d-block w-100 " style=" margin-top: -400px;" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="images/elements/img6.jpg" class="d-block w-100 " style=" margin-top: -400px;"  alt="...">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
- </section> -->
-
  <section>
   <div id="carouselExampleFade" class="carousel slide carousel-fade" >
     <div class="carousel-inner">
@@ -199,15 +175,13 @@
   <!-- sub topic -->
   <div class="container-fluid">
   <section class="row" style="padding-top: 30px; padding-bottom: 30px; background-color: rgb( 15, 13, 13);" data-aos="fade-up" data-aos-duration="1000">
-      <!-- <div class="row d-flex mx-auto justify-content-center"> -->
-        <!-- Repeat this block for each image -->
 
         <div class="col-md-1">
 
         </div>
 
         <div class="col-md-5 " >
-          <img src="./images/poster/poster9.png" class="card-img-top" alt="...">
+          <img src="./images/elements/img11.png" class="card-img-top" alt="...">
         </div>
         
         <div class="col-md-5 d-block justify-content-center index" style="margin-top: 13%;" >
@@ -222,7 +196,6 @@
               </a>
             </div>
           </div>
-        
      
        <div class="row mx-auto justify-content-end d-flex">
         <div class="col-md-7">
@@ -288,10 +261,6 @@
       <div class="col-md-1">
 
       </div>
-        
-      
-        <!-- Repeat end -->
-      <!-- </div> -->
     
 </section>
 </div>
@@ -469,24 +438,24 @@
              <script src="https://cdn.jsdelivr.net/npm/i18next-sprintf-postprocessor/dist/umd/i18nextSprintfPostProcessor.js"></script>
 
              <script>
-              function changeLanguage(newLanguage) {
-           i18next.changeLanguage(newLanguage, (err, t) => {
-             if (err) return console.log('Error loading translation files:', err);
-       
-             // Update textContent for each element
-             elementIds.forEach((elementId) => {
-               document.getElementById(elementId).textContent = t(elementId);
-             });
-
-             // Update flag image
-             const flagImage = document.getElementById('languageFlag');
-                  if (newLanguage === 'en') {
-                    flagImage.src = 'images/flags/engflag.png';
-                  } else {
-                    flagImage.src = 'images/flags/thaiflag.png';
-                  }
-           });
-         }
+             function changeLanguage(newLanguage) {
+              i18next.changeLanguage(newLanguage, (err, t) => {
+                if (err) return console.log('Error loading translation files:', err);
+                // Update textContent for each element
+                elementIds.forEach((elementId) => {
+                  document.getElementById(elementId).textContent = t(elementId);
+                });
+                // Update flag image
+                const flagImage = document.getElementById('languageFlag');
+                if (newLanguage === 'en') {
+                  flagImage.src = 'images/flags/engflag.png';
+                  document.body.style.fontFamily = "'Adam'"; 
+                } else {
+                  flagImage.src = 'images/flags/thaiflag.png';
+                  document.body.style.fontFamily = "'Kanit', sans-serif";
+                }
+              });
+            }  
               const elementIds = ['Home', 'Project', 'Detail', 'Register', 'Announce', 'Performance', 'Contact', 'Visual Art', 'Music', 'Performing Arts', 'Visual Art2', 'Music2', 'Performing Arts2', 'Topic Index', 'Topic Index2', 'rst index', 'dts index'];
              
               i18next.use(i18nextBrowserLanguageDetector)
@@ -509,7 +478,7 @@
                     document.getElementById(elementId).textContent = t(elementId);
                   });
                 });
-            </script>
+             </script> 
             
     </body>
 </html>

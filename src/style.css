@@ -1,7 +1,7 @@
 
 body {
     /* margin-top:20px; */
-    font-family: 'Kanit', sans-serif;
+    font-family: 'Adam';
     background-color: #fff;
 }
 
@@ -23,6 +23,10 @@ body {
 
 .navbar-nav .dropdown-item {
     color:  rgb(202, 220, 215) !important;
+  }
+
+  .navbar-toggler {
+    color: transparent
   }
 
   /* icon nav */
@@ -120,7 +124,6 @@ body {
 .card {
   border-radius: 20px;
 }
-
 
 
 /* performance */

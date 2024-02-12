@@ -60,7 +60,6 @@ button {
   align-items: center;
   min-height: 80vh;
   background-color: #0F0D0D;
-  font-family: 'Adam';
 }
 
 .container {
@@ -118,9 +117,7 @@ svg {
     display: flex;
     align-items: center;
     min-height: 40vh;
-        
-    }
-
+  }
   .layout {
     display: flex;
     flex-wrap: nowrap;

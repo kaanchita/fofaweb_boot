@@ -677,16 +677,24 @@
        <script src="https://cdn.jsdelivr.net/npm/i18next-sprintf-postprocessor/dist/umd/i18nextSprintfPostProcessor.js"></script>
      
        <script>
-           function changeLanguage(newLanguage) {
-           i18next.changeLanguage(newLanguage, (err, t) => {
-             if (err) return console.log('Error loading translation files:', err);
-       
-             // Update textContent for each element
-             elementIds.forEach((elementId) => {
-               document.getElementById(elementId).textContent = t(elementId);
-             });
-           });
-         }
+          function changeLanguage(newLanguage) {
+              i18next.changeLanguage(newLanguage, (err, t) => {
+                if (err) return console.log('Error loading translation files:', err);
+                // Update textContent for each element
+                elementIds.forEach((elementId) => {
+                  document.getElementById(elementId).textContent = t(elementId);
+                });
+                // Update flag image
+                const flagImage = document.getElementById('languageFlag');
+                if (newLanguage === 'en') {
+                  flagImage.src = 'images/flags/engflag.png';
+                  document.body.style.fontFamily = "'Adam'"; 
+                } else {
+                  flagImage.src = 'images/flags/thaiflag.png';
+                  document.body.style.fontFamily = "'Kanit', sans-serif";
+                }
+              });
+            }  
        
          const elementIds = ['Home', 'Project', 'Detail', 'Register', 'Announce', 'Performance', 'Contact', 'Visual Art', 'Music', 'Performing Arts', 'Visual Art2', 'Music2', 'Performing Arts2','pfm','va','ms','pma'];
        

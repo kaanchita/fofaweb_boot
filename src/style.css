@@ -7,18 +7,21 @@ body {
 /* CSS เพื่อซ่อน header */
 .hidden {
   transform: translateY(-100%);
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.9s ease-in-out;
+}
+.open {
+  transform: translateY(0);
+  transition: transform 0.9s ease-in-out;
+
 }
 
 .navbar {
   background-color: rgb( 15, 13, 13);
-  
 }
 
 .navbar .nav-link {
   color:  rgb(202, 220, 215) !important;
 }
-
 
 .navbar-nav .nav-item.dropdown:hover > .dropdown-menu {
   background-color: rgb( 15, 13, 13);
@@ -35,7 +38,6 @@ body {
     color:  #9B1E2E  !important;
     
   }
-
   
   
   .navbar-toggler {

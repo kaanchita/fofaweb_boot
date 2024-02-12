@@ -33,9 +33,11 @@ $(document).ready(function(){
     if (currentScroll > lastScrollTop) {
       // เลื่อนลง
       header.classList.add("hidden");
+      header.classList.remove("open");
     } else {
       // เลื่อนขึ้น
       header.classList.remove("hidden");
+      header.classList.add("open");
     }
     lastScrollTop = currentScroll;
     

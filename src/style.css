@@ -16,11 +16,14 @@ body {
 }
 
 .navbar {
-  background-color: rgb( 15, 13, 13);
+  background-color: #fff;
 }
 
 .navbar .nav-link {
-  color:  rgb(202, 220, 215) !important;
+  color:  #0F0D0D!important;
+  font-weight: 500;
+  font-size: 20px;
+
 }
 
 .navbar-nav .nav-item.dropdown:hover > .dropdown-menu {
@@ -41,8 +44,10 @@ body {
   
   
   .navbar-toggler {
-   color: transparent !important;
+   border: none !important;
+   color: transparent !important; 
   }
+ 
 
   /* hover line menu */
   .hoverelement > a{

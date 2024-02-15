@@ -450,7 +450,7 @@
        <script src="https://cdn.jsdelivr.net/npm/i18next-sprintf-postprocessor/dist/umd/i18nextSprintfPostProcessor.js"></script>
      
        <script>
-           function changeLanguage(newLanguage) {
+          function changeLanguage(newLanguage) {
               i18next.changeLanguage(newLanguage, (err, t) => {
                 if (err) return console.log('Error loading translation files:', err);
                 // Update textContent for each element
@@ -462,9 +462,12 @@
                 if (newLanguage === 'en') {
                   flagImage.src = 'images/flags/engflag.png';
                   document.body.style.fontFamily = "'Adam'"; 
+                  document.body.style.fontWeight = "bold";
                 } else {
                   flagImage.src = 'images/flags/thaiflag.png';
                   document.body.style.fontFamily = "'Kanit', sans-serif";
+                  document.body.style.fontSize = "18px";
+                  document.body.style.fontWeight = "2px";
                 }
               });
             }  

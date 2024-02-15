@@ -140,6 +140,16 @@ $( document ).ready(function() {
   },50);
 });
 
+//pop up poster
+window.onload = function() {
+  
+  if (!localStorage.getItem('modalShown')) {
+      var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
+      myModal.show();
+      localStorage.setItem('modalShown', 'true');
+  }
+}
+
 
 
   

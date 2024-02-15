@@ -494,20 +494,19 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css
                     </li>
     
                     <li>
-                      <a href="detail.html" class="c-link">Details</a>
+                      <a href="detail.html" class="c-link">Format and Details of Work</a>
                     </li>
                     <li>
-                      <a href="register.html" class="c-link">Register</a>
+                      <a href="register.html" class="c-link">Registration</a>
                     </li>
                     <li>
-                      <a href="announce.html" class="c-link">Announce</a>
+                      <a href="announce.html" class="c-link">Announcement</a>
                     </li>
                     <li>
-                      <a href="performance.html" class="c-link">performance</a>
+                      <a href="performance.html" class="c-link">Creative Works</a>
                     </li>
                   </ul>
                 </nav>
-    
               </div>
     
               <div class="col-6 col-md-3">
@@ -593,15 +592,23 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css
      
        <script>
            function changeLanguage(newLanguage) {
-           i18next.changeLanguage(newLanguage, (err, t) => {
-             if (err) return console.log('Error loading translation files:', err);
-       
-             // Update textContent for each element
-             elementIds.forEach((elementId) => {
-               document.getElementById(elementId).textContent = t(elementId);
-             });
-           });
-         }
+              i18next.changeLanguage(newLanguage, (err, t) => {
+                if (err) return console.log('Error loading translation files:', err);
+                // Update textContent for each element
+                elementIds.forEach((elementId) => {
+                  document.getElementById(elementId).textContent = t(elementId);
+                });
+                // Update flag image
+                const flagImage = document.getElementById('languageFlag');
+                if (newLanguage === 'en') {
+                  flagImage.src = 'images/flags/engflag.png';
+                  document.body.style.fontFamily = "'Adam'"; 
+                } else {
+                  flagImage.src = 'images/flags/thaiflag.png';
+                  document.body.style.fontFamily = "'Kanit', sans-serif";
+                }
+              });
+            }  
        
          const elementIds = ['Home', 'Project', 'Detail', 'Register', 'Announce', 'Creative Works', 'Contact', 'Visual Art', 'Music', 'Performing Arts', 'Visual Art2', 'Music2', 'Performing Arts2','dt'];
        

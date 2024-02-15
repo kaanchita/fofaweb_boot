@@ -6,7 +6,7 @@ body {
     background-color: #fff;
 }
 /* CSS เพื่อซ่อน header */
-.hidden {
+/* .hidden {
   transform: translateY(-100%);
   transition: transform 0.9s ease-in-out;
 }
@@ -14,6 +14,11 @@ body {
   transform: translateY(0);
   transition: transform 0.9s ease-in-out;
 
+} */
+
+.sticky-top.scrolling {
+  opacity: 0.9; /* ปรับค่า opacity ตามต้องการ */
+  transition: opacity 0.3s ease; /* เพิ่ม transition เพื่อให้การเปลี่ยนแปลง opacity เนียนขึ้น */
 }
 
 .navbar {
@@ -21,8 +26,8 @@ body {
 }
 
 .navbar .nav-link {
-  color:  #0F0D0D!important;
-  font-weight: 500;
+  color:  #9B1E2E !important;
+  font-weight: bold;
   font-size: 17px;
 
 }
@@ -37,27 +42,38 @@ body {
 
 .navbar-nav .dropdown-item {
     color:  rgb(202, 220, 215) !important;
-    
-    
+    font-weight: bold;  
   }
-  .navbar-nav .dropdown-item:hover {
+.navbar-nav .dropdown-item:hover {
     color:  #9B1E2E  !important;
     
   }
   
-  .navbar-toggler {
+.navbar-toggler {
    border: none !important;
    color: transparent !important; 
   }
  
 
+.nav-pills .nav-link {
+    border-radius: 25px; 
+    font-weight: bold;
+    color: #0F0D0D;
+    border: solid 1px #0F0D0D;
+    margin-right: 20px;
+}
+.nav-pills .nav-link.active {
+  background-color: #0F0D0D;
+}
+
+
   /* hover line menu */
-  .hoverelement > a{
+.hoverelement > a{
     position: relative;
     text-decoration: none;
   }
   
-  .hoverelement > a:before {
+.hoverelement > a:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -336,6 +352,11 @@ body {
 }
 }
 
+/* black and white */
+.grayscale-image {
+  filter: grayscale(100%);
+}
+
 
 /* GALLERY */
 .wrapper {
@@ -519,31 +540,9 @@ margin-right: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
-/* element detail page */
-/* .half-circle-container { 
-   display: flex; 
-   margin-left: 2%; 
-   justify-content: space-around; 
-   align-items: center; 
-   height: 20; 
- } 
-
- .half-circle { 
-   width: 300px;
-  height: 380px;
-  border-radius: 50% 50% 0 0;
-  overflow: hidden;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 2);
-  margin-bottom: 30px;
-} 
-
-.half-circle img {
-  width: 100%;
-  height: 100%;
-} */
 
 #enlargeImage:hover {
-  transform: scale(1.1);
+  transform: scale(1.0);
   transition: transform 0.3s;
 }
 
@@ -711,9 +710,10 @@ transition: background-color 0.3s, color 0.3s, border-color 0.3s;
   border: none;
   color: #8A4A38;
   cursor: pointer;
-  font-size: 25px;
-  padding: 10px;
-  z-index: 99;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px;
+  z-index: 1000;
   transition: opacity 0.5s; /* เพิ่ม transition สำหรับ opacity */
 }
 .go-to-top  a{ 

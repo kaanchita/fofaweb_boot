@@ -23,24 +23,24 @@ $(document).ready(function(){
   }
 
   // navbar
-  var header = document.querySelector("header");
-  var lastScrollTop = 0;
-  // ให้ window เพิ่ม event listener เมื่อเลื่อนหน้าจอ
-  window.addEventListener("scroll", function() {
-    var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-    // ถ้าค่า scroll ปัจจุบันมากกว่าค่า scroll ก่อนหน้า
-    if (currentScroll > lastScrollTop) {
-      // เลื่อนลง
-      header.classList.add("hidden");
-      header.classList.remove("open");
-    } else {
-      // เลื่อนขึ้น
-      header.classList.remove("hidden");
-      header.classList.add("open");
-    }
-    lastScrollTop = currentScroll;
+  // var header = document.querySelector("header");
+  // var lastScrollTop = 0;
+  // // ให้ window เพิ่ม event listener เมื่อเลื่อนหน้าจอ
+  // window.addEventListener("scroll", function() {
+  //   var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+  //   // ถ้าค่า scroll ปัจจุบันมากกว่าค่า scroll ก่อนหน้า
+  //   if (currentScroll > lastScrollTop) {
+  //     // เลื่อนลง
+  //     header.classList.add("hidden");
+  //     header.classList.remove("open");
+  //   } else {
+  //     // เลื่อนขึ้น
+  //     header.classList.remove("hidden");
+  //     header.classList.add("open");
+  //   }
+  //   lastScrollTop = currentScroll;
     
-  });
+  // });
 
   //welcome text
   consoleText(['Welcome Everyone', 'We are glad to see you joining us.'], 'text',['#0F0D0D','#0F0D0D']);

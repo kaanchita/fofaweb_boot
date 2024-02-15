@@ -32,17 +32,18 @@ body {
 	display: block;
   border: none !important;
   border-radius: 0;
+  z-index: 3000;
   }
 
 .navbar-nav .dropdown-item {
     color:  rgb(202, 220, 215) !important;
+    
     
   }
   .navbar-nav .dropdown-item:hover {
     color:  #9B1E2E  !important;
     
   }
-  
   
   .navbar-toggler {
    border: none !important;
@@ -190,7 +191,7 @@ body {
   left:0;
   right:0; */
   /* margin:auto; */
-  z-index: 1000;
+  z-index: 200;
 }
 .console-underscore {
   display:inline-block;

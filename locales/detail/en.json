@@ -30,6 +30,11 @@
 
     "Qualifications-Music":"Qualifications of creative work : Music",
     "Type of creative work-music":"Type of creative work",
+    "Detail-Music":"Music",
+    "The Creative presentation format-music":"The Creative presentation format :",
+    "Creative1":"1.Transmission must occur through live musical performance or electronic synthesis (synthesized sound), recorded as a video.",
+    "Creative2":"2.The creative work must be an original composition, emphasizing greater innovation than the original music. It should not involve mere rearrangement, modification, or a rendition of existing songs using new tools.",
+    "Presenter of creative work submits information-music":"Presenter of creative work submits information",
     "Concept Paper-Music":"1. Concept Paper (form of IFA-2024)",
     "Information-music":"2. Information of creative work",
     "Information-music1":"Photos of creative work :",
@@ -51,8 +56,8 @@
 
     "Qualifications-Dance":"Qualifications of creative work : Performing Arts and Dance",
     "Type of creative work-dance":"Type of creative work",
-    "Performing Arts and Dance":"Performing Arts and Dance",
-    "The Creative presentation format-dance":"The Creative presentation format",
+    "Detail-Dance":"Performing Arts and Dance",
+    "The Creative presentation format-dance":"The Creative presentation format :",
     "Video-dance":"Video",
     "format-dance1":"- Video size 16:9",
     "format-dance2":"- File format MP4",

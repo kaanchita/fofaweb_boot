@@ -30,6 +30,11 @@
 
     "Qualifications-Music":"คุณสมบัติผลงานสร้างสรรค์ด้านดนตรี",
     "Type of creative work-music":"ประเภท ",
+    "Detail-Music":"ดนตรี",
+    "The Creative presentation format-music":"รูปแบบงานที่ใช้นำเสนอ",
+    "Creative1":"1. ถ่ายทอดผ่านรูปแบบเสียงที่มาจากการบรรเลงดนตรีสด หรือเป็นรูปแบบอิเล็กทรอนิกส์(เสียงสังเคราะห์) โดยบันทึกเป็นวีดีโอ",
+    "Creative2":"2. งานสร้างสรรค์ต้องเป็นงานประพันธ์ใหม่ ดนตรีเดิมให้มีส่วนของการสร้างสรรค์มากกว่าของเดิมโดยไม่ใช่การเรียบเรียงใหม่ หรือ ดัดแปลง หรือ ต้องไม่ใช่การบรรเลงเพลงเดิมโดยเครื่องมือใหม่ ",
+    "Presenter of creative work submits information-music":"สิ่งที่ต้องส่ง",
     "Concept Paper-Music":"1. Concept paper (ตามแบบฟอร์ม) ",
     "Information-music":"2. Information of creative work",
     "Information-music1":"ผลงานสร้างสรรค์  :",
@@ -51,7 +56,7 @@
 
     "Qualifications-Dance":"คุณสมบัติผลงานสร้างสรรค์ด้านศิลปะการแสดง และนาฏศิลป์",
     "Type of creative work-dance":"ประเภทผลงาน",
-    "Performing Arts and Dance":"ผลงานสร้างสรรค์ด้านศิลปะการแสดง และนาฏศิลป์",
+    "Detail-Dance":"ผลงานสร้างสรรค์ด้านศิลปะการแสดง และนาฏศิลป์",
     "The Creative presentation format-dance":"รูปแบบงานที่ใช้นำเสนอ",
     "Video-dance":"วีดีโอ",
     "format-dance1":"- ขนาด 16:9 ",

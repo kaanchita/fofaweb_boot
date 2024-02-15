@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R9D7VRKFN3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-R9D7VRKFN3');
+</script>
+
+<link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="./src/style.css" rel="stylesheet">
+<link href="./src/swiper.css" rel="stylesheet">
+<link href="./src/footer.css" rel="stylesheet">
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+/>
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<!-- icon -->
+<link rel="shortcut icon" type="image/x-icon" href="./images/LogoIFOA_1x.png" />
+
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');     
+       @font-face {
+        font-family: 'Adam';
+        src: url('fonts/Adam-Bold.ttf');
+        font-weight: bold;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'Adam';
+        src: url('fonts/Adam-Light.ttf');
+        font-weight: lighter;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'Adam';
+        src: url('fonts/Adam-Medium.ttf');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+</head>
+<body>
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-sm" style="background-color: #0F0D0D;">
+      <div class="container justify-content-end">
+      <p style = "color: #CAD3D7 ; -webkit-text-stroke: 2px #CAD3D7 ; font-size: 28px; font-family: 'Adam'; font-weight: bold; margin-bottom: 2px;">
+        INTERNATIONAL FESTIVAL OF ARTS 2024
+      </p>
+    </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-sm shadow-sm" style="border-top: 1.5px solid #0F0D0D; border-bottom: 1.5px solid #0F0D0D; ">
+     <div class="container">
+      <a class="navbar-brand" href="./index.html"><img src="./images/LogoIFOA.png" class="img-fluid" style="max-width: 64px;" alt="logo"></a>
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <div id="nav-icon3">
+           <span></span>
+           <span></span>
+           <span></span>
+           <span></span>
+         </div>
+       </button>
+       <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+         <ul class="navbar-nav ml-auto mb-2 mb-lg-0 mt-3">
+           <li class="nav-item hoverelement">
+             <a class="nav-link" id="Home" href="./index.html">Home</a>
+           </li>
+           <li class="nav-item hoverelement">
+             <a class="nav-link" id="Project" href="./project.html">Project</a>
+           </li>
+           <li class="nav-item dropdown hoverelement">
+             <a class="nav-link dropdown-toggle" id="Detail" href="./detail-en.html" >
+              Format & Details
+             </a>
+             <ul class="dropdown-menu">
+               <li><a class="dropdown-item" id="Visual Art"  href="#">Visual Art</a></li>
+               <li><a class="dropdown-item"  id= "Music" href="#">Music</a></li>
+               <li><a class="dropdown-item" id="Performing Arts" href="#">Performing Arts</a></li>
+             </ul>
+           </li>
+           <li class="nav-item hoverelement">
+             <a class="nav-link" id="Register" href="./register.html">Registration</a>
+           </li>
+           <li class="nav-item hoverelement">
+             <a class="nav-link" id="Announce" href="./announce.html">Announcement</a>
+           </li>
+           <li class="nav-item dropdown hoverelement">
+             <a class="nav-link dropdown-toggle" id="Creative Works" href="./performance.html">
+              Creative Works
+             </a>
+             <ul class="dropdown-menu">
+               <li><a class="dropdown-item" href="performance.html#section1" id="Visual Art2">Visual Art</a></li>
+               <li><a class="dropdown-item"  href="performance.html#section2" id= "Music2">Music</a></li>
+               <li><a class="dropdown-item"  href="performance.html#section3" id="Performing Arts2">Performing Arts</a></li>
+             </ul>
+           </li>
+           <li class="nav-item hoverelement">
+             <a class="nav-link" id="Contact" href="mailto:fofaswu@g.swu.ac.th">Contact</a>
+           </li>
+
+           <!-- multi-langue -->
+           <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="">
+              <img id="languageFlag" src="images/flags/engflag.png" class="img-fluid m-2" style="max-width: 20px;">
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#" onclick="changeLanguage('th')"><img src="images/flags/thaiflag.png" class="img-fluid m-2" style="max-width: 20px;">Thai</a></li>
+              <li><a class="dropdown-item" href="#" onclick="changeLanguage('en')"><img src="images/flags/engflag.png" class="img-fluid m-2" style="max-width: 20px;">English</a></li>
+            </ul>
+          </li>
+           <!-- multi-langue -->
+        
+         </ul>
+           </div>
+       </div>
+     </div>
+   </nav>
+   </div>
+ </header>
+      
+  <!-- content -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <!-- <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div> -->
+        <div class="modal-body d-flex justify-content-center align-items-center">
+            <img style="height: 100%; width: 100%;" src="images/poster/4.png" alt="Poster Image">
+        </div>
+        <!-- <div class="modal-footer justify-content-center">
+          <button type="button" class="btn-popUp" data-bs-dismiss="modal">Close</button>
+        </div> -->
+      </div>
+    </div>
+  </div>
+  <!-- welcome text -->
+ <section class="container-fluid mb-5">
+  <div class="row mb-5" >
+    <div class="console-container d-flex justify-content-center align-items-center " data-aos="fade-up" data-aos-duration="1000">
+      <span id="text"></span>
+      <div class="console-underscore" id="console">&#95;</div>
+      <div id="background-animation-container">
+        <div class="ani-bubble"></div>
+        <div class="ani-bubble"></div>
+        <div class="ani-bubble"></div>
+        <div class="ani-bubble"></div>
+        <div class="ani-bubble"></div>
+        <div class="ani-bubble"></div>
+        <div class="ani-bubble"></div>
+        <div class="ani-bubble"></div>
+        <div class="ani-bubble"></div>
+        <div class="ani-bubble"></div>
+        <div class="ani-bubble"></div>
+        <div class="ani-bubble"></div>
+        <div class="ani-bubble"></div>
+        <div class="ani-bubble"></div>
+        <div class="ani-bubble"></div>
+        <div class="ani-bubble"></div>
+        <div class="ani-bubble"></div>
+        <div class="ani-bubble"></div>
+        <div class="ani-bubble"></div>
+        <div class="ani-bubble"></div>
+        <div class="ani-bubble"></div>
+        <div class="ani-bubble"></div>
+        <div class="ani-bubble"></div>
+        <div class="ani-bubble"></div>
+        <div class="ani-bubble"></div>
+        <div class="ani-bubble"></div>
+        <div class="ani-bubble"></div>
+        <div class="ani-bubble"></div>
+        <div class="ani-bubble"></div>
+        <div class="ani-bubble"></div>
+        <div class="ani-bubble"></div>
+      </div>
+    </div>
+  </div>
+ </section>
+ <!-- welcome text -->
+
+ <hr class="mx-auto w-75 justify-content-center mt-5" style="color: rgb(138, 74, 56)">
+
+ <div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <section class="d-flex justify-content-center  mt-5 mb-5 mx-auto" data-aos="fade-up" data-aos-duration="1000" >
+        <span class="btn">
+          <p id="Topic Index">The 11th International Festival of Arts (IFA:2024)</p>
+          <p id="Topic Index2">Jun 16th,2024</p> 
+          <div class="d-flex align-items-center justify-content-center">
+            <a href="./register.html" class=" custom-btn d-flex align-items-center justify-content-center mt-3 registration-btn" id="rst index">Register</a>
+            <a href="./detail.html" class=" custom-btn d-flex align-items-center justify-content-center mt-3 details-btn" id="dts index">Details</a>
+          </div> 
+        </span>      
+    </section>
+    </div>
+  </div>
+</div>
+
+ <hr class="mx-auto w-75 justify-content-center mt-5" style="color: rgb(138, 74, 56)">
+
+ <!-- carousel -->
+ <section class="container-fluid mt-5">
+  <div class="row " data-aos="fade-up" data-aos-duration="1000">
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" >
+        <img src="images/elements/img1.jpg" class="d-block w-100 " alt="...">
+      </div>
+      <div class="carousel-item" >
+        <img src="images/elements/img7.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" >
+        <img src="images/elements/img12.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" >
+        <img src="images/elements/img6.jpg" class="d-block w-100 " alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/elements/img2.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+ </section>
+ <!-- carousel -->
+
+ <hr class="mx-auto w-75 justify-content-center mt-5" style="color: rgb(138, 74, 56)">
+
+  <!-- sub topic -->
+  <div class="container-fluid">
+  <section class="row" style="padding-top: 30px; padding-bottom: 30px; background-color: rgb( 15, 13, 13);" data-aos="fade-up" data-aos-duration="1000">
+      <!-- <div class="row d-flex mx-auto justify-content-center"> -->
+        <!-- Repeat this block for each image -->
+
+        <div class="col-md-1">
+
+        </div>
+
+        <div class="col-md-5 " >
+          <img src="./images/poster/poster9.png" class="card-img-top" alt="...">
+        </div>
+
+        
+        <div class="col-md-5 d-block justify-content-center index" style="margin-top: 13%;" >
+          <div class="row mx-auto justify-content-start d-flex">
+            <div class="col-md-7">
+              <a href="#" class="cta" >
+                <span >Certification</span>
+                <svg width="13px" height="10px"  viewBox="0 0 13 10">
+                  <path d="M1,5 L11,5"></path>
+                  <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        
+     
+       <div class="row mx-auto justify-content-end d-flex">
+        <div class="col-md-7">
+          <a href="#" class="cta">
+            <span>Program</span>
+            <svg width="13px" height="10px" viewBox="0 0 13 10">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </a>
+        </div>
+       </div>
+        
+        <div class="row mx-auto justify-content-start d-flex">
+          <div class="col-md-7">
+            <a href="schedule.html" class="cta">
+              <span>Schedule</span>
+              <svg width="13px" height="10px" viewBox="0 0 13 10">
+                <path d="M1,5 L11,5"></path>
+                <polyline points="8 1 12 5 8 9"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="row mx-auto justify-content-end d-flex">
+          <div class="col-md-7">
+            <a href="#" class="cta">
+              <span>KEYNOTE</span>
+              <svg width="13px" height="10px" viewBox="0 0 13 10">
+                <path d="M1,5 L11,5"></path>
+                <polyline points="8 1 12 5 8 9"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>  
+
+        <div class="row mx-auto justify-content-start d-flex">
+          <div class="col-md-7">
+            <a href="#" class="cta">
+              <span>Peer Review</span>
+              <svg width="13px" height="10px" viewBox="0 0 13 10">
+                <path d="M1,5 L11,5"></path>
+                <polyline points="8 1 12 5 8 9"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+       
+        <div class="row mx-auto justify-content-end d-flex">
+          <div class="col-md-7">
+            <a href="#" class="cta">
+              <span>บรรยากาศงาน</span>
+              <svg width="13px" height="10px" viewBox="0 0 13 10">
+                <path d="M1,5 L11,5"></path>
+                <polyline points="8 1 12 5 8 9"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-1">
+
+      </div>
+        <!-- Repeat end -->
+</section>
+</div>
+ <!-- sub topic -->
+
+  <hr class="mx-auto w-75 justify-content-center mt-5" style="color: rgb(138, 74, 56)">
+
+   <!-- live -->
+   <div class="container-fluid">
+    <section class="row text-center" style="margin-top: 90px; margin-bottom: 90px; " data-aos="fade-up" data-aos-duration="1000">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <p style="font-size: 30px;color: rgb(138, 74, 56) ">การถ่ายทอดสด (ตัวอย่าง)</p>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col">
+            <div class="ratio ratio-16x9">
+              <iframe class="embed-responsive-item" width="650" height="520" src="https://www.youtube.com/embed/G5IkwooS-to?si=lPg7b9wirU7FxFhD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="go-to-top" id="goToTop">
+    <a href="#">
+      <p>GO <br>TO<br>TOP</p>
+      <i class="fas fa-arrow-up"></i>
+    </a>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer_inner">
+        <div class="c-footer">
+          <div class="container-fluid">
+            <div class="row">
+            <!-- Work -->
+              <div class="col-12 col-md-6 mb-3"  style="margin-right: 30px;">
+                <hr class="mx-auto" style="color:#0F0D0D; width: 100%;">
+                <div class="newsletter">
+                  <h3 class="newsletter_title" style="font-weight: bold;">The 11th International Festival Of Arts and Culture (IFA:2024)</h3>
+                  <p style="font-size: 14px; text-align: center;">Jun 16th, 2024 at Music and Performing Arts Hall (4th Floor)</p>
+                  <p style="font-size: 14px;  text-align: center;">Prof.Dr.Saroj Buasri SWU Innovation Building Srinakharinwirot University</p>
+                </div>
+                <hr class="mx-auto" style="color:#0F0D0D; width: 100%;">
+              </div>
+              
+              <!-- menu -->
+              <div class="col-5 col-md-2">
+                <nav class="c-nav-tool">
+                  <h4 class="c-nav-tool_title" style="font-weight: bold;">Menu</h4>
+                  <ul class="c-nav-tool_list">
+                    <li>
+                      <a href="index.html" class="c-link">Home</a>
+                    </li>
+    
+                    <li>
+                      <a href="project.html" class="c-link">Project</a>
+                    </li>
+    
+                    <li>
+                      <a href="detail.html" class="c-link">Format & Details</a>
+                    </li>
+                    <li>
+                      <a href="register.html" class="c-link">Registration</a>
+                    </li>
+                    <li>
+                      <a href="announce.html" class="c-link">Announcement</a>
+                    </li>
+                    <li>
+                      <a href="performance.html" class="c-link">Creative Works</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+    
+              <!-- contact -->
+              <div class="col-7 col-md-3 ">
+                <nav class="c-nav-tool">
+                  <h4 class="c-nav-tool_title" style="font-weight: bold;">Contact</h4>
+                  <ul class="c-nav-tool_list">
+    
+                    <li class="c-nav-tool_item">
+                      <strong>Email :</strong> <a href=""><p >fofafest@g.swu.ac.th </p> </a>
+                    </li>
+    
+                    <li class="c-nav-tool_item">
+                      <strong>Tel :</strong><a href=""  style="text-indent: 5px;"><p>091-825-5866</p></a>
+                    </li>               
+                  </ul>
+                  <ul class="flex">
+                    <li>
+                      <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
+                          <path fill="none" d="M0 0h24v24H0z" />
+                          <path d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.989C18.343 21.129 22 16.99 22 12c0-5.523-4.477-10-10-10z" />
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
+                          <path fill="none" d="M0 0h24v24H0z" />
+                          <path d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.25a1.25 1.25 0 0 0-2.5 0 1.25 1.25 0 0 0 2.5 0zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z" />
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              
+            </div>
+          </div>  
+        
+          <div class="container">
+            <div class="row-6 justify-content-center">  
+              <div class="col-2 text-center">
+                <a href="./index.html"><img src="./images/LogoIFOA.png" style="max-width: 64px;" class="img-fluid"></a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="layout_item w-50">
+                  <ul style="display: flex; align-items: center; list-style-type: none; padding: 0;">
+                    <li style="margin-right: 5px;"> 
+                      <img src="./images/Srinakharinwirot_Logo_EN_Color.png" style="width: 54px;" class="img-fluid">
+                    </li>
+                    <li style="margin-right: 5px;"> 
+                      <img src="./images/LOGO-FOFA.png" style="width: 70px;" class="img-fluid">
+                    </li>
+                    <li>
+                      <!-- <img src="./images/S__30532871.jpg" style="width: 64px;"> -->
+                      <img src="./images/logo_cfadt.jpeg" style="width: 120px;" class="img-fluid">
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+  
+            <div class="row">
+              <div class="col-12 "> 
+                <div class="footer_copyright justify-content-end">
+                  <p>&copy; 2024 FACULTY OF FINE ARTS.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+     
+    </div>
+  </footer>
+
+       <script>
+        AOS.init();
+      </script>
+      
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script src="./js/script.js"></script>
+
+             <!-- multi-langue -->
+             <script src="https://cdn.jsdelivr.net/npm/i18next/dist/umd/i18next.js"></script>
+             <script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector/dist/umd/i18nextBrowserLanguageDetector.js"></script>
+             <script src="https://cdn.jsdelivr.net/npm/i18next-xhr-backend/dist/umd/i18nextXHRBackend.js"></script>
+             <script src="https://cdn.jsdelivr.net/npm/i18next-sprintf-postprocessor/dist/umd/i18nextSprintfPostProcessor.js"></script>
+
+             <script>
+        function changeLanguage(newLanguage) {
+              i18next.changeLanguage(newLanguage, (err, t) => {
+                if (err) return console.log('Error loading translation files:', err);
+                // Update textContent for each element
+                elementIds.forEach((elementId) => {
+                  document.getElementById(elementId).textContent = t(elementId);
+                });
+                // Update flag image
+                const flagImage = document.getElementById('languageFlag');
+                if (newLanguage === 'en') {
+                  flagImage.src = 'images/flags/engflag.png';
+                  document.body.style.fontFamily = "'Adam'"; 
+                } else {
+                  flagImage.src = 'images/flags/thaiflag.png';
+                  document.body.style.fontFamily = "'Kanit', sans-serif";
+                }
+              });
+            }  
+              const elementIds = ['Home', 'Project', 'Detail', 'Register', 'Announce', 'Creative Works', 'Contact', 'Visual Art', 'Music', 'Performing Arts', 'Visual Art2', 'Music2', 'Performing Arts2', 'Topic Index', 'Topic Index2', 'rst index', 'dts index'];
+             
+              i18next.use(i18nextBrowserLanguageDetector)
+                .use(i18nextXHRBackend)
+                .use(i18nextSprintfPostProcessor)
+                .init({
+                  debug: true,
+                  fallbackLng: 'en',
+                  backend: {
+                    loadPath: '/locales/{{lng}}.json'
+                  },
+                  interpolation: {
+                    escapeValue: false
+                  }
+                }, (err, t) => {
+                  if (err) return console.log('Error initializing i18next:', err);
+            
+                  // Update textContent for each element
+                  elementIds.forEach((elementId) => {
+                    document.getElementById(elementId).textContent = t(elementId);
+                  });
+                });
+            </script>
+            
+    </body>
+</html>

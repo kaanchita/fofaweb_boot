@@ -3,10 +3,10 @@
 {
     "Home": "Home",
     "Project": "Project",
-    "Detail": "Detail",
-    "Register": "Register",
-    "Announce": "Announce",
-    "Performance" : "Performance",
+    "Detail": "Format and Details of Work",
+    "Register": "Registration",
+    "Announce": "Announcement",
+    "Creative Works" : " Creative Works",
     "Contact":"Contact",
 
     "Visual Art": "Visual Art",
@@ -22,10 +22,10 @@
     "pma":"PERFORMING ARTS",
 
     "pj":"Project",
-    "dt":"Detail",
-    "rst":"Register",
-    "anu":"Announce",
-    "pfm":"Performance",
+    "dt":"Format and Details of Work",
+    "rst":"Registration",
+    "anu":"Announcement of Selected Candidates",
+    "pfm":"Creative Works",
     "ct":"Contact",
 
     "Topic Index" : "The 11th International Festival of Arts (IFA:2024)",

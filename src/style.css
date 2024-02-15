@@ -735,6 +735,9 @@ transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 } */
 
 .carousel-animate {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   height: 100vh;
   display: grid;
   place-items: center;
@@ -839,7 +842,7 @@ main {
   }
 }
 
-.nav {
+.nav-carousel {
   position: absolute;
   bottom: 2rem;
   left: 50%;

@@ -1,3 +1,5 @@
+const { Carousel } = require("bootstrap");
+
 // icon nav
 $(document).ready(function(){
     $('#nav-icon3').click(function(){
@@ -108,7 +110,7 @@ window.onload = function() {
 
   // bubble
 var mybubbles = document.getElementsByClassName("ani-bubble");
-var bubblecolors = [ "#CAD3D7", "#0F0D0D", "#9B1E2E" ];
+var bubblecolors = [ "#CAD3D7", "#9B1E2E" ];
 
 for (var i = 0; i < mybubbles.length; i++) {
 
@@ -146,6 +148,14 @@ $( document ).ready(function() {
   },50);
 });
 
+// Carousel
+const slider = document.querySelector(".slider");
+function activate(e) {
+  const items = document.querySelectorAll(".item");
+  e.target.matches(".next") && slider.append(items[0]);
+  e.target.matches(".prev") && slider.prepend(items[items.length - 1]);
+}
+document.addEventListener("click", activate, false);
 
 
   

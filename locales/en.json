@@ -3,7 +3,7 @@
 {
     "Home": "Home",
     "Project": "Project",
-    "Detail": "Format and Details of Work",
+    "Detail": "Format and Details",
     "Register": "Registration",
     "Announce": "Announcement",
     "Creative Works" : " Creative Works",
@@ -22,7 +22,7 @@
     "pma":"PERFORMING ARTS",
 
     "pj":"Project",
-    "dt":"Format and Details of Work",
+    "dt":"Format and Details",
     "rst":"Registration",
     "anu":"Announcement of Selected Candidates",
     "pfm":"Creative Works",

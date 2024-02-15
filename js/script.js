@@ -5,6 +5,18 @@ $(document).ready(function(){
     });
   });
 
+
+//pop up poster
+window.onload = function() {
+  // ตรวจสอบว่าโมดัลได้ถูกแสดงแล้วหรือไม่โดยใช้ localStorage
+  if (!localStorage.getItem('modalShown')) {
+      var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
+      myModal.show();
+      // เซ็ตค่าใน localStorage เพื่อบอกว่าโมดัลได้ถูกแสดงแล้ว
+      localStorage.setItem('modalShown', 'true');
+  }
+}
+
   // go to top
   window.onscroll = function() {scrollFunction()};
 

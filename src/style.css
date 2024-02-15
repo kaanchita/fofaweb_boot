@@ -796,17 +796,21 @@ main {
   width: min(30vw, 400px);
   position: absolute;
   top: 50%;
-  left: 3rem;
+  left: 200px;
   transform: translateY(-50%);
   font: 400 0.85rem helvetica, sans-serif;
   color: white;
   text-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
   opacity: 0;
   display: none;
+  
 
   & .title {
-    font-family: "arial-black";
+    font-family: "Adam";
+    -webkit-text-stroke-width: 2px;
     text-transform: uppercase;
+  
+
   }
 
   & .description {

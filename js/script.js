@@ -148,19 +148,19 @@ window.onload = function() {
   //     myModal.show();
   //     localStorage.setItem('modalShown', 'true');
   // }
-  // var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
-  //     myModal.show();
-  //     localStorage.setItem('modalShown', 'true');
+  var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
+      myModal.show();
+      localStorage.setItem('modalShown', 'true');
   
   // ตรวจสอบว่าโมดัลยังไม่ได้ถูกแสดงหรือไม่โดยใช้ sessionStorage
-if (!sessionStorage.getItem('modalShown')) {
-  window.onload = function() {
-    var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
-    myModal.show();
-    // เซ็ตค่าใน sessionStorage เพื่อบอกว่าโมดัลได้ถูกแสดงแล้ว
-    sessionStorage.setItem('modalShown', 'true');
-  }
-}
+// if (!sessionStorage.getItem('modalShown')) {
+//   window.onload = function() {
+//     var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
+//     myModal.show();
+//     // เซ็ตค่าใน sessionStorage เพื่อบอกว่าโมดัลได้ถูกแสดงแล้ว
+//     sessionStorage.setItem('modalShown', 'true');
+//   }
+// }
 
 }
 

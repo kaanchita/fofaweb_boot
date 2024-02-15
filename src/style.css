@@ -177,7 +177,7 @@ body {
 }
 .console-container {
  
-  font-size:50px;
+  font-size:55px;
   font-weight: bold;
   /* text-align:center; */
   height:750px;
@@ -201,8 +201,8 @@ body {
 
 /* welcome Text */
 
-/* bubble */
 
+/* bubble */
 #background-animation-container {
   background-color: #fff;
   height: 100%;
@@ -251,7 +251,6 @@ body {
 /* card */
 .card {
   border-radius: 20px;
- 
 }
 /* card */
 
@@ -305,20 +304,37 @@ body {
     letter-spacing: 5px;
     -webkit-text-stroke: 1px #9B1E2E;
   }
+  .console-container {
+    font-size:40px;
+    height:720px;
+  }
+  .ani-bubble {
+    border-radius: 20px;
+    height: 10px;
+    top: 100%;
+    width: 50px;
+  }
+ 
 }
-
-
 /* performance */
+
 @media (max-width: 575.98px) { 
 .btn {
   font-size: 16px!important;
   padding: 1.5rem!important;
 }
 .console-container {
-  font-size: 20px;
+  font-size:30px;
+  height:500px;
+}
+.ani-bubble {
+  border-radius: 10px;
+  height: 5px;
+  top: 100%;
+  width: 50px;
+}
 }
 
- }
 
 /* GALLERY */
 .wrapper {

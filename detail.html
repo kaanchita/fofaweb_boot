@@ -56,10 +56,18 @@
 
 </head>
 <body>
-  <header class="sticky-top" >
-    <nav class="navbar navbar-expand-lg shadow">
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-sm" style="background-color: #0F0D0D;">
+      <div class="container justify-content-end">
+      <p style = "color: #CAD3D7 ; -webkit-text-stroke: 2px #CAD3D7 ; font-size: 28px; font-family: 'Adam'; font-weight: bold; margin-bottom: 2px;">
+        INTERNATIONAL FESTIVAL OF ARTS 2024
+      </p>
+    </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-sm shadow-sm" style="border-top: 1.5px solid #0F0D0D; border-bottom: 1.5px solid #0F0D0D; ">
      <div class="container">
-      <a class="navbar-brand" href="./index.html"><img src="./images/Asset_LogoIFA_Red.png" class="img-fluid" style="max-width: 64px;" alt="logo"></a>
+      <a class="navbar-brand" href="./index.html"><img src="./images/LogoIFOA.png" class="img-fluid" style="max-width: 64px;" alt="logo"></a>
        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
          <div id="nav-icon3">
            <span></span>
@@ -69,58 +77,53 @@
          </div>
        </button>
        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-         <ul class="navbar-nav ml-auto mb-2 mb-lg-0 ">
-           <li class="nav-item">
-             <a class="nav-link" id="Home" href="./index.html">หน้าหลัก</a>
+         <ul class="navbar-nav ml-auto mb-2 mb-lg-0 mt-3">
+           <li class="nav-item hoverelement">
+             <a class="nav-link" id="Home" href="./index.html">Home</a>
            </li>
-           <li class="nav-item">
-             <a class="nav-link" id="Project" href="./project.html">โครงการ</a>
+           <li class="nav-item hoverelement">
+             <a class="nav-link" id="Project" href="./project.html">Project</a>
            </li>
-           <li class="nav-item dropdown">
-             <a class="nav-link dropdown-toggle" id="Detail" href="./detail.html" >
-               รูปแบบผลงานและรายละเอียด
+           <li class="nav-item dropdown hoverelement">
+             <a class="nav-link dropdown-toggle" id="Detail" href="./detail-en.html" >
+              Format & Details
              </a>
              <ul class="dropdown-menu">
-               <li><a class="dropdown-item" id="Visual Art"  href="#">ทัศนศิลป์และการออกแบบ</a></li>
-               <li><hr class="dropdown-divider"  ></li>
-               <li><a class="dropdown-item"  id= "Music" href="#">ดนตรี</a></li>
-               <li><hr class="dropdown-divider"></li>
-               <li><a class="dropdown-item" id="Performing Arts" href="#">ศิลปะการแสดงและนาฏศิลป์</a></li>
+               <li><a class="dropdown-item" id="Visual Art"  href="#">Visual Art</a></li>
+               <li><a class="dropdown-item"  id= "Music" href="#">Music</a></li>
+               <li><a class="dropdown-item" id="Performing Arts" href="#">Performing Arts</a></li>
              </ul>
            </li>
-           <li class="nav-item">
-             <a class="nav-link" id="Register" href="./register.html">ลงทะเบียนส่งผลงาน</a>
+           <li class="nav-item hoverelement">
+             <a class="nav-link" id="Register" href="./register.html">Registration</a>
            </li>
-           <li class="nav-item">
-             <a class="nav-link" id="Announce" href="./announce.html">ประกาศรายชื่อผู้ได้รับคัดเลือก</a>
+           <li class="nav-item hoverelement">
+             <a class="nav-link" id="Announce" href="./announce.html">Announcement</a>
            </li>
-           <li class="nav-item dropdown">
-             <a class="nav-link dropdown-toggle" id="Performance" href="./performance.html">
-               ผลงานสร้างสรรค์
+           <li class="nav-item dropdown hoverelement">
+             <a class="nav-link dropdown-toggle" id="Creative Works" href="./performance.html">
+              Creative Works
              </a>
              <ul class="dropdown-menu">
-               <li><a class="dropdown-item" href="performance.html#section1" id="Visual Art2">ทัศนศิลป์และการออกแบบ</a></li>
-               <li><hr class="dropdown-divider"></li>
-               <li><a class="dropdown-item"  href="performance.html#section2" id= "Music2">ดนตรี</a></li>
-               <li><hr class="dropdown-divider"></li>
-               <li><a class="dropdown-item"  href="performance.html#section3" id="Performing Arts2">ศิลปะการแสดง และนาฏศิลป์</a></li>
+               <li><a class="dropdown-item" href="performance.html#section1" id="Visual Art2">Visual Art</a></li>
+               <li><a class="dropdown-item"  href="performance.html#section2" id= "Music2">Music</a></li>
+               <li><a class="dropdown-item"  href="performance.html#section3" id="Performing Arts2">Performing Arts</a></li>
              </ul>
            </li>
-           <li class="nav-item">
-             <a class="nav-link" id="Contact" href="mailto:fofaswu@g.swu.ac.th">ติดต่อสอบถาม</a>
+           <li class="nav-item hoverelement">
+             <a class="nav-link" id="Contact" href="mailto:fofaswu@g.swu.ac.th">Contact</a>
            </li>
 
            <!-- multi-langue -->
            <li class="nav-item dropdown">
-             <a class="nav-link dropdown-toggle"  href="">
-               <img src="./images/thaiflag.png" class="img-fluid m-2" style="max-width: 20px;">
-             </a>
-             <ul class="dropdown-menu">
-               <li><a class="dropdown-item" href="#" onclick="changeLanguage('th')"><img src="./images/thaiflag.png" class="img-fluid m-2" style="max-width: 20px;">ไทย</a></li>
-               <li><hr class="dropdown-divider"></li>
-               <li><a class="dropdown-item" href="#" onclick="changeLanguage('en')" ><img src="./images/engflag.png" class="img-fluid m-2" style="max-width: 20px;">English</a></li>
-             </ul>
-           </li>
+            <a class="nav-link dropdown-toggle" href="">
+              <img id="languageFlag" src="images/flags/engflag.png" class="img-fluid m-2" style="max-width: 20px;">
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#" onclick="changeLanguage('th')"><img src="images/flags/thaiflag.png" class="img-fluid m-2" style="max-width: 20px;">Thai</a></li>
+              <li><a class="dropdown-item" href="#" onclick="changeLanguage('en')"><img src="images/flags/engflag.png" class="img-fluid m-2" style="max-width: 20px;">English</a></li>
+            </ul>
+          </li>
            <!-- multi-langue -->
         
          </ul>

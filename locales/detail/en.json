@@ -1,5 +1,11 @@
 {
+
+"d-tab1":"Visual Art & Design",
+"d-tab2":"Music",
+"d-tab3":"Performing Arts",
+
     "Qualifications-Visual": "Qualifications of creative work : Visual arts and Design",
+    "VAD":"VISUAL ARTS & DESIGN",
     "Type of creative work-visual" : "Type of creative work",
     "Product design" : "Product design :",    
     "Jewelry design, Fashion design, Packaging design":"Jewelry design, Fashion design, Packaging design",
@@ -10,6 +16,7 @@
     "The Creative presentation format-visual":"The Creative presentation format ",
     "Photos-visual":"1. Photos",
     "Video Art-visual":"2. Video Art",
+    
     "Presenter of creative work submits information-visual":"Presenter of creative work submits information",
     "Concept Paper-Visual":"1. Concept Paper (form of IFA-2024)",
     "creative work2-visual":"2. Photos of creative work: size 16:9, resolution not less than 720p (Horizontal image)",

@@ -102,7 +102,7 @@ $(document).ready(function(){
 
   // bubble
 var mybubbles = document.getElementsByClassName("ani-bubble");
-var bubblecolors = [ "#CAD3D7", "#0F0D0D", "#9B1E2E" ];
+var bubblecolors = [ "#CAD3D7", "#9B1E2E" ];
 
 for (var i = 0; i < mybubbles.length; i++) {
 

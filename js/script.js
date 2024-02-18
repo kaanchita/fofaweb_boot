@@ -143,14 +143,14 @@ $( document ).ready(function() {
 //pop up poster
 window.onload = function() {
   
-  if (!localStorage.getItem('modalShown')) {
-      var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
-      myModal.show();
-      localStorage.setItem('modalShown', 'true');
-  }
-  // var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
+  // if (!localStorage.getItem('modalShown')) {
+  //     var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
   //     myModal.show();
   //     localStorage.setItem('modalShown', 'true');
+  // }
+  var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
+      myModal.show();
+      localStorage.setItem('modalShown', 'true');
   
   
 

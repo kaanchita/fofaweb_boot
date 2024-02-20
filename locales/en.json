@@ -9,13 +9,17 @@
     "Creative Works" : " Creative Works",
     "Contact":"Contact",
 
-    "Visual Art": "Visual Art",
+    "Visual Art": "Visual Art & Design",
     "Music":"Music",
-    "Performing Arts":"Performing Arts",
+    "Performing Arts":"Performing Arts & Dance",
 
-    "Visual Art2": "Visual Art",
+    "Visual Art2": "Visual Art & Design",
     "Music2":"Music",
-    "Performing Arts2":"Performing Arts",
+    "Performing Arts2":"Performing Arts & Dance",
+
+    "Visual Art3": "Visual Art & Design",
+    "Music3":"Music",
+    "Performing Arts3":"Performing Arts & Dance",
 
     "va":"VISUAL ART",
     "ms":"MUSIC",
@@ -48,10 +52,6 @@
     "objectives4" : "4. To create an international network of arts and culture to preserve and strengthen cultural heritage, as well as create opportunities for academic cooperation in the future.",
 
    
-
-
-
-
 
 
 

@@ -371,43 +371,6 @@ body {
       filter: grayscale(100%);
     }
 
-    /* .social {
-      position: absolute;
-      left: 60px;
-      top: 0;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: distribute;
-      justify-content: space-around;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      width: 180px;
-      height: 64px;
-      border-radius: 80px;
-    }
-
-    .social i:nth-of-type(1) {
-      -webkit-transition-delay: 0.4s;
-      transition-delay: 0.4s;
-    }
-
-    .social i:nth-of-type(2) {
-      -webkit-transition-delay: 0.3s;
-      transition-delay: 0.3s;
-    }
-
-    .social i:nth-of-type(3) {
-      -webkit-transition-delay: 0.2s;
-      transition-delay: 0.2s;
-    }
-
-    .social i:nth-of-type(4) {
-      -webkit-transition-delay: 0.1s;
-      transition-delay: 0.1s;
-    } */
-
     &:hover i {
       opacity: 1;
       -webkit-transform: scale(1);
@@ -465,6 +428,72 @@ body {
   }
 }
 /* branch */
+
+/* text-video */
+.body-video {
+  display: flex;
+  /* align-items: center; */
+  /* background: rgb(225, 53, 16 ); */
+  /* justify-content: center; */
+  overflow: hidden;
+  padding-top: 100px;
+}   
+
+.perspective-text {
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 55px;
+  font-weight: 900;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+}
+
+.perspective-line {
+  position: relative;
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+
+  p {
+    margin: 0;
+    height: 50px;
+    line-height: 50px;
+    transition: all 0.5s ease-in-out;
+  }
+}
+
+.perspective-line:nth-child(odd) {
+  transform: skew(60deg, -30deg) scaleY(0.667);
+}
+
+.perspective-line:nth-child(even) {
+  transform: skew(0deg, -30deg) scaleY(1.55);
+}
+
+.perspective-line:hover p{
+  transform: translate(0, -50px);
+}
+
+.perspective-line:nth-child(1) {
+  left: 29px;
+}
+
+.perspective-line:nth-child(2) {
+  left: 58px;
+}
+
+.perspective-line:nth-child(3) {
+  left: 87px;
+}
+
+.perspective-line:nth-child(4) {
+  left: 116px;
+}
+
+.perspective-line:nth-child(5) {
+  left: 145px;
+}
+/* text-video */
 
 
 /* carousel */
@@ -540,6 +569,14 @@ body {
     top: 100%;
     width: 50px;
   }
+  .navbar p {
+    font-size: 24px !important; 
+  }
+ 
+
+  .navbar-brand img {
+    max-width: 50px !important;  
+  }
  
 }
 /* performance */
@@ -560,6 +597,21 @@ body {
   width: 50px;
 }
 }
+
+@media (max-width: 576px) {
+  .navbar p {
+    font-size: 16px !important; 
+  }
+  .nav-pills .nav-link {
+   font-size: 10px !important;
+  }
+
+  .navbar-brand img {
+    max-width: 48px !important;  
+  }
+
+}
+
 
 /* black and white */
 .grayscale-image {

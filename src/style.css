@@ -1,6 +1,6 @@
 body {
     /* margin-top:20px; */
-    font-family: 'Adam';
+    /* font-family: 'Adam'; */
     /* font-family: 'Kanit', sans-serif; */
     background-color: #fff;
 }
@@ -12,6 +12,7 @@ body {
 
 .navbar {
   background-color: #fff;
+  
 }
 
 .navbar .nav-link {
@@ -46,7 +47,7 @@ body {
 
 .nav-pills .nav-link {
     border-radius: 25px; 
-    font-weight: bold;
+    font-weight: 400;
     color: #0F0D0D;
     border: solid 1px #0F0D0D;
     margin-right: 20px;
@@ -720,6 +721,7 @@ body {
 /* GALLERY */
 
 /* Detail Page */
+
 /* detail Animation */
 @keyframes slideIn {
   from {

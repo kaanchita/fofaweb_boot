@@ -9,7 +9,10 @@ body {
   opacity: 0.9; /* ปรับค่า opacity ตามต้องการ */
   transition: opacity 0.3s ease; /* เพิ่ม transition เพื่อให้การเปลี่ยนแปลง opacity เนียนขึ้น */
 }
-
+#navbar-second {
+  opacity: 80%;
+  transition: opacity 0.3s ease; /* เพิ่ม transition เพื่อให้การเปลี่ยนแปลง opacity เนียนขึ้น */
+  }
 .navbar {
   background-color: #fff;
 }

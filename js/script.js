@@ -166,5 +166,12 @@ function activate(e) {
 document.addEventListener("click", activate, false);
 
 
-  
+// detail animation
+document.querySelectorAll('.nav-link').forEach(item => {
+  item.addEventListener('click', event => {
+    document.querySelector(item.getAttribute('data-bs-target')).classList.add('show', 'active');
+  });
+});
+
+
  

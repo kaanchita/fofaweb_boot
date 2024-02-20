@@ -5,16 +5,6 @@ body {
     /* font-family: 'Kanit', sans-serif; */
     background-color: #fff;
 }
-/* CSS เพื่อซ่อน header */
-/* .hidden {
-  transform: translateY(-100%);
-  transition: transform 0.9s ease-in-out;
-}
-.open {
-  transform: translateY(0);
-  transition: transform 0.9s ease-in-out;
-
-} */
 
 .sticky-top.scrolling {
   opacity: 0.9; /* ปรับค่า opacity ตามต้องการ */
@@ -457,6 +447,23 @@ body {
   transition: all 0.35s;
 }
 /* GALLERY */
+
+/* Detail Page */
+/* detail Animation */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.tab-pane {
+  animation: slideIn 1s forwards;
+}
+
+
+/* detail Animation End */
 
 /* main content */
 

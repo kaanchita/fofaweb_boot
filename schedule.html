@@ -35,6 +35,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css
     
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');     
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
       @font-face {
        font-family: 'Adam';
        src: url('fonts/Adam-Bold.ttf');
@@ -90,13 +92,18 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css
               Format & Details
              </a>
              <ul class="dropdown-menu">
-               <li><a class="dropdown-item" id="Visual Art"  href="#">Visual Art</a></li>
+               <li><a class="dropdown-item" id="Visual Art"  href="#">Visual Art & Design</a></li>
                <li><a class="dropdown-item"  id= "Music" href="#">Music</a></li>
-               <li><a class="dropdown-item" id="Performing Arts" href="#">Performing Arts</a></li>
+               <li><a class="dropdown-item" id="Performing Arts" href="#">Performing Arts & Dance</a></li>
              </ul>
            </li>
-           <li class="nav-item hoverelement">
-             <a class="nav-link" id="Register" href="./register.html">Registration</a>
+           <li class="nav-item dropdown hoverelement">
+             <a class="nav-link dropdown-toggle" id="Register" href="">Registration</a>
+             <ul class="dropdown-menu">
+             <li><a class="dropdown-item" href="https://forms.gle/Dsww6jcWwqMVUor7A" id="Visual Art3">Visual Art & Design</a></li>
+             <li><a class="dropdown-item"  href="https://forms.gle/7DRdxVvbhvqgKGy27" id= "Music3">Music</a></li>
+             <li><a class="dropdown-item"  href="https://forms.gle/qmr3jN7hNRuqQYWr7" id="Performing Arts3">Performing Arts & Dance</a></li>
+           </ul>
            </li>
            <li class="nav-item hoverelement">
              <a class="nav-link" id="Announce" href="./announce.html">Announcement</a>
@@ -106,9 +113,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css
               Creative Works
              </a>
              <ul class="dropdown-menu">
-               <li><a class="dropdown-item" href="performance.html#section1" id="Visual Art2">Visual Art</a></li>
+               <li><a class="dropdown-item" href="performance.html#section1" id="Visual Art2">Visual Art & Design</a></li>
                <li><a class="dropdown-item"  href="performance.html#section2" id= "Music2">Music</a></li>
-               <li><a class="dropdown-item"  href="performance.html#section3" id="Performing Arts2">Performing Arts</a></li>
+               <li><a class="dropdown-item"  href="performance.html#section3" id="Performing Arts2">Performing Arts & Dance</a></li>
              </ul>
            </li>
            <li class="nav-item hoverelement">
@@ -288,7 +295,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css
          <script src="https://cdn.jsdelivr.net/npm/i18next-sprintf-postprocessor/dist/umd/i18nextSprintfPostProcessor.js"></script>
        
          <script>
-           function changeLanguage(newLanguage) {
+            function changeLanguage(newLanguage) {
               i18next.changeLanguage(newLanguage, (err, t) => {
                 if (err) return console.log('Error loading translation files:', err);
                 // Update textContent for each element
@@ -299,13 +306,13 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css
                 const flagImage = document.getElementById('languageFlag');
                 if (newLanguage === 'en') {
                   flagImage.src = 'images/flags/engflag.png';
-                  document.body.style.fontFamily = "'Adam'"; 
-                  document.body.style.fontWeight = "bold";
+                  document.body.style.fontFamily = "'Poppins', sans-seri"; 
+                 
                 } else {
                   flagImage.src = 'images/flags/thaiflag.png';
                   document.body.style.fontFamily = "'Kanit', sans-serif";
-                  document.body.style.fontSize = "18px";
-                  document.body.style.fontWeight = "2px";
+                  document.body.style.fontSize = "15px";
+                
                 }
               });
             }  

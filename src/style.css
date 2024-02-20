@@ -17,7 +17,7 @@ body {
 
 .navbar .nav-link {
   color:  #9B1E2E !important;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 17px;
 
 }
@@ -32,7 +32,7 @@ body {
 
 .navbar-nav .dropdown-item {
     color:  rgb(202, 220, 215) !important;
-    font-weight: bold;  
+    font-weight: 500;  
   }
 .navbar-nav .dropdown-item:hover {
     color:  #9B1E2E  !important;

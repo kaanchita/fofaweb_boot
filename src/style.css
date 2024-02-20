@@ -608,7 +608,7 @@ transition: background-color 0.3s, color 0.3s, border-color 0.3s;
   /* font-weight: bold;  */
   -webkit-text-stroke-width: 2px;
   color: #0F0D0D;
-  text-shadow: 4px 8px 5px rgba(0, 0, 0, 0.5);
+  text-shadow: 3px 5px 3px rgba(0, 0, 0, 0.5);
 }
 
 .cta {

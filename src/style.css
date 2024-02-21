@@ -6,8 +6,8 @@ body {
 }
 
 .sticky-top.scrolling {
-  opacity: 0.9; /* ปรับค่า opacity ตามต้องการ */
-  transition: opacity 0.3s ease; /* เพิ่ม transition เพื่อให้การเปลี่ยนแปลง opacity เนียนขึ้น */
+  opacity: 0.9; 
+  transition: opacity 0.3s ease; 
 }
 
 .navbar {
@@ -340,6 +340,7 @@ body {
       font-size: 45px;
       font-weight: 700;
       color: #fff;
+      text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
     }
 
     .fa-arrow-right {
@@ -826,7 +827,6 @@ margin-right: 10px;
   transition: transform 0.3s;
 }
 
-
 /* template paper  */
 .template-text {
   font-size: 40px;
@@ -886,9 +886,8 @@ transition: background-color 0.3s, color 0.3s, border-color 0.3s;
   text-decoration: none;
    /* font-size: 50px; */
   /* font-weight: bold;  */
-  -webkit-text-stroke-width: 2px;
   color: #0F0D0D;
-  text-shadow: 3px 5px 3px rgba(0, 0, 0, 0.5);
+  text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.5);
 }
 
 .cta {
@@ -1067,7 +1066,7 @@ main {
     left: calc(50% + 440px);
   }
   &:nth-child(6) {
-    left: calc(50% + 660px);
+    /* left: calc(50% + 660px); */
     opacity: 0;
   }
 }

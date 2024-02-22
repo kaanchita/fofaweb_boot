@@ -620,6 +620,11 @@ body {
   filter: grayscale(100%);
 }
 
+.grayscale-image:hover {
+  transition: filter 0.5s ease;
+  filter: none; /* ยกเลิกเอฟเฟกต์ grayscale ขณะโฮเวอร์ */
+  opacity: 80%;
+}
 
 /* GALLERY */
 .wrapper {
@@ -722,6 +727,67 @@ body {
 /* GALLERY */
 
 /* Detail Page */
+.grid-wrapper > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.grid-wrapper > div > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.grid-wrapper {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-auto-rows: 200px;
+	grid-auto-flow: dense;
+}
+.grid-wrapper .wide {
+	grid-column: span 2;
+
+
+}
+.grid-wrapper .tall {
+	grid-row: span 2;
+}
+.image-overlay1 {
+  position: absolute;
+  top: 100px;
+  right: 20px;
+  transform: translate(-50%, -50%);
+  padding: 5px 20px; /* ปรับขนาดของพื้นที่ข้อความและขอบ */
+  border-radius: 50px; /* ปรับรูปร่างของขอบ */
+  border: 2px solid #0F0D0D;
+  color: #000; /* ปรับสีของข้อความ */
+  font-weight: bold; /* ปรับแบบอักษร */
+  font-size: 54px;
+  background-color: #ffffffca;
+  font-style: italic;
+  font-family: 'Adam';
+  -webkit-text-stroke: 4px #0F0D0D;
+  letter-spacing: 6px; /* กำหนดระยะห่างระหว่างตัวอักษรเป็น 2px */
+}
+.image-overlay2 {
+  position: absolute;
+  top: 220px;
+  right: 200px;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px; /* ปรับขนาดของพื้นที่ข้อความและขอบ */
+  border-radius: 50px; /* ปรับรูปร่างของขอบ */
+  border: 2px solid #0F0D0D;
+  color: #000; /* ปรับสีของข้อความ */
+  font-weight: bold; /* ปรับแบบอักษร */
+  font-size: 54px;
+  background-color: #ffffffca;
+  font-style: italic;
+  font-family: 'Adam';
+  -webkit-text-stroke: 4px #0F0D0D;
+  
+}
 
 /* detail Animation */
 @keyframes slideIn {

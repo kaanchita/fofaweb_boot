@@ -550,37 +550,57 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css
          
     </div>
          
-    
-         
     <div class="row justify-content-start d-flex" data-aos="fade-left" data-aos-duration="1000">
          
     <div class="col-md-7 mx-auto mb-4 mt-4">
-         
-    <a href="schedule.html" class="cta">
-         
-    <span>Schedule</span>
-         
-    <svg width="13px" height="10px" viewBox="0 0 13 10">
-         
-    <path d="M1,5 L11,5"></path>
-         
-    <polyline points="8 1 12 5 8 9"></polyline>
-         
-    </svg>
-         
-    </a>
-         
-    </div>
+    <div class="body-schedule" >
+          <a class="cta button" onclick="document.body.classList.add('active')">
+              <span >Schedule</span>
+              <svg width="13px" height="10px" viewBox="0 0 13 10">
+                <path d="M1,5 L11,5"></path>    
+                <polyline points="8 1 12 5 8 9"></polyline> 
+                </svg>
+            </a>
+      <div class="wrapper-schedule" >
+          <div class="popup" >
+              <div class="popup-inside">
+                  <div class="bgs">
+                      <div class="bg"></div>
+                      <div class="bg bg2"></div>
+                      <div class="bg bg3"></div>
+                      <div class="bg bg4"></div>
+                      <div class="bg bg5"></div>
+                      <div class="bg bg6"></div>
+                  </div>
+              </div>
+              <div class="content-schedule" >
+                  <div class="content-schedule-wrapper" >
+                      <h1 style="text-align: center; font-size: 18px;">June 16, 2024</h1>
+                      <p>09.00 a.m. – 09.30 a.m</p>
+                      <div style="text-indent: 2.5em; margin-top: -20px; padding-bottom: 20px;"   >Opening ceremony of the 11th International Festival of Arts (online).</div>
+                      <p>9:30 a.m. onwards</p>
+                      <div style="text-indent: 2.5em; margin-top: -20px; padding-bottom: 15px;">presentation of international artistic creations: The 11th International Festival of Arts.</div>
+                      <div style="text-indent: 4em; padding-bottom: 15px;">- Performing arts </div>
+                      <div style="text-indent: 4em; padding-bottom: 15px;">- Music</div>
+                      <p class="try-again" style="text-align: center;" onclick="document.body.classList.remove('active')">ok</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
          
     </div>
     <div class="row justify-content-end d-flex" data-aos="fade-right" data-aos-duration="1000">
          
-    <div class="col-md-7 d-flex justify-content-end mb-4 mt-4">
+    <div class="col-md-7 d-flex justify-content-end mb-4 mt-4" >
     <a href="#" class="cta">
          
     <span>KEYNOTE</span>
          
-    <svg width="13px" height="10px" viewBox="0 0 13 10">
+    <svg width="13px" height="10px" viewBox="0 0 13 10" >
          
     <path d="M1,5 L11,5"></path>
          
@@ -590,6 +610,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css
     </div>
          
     </div>
+    
     <div class="row justify-content-start d-flex">
          
     <div class="col-md-7 mx-auto mb-4 mt-4" data-aos="fade-right" data-aos-duration="1000">
@@ -829,9 +850,12 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css
                 }
               });
             }  
-              const elementIds = ['Home', 'Project', 'Detail', 'Register', 'Announce', 'Creative Works', 'Contact', 'Visual Art', 'Music', 'Performing Arts',
-               'Visual Art2', 'Music2', 'Performing Arts2','Visual Art3', 'Music3', 'Performing Arts3', 'Topic Index', 'Topic Index2', 'rst index', 'dts index'];
-             
+              const elementIds = ['Home', 'Project', 'Detail', 'Register', 'Announce',
+               'Creative Works', 'Contact', 'Visual Art', 'Music', 'Performing Arts',
+               'Visual Art2', 'Music2', 'Performing Arts2','Visual Art3', 'Music3', 
+               'Performing Arts3', 'Topic Index', 'Topic Index2', 'rst index', 'dts index',
+              'June 16, 2024','time1','time1.1','time2.2','time-performing','time-music'];
+
               i18next.use(i18nextBrowserLanguageDetector)
                 .use(i18nextXHRBackend)
                 .use(i18nextSprintfPostProcessor)

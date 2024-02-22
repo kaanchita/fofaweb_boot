@@ -5,332 +5,349 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
 
-.description {
-  opacity: 0;
-  font-size: 18px;
-  color: #792626;
-  will-change: transform;
-  -webkit-transform: scale(0.1);
-  transform: scale(0.1);
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+        
+.color{
+    background: linear-gradient(to right, #e1e0ff, #d7fadd);
 }
 
-.h2-custom {
-  pointer-events: none;
+.body-schedule{
+    background: #191919;
+    background: white;
+    user-select: none;
+    letter-spacing: 3px;
+    color: #b9b9b9;
 }
 
-.body-branch {
-  background-color: #e6b904;
-  width: 100vw;
-  height: 100vh;
+h1{
+    padding-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 16px;
 }
 
-.container-branch {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+p{
+    padding-bottom: 15px;
+}
 
-  .card {
+p:last-of-type{
+    padding-bottom: 0;
+}
+
+.try-again{
+    cursor: pointer;
     position: relative;
-    width: 500px;
-    height: 220px;
-    background-color: #fff;
-    overflow: hidden;
-    margin-bottom: 10px;
-
-    &:before {
-      content: "";
-      z-index: 99;
-      position: absolute;
-      top: -10px;
-      left: 32px;
-      display: block;
-      width: 16px;
-      height: 18px;
-      border-radius: 16px;
-      background-color: #7a6a2a;
-    }
-    &:after {
-      content: "";
-      z-index: 99;
-      position: absolute;
-      bottom: -10px;
-      left: 32px;
-      display: block;
-      width: 16px;
-      height: 16px;
-      border-radius: 16px;
-      background-color: #e6e5e1;
-    }
-    ul {
-      z-index: 99;
-      position: absolute;
-      left: 39px;
-      top: 5px;
-      list-style-type: none;
-      li {
-        width: 2px;
-        height: 2px;
-        border-radius: 2px;
-        margin: 6px 0;
-        background-color: #d9ae05;
-      }
-    }
-    h2 {
-      z-index: 99;
-      font-family: "Poppins", sans-serif;
-      position: absolute;
-      top: -22px;
-      /* bottom: 0; */
-      right: 130px;
-      font-size: 45px;
-      font-weight: 700;
-      color: #cb3030;
-    }
-
-    .fa-arrow-right {
-      z-index: 100;
-      position: absolute;
-      right: 75px;
-      bottom: 25px;
-      font-size: 40px;
-      cursor: pointer;
-    }
-    p {
-      z-index: 99;
-      position: absolute;
-      top: 20px;
-      right: 70px;
-      color: #5f0909;
-      opacity: 0.7;
-      font-size: 12px;
-      letter-spacing: 1px;
-      writing-mode: vertical-lr;
-      -webkit-transition: all 0.2s ease;
-      transition: all 0.2s ease;
-    }
-    .pic {
-      z-index: 100;
-      width: 400px;
-      height: 220px;
-      background-image: url("images/elements/ทัศนศิลป์.jpg");
-      background-size: 100% 100%;
-      filter: grayscale(100%);
-    }
-
-    .social {
-      position: absolute;
-      left: 60px;
-      top: 0;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: distribute;
-      justify-content: space-around;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      width: 180px;
-      height: 64px;
-      border-radius: 80px;
-    }
-
-    .social i:nth-of-type(1) {
-      -webkit-transition-delay: 0.4s;
-      transition-delay: 0.4s;
-    }
-
-    .social i:nth-of-type(2) {
-      -webkit-transition-delay: 0.3s;
-      transition-delay: 0.3s;
-    }
-
-    .social i:nth-of-type(3) {
-      -webkit-transition-delay: 0.2s;
-      transition-delay: 0.2s;
-    }
-
-    .social i:nth-of-type(4) {
-      -webkit-transition-delay: 0.1s;
-      transition-delay: 0.1s;
-    }
-
-    &:hover i {
-      opacity: 1;
-      -webkit-transform: scale(1);
-      transform: scale(1);
-    }
-
-    button {
-      position: absolute;
-      right: 14px;
-      bottom: 14px;
-      width: 30px;
-      height: 30px;
-      background-color:  #722309;
-      border: none;
-      border-radius: 30px;
-      cursor: pointer;
-      outline: none;
-      transition: all 0.3s ease;
-      mix-blend-mode: hard-light;
-
-      i {
-        font-size: 3rem;
-      }
-    }
-
-    &:hover button {
-      transform: scale(16.5);
-    }
-
-    &:hover p {
-      color: #db6060;
-    }
-
-    &:hover .pic {
-      filter: grayscale(0);
-    }
-  }
-
-  .card2 {
-    .pic {
-      background-image: url("images/elements/img3.jpg");
-    }
-    button {
-      background-color: #2b26c3;
-    }
-  }
-
-  .card3 {
-    .pic {
-      background-image: url("images/elements/img14.jpg");
-    }
-    button {
-      background-color: #9B1E2E;
-    }
-  }
+    font-size: 16px;
 }
 
-/* .dr {
-  position: absolute;
-  bottom: 16px;
-  right: 16px;
-  width: 100px;
-} */
+.try-again:after{
+    content: '';
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    height: 1px;
+    top: 100%;
+    background: #ebebeb;
+    margin-top: 8px;
+    transition: all 0.3s ease;
+}
 
+.try-again:hover:after{
+    left: 40%;
+    right: 40%;
+}
 
+.wrapper-schedule{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button{
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    -webkit-appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-radius: 2px;
+    transition: all 0.5s ease;
+    font-weight: 600;
+    font-size: 14px;
+    height: 60px;
+    width: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0,0,0,0.06);
+    border-radius: 0px;
+    box-shadow: 0 0 0 white, 0 0 0 white;
+}
+
+.button-text{
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    background: linear-gradient(to right, #504bff, #4cfa63);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.button-circle{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #504bff, 0 0 20px #504bff, 0 0 30px #504bff;
+    transition: all 0.5s ease;
+}
+
+.button-circle2{
+    top: auto;
+    bottom: 0;
+}
+
+.button-circle3{
+    left: auto;
+    right: 0;
+    box-shadow: 0 0 10px #4cfa63, 0 0 20px #4cfa63, 0 0 30px #4cfa63;
+}
+
+.button-circle4{
+    left: auto;
+    top: auto;
+    bottom: 0;
+    right: 0;
+    box-shadow: 0 0 10px #4cfa63, 0 0 20px #4cfa63, 0 0 30px #4cfa63;
+}
+
+.button:hover{
+    box-shadow: -15px 0 70px -15px #504bff, 15px 0 70px -15px #4cfa63;
+}
+
+.button:hover .button-circle1{
+    transform: translate(-15px, -15px) scale(0);
+}
+
+.button:hover .button-circle2{
+    transform: translate(-15px, 15px) scale(0);
+}
+
+.button:hover .button-circle3{
+    transform: translate(15px, -15px) scale(0);
+}
+
+.button:hover .button-circle4{
+    transform: translate(15px, 15px) scale(0);
+}
+
+.button:hover .button-circle{
+    box-shadow: none;
+}
+
+.popup{
+    opacity: 0;
+    visibility: hidden;
+    height: 400px;
+    width: 400px;
+    flex-shrink: 0;
+    border-radius: 3px;
+    position: relative;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease
+}
+
+.popup-inside{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 0 0 black;
+    transition:
+            box-shadow 0.5s ease 0.7s,
+            border-radius 0.35s ease 0.7s;
+}
+
+.bgs{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.bg{
+    --offset: 0;
+    position: absolute;
+    left: var(--offset);
+    right: var(--offset);
+    bottom: var(--offset);
+    top: var(--offset);
+    background: linear-gradient(to right, #504bff, #4cfa63);
+    transform: scale(0);
+    transition: all 0.5s ease 0s;
+    border-radius: 50%;
+}
+
+.bg2{
+    --offset: 10%;
+    position: absolute;
+    left: var(--offset);
+    right: var(--offset);
+    bottom: var(--offset);
+    top: var(--offset);
+    background: linear-gradient(to right, #6665ff, #69fa7f);
+    transform: scale(0);
+    transition: all 0.5s ease 0.1s;
+}
+
+.bg3{
+    --offset: 20%;
+    position: absolute;
+    left: var(--offset);
+    right: var(--offset);
+    bottom: var(--offset);
+    top: var(--offset);
+    background: linear-gradient(to right, #8583ff, #85fa99);
+    z-index: 2;
+    transition: all 0.5s ease 0.2s;
+}
+
+.bg4{
+    --offset: 30%;
+    position: absolute;
+    left: var(--offset);
+    right: var(--offset);
+    bottom: var(--offset);
+    top: var(--offset);
+    background: linear-gradient(to right, #aaaaff, #a7fab7);
+    z-index: 3;
+    transition: all 0.5s ease 0.3s;
+}
+
+.bg5{
+    --offset: 40%;
+    position: absolute;
+    left: var(--offset);
+    right: var(--offset);
+    bottom: var(--offset);
+    top: var(--offset);
+    background: linear-gradient(to right, #c9c8ff, #c3fad1);
+    z-index: 4;
+    transition: all 0.5s ease 0.4s;
+}
+
+.bg6{
+    --offset: 40%;
+    position: absolute;
+    left: var(--offset);
+    right: var(--offset);
+    bottom: var(--offset);
+    top: var(--offset);
+    background: white;
+    z-index: 5;
+    transition: all 0.8s ease 0.4s;
+}
+
+.content-schedule{
+    --offset: 0;
+    position: absolute;
+    left: var(--offset);
+    right: var(--offset);
+    bottom: var(--offset);
+    top: var(--offset);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.35s ease 0.75s;
+    z-index: 10;
+}
+
+.content-schedule-wrapper{
+    text-align: center;
+}
+
+body.active .content-schedule{
+    opacity: 1;
+    transform: none;
+}
+
+body.active .popup{
+    opacity: 1;
+    visibility: visible;
+}
+
+body.active .popup-inside{
+    border-radius: 0;
+    box-shadow: -50px 0 200px -50px #504bff, 50px 0 200px -50px #4cfa63;
+}
+
+body.active .bg{
+    transform: scale(1);
+}
+
+body.active .bg6{
+    transform: scale(8);
+}
     </style>
 </head>
 
-    <div class="body-branch">
-        <div class="container-branch">
-            <div class="card">
-                <h2 class=".h2-custom ">Visual Art &</h2>
-                <h2 class=".h2-custom " style="margin-top: 80px;">Design</h2>
-                <i class="fas fa-arrow-right description"></i>
-                <p>Artist : Sitthidham Rohitasuk</p>
-                <div class="pic"></div>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                  </ul>
-                  <div class="social">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-github"></i>
-                  </div>
-                  <button>
-                  </button>
-                </div>
-                  <div class="card card2">
-                  <h2>Vauxhall</h2>
-                  <i class="fas fa-arrow-right"></i>
-                  <p>a lonely trip.</p>
-                  <div class="pic"></div>
-                  <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                  </ul>
-                <button>
-                </button>
-              </div>
-    
-              <div class="card card2">
-                <h2 class=".h2-custom ">Music</h2>
-                <i class="fas fa-arrow-right description"></i>
-                <p>(IFA:2024)</p>
-                <div class="pic"></div>
-                <button>
-                </button>
+<body>
+    <div class="body-schedule">
+    <div class="wrapper-schedule">
+        <div class="button" onclick="document.body.classList.add('active')">
+            <span class="button-text">Press</span>
+            <div class="button-bgs">
+                <div class="button-circle button-circle1"></div>
+                <div class="button-circle button-circle2"></div>
+                <div class="button-circle button-circle3"></div>
+                <div class="button-circle button-circle4"></div>
             </div>
-    
-            <div class="card card3">
-              <h2 class=".h2-custom ">Performing Arts</h2>
-              <h2 class=".h2-custom " style="margin-top: 83px;">& Dance</h2>
-              <i class="fas fa-arrow-right description"></i>
-              <p>(IFA:2024)</p>
-              <div class="pic"></div>
-              <button>
-              </button>
-            </div>
-    
-              
-          </div>    
+        </div>
     </div>
+
+    <div class="wrapper-schedule">
+        <div class="popup">
+            <div class="popup-inside">
+                <div class="bgs">
+                    <div class="bg"></div>
+                    <div class="bg bg2"></div>
+                    <div class="bg background3"></div>
+                    <div class="bg bg4"></div>
+                    <div class="bg bg5"></div>
+                    <div class="bg bg6"></div>
+                </div>
+            </div>
+            <div class="content-schedule">
+                <div class="content-schedule-wrapper">
+                    <h1>well done</h1>
+                    <p>Do you like it?</p>
+                    <p class="try-again" onclick="document.body.classList.remove('active')">Yes! I will try again</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
           
 
 </html>

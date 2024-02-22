@@ -148,12 +148,9 @@ window.onload = function() {
   //     myModal.show();
   //     localStorage.setItem('modalShown', 'true');
   // }
-  // var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
-  //     myModal.show();
-  //     localStorage.setItem('modalShown', 'true');
-  
-  
-
+  var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
+      myModal.show();
+      localStorage.setItem('modalShown', 'true');
 }
 
 // Carousel

@@ -368,7 +368,7 @@ body {
       z-index: 0;
       width: 400px;
       height: 250px;
-      background-image: url("../images/branch/ทัศนศิลป์.jpg");
+      background-image: url("../images/branch/art1.jpg");
       background-size: 100% 100%;
       filter: grayscale(100%);
     }
@@ -1343,29 +1343,6 @@ p:last-of-type{
     box-shadow: 0 0 10px #8A4A38, 0 0 20px #8A4A38, 0 0 30px #8A4A38;
 }
 
-/* .button:hover{
-    box-shadow: -15px 0 70px -15px #9B1E2E, 15px 0 70px -15px #8A4A38;
-} */
-
-/* .button:hover .button-circle1{
-    transform: translate(-15px, -15px) scale(0);
-}
-
-.button:hover .button-circle2{
-    transform: translate(-15px, 15px) scale(0);
-}
-
-.button:hover .button-circle3{
-    transform: translate(15px, -15px) scale(0);
-}
-
-.button:hover .button-circle4{
-    transform: translate(15px, 15px) scale(0);
-}
-
-.button:hover .button-circle{
-    box-shadow: none;
-} */
 
 .popup{
     opacity: 0;

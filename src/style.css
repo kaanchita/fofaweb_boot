@@ -1079,7 +1079,7 @@ transition: background-color 0.3s, color 0.3s, border-color 0.3s;
   font-weight: bold;
   padding: 5px;
   z-index: 1000;
-  transition: opacity 0.5s; /* เพิ่ม transition สำหรับ opacity */
+  transition: opacity 0.5s; 
 }
 .go-to-top  a{ 
   color: #8A4A38;
@@ -1091,18 +1091,11 @@ transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 
 /* test carousel */
 
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
-
-
 .carousel-animate {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  height: 80vh; /* เปลี่ยนเป็น 80% ของความสูงของหน้าจอ */
+  height: 80vh; 
   display: grid;
   place-items: center;
   overflow: hidden;
@@ -1113,13 +1106,13 @@ transition: background-color 0.3s, color 0.3s, border-color 0.3s;
   height: 14vw; 
   list-style-type: none;
   position: absolute;
-  top: 50%;
-  transform: translateY(50%);
+  /* top: 60%; */
+  transform: translateY(0);
   z-index: 1;
   background-position: center;
   background-size: cover;
   border-radius: 20px;
-  box-shadow: 0 2vw 3vw rgba(255, 255, 255, 0.3) inset; /* เปลี่ยนเป็น % ของความกว้างของหน้าจอ */
+  box-shadow: 0 2vw 3vw rgba(255, 255, 255, 0.3) inset; 
   transition: transform 0.1s, left 0.75s, top 0.75s, width 0.75s, height 0.75s;
 
   &:nth-child(1),
@@ -1135,50 +1128,50 @@ transition: background-color 0.3s, color 0.3s, border-color 0.3s;
   }
 
   &:nth-child(3) {
-    left: 15vw; /* เปลี่ยนเป็น 15% ของความกว้างของหน้าจอ */
+    left: 8vw; 
   }
   &:nth-child(4) {
-    left: calc(36vw); /* เปลี่ยนเป็น 25% ของความกว้างของหน้าจอ */
+    left: calc(29vw); 
   }
   &:nth-child(5) {
-    left: calc(57vw); /* เปลี่ยนเป็น 35% ของความกว้างของหน้าจอ */
+    left: calc(50vw); 
   }
   &:nth-child(6) {
-    left: calc(78vw); /* เปลี่ยนเป็น 45% ของความกว้างของหน้าจอ */
+    left: calc(71vw); 
   }
 }
 
 .content-carousel {
-  width: min(45vw, 400px); /* เปลี่ยนเป็น 45% ของความกว้างของหน้าจอ หรือ 400px (ค่าที่น้อยกว่า) */
+  width: min(60vw, 900px); 
   position: absolute;
-  top: 50%;
-  left: 17vw; /* เปลี่ยนเป็น 17% ของความกว้างของหน้าจอ */
-  transform: translateY(-50%);
-  font: 400 0.85rem;
+  top: 38%;
+  left: 15vw; 
+  /* transform: translateY(-50%); */
+  font: 30vw 0.85rem;
   font-family: 'Adam';
   color: white;
-  text-shadow: 0 0.15em 0.3em rgba(0, 0, 0, 0.5); /* แก้ไขเป็นค่าที่มีหน่วยเป็น em */
+  text-shadow: 0 0.15em 0.3em rgba(0, 0, 0, 0.5); 
   opacity: 0;
   display: none;
   
   & .title {
     font-family: "Adam";
-    -webkit-text-stroke-width: 0.05em; /* แก้ไขเป็นค่าที่มีหน่วยเป็น em */
+    -webkit-text-stroke-width: 0.05em; 
     text-transform: uppercase;
+    font-size: 3vw;
   }
 
-  & .description {
-    line-height: 1.7;
-    margin: 1em 0 1.5em; /* แก้ไขเป็นค่าที่มีหน่วยเป็น em */
-    font-size: 0.8rem;
+  & .description-carousel {
+    /* font-size: 0.8rem; */
+    font-size: 1.5vw; 
   }
 
   & button {
     width: fit-content;
     background-color: rgba(0, 0, 0, 0.1);
     color: white;
-    border: 0.2em solid white; /* แก้ไขเป็นค่าที่มีหน่วยเป็น em */
-    border-radius: 0.25em; /* แก้ไขเป็นค่าที่มีหน่วยเป็น em */
+    border: 0.2em solid white; 
+    border-radius: 0.25em; 
     padding: 0.75em;
     cursor: pointer;
   }
@@ -1191,8 +1184,8 @@ transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 
 @keyframes show {
   0% {
-    filter: blur(0.31em); /* แก้ไขเป็นค่าที่มีหน่วยเป็น em */
-    transform: translateY(calc(-50% + 0.94em)); /* แก้ไขเป็นค่าที่มีหน่วยเป็น em */
+    filter: blur(0.31em); 
+    transform: translateY(calc(-50% + 0.94em)); 
   }
   100% {
     opacity: 1;
@@ -1202,7 +1195,7 @@ transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 
 .nav-carousel {
   position: absolute;
-  bottom: 2em; /* แก้ไขเป็นค่าที่มีหน่วยเป็น em */
+  bottom: 2em; 
   left: 50%;
   transform: translateX(-50%);
   z-index: 5;
@@ -1223,96 +1216,6 @@ transition: background-color 0.3s, color 0.3s, border-color 0.3s;
   }
 }
 
-
-/* @media (max-width: 1280px) {
-  .carousel-animate {
-    height: 80vh; 
-  }
-
-  .item-carousel-animate {
-   
-    &:nth-child(3) {
-      left: 250px; 
-    }
-    &:nth-child(4) {
-      left: calc(250px + 220px); 
-    }
-    &:nth-child(5) {
-      left: calc(250px + 440px); 
-    }
-    &:nth-child(6) {
-      left: calc(250px + 660px); 
-    }
-  }
-  .content-carousel {
-    left: 70px; 
-  }
-}
-
-@media (max-width: 768px) {
-  .content-carousel {
-    & .title {
-      font-size: 1rem;
-    }
-    & .description {
-      font-size: 0.7rem;
-    }
-    & button {
-      font-size: 0.7rem;
-    }
-  }
-  .item-carousel-animate {
-    width: 150px;
-    height: 240px;
-    transform: translateY(50%);
-
-    &:nth-child(3) {
-      left: 100px;
-    }
-    &:nth-child(4) {
-      left: calc(260px);
-    }
-    &:nth-child(5) {
-      left: calc(420px);
-    }
-    &:nth-child(6) {
-      left: calc(580px);
-     
-    }
-  }
-}
-
-@media (width < 650px) {
-  .content-carousel {
-    & .title {
-      font-size: 0.9rem;
-    }
-    & .description {
-      font-size: 0.65rem;
-    }
-    & button {
-      font-size: 0.7rem;
-    }
-  }
-  .item-carousel-animate {
-    width: 130px;
-    height: 220px;
-    transform: translateY(50%);
-
-    &:nth-child(3) {
-      left: 40px;
-    }
-    &:nth-child(4) {
-      left: calc(180px);
-    }
-    &:nth-child(5) {
-      left: calc(320px);
-    }
-    &:nth-child(6) {
-      left: calc(460px);
-    }
-  }
-} */
 /* test carousel */
 
 

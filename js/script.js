@@ -154,13 +154,37 @@ window.onload = function() {
 }
 
 // Carousel
+// const slider = document.querySelector(".slider");
+// function activate(e) {
+//   const items = document.querySelectorAll(".item-carousel-animate");
+//   e.target.matches(".next") && slider.append(items[0]);
+//   e.target.matches(".prev") && slider.prepend(items[items.length - 1]);
+// }
+// document.addEventListener("click", activate, false);
 const slider = document.querySelector(".slider");
-function activate(e) {
-  const items = document.querySelectorAll(".item-carousel-animate");
-  e.target.matches(".next") && slider.append(items[0]);
-  e.target.matches(".prev") && slider.prepend(items[items.length - 1]);
+const items = document.querySelectorAll(".item-carousel-animate");
+let currentIndex = 0;
+let interval = 5000; // เวลาในการเลื่อน (หน่วยเป็นมิลลิวินาที)
+
+function autoSlide() {
+  moveRight();
+  setTimeout(autoSlide, interval);
 }
-document.addEventListener("click", activate, false);
+
+function moveRight() {
+  currentIndex = (currentIndex + 1) % items.length;
+  slider.append(items[currentIndex]);
+}
+
+function moveLeft() {
+  currentIndex = (currentIndex - 1 + items.length) % items.length;
+  slider.prepend(items[currentIndex]);
+}
+
+// เริ่มการเลื่อนอัตโนมัติ
+setTimeout(autoSlide, interval);
+
+// Carousel
 
 
 // detail animation

@@ -1455,7 +1455,7 @@ p:last-of-type{
     bottom: var(--offset);
     top: var(--offset);
     background: #9B1E2E;
-    z-index: 5;
+    z-index: 9;
     transition: all 0.8s ease 0.4s;
 }
 
@@ -1477,7 +1477,7 @@ p:last-of-type{
 }
 
 .content-schedule-wrapper{
-    z-index: 1000;
+    z-index: 10;
 }
 
 body.active .content-schedule{

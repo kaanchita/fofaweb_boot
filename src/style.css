@@ -623,7 +623,7 @@ body {
 .grayscale-image:hover {
   transition: filter 0.5s ease;
   filter: none; /* ยกเลิกเอฟเฟกต์ grayscale ขณะโฮเวอร์ */
-  opacity: 80%;
+  opacity: 90%;
 }
 
 /* GALLERY */

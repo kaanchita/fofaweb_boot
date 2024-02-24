@@ -1150,16 +1150,16 @@ transition: background-color 0.3s, color 0.3s, border-color 0.3s;
     left: calc(50% + 440px);
   }
   &:nth-child(6) {
-    /* left: calc(50% + 660px); */
+    left: calc(50% + 660px);
     opacity: 0;
   }
 }
 
 .content-carousel {
-  width: min(30vw, 400px);
+  width: min(450px, 400px);
   position: absolute;
   top: 50%;
-  left: 200px;
+  left: 150px;
   transform: translateY(-50%);
   font: 400 0.85rem helvetica, sans-serif;
   color: white;
@@ -1245,21 +1245,22 @@ transition: background-color 0.3s, color 0.3s, border-color 0.3s;
     }
   }
   .item-carousel-animate {
-    width: 160px;
-    height: 270px;
+    width: 150px;
+    height: 240px;
+    transform: translateY(50%);
 
     &:nth-child(3) {
-      left: 50%;
+      left: 10vh;
     }
     &:nth-child(4) {
-      left: calc(50% + 170px);
+      left: calc(10vh + 160px);
     }
     &:nth-child(5) {
-      left: calc(50% + 340px);
+      left: calc(10vh + 320px);
     }
     &:nth-child(6) {
-      left: calc(50% + 510px);
-      opacity: 0;
+      left: calc(10vh + 480px);
+      /* opacity: 0; */
     }
   }
 }

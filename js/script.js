@@ -195,4 +195,19 @@ document.querySelectorAll('.nav-link').forEach(item => {
 });
 
 
+  // เรียกฟังก์ชัน togglePopup เมื่อคลิกที่ปุ่มหรือองค์ประกอบอื่นที่คุณต้องการให้เปิดหรือปิดป๊อปอัพ
+  function togglePopup() {
+    // เช็คว่า body มีคลาส 'active' หรือไม่
+    if (document.body.classList.contains('active')) {
+      // ถ้ามีคลาส 'active' ให้ลบออก
+      document.body.classList.remove('active');
+    } else {
+      // ถ้าไม่มีคลาส 'active' ให้เพิ่มเข้าไป
+      document.body.classList.add('active');
+    }
+  }
+
+
+
+
  

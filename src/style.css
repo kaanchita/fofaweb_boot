@@ -512,56 +512,17 @@ body {
 } */
 /* card */
 
+
 /* performance */
-.text-title {
-  position: relative;
-  color: transparent;
-  font-weight: bold;
-  font-family: 'Adam'; 
-  font-size: 90px;
-  -webkit-text-stroke: 3px #9B1E2E;
-  letter-spacing: 15px;
-  line-height: 1.2;
-  margin: 3; /* ลบ margin ที่อาจจะมีอยู่ */
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  animation: colorChange 5s infinite alternate; /* เพิ่ม animation */
-  text-shadow: 5px 10px 4px rgba(0, 0, 0, 0.212); /* ปรับค่า shadow ตามที่ต้องการ */
-}
 
-@keyframes colorChange {
-  0% {
-    color: #9B1E2E;
-  }
-  50% {
-    color: #fff; /* สีที่ต้องการให้เปลี่ยนไป */
-  }
-  100% {
-    color: #9B1E2E;
-  }
-}
-.text-title span {
-  display: inline-block;
-  animation: colorChange 8s infinite alternate; /* เปลี่ยนจาก 5s เป็น 8s */
-}
-
-.text-title hr {
-  flex: 1;
-  height: 4px; /* ขนาดของเส้น */
-  margin-left: 10px; /* ระยะห่างระหว่าง "MUSIC" กับ <hr> */
-  opacity: 0.7;
-  border: none;
-  background-color: #9B1E2E /* สีของเส้น */
-}
 
 @media (max-width: 768px) {
-  .text-title {
+  /* .text-title {
     font-weight: 700 !important;
     font-size: 8vw; 
     letter-spacing: 5px;
     -webkit-text-stroke: 1px #9B1E2E;
-  }
+  } */
   .console-container {
     font-size:40px;
     height:720px;
@@ -644,7 +605,8 @@ body {
   height: auto;
 }
 .caption {
-  font-size: 1.8rem;
+  font-size: 20px;
+  font-weight: 600;
   text-align: center;
   line-height: 2em;
 }

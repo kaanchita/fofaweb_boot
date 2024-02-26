@@ -428,10 +428,11 @@ flex-direction: column;
     background-color: #8A4A38;
   }
 }
+
+}
 .text-branch {
   font-size: 70px; 
-  -webkit-text-stroke-width: 2px; 
-  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5); 
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5); 
   color: #ffffff;
   align-items: center;
   display: flex;
@@ -439,12 +440,11 @@ flex-direction: column;
 .text-branch hr {
   margin: 0;
   flex: 1;
-  height: 4px; 
+  height: 3px; 
   margin-left: 30px;
   opacity: 0.7;
   border: none;
   background-color: #ffffff;
-}
 }
 
 /* branch */
@@ -1291,8 +1291,7 @@ p:last-of-type{
 
 .wrapper-schedule{
   position: absolute;
-  left: 0;
-  top: 0;
+ 
   width: 100%;
   height: 100%;
   display: flex;

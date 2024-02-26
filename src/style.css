@@ -276,22 +276,24 @@ body {
 
 .container-branch {
   width: 100%;
-  height: 100%;
+  height: 100%; /* เปลี่ยนเป็น auto เพื่อให้ความสูงของคอนเทนเนอร์ขยายตามเนื้อหา */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 
+
   .card {
     position: relative;
-    width: 700px;
-    height: 250px;
+    max-width: 90%; /* ปรับขนาดการ์ดให้ไม่เกิน 90% ของคอนเทนเนอร์ */
+    width: 700px; /* คุณอาจต้องปรับขนาดการ์ดตามความต้องการ */
+    height: auto; /* เปลี่ยนเป็น auto เพื่อให้ความสูงของการ์ดขยายตามเนื้อหา */
     background-color: #fff;
     overflow: hidden;
     border-color: #CAD3D7;
     border-radius: 0;
     box-shadow: 6px 6px 3px rgba(0, 0, 0, 0.2);
-    /* margin-bottom: 0px; */
+    margin-bottom: 20px; /* เพิ่มระยะห่างระหว่างการ์ด */
 
     &:before {
       content: "";
@@ -365,12 +367,14 @@ body {
       -webkit-transition: all 0.2s ease;
       transition: all 0.2s ease;
     }
+
     .pic {
       z-index: 0;
-      width: 400px;
-      height: 250px;
+      max-width: 100%; /* ปรับขนาดรูปให้ไม่เกินขอบเขตของการ์ด */
+      height: auto; /* เปลี่ยนเป็น auto เพื่อให้สัดส่วนของรูปถูกต้อง */
+      background-size: cover;
       background-image: url("../images/branch/art1.jpg");
-      background-size: 100% 100%;
+      /* background-size: 100% 100%; */
       filter: grayscale(100%);
     }
 

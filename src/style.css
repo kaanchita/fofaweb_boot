@@ -428,6 +428,23 @@ flex-direction: column;
     background-color: #8A4A38;
   }
 }
+.text-branch {
+  font-size: 70px; 
+  -webkit-text-stroke-width: 2px; 
+  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5); 
+  color: #ffffff;
+  align-items: center;
+  display: flex;
+}
+.text-branch hr {
+  margin: 0;
+  flex: 1;
+  height: 4px; 
+  margin-left: 30px;
+  opacity: 0.7;
+  border: none;
+  background-color: #ffffff;
+}
 }
 
 /* branch */

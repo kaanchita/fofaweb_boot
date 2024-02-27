@@ -899,12 +899,66 @@ transition: all 0.35s;
 
 /* GALLERY */
 
+/* Artists */
+.imageartists {
+  width: 400px;
+  justify-content: center;
+}
+.artistname {
+  font-style: oblique 90deg;
+  font-family: 'Adam';
+  font-size: 60px;
+  font-weight: bold;
+  color: #0F0D0D;
+  letter-spacing: 15px; /* ปรับค่าตามที่ต้องการ */
+  -webkit-text-stroke: 1px;
+  text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.3); 
+}
+.imageartwork {
+  width: 300px;
+}
+.firstname {
+ margin-right: 100px;
+}
+.lastname {
+  margin-left: 100px;
+}
+
+.secondcol {
+  overflow-y: auto; /* เพิ่มการเลื่อนแกน y เมื่อเนื้อหาเกินขนาด */
+  max-height: 500px; /* กำหนดความสูงสูงสุดของเนื้อหา */
+}
+.secondcol::-webkit-scrollbar{
+  display: none; /* ซ่อนแถบเลื่อนสำหรับเบราว์เซอร์ที่รองรับแบบใช้งานนี้ */
+
+}
+.artwork {
+  overflow-x: auto;
+}
+.artwork::-webkit-scrollbar {
+  display: none; /* ซ่อนแถบเลื่อนสำหรับเบราว์เซอร์ที่รองรับแบบใช้งานนี้ */
+}
+
+.image-container {
+  display: flex;
+  margin-left: 30px;
+}
+
+.imageartwork {
+  flex: 0 0 auto;
+  margin-right: 10px;
+}
+
+
+/* Artists End */
+
+
+
 /* Detail Page */
 .grid-wrapper > div {
 display: flex;
 justify-content: center;
-align-items: center;
-
+align-items: center
 }
 .grid-wrapper > div > img {
 width: 100%;

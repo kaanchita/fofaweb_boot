@@ -234,3 +234,12 @@ window.addEventListener('scroll', function() {
   }
 });
 
+// artwork
+document.addEventListener("DOMContentLoaded", function() {
+  const container = document.querySelector(".artwork");
+  container.addEventListener("wheel", function(event) {
+    event.preventDefault();
+    container.scrollLeft += event.deltaY;
+  });
+});
+

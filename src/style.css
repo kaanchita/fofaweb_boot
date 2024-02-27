@@ -647,21 +647,35 @@ opacity: 80%;
 
 /* GALLERY */
 .textstyle1 {
+  display: inline-block; /* ทำให้ <hr> เป็น inline-block เพื่อให้อยู่บนบรรทัดเดียวกับ <p> */
   font-family: 'Poppins', sans-serif;
   font-size: 80px;
-  font-weight:600;
-  letter-spacing: -5px; /* ปรับค่าตามที่ต้องการ */
+  font-weight: 550;
+  letter-spacing: -11px; /* ปรับค่าตามที่ต้องการ */
   margin-bottom: 0; /* ปรับค่าตามที่ต้องการ */
   padding: 0;
- 
+  vertical-align: middle; /* จัดให้ตำแหน่งของ <p> อยู่ในระดับกลางของ <hr> */
 }
+
 .textstyle2 {
   font-style: oblique 90deg;
   font-family: 'Adam';
   font-size: 100px;
   font-weight: bold;
-  letter-spacing: 5px; /* ปรับค่าตามที่ต้องการ */
-  margin-top: -20px; /* ปรับค่าตามที่ต้องการ */
+  letter-spacing: 15px; /* ปรับค่าตามที่ต้องการ */
+  margin-top: -30px; /* ปรับค่าตามที่ต้องการ */
+  -webkit-text-stroke: 1px;
+  margin-left: 120px;
+}
+
+.custom-hr {
+  display: inline-block; /* ทำให้ <hr> เป็น inline-block เพื่อให้อยู่บนบรรทัดเดียวกับ <p> */
+  border: none;
+  border-top: 3px solid black; /* ปรับความหนาของเส้นตามต้องการ */
+  opacity: 1;
+  width: calc(50% - 10px); /* ปรับค่าตามความต้องการให้เหมาะสม */
+  margin-top: -10px; /* ปรับค่าตามความต้องการให้เหมาะสม */
+  margin-bottom: 0; /* ปรับให้มีระยะห่างด้านล่างเป็น 0 */
 }
 
 
@@ -669,7 +683,6 @@ opacity: 80%;
 width: 100%;
 padding: 0 2rem;
 text-align: center;
-font-family: 'Poppins';
 }
 .polaroid {
 background: #fff;
@@ -682,7 +695,8 @@ max-width: 100%;
 height: auto;
 }
 .caption {
-font-size: 1.8rem;
+font-size: 18px;
+font-weight: 600;
 text-align: center;
 line-height: 2em;
 }

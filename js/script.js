@@ -207,7 +207,3 @@ document.querySelectorAll('.nav-link').forEach(item => {
     }
   }
 
-
-
-
- 

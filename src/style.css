@@ -683,6 +683,25 @@ opacity: 80%;
 }
 
 
+.creativetext {
+  position: fixed;
+  top: 300px !important; /* ปรับตำแหน่งให้ creative อยู่ล่าง breadcrumb */
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  z-index: -1;
+  /* ปรับแต่งค่าต่างๆ ตามที่ต้องการ */
+}
+
+.artiststype {
+  position: relative;
+  top: 300px !important; /* ปรับตำแหน่งให้ creative อยู่ล่าง breadcrumb */
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  z-index: 1;
+  /* ปรับแต่งค่าต่างๆ ตามที่ต้องการ */
+}
 .wrapper {
 width: 100%;
 padding: 0 2rem;

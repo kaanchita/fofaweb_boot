@@ -206,7 +206,7 @@ document.querySelectorAll('.nav-link').forEach(item => {
       document.body.classList.add('active');
     }
   }
-
+// nav 
  
   window.addEventListener('scroll', function() {
     var header = document.querySelector('header.sticky-top');
@@ -216,4 +216,21 @@ document.querySelectorAll('.nav-link').forEach(item => {
       header.style.top = '0'; // หาก scroll มีค่าเป็น 0 ให้ header ขยับกลับมาที่ตำแหน่งเริ่มต้น
     }
   });
+
+// parallax creative
+window.addEventListener('scroll', function() {
+  var scrollTop = window.scrollY;
+  var creativeText = document.querySelector('.creativetext');
+  var windowHeight = window.innerHeight;
+  var documentHeight = document.body.scrollHeight;
+  
+  // คำนวณความสูงของ creative ตามความสูงของหน้าเอกสาร
+  var creativeHeight = creativeText.offsetHeight;
+
+  if (scrollTop + windowHeight > documentHeight - creativeHeight) {
+    creativeText.style.bottom = 0;
+  } else {
+    creativeText.style.bottom = '-' + creativeHeight + 'px';
+  }
+});
 

@@ -7,7 +7,7 @@ body {
 }
 
 .sticky-top{
-  position: relative;
+  /* position: relative; */
   top: 0;
   z-index: 999;
   transition: top 0.8s ease-in-out; 
@@ -699,13 +699,15 @@ opacity: 80%;
   left: 50%;
   width: 100%;
   transform: translateX(-50%);
-  z-index: 1;
+ 
   /* ปรับแต่งค่าต่างๆ ตามที่ต้องการ */
 }
+
 .wrapper {
 width: 100%;
 padding: 0 2rem;
 text-align: center;
+margin-bottom: 300px;
 }
 .polaroid {
 background: #fff;

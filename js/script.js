@@ -208,14 +208,14 @@ document.querySelectorAll('.nav-link').forEach(item => {
   }
 // nav 
  
-  window.addEventListener('scroll', function() {
-    var header = document.querySelector('header.sticky-top');
-    if (window.scrollY > 0) {
-      header.style.top = '-300px'; // กำหนดค่า top เพื่อให้ header เลื่อนขึ้นไปทันที
-    } else {
-      header.style.top = '0'; // หาก scroll มีค่าเป็น 0 ให้ header ขยับกลับมาที่ตำแหน่งเริ่มต้น
-    }
-  });
+  // window.addEventListener('scroll', function() {
+  //   var header = document.querySelector('header.sticky-top');
+  //   if (window.scrollY > 0) {
+  //     header.style.top = '-300px'; // กำหนดค่า top เพื่อให้ header เลื่อนขึ้นไปทันที
+  //   } else {
+  //     header.style.top = '0'; // หาก scroll มีค่าเป็น 0 ให้ header ขยับกลับมาที่ตำแหน่งเริ่มต้น
+  //   }
+  // });
 
 // parallax creative
 window.addEventListener('scroll', function() {

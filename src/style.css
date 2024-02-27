@@ -6,13 +6,17 @@ body {
   background-color: #fffcf9;
 }
 
-.sticky-top.scrolling {
-opacity: 0.9; 
-transition: opacity 0.3s ease; 
+.sticky-top{
+  /* position: relative; */
+  top: 0;
+  z-index: 999;
+  transition: top 0.8s ease-in-out; 
+  opacity: 90%;
+ 
 }
 
 .navbar {
-background-color: #fff;
+background-color: #fffcf9;
 
 }
 
@@ -648,10 +652,93 @@ opacity: 80%;
 }
 
 /* GALLERY */
+
+.textstyle1 {
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  font-size: 80px;
+  font-weight: 550;
+  letter-spacing: -11px;
+  margin-bottom: 0;
+  padding: 0;
+  vertical-align: middle;
+  color: #0F0D0D;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3); 
+}
+
+.textstyle2 {
+  font-style: oblique 90deg;
+  font-family: 'Adam';
+  font-size: 100px;
+  font-weight: bold;
+  color: #0F0D0D;
+  letter-spacing: 15px; /* ปรับค่าตามที่ต้องการ */
+  margin-top: -30px; /* ปรับค่าตามที่ต้องการ */
+  -webkit-text-stroke: 1px;
+  margin-left: 120px;
+  text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.3); 
+
+}
+
+.custom-hr {
+  display: inline-block; /* ทำให้ <hr> เป็น inline-block เพื่อให้อยู่บนบรรทัดเดียวกับ <p> */
+  border: none;
+  border-top: 3px solid black; /* ปรับความหนาของเส้นตามต้องการ */
+  opacity: 1;
+  width: calc(50% - 10px); /* ปรับค่าตามความต้องการให้เหมาะสม */
+  margin-top: -10px; /* ปรับค่าตามความต้องการให้เหมาะสม */
+  margin-bottom: 0; /* ปรับให้มีระยะห่างด้านล่างเป็น 0 */
+}
+
+
+.creativetext {
+  position: fixed;
+  top: 300px !important; /* ปรับตำแหน่งให้ creative อยู่ล่าง breadcrumb */
+  left: 10%;
+  width: 100%;
+  transform: translateX(-50%);
+  z-index: -1;
+  /* ปรับแต่งค่าต่างๆ ตามที่ต้องการ */
+}
+
+.artiststype {
+  position: relative;
+  top: 300px !important;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  background-color: #0f0d0d15;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+
+@keyframes wave {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px); /* ปรับตำแหน่งของคลื่นให้ตัวหนังสือเลื่อนขึ้น */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.textstyle1 {
+  animation: wave 1.8s infinite; /* ใช้ animation wave ทีละตัวที่มีความยาว 1.5 วินาที */
+}
+
+.textstyle2 {
+  animation: wave 1.5s infinite; /* ใช้ animation wave ทีละตัวที่มีความยาว 1.5 วินาที */
+  animation-delay: 0.5s; /* หน่วงเวลาการเริ่มต้นของ animation อีก 0.5 วินาที */
+}
+
 .wrapper {
 width: 100%;
 padding: 0 2rem;
 text-align: center;
+margin-bottom: 300px;
 }
 .polaroid {
 background: #fff;
@@ -664,12 +751,13 @@ max-width: 100%;
 height: auto;
 }
 .caption {
-font-size: 1.8rem;
+font-size: 18px;
+font-weight: 600;
 text-align: center;
 line-height: 2em;
 }
 .item {
-width: 20%;
+width: 25%;
 display: inline-block;
 margin-top: 2rem;
 filter: grayscale(100%);
@@ -745,14 +833,139 @@ right: 5%;
 box-shadow: 0 1rem 3rem rgba(0,0,0,0.2);
 transition: all 0.35s;
 }
+/* สำหรับ iPad */
+@media (max-width: 1024px) {
+  .wrapper {
+    padding: 0 1rem;
+  }
+  .item {
+    width: 50%;
+  }
+  .textstyle1 {
+    font-size: 55px;
+  }
+  
+  .textstyle2 {
+    font-size: 65px;
+  }
+  .custom-hr {
+    width: calc(40% - 10px); /* ปรับค่าตามความต้องการให้เหมาะสม */
+  }
+}
+
+/* สำหรับ iPhone */
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 0 0.5rem;
+  }
+  .item {
+    width: 100%;
+  }
+  .textstyle1 {
+    display: inline-block;
+    font-size:40px;
+    font-weight: 500;
+    letter-spacing: -7px;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  
+  .textstyle2 {
+    font-style: oblique 90deg;
+    font-family: 'Adam';
+    font-size: 40px;
+    font-weight: bold;
+    color: #0F0D0D;
+    letter-spacing: 15px; /* ปรับค่าตามที่ต้องการ */
+    margin-top: -20px !important; /* ปรับค่าตามที่ต้องการ */
+    margin-left: 0px !important;
+  
+  }
+  .custom-hr {
+    display: inline-block; /* ทำให้ <hr> เป็น inline-block เพื่อให้อยู่บนบรรทัดเดียวกับ <p> */
+    border: none;
+    border-top: 3px solid black; /* ปรับความหนาของเส้นตามต้องการ */
+    opacity: 1;
+    width: calc(30% - 10px); /* ปรับค่าตามความต้องการให้เหมาะสม */
+  }
+  .creativetext {
+    position: fixed;
+    top: 350px !important; /* ปรับตำแหน่งให้ creative อยู่ล่าง breadcrumb */
+    left: 0 !important;
+    width: 100%;
+    transform: translateX(-50%);
+    z-index: -1;
+    /* ปรับแต่งค่าต่างๆ ตามที่ต้องการ */
+  }
+}
+
 /* GALLERY */
+
+/* Artists */
+.dataartist {
+  /* background-color: #0f0d0d15;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); */
+}
+.imageartists {
+  width: 400px;
+  justify-content: center;
+}
+.artistname {
+  font-style: oblique 90deg;
+  font-family: 'Adam';
+  font-size: 60px;
+  font-weight: bold;
+  color: #0F0D0D;
+  letter-spacing: 15px; /* ปรับค่าตามที่ต้องการ */
+  -webkit-text-stroke: 1px;
+  text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.3); 
+}
+.imageartwork {
+  width: 300px;
+}
+.firstname {
+ margin-right: 100px;
+}
+.lastname {
+  margin-left: 100px;
+}
+
+.secondcol {
+  overflow-y: auto; /* เพิ่มการเลื่อนแกน y เมื่อเนื้อหาเกินขนาด */
+  max-height: 500px; /* กำหนดความสูงสูงสุดของเนื้อหา */
+}
+.secondcol::-webkit-scrollbar{
+  display: none; /* ซ่อนแถบเลื่อนสำหรับเบราว์เซอร์ที่รองรับแบบใช้งานนี้ */
+
+}
+.artwork {
+  overflow-x: auto;
+  background-color: #844635;
+}
+.artwork::-webkit-scrollbar {
+  display: none; /* ซ่อนแถบเลื่อนสำหรับเบราว์เซอร์ที่รองรับแบบใช้งานนี้ */
+}
+
+.image-container {
+  display: flex;
+}
+
+.imageartwork {
+  flex: 0 0 auto;
+  margin-right: 30px;
+}
+
+
+/* Artists End */
+
+
 
 /* Detail Page */
 .grid-wrapper > div {
 display: flex;
 justify-content: center;
-align-items: center;
-
+align-items: center
 }
 .grid-wrapper > div > img {
 width: 100%;

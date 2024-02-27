@@ -10,7 +10,7 @@ $(document).ready(function(){
     var header = document.querySelector('header');
     header.classList.toggle('scrolling', window.scrollY > 0);
   });
-  
+
   // go to top
   window.onscroll = function() {scrollFunction()};
 
@@ -206,8 +206,40 @@ document.querySelectorAll('.nav-link').forEach(item => {
       document.body.classList.add('active');
     }
   }
-
-
-
-
+// nav 
  
+  // window.addEventListener('scroll', function() {
+  //   var header = document.querySelector('header.sticky-top');
+  //   if (window.scrollY > 0) {
+  //     header.style.top = '-300px'; // กำหนดค่า top เพื่อให้ header เลื่อนขึ้นไปทันที
+  //   } else {
+  //     header.style.top = '0'; // หาก scroll มีค่าเป็น 0 ให้ header ขยับกลับมาที่ตำแหน่งเริ่มต้น
+  //   }
+  // });
+
+// parallax creative
+window.addEventListener('scroll', function() {
+  var scrollTop = window.scrollY;
+  var creativeText = document.querySelector('.creativetext');
+  var windowHeight = window.innerHeight;
+  var documentHeight = document.body.scrollHeight;
+  
+  // คำนวณความสูงของ creative ตามความสูงของหน้าเอกสาร
+  var creativeHeight = creativeText.offsetHeight;
+
+  if (scrollTop + windowHeight > documentHeight - creativeHeight) {
+    creativeText.style.bottom = 0;
+  } else {
+    creativeText.style.bottom = '-' + creativeHeight + 'px';
+  }
+});
+
+// artwork
+document.addEventListener("DOMContentLoaded", function() {
+  const container = document.querySelector(".artwork");
+  container.addEventListener("wheel", function(event) {
+    event.preventDefault();
+    container.scrollLeft += event.deltaY;
+  });
+});
+

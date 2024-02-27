@@ -55,7 +55,8 @@ button {
 
 
 .footer {
-  position: relative;
+  position: relative; /* แก้จาก fixed เป็น relative */
+  z-index: 999; /* กำหนด z-index ให้ต่ำกว่า */
   display: flex;
   align-items: center;
   min-height: 80vh;

@@ -705,7 +705,7 @@ opacity: 80%;
   left: 50%;
   width: 100%;
   transform: translateX(-50%);
-  /* background-color: #0f0d0d38; */
+  background-color: #0f0d0d1e;
   backdrop-filter: blur(10px); /* ใช้ backdrop-filter เพื่อทำให้พื้นหลังเบลอ */
   /* ปรับแต่งค่าต่างๆ ตามที่ต้องการ */
 }

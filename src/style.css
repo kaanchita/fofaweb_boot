@@ -646,6 +646,25 @@ opacity: 80%;
 }
 
 /* GALLERY */
+.textstyle1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 80px;
+  font-weight:600;
+  letter-spacing: -5px; /* ปรับค่าตามที่ต้องการ */
+  margin-bottom: 0; /* ปรับค่าตามที่ต้องการ */
+  padding: 0;
+ 
+}
+.textstyle2 {
+  font-style: oblique 90deg;
+  font-family: 'Adam';
+  font-size: 100px;
+  font-weight: bold;
+  letter-spacing: 5px; /* ปรับค่าตามที่ต้องการ */
+  margin-top: -20px; /* ปรับค่าตามที่ต้องการ */
+}
+
+
 .wrapper {
 width: 100%;
 padding: 0 2rem;

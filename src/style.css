@@ -900,6 +900,11 @@ transition: all 0.35s;
 /* GALLERY */
 
 /* Artists */
+.dataartist {
+  /* background-color: #0f0d0d15;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); */
+}
 .imageartists {
   width: 400px;
   justify-content: center;
@@ -934,6 +939,7 @@ transition: all 0.35s;
 }
 .artwork {
   overflow-x: auto;
+  background-color: #844635;
 }
 .artwork::-webkit-scrollbar {
   display: none; /* ซ่อนแถบเลื่อนสำหรับเบราว์เซอร์ที่รองรับแบบใช้งานนี้ */
@@ -941,12 +947,11 @@ transition: all 0.35s;
 
 .image-container {
   display: flex;
-  margin-left: 30px;
 }
 
 .imageartwork {
   flex: 0 0 auto;
-  margin-right: 10px;
+  margin-right: 30px;
 }
 
 

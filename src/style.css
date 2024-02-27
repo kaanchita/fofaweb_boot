@@ -831,6 +831,72 @@ right: 5%;
 box-shadow: 0 1rem 3rem rgba(0,0,0,0.2);
 transition: all 0.35s;
 }
+/* สำหรับ iPad */
+@media (max-width: 1024px) {
+  .wrapper {
+    padding: 0 1rem;
+  }
+  .item {
+    width: 50%;
+  }
+  .textstyle1 {
+    font-size: 55px;
+  }
+  
+  .textstyle2 {
+    font-size: 65px;
+  }
+  .custom-hr {
+    width: calc(40% - 10px); /* ปรับค่าตามความต้องการให้เหมาะสม */
+  }
+}
+
+/* สำหรับ iPhone */
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 0 0.5rem;
+  }
+  .item {
+    width: 100%;
+  }
+  .textstyle1 {
+    display: inline-block;
+    font-size:40px;
+    font-weight: 500;
+    letter-spacing: -7px;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  
+  .textstyle2 {
+    font-style: oblique 90deg;
+    font-family: 'Adam';
+    font-size: 40px;
+    font-weight: bold;
+    color: #0F0D0D;
+    letter-spacing: 15px; /* ปรับค่าตามที่ต้องการ */
+    margin-top: -20px !important; /* ปรับค่าตามที่ต้องการ */
+    margin-left: 0px !important;
+  
+  }
+  .custom-hr {
+    display: inline-block; /* ทำให้ <hr> เป็น inline-block เพื่อให้อยู่บนบรรทัดเดียวกับ <p> */
+    border: none;
+    border-top: 3px solid black; /* ปรับความหนาของเส้นตามต้องการ */
+    opacity: 1;
+    width: calc(30% - 10px); /* ปรับค่าตามความต้องการให้เหมาะสม */
+  }
+  .creativetext {
+    position: fixed;
+    top: 350px !important; /* ปรับตำแหน่งให้ creative อยู่ล่าง breadcrumb */
+    left: 0 !important;
+    width: 100%;
+    transform: translateX(-50%);
+    z-index: -1;
+    /* ปรับแต่งค่าต่างๆ ตามที่ต้องการ */
+  }
+}
+
 /* GALLERY */
 
 /* Detail Page */

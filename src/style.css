@@ -3,7 +3,7 @@ body {
   font-family: 'Adam';
   font-family: 'Kanit', sans-serif;
   font-family: 'Poppins', sans-serif;
-  background-color: #fff;
+  background-color: #fffcf9;
 }
 
 .sticky-top{
@@ -16,7 +16,7 @@ body {
 }
 
 .navbar {
-background-color: #fff;
+background-color: #fffcf9;
 
 }
 
@@ -650,15 +650,18 @@ opacity: 80%;
 }
 
 /* GALLERY */
+
 .textstyle1 {
-  display: inline-block; /* ทำให้ <hr> เป็น inline-block เพื่อให้อยู่บนบรรทัดเดียวกับ <p> */
+  display: inline-block;
   font-family: 'Poppins', sans-serif;
   font-size: 80px;
   font-weight: 550;
-  letter-spacing: -11px; /* ปรับค่าตามที่ต้องการ */
-  margin-bottom: 0; /* ปรับค่าตามที่ต้องการ */
+  letter-spacing: -11px;
+  margin-bottom: 0;
   padding: 0;
-  vertical-align: middle; /* จัดให้ตำแหน่งของ <p> อยู่ในระดับกลางของ <hr> */
+  vertical-align: middle;
+  color: #0F0D0D;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3); 
 }
 
 .textstyle2 {
@@ -666,10 +669,13 @@ opacity: 80%;
   font-family: 'Adam';
   font-size: 100px;
   font-weight: bold;
+  color: #0F0D0D;
   letter-spacing: 15px; /* ปรับค่าตามที่ต้องการ */
   margin-top: -30px; /* ปรับค่าตามที่ต้องการ */
   -webkit-text-stroke: 1px;
   margin-left: 120px;
+  text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.3); 
+
 }
 
 .custom-hr {
@@ -686,7 +692,7 @@ opacity: 80%;
 .creativetext {
   position: fixed;
   top: 300px !important; /* ปรับตำแหน่งให้ creative อยู่ล่าง breadcrumb */
-  left: 50%;
+  left: 10%;
   width: 100%;
   transform: translateX(-50%);
   z-index: -1;
@@ -699,8 +705,30 @@ opacity: 80%;
   left: 50%;
   width: 100%;
   transform: translateX(-50%);
- 
+  /* background-color: #0f0d0d38; */
+  backdrop-filter: blur(10px); /* ใช้ backdrop-filter เพื่อทำให้พื้นหลังเบลอ */
   /* ปรับแต่งค่าต่างๆ ตามที่ต้องการ */
+}
+
+@keyframes wave {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px); /* ปรับตำแหน่งของคลื่นให้ตัวหนังสือเลื่อนขึ้น */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.textstyle1 {
+  animation: wave 1.8s infinite; /* ใช้ animation wave ทีละตัวที่มีความยาว 1.5 วินาที */
+}
+
+.textstyle2 {
+  animation: wave 1.5s infinite; /* ใช้ animation wave ทีละตัวที่มีความยาว 1.5 วินาที */
+  animation-delay: 0.5s; /* หน่วงเวลาการเริ่มต้นของ animation อีก 0.5 วินาที */
 }
 
 .wrapper {

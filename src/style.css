@@ -1,7 +1,8 @@
 body {
   /* margin-top:20px; */
-  /* font-family: 'Adam'; */
-  /* font-family: 'Kanit', sans-serif; */
+  font-family: 'Adam';
+  font-family: 'Kanit', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: #fff;
 }
 
@@ -992,7 +993,7 @@ text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
 
 .cta {
 position: relative;
-margin: auto;
+/* margin: auto; */
 padding: 19px 30px;
 /* padding: 20px 25px; */
 transition: all 0.2s ease;
@@ -1014,6 +1015,7 @@ z-index: 0;
 .cta span {
 position: relative;
 font-size: 22px;
+/* text-shadow: 2px 3px 2px rgba(255, 255, 255, 0.77); */
 line-height: 23px;
 font-weight: bold;
 letter-spacing: 5px;
@@ -1033,9 +1035,12 @@ transform: translateX(-5px);
 transition: all 0.3s ease;
 }
 .cta:hover:before {
-width: 100%;
-background: #9B1E2E;
+  width: 100%;
+  /* opacity: 80%; */
+  background: linear-gradient(to right, #fff, #9B1E2E);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* กำหนดเงา */
 }
+
 .cta:hover svg {
 transform: translateX(0);
 }
@@ -1240,13 +1245,13 @@ font-weight: 600;
   background: linear-gradient(to right, #e1e0ff, #d7fadd);
 } */
 
-.body-schedule{
+/* .body-schedule{
   background: #191919;
   background: white;
   user-select: none;
-  letter-spacing: 3px;
+  letter-spacing: 3px; */
   /* color: #b9b9b9; */
-}
+/* } */
 
 h1{
   padding-bottom: 30px;
@@ -1290,12 +1295,12 @@ p:last-of-type{
 
 .wrapper-schedule{
   position: absolute;
- 
-  width: 100%;
-  height: 100%;
-  display: flex;
+  width: 50%;
+  height: 50%;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
+  background-color: #8A4A29;
 }
 
 .button{
@@ -1310,16 +1315,6 @@ p:last-of-type{
   letter-spacing: 3px;
   /* border-radius: 2px; */
   transition: all 0.5s ease;
-  /* font-weight: 600;
-  font-size: 14px; */
-  /* height: 60px;
-  width: 110px; */
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
-  /* border: 1px solid rgba(0,0,0,0.06);
-  border-radius: 0px; */
-  /* box-shadow: 0 0 0 white, 0 0 0 white; */
 }
 
 .button-text{
@@ -1365,9 +1360,8 @@ p:last-of-type{
 .popup{
   opacity: 0;
   visibility: hidden;
-  height: 700px;
-  width: 700px;
-  margin-top: 100px;
+  height:80%;
+  width: 80%;
   flex-shrink: 0;
   border-radius: 3px;
   position: relative;
@@ -1461,7 +1455,7 @@ p:last-of-type{
   transition: all 0.5s ease 0.4s;
 }
 
-.bg6{
+/* .bg6{
   --offset: 40%;
   position: absolute;
   left: var(--offset);
@@ -1471,7 +1465,7 @@ p:last-of-type{
   background: #9B1E2E;
   z-index: 5;
   transition: all 0.8s ease 0.4s;
-}
+} */
 
 .content-schedule{
   --offset: 0;
@@ -1769,4 +1763,15 @@ body.active .bg6{
     
   }
 
+}
+
+.textstyle1 {
+  display: inline-block; /* ทำให้ <hr> เป็น inline-block เพื่อให้อยู่บนบรรทัดเดียวกับ <p> */
+  font-family: 'Poppins', sans-serif;
+  font-size: 80px;
+  font-weight: 550;
+  letter-spacing: -11px; /* ปรับค่าตามที่ต้องการ */
+  margin-bottom: 0; /* ปรับค่าตามที่ต้องการ */
+  padding: 0;
+  vertical-align: middle; /* จัดให้ตำแหน่งของ <p> อยู่ในระดับกลางของ <hr> */
 }

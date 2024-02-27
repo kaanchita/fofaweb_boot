@@ -1,402 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home</title>
-        
-        <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R9D7VRKFN3"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-R9D7VRKFN3');
-    </script>
-    
-    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="./src/style.css" rel="stylesheet">
-    <!-- <link href="./src/swiper.css" rel="stylesheet"> -->
-    <link href="./src/footer.css" rel="stylesheet">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <!-- icon -->
-    <link rel="shortcut icon" type="image/x-icon" href="./images/LogoIFOA_1x.png" />
-    
-        <style>
-           @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');     
-           @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-    
-           @font-face {
-            font-family: 'Adam';
-            src: url('fonts/Adam-Bold.ttf');
-            font-weight: bold;
-            font-style: normal;
-          }
-          @font-face {
-            font-family: 'Adam';
-            src: url('fonts/Adam-Light.ttf');
-            font-weight: lighter;
-            font-style: normal;
-          }
-          @font-face {
-            font-family: 'Adam';
-            src: url('fonts/Adam-Medium.ttf');
-            font-weight: normal;
-            font-style: normal;
-          }
-        </style>
-
-        <style>
-    
-            /* *, *:before, *:after {
-      box-sizing: border-box;
-      min-width: 0;
-      min-height: 0;
-      margin: 0;
-      padding: 0;
-    } */
-    
-    
-    .index-page {
-      margin: 0;
-      width: 100%;
-      font-family: 'Poppins', sans-serif;
-      font-weight: 400;
-      font-style: normal;
-      -ms-text-size-adjust: 100%;
-      -webkit-text-size-adjust: 100%;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      text-rendering: optimizeLegibility;
-    
-    
-    .border-top {
-      width: 100%;
-      height: 0.75em;
-      top: 0;
-      width: 0;
-      -webkit-animation: ani-width ease-in-out 0.5s 0s both;
-              animation: ani-width ease-in-out 0.5s 0s both;
-    }
-    .border-top:after {
-      content: "";
-      bottom: 0;
-      width: 100%;
-      height: 0.75em;
-      right: 0;
-      -webkit-animation: ani-width ease-in-out 0.5s 1s both;
-              animation: ani-width ease-in-out 0.5s 1s both;
-    }
-    
-    .border-left {
-      height: 100%;
-      width: 0.75em;
-      left: 0;
-      bottom: 0;
-      -webkit-animation: ani-height ease-in-out 0.5s 1.5s both;
-              animation: ani-height ease-in-out 0.5s 1.5s both;
-    }
-    .border-left:after {
-      content: "";
-      right: 0;
-      top: 0;
-      height: 100%;
-      width: 0.75em;
-      -webkit-animation: ani-height ease-in-out 0.5s 0.5s both;
-              animation: ani-height ease-in-out 0.5s 0.5s both;
-    }
-    
-    .border-top,
-    .border-top:after,
-    .border-left,
-    .border-left:after {
-      position: fixed;
-      z-index: 9;
-      background-color: #ffffff;
-    }
-    
-    h2 {
-        font-family: 'Poppins', sans-serif;
-    /* letter-spacing: -9px;  */
-    font-weight: 700;
-      font-size: 18px;
-      line-height: 1.2;
-    }
-    @media (min-width: 32em) {
-      h2 {
-        font-size: 50px;
-      }
-    }
-    
-    hr.sep {
-      border: 0px;
-      height: 1px;
-      background: #fff;
-      margin: 1.4em auto;
-      width: 3em;
-    }
-    
-    main > section:nth-child(1):not(.site-menu), main > article:nth-child(1):not(.site-menu) {
-      z-index: 2;
-    }
-    main > section:nth-child(2):not(.site-menu), main > article:nth-child(2):not(.site-menu) {
-      z-index: 3;
-    }
-    main > section:nth-child(3):not(.site-menu), main > article:nth-child(3):not(.site-menu) {
-      z-index: 4;
-    }
-    
-    .mast {
-      position: relative;
-      display: flex;
-      align-items: center;
-      height: 90vh;
-      width: 100%;
-      color: #850707;
-      margin-bottom: 1em;
-    }
-    .mast:after {
-      content: "";
-      z-index: 0;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.7);
-    }
-    .mast__bg {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      margin: 0 auto;
-      padding: 0;
-      background-size: cover;
-      background-color: #111;
-      -webkit-animation: fade-in 1s ease both;
-              animation: fade-in 1s ease both;
-    }
-    .mast__header {
-      z-index: 5;
-      position: fixed;
-      width: 100%;
-      top: 45%;
-      text-align: center;
-      -webkit-animation: fade-in 2s 1.5s ease both;
-              animation: fade-in 2s 1.5s ease both;
-    }
-   
-    .mast__pretitle {
-      margin-bottom: 0.5em;
-      font-size: 1em;
-      font-weight: 400;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-    }
-    
-    @-webkit-keyframes fade-in {
-      0% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
-    }
-    
-    @keyframes fade-in {
-      0% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
-    }
-    @-webkit-keyframes ani-width {
-      0% {
-        width: 0;
-      }
-      100% {
-        width: 100%;
-      }
-    }
-    @keyframes ani-width {
-      0% {
-        width: 0;
-      }
-      100% {
-        width: 100%;
-      }
-    }
-    @-webkit-keyframes ani-height {
-      0% {
-        height: 0;
-      }
-      100% {
-        height: 100%;
-      }
-    }
-    @keyframes ani-height {
-      0% {
-        height: 0;
-      }
-      100% {
-        height: 100%;
-      }
-    }
-
-    }
-    .container-fluid {
-    position: relative;
-    z-index: 100; 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Istok+Web);
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
 }
-    
-        </style>
-    </head>
+.section-slide{
+    * {
+  box-sizing: border-box;
+}
+body, figure { 
+  margin: 0; background: #101010;
+  font-family: Istok Web, sans-serif;
+  font-weight: 100;
+}
+div#captioned-gallery { 
+  width: 100%; overflow: hidden; 
+}
+figure.slider { 
+  position: relative; width: 500%;
+  font-size: 0; animation: 30s slidy infinite; 
+}
+figure.slider figure { 
+  width: 20%; height: auto;
+  display: inline-block;  position: inherit; 
+}
+figure.slider img { width: 100%; height: auto; }
+figure.slider figure figcaption { 
+  position: absolute; bottom: 0;
+  background: rgba(0,0,0,0.4);
+  color: #fff; width: 100%;
+  font-size: 2rem; padding: .6rem; 
+}
+}
+
+    </style>
+</head>
 <body>
-   <!-- section1 -->
-   <section class="index-page">   
-    <main>
-        <section class="mast">
-           <figure class="mast__bg" style="background-image:url(./images/elements/img7.jpg)"></figure>
-          <header class="mast__header  js-clippy">
-              <h5 class="mast__pretitle">welcome to</h5>
-              <h2 class="mast__title">International Festival of Arts</h2>
-              <hr class="sep">
-          </header>
-        </section>
-        
-        <section class="mast">
-           <figure class="mast__bg" style="background-image:url(./images/elements/img1.jpg)"></figure>
-          <header class="mast__header  js-clippy">
-            <h5 class="mast__pretitle">presented by</h5>
-            <h2 class="mast__title">Srinakharinwirot University</h2>
-            <hr class="sep">
-          </header>
-        </section>
-          
-        <section class="mast">
-           <figure class="mast__bg" style="background-image:url(./images/elements/img5.jpg)"></figure>
-        <header class="mast__header  js-clippy">
-          <h5 class="mast__pretitle">Collaborate with</h5>
-          <h2 class="mast__title">Faculty of Fine Arts </h2>
-          <h2 class="mast__title">Council Of Arts And Design Deans Of Thailand</h2>
-          <hr class="sep">
-        </header>
-        </section>
-        <div class="border-top"></div>
-        <div class="border-left"></div>      
-        </main>
-    </section>
-    <!-- section1 -->
-
-
-    <section class="container-fluid " style="background-color: #fff;">
-        <div class="row" style="height: 300px; width: auto;">
-    
+    <!-- <base href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/"> -->
+    <section class="section-slide">
+        <div id="captioned-gallery">
+            <figure class="slider">
+                <figure>
+                    <img src="./images/elements/img14.jpg" alt>
+                    <figcaption>Hobbiton, New Zealand</figcaption>
+                </figure>
+                <figure>
+                    <img src="/images/elements/img9.jpg" alt>
+                    <figcaption>Wanaka, New Zealand</figcaption>
+                </figure>
+                <figure>
+                    <img src="/images/elements/img6.jpg" alt>
+                    <figcaption>Utah, United States</figcaption>
+                </figure>
+                <figure>
+                    <img src="/images/elements/img2.jpg" alt>
+                    <figcaption>Bryce Canyon, Utah, United States</figcaption>
+                </figure>
+                <!-- <figure>
+                    <img src="hobbiton-lake.jpg" alt>
+                    <figcaption>Hobbiton, New Zealand</figcaption>
+                </figure> -->
+            </figure>
         </div>
-    
+
     </section>
 
-        <!-- section logo -->
-    <div class="container-fluid mt-5" data-aos="fade-up" data-aos-duration="1500">
-        <div class="row justify-content-center align-items-center pb-5">
-          <div class="col-6 col-md-2 d-flex justify-content-center align-items-center">
-            <div class="grayscale-image d-flex justify-content-center align-items-center">
-              <img src="images/logo/LogoIFOA.png" class="w-50 h-auto">
-            </div>
-          </div>
-      
-          <div class="col-6 col-md-2 d-flex justify-content-center align-items-center">
-            <div class="grayscale-image d-flex justify-content-center align-items-center">
-              <img src="images/logo/Srinakharinwirot_Logo_EN_Color.png" class="w-75 h-auto">
-            </div>
-          </div>
-      
-          <div class="col-6 col-md-2 d-flex justify-content-center align-items-center">
-            <div class="grayscale-image d-flex justify-content-center align-items-center">
-              <img src="images/logo/LOGO-FOFA.png" class="w-100 h-auto">
-            </div>
-          </div>
-      
-          <div class="col-6 col-md-2 d-flex justify-content-center align-items-center"> 
-            <div class="grayscale-image d-flex justify-content-center align-items-center">
-              <img src="images/logo/S__30532871.jpg" class="w-75 h-auto">
-            </div>
-          </div>
-        </div>
-      </div>
- <!-- section logo -->
-
-
-
-
-
-
-
-
-
-
-    <script>
-       (function($) {
-  var s,
-  clippy = {
-    settings: {
-      heading: $('.js-clippy'),
-    },
-    init: function() {
-      s = this.settings;
-      this.bindEvents();
-    },
-    bindEvents: function(){
-      $(window).on("load resize scroll", $.proxy(this.getClippy, this));
-    },
-
-    getClippy: function(){
-    s.heading.each(function() {
-        var layerOffset = $(this).closest('.mast').offset(), // เปลี่ยนเป็น .mast
-            containerOffset = layerOffset.top - $(window).scrollTop(),
-            clippy = containerOffset - $(this).css("top").replace(/[^-\d\.]/g, '') - $(this).css("margin-top").replace(/[^-\d\.]/g, '');
-
-        // Check if the current element is within the range of the logo section
-        var logoSection = $('.container-fluid');
-        var logoSectionTop = logoSection.offset().top;
-        var logoSectionBottom = logoSectionTop + logoSection.outerHeight();
-
-        // Check if the current element's bottom is below the top of the logo section
-        // and if the current element's top is above the bottom of the logo section
-        if (layerOffset.top + $(this).outerHeight() > logoSectionTop && layerOffset.top < logoSectionBottom) {
-            // Adjust clippy value to ensure it doesn't overlap with the logo section
-            clippy = Math.min(clippy, logoSectionBottom - layerOffset.top);
-        }
-
-        $(this).css('clip', 'rect('+ clippy +'px, auto, auto, auto)');
-    });
-},
-  };
-   clippy.init();
-})(jQuery);
-    </script>
-
-<script>
-    AOS.init();
-  </script>
-
+    
 </body>
 </html>

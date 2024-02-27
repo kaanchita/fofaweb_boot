@@ -61,213 +61,47 @@
           }
         </style>
 
-        <style>
-    
-            /* *, *:before, *:after {
-      box-sizing: border-box;
-      min-width: 0;
-      min-height: 0;
-      margin: 0;
-      padding: 0;
-    } */
-    
-    
-    .index-page {
-      margin: 0;
-      width: 100%;
-      font-family: 'Poppins', sans-serif;
-      font-weight: 400;
-      font-style: normal;
-      -ms-text-size-adjust: 100%;
-      -webkit-text-size-adjust: 100%;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      text-rendering: optimizeLegibility;
-    
-    
-    .border-top {
-      width: 100%;
-      height: 0.75em;
-      top: 0;
-      width: 0;
-      -webkit-animation: ani-width ease-in-out 0.5s 0s both;
-              animation: ani-width ease-in-out 0.5s 0s both;
-    }
-    .border-top:after {
-      content: "";
-      bottom: 0;
-      width: 100%;
-      height: 0.75em;
-      right: 0;
-      -webkit-animation: ani-width ease-in-out 0.5s 1s both;
-              animation: ani-width ease-in-out 0.5s 1s both;
-    }
-    
-    .border-left {
-      height: 100%;
-      width: 0.75em;
-      left: 0;
-      bottom: 0;
-      -webkit-animation: ani-height ease-in-out 0.5s 1.5s both;
-              animation: ani-height ease-in-out 0.5s 1.5s both;
-    }
-    .border-left:after {
-      content: "";
-      right: 0;
-      top: 0;
-      height: 100%;
-      width: 0.75em;
-      -webkit-animation: ani-height ease-in-out 0.5s 0.5s both;
-              animation: ani-height ease-in-out 0.5s 0.5s both;
-    }
-    
-    .border-top,
-    .border-top:after,
-    .border-left,
-    .border-left:after {
-      position: fixed;
-      z-index: 9;
-      background-color: #ffffff;
-    }
-    
-    h2 {
-        font-family: 'Poppins', sans-serif;
-    /* letter-spacing: -9px;  */
-    font-weight: 700;
-      font-size: 18px;
-      line-height: 1.2;
-    }
-    @media (min-width: 32em) {
-      h2 {
-        font-size: 50px;
-      }
-    }
-    
-    hr.sep {
-      border: 0px;
-      height: 1px;
-      background: #fff;
-      margin: 1.4em auto;
-      width: 3em;
-    }
-    
-    main > section:nth-child(1):not(.site-menu), main > article:nth-child(1):not(.site-menu) {
-      z-index: 2;
-    }
-    main > section:nth-child(2):not(.site-menu), main > article:nth-child(2):not(.site-menu) {
-      z-index: 3;
-    }
-    main > section:nth-child(3):not(.site-menu), main > article:nth-child(3):not(.site-menu) {
-      z-index: 4;
-    }
-    
-    .mast {
-      position: relative;
-      display: flex;
-      align-items: center;
-      height: 90vh;
-      width: 100%;
-      color: #ffffff;
-      margin-bottom: 1em;
-    }
-    .mast:after {
-      content: "";
-      z-index: 0;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.7);
-    }
-    .mast__bg {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      margin: 0 auto;
-      padding: 0;
-      background-size: cover;
-      background-color: #111;
-      -webkit-animation: fade-in 1s ease both;
-              animation: fade-in 1s ease both;
-    }
-    .mast__header {
-      z-index: 5;
-      position: fixed;
-      width: 100%;
-      top: 45%;
-      text-align: center;
-      -webkit-animation: fade-in 2s 1.5s ease both;
-              animation: fade-in 2s 1.5s ease both;
-    }
-   
-    .mast__pretitle {
-      margin-bottom: 0.5em;
-      font-size: 1em;
-      font-weight: 400;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-    }
-    
-    @-webkit-keyframes fade-in {
-      0% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
-    }
-    
-    @keyframes fade-in {
-      0% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
-    }
-    @-webkit-keyframes ani-width {
-      0% {
-        width: 0;
-      }
-      100% {
-        width: 100%;
-      }
-    }
-    @keyframes ani-width {
-      0% {
-        width: 0;
-      }
-      100% {
-        width: 100%;
-      }
-    }
-    @-webkit-keyframes ani-height {
-      0% {
-        height: 0;
-      }
-      100% {
-        height: 100%;
-      }
-    }
-    @keyframes ani-height {
-      0% {
-        height: 0;
-      }
-      100% {
-        height: 100%;
-      }
-    }
-
-    }
-    .container-fluid {
-    position: relative;
-    z-index: 100; 
+<style>
+    @import url(https://fonts.googleapis.com/css?family=Istok+Web);
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
 }
-    
-        </style>
+.section-slide{
+
+body, figure { 
+margin: 0; background: #101010;
+font-family: Istok Web, sans-serif;
+font-weight: 100;
+}
+div#captioned-gallery { 
+width: 100%; overflow: hidden; 
+}
+figure.slider { 
+position: relative; width: 500%;
+font-size: 0; animation: 30s slidy infinite; 
+}
+figure.slider figure { 
+width: 20%; height: auto;
+display: inline-block;  position: inherit; 
+}
+figure.slider img { width: 100%; height: auto; }
+figure.slider figure figcaption { 
+position: absolute; bottom: 0;
+background: rgba(0,0,0,0.4);
+color: #fff; width: 100%;
+font-size: 2rem; padding: .6rem; 
+}
+}
+
+</style>
     </head>
 <body>
     <header class="sticky-top">
@@ -348,8 +182,6 @@
        </div>
      </header>
 
-
-
    <!-- section1 -->
    <section class="index-page">   
     <main>
@@ -387,15 +219,14 @@
     <!-- section1 -->
 
 
-    <section class="container-fluid " style="background-color: #fff; margin-top: -50px;">
-        <div class="row" style="height: 200px; width: auto;">
+    <section class="container-fluid " style="margin-top: -40px;">
+        <div class="row" style="height: 100px; width: auto;">
     
         </div>
-    
     </section>
 
         <!-- section logo -->
-    <div class="container-fluid" style="background-color: #fff;" data-aos="fade-up" data-aos-duration="1500">
+    <div class="container-fluid" data-aos="fade-up" data-aos-duration="1500">
         <div class="row justify-content-center align-items-center pb-5">
           <div class="col-6 col-md-2 d-flex justify-content-center align-items-center">
             <div class="grayscale-image d-flex justify-content-center align-items-center">
@@ -424,30 +255,317 @@
       </div>
  <!-- section logo -->
 
- <section class="container-fluid " style="background-color: #fff;">
-    <div class="row" style="height: 100px; width: auto;">
+ <section class="container-fluid ">
+    <div class="row" style="height: 70px; width: auto;">
 
     </div>
-
 </section>
 
-<!-- video -->
-<section data-aos="fade-down" data-aos-duration="1500">
-    <video>
-        
-    </video>
 
-</section>
-<!-- video -->
+<!-- branch -->
+<div class="container-fluid h-100 w-100 pt-5 pb-5" style=" background-color: #CAD3D7;" id="branch">
 
-<hr class="mx-auto w-50 justify-content-center " style="color: rgb(0, 0, 0); border: solid 1px;" data-aos="fade-right" data-aos-duration="800">
+    <div class="row pt-5 d-flex justify-content-center align-items-center" data-aos="fade-right" data-aos-duration="1000">
+      <div class="col-10 align-items-center">
+        <div class="text-branch">BRANCHES <hr> </div>
+      </div>
+      <!-- <div class="text-branch col-7 justify-content-center align-items-center">
+        <hr style="border-top: 4px solid #ffffff;">
+      </div> -->
+    </div>
+  
+    <div class="row d-flex justify-content-center" style="margin-top: 100px;  margin-bottom: 120px;" >
+      <div class="col-8">
+        <div class="body-branch" data-aos="zoom-in-left" data-aos-duration="1000">
+          <div class="container-branch">
+              <div class="card">
+                  <h2 class=".h2-custom ">Visual Art &</h2>
+                  <h2 class=".h2-custom " style="margin-top: 40px;">Design</h2>
+                  <i class="fas fa-arrow-right description"></i>
+                  <p>Artist : Sitthidham Rohitasuk</p>
+                    <div class="pic"></div>
+                  <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <button>
+                  </button>
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="row d-flex justify-content-center" style=" margin-bottom: 120px;">
+      <div class="col-8">
+        <div class="body-branch" data-aos="zoom-in-right" data-aos-duration="1000" >
+          <div class="container-branch">
+        <div class="card card2">
+          <h2 class=".h2-custom ">Music</h2>
+          <i class="fas fa-arrow-right description"></i>
+          <p>(IFA:2024)</p>
+          <div class="pic"></div>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <button>
+          </button>
+      </div>
+      </div>
+        </div>
+      </div>
+      </div>
+  
+      <div class="row d-flex justify-content-center" style=" margin-bottom: 120px;">
+        <div class="col-8">
+          <div class="body-branch" data-aos="zoom-in-right" data-aos-duration="1000" >
+            <div class="container-branch">
+          <div class="card card3">
+            <h2 class=".h2-custom ">Performing Arts</h2>
+            <h2 class=".h2-custom " style="margin-top: 45px;">& Dance</h2>
+            <i class="fas fa-arrow-right description"></i>
+            <p>(IFA:2024)</p>
+            <div class="pic"></div>
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <button>
+            </button>
+        </div>
+        </div>
+          </div>
+        </div>
+        </div>
+  
+  </div>
+  <!-- branch -->
 
-<section class="container-fluid " style="background-color: #fff;">
+<section class="container-fluid " >
     <div class="row" style="height: 200px; width: auto;">
 
     </div>
 
 </section>
+
+<!-- video -->
+<section class="container-fluid">
+    <div class="row justify-content-center align-items-center pb-5">
+        <div class="col-1">
+
+        </div>
+
+        <div class="col-5 justify-content-center " data-aos="fade-down" data-aos-duration="1500">
+            <video class="" style="width: 100%;"  controls>
+                <source src="./images/video.mov" type="video/mp4">
+               
+              </video>
+        </div>
+
+        <div class="col-1">
+
+        </div>
+        
+        <div class="col-4 justify-content-center" data-aos="fade-up" data-aos-duration="1500">
+            <p style="text-indent: 50px;">Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
+
+        </di>
+        <div class="col-1">
+
+        </div>
+        
+    </div>
+</section>
+<!-- video -->
+
+<section class="container-fluid " >
+    <div class="row" style="height: 200px; width: auto;">
+
+    </div>
+</section>
+
+ <!-- sub topic -->
+  <div class="container-fluid">
+    <section class="row d-flex align-items-center justify-content-center">     
+    <div class="col-md-2 index"> 
+
+    </div>
+                  
+    <div class="col-md-8 index ">   
+    <div class="row justify-content-start d-flex" data-aos="fade-right" data-aos-duration="1000">
+         <div class="col-md-7 mx-auto mb-4 mt-4">   
+          <a href="#" class="cta">  
+            <span>Certification</span>
+            <svg width="13px" height="10px" viewBox="0 0 13 10">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </a>
+         </div>
+    </div>
+
+    <div class="row justify-content-end d-flex" data-aos="fade-left" data-aos-duration="1000">
+         <div class="col-md-7 d-flex justify-content-end mb-4 mt-4">
+         <a href="#" class="cta"><span>Program</span>
+          <svg width="13px" height="10px" viewBox="0 0 13 10">
+         <path d="M1,5 L11,5"></path>
+         <polyline points="8 1 12 5 8 9"></polyline>
+         </svg>
+        </a>
+      </div>
+    </div>
+
+<div class="row justify-content-end d-flex">
+         <div class="col-md-7 mx-auto mb-4 mt-4" data-aos="fade-right" data-aos-duration="1000" >
+          <a href="#" class="cta">
+         <span>KEYNOTE</span>
+         <svg width="13px" height="10px" viewBox="0 0 13 10" >
+          <path d="M1,5 L11,5"></path>
+         <polyline points="8 1 12 5 8 9"></polyline>
+        </svg>     
+      </a>    
+    </div>
+</div>
+
+ <div class="row justify-content-end d-flex">
+  <div class="col-md-7 d-flex justify-content-end mb-4 mt-4" data-aos="fade-left" data-aos-duration="1000">
+    <a href="#" class="cta">
+    <span>Peer Review </span>
+    <svg width="13px" height="10px" viewBox="0 0 13 10">
+    <path d="M1,5 L11,5"></path>
+    <polyline points="8 1 12 5 8 9"></polyline>
+    </svg>
+    </a>
+    </div>
+  </div>
+
+  <div class="row justify-content-end d-flex">
+    <div class="col-md-7 mx-auto mb-4 mt-4" data-aos="fade-right" data-aos-duration="1000" >
+     <a href="#" class="cta">
+    <span>Event Photos</span>
+    <svg width="13px" height="10px" viewBox="0 0 13 10" >
+     <path d="M1,5 L11,5"></path>
+    <polyline points="8 1 12 5 8 9"></polyline>
+   </svg>     
+ </a>    
+</div>
+</div>
+    </div>
+         
+    <div class="col-md-2 index">
+         
+    </div>                 
+    </section>
+    </div>
+ <!-- sub topic -->
+
+ <section class="container-fluid " >
+    <div class="row" style="height: 200px; width: auto;">
+
+    </div>
+</section>
+
+<section class="container-fluid " >
+    
+    <section class="section-slide">
+        <div id="captioned-gallery">
+            <figure class="slider">
+                <figure>
+                    <img src="./images/elements/img14.jpg" alt>
+                    <figcaption>Hobbiton, New Zealand</figcaption>
+                </figure>
+                <figure>
+                    <img src="/images/elements/img9.jpg" alt>
+                    <figcaption>Wanaka, New Zealand</figcaption>
+                </figure>
+                <figure>
+                    <img src="/images/elements/img6.jpg" alt>
+                    <figcaption>Utah, United States</figcaption>
+                </figure>
+                <figure>
+                    <img src="/images/elements/img2.jpg" alt>
+                    <figcaption>Bryce Canyon, Utah, United States</figcaption>
+                </figure>
+            </figure>
+        </div>
+
+    </section>
+
+</section>
+
 
 
 

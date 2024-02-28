@@ -932,12 +932,6 @@ transition: all 0.35s;
   display: none; /* ซ่อนแถบเลื่อนสำหรับเบราว์เซอร์ที่รองรับแบบใช้งานนี้ */
 
 }
-/* .artwork {
-  overflow-x: auto;
-}
-.artwork::-webkit-scrollbar {
-  display: none; 
-} */
 
 .creativetext2 {
   position: fixed;

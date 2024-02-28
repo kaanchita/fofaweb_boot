@@ -2300,5 +2300,11 @@ font-size: 2rem; padding: .6rem;
     height: 500px;
 }
 
+.vertical {
+  border-left: 2px solid black;
+  height: 600px;
+  position: absolute;
+  left: 50%;
+}
 
 

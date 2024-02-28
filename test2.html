@@ -1,57 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<title>
+		HTML border Property
+	</title>
 
+	<!-- style to create vertical line -->
 
-    <style>
-        .schedule-body {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  font-family: "Roboto", sans-serif;
-  justify-content: center;
-  min-height: 100vh;
-
-  h1 {
-  color: #fff;
-  font-size: 25vw;
-  line-height: 0.7;
-  margin: 0.5em;
-}
-
-.shadow {
-  filter: drop-shadow(1px 0 0 #000) drop-shadow(-1px 0 0 #000) drop-shadow(0 1px 0 #000) drop-shadow(0 -1px 0 #000);
-}
-
-.stroke {
-  -webkit-text-stroke: 2px #000;
-  color: #000;
-  position: relative;
-}
-.stroke::before {
-  -webkit-text-stroke: 0;
-  color: #fff;
-  content: attr(data-text);
-  position: absolute;
-  white-space: pre;
-}
-}
-    </style>
+	<style>
+		.vertical {
+			border-left: 6px solid black;
+			height: 200px;
+			position: absolute;
+			left: 50%;
+		}
+	</style>
 </head>
-<body>
-    <div class="schedule-body">
-        <h1 class="shadow">
-            Schedule<br>
-            Studio
-          </h1>
-          
-          <h1 class="stroke" data-text="Design&#xa;Studio">
-            schedule<br>
-            Studio
-          </h1>
-    </div>
+
+<body style="text-align: center;">
+
+	<h1 style="color: green;">
+		GeeksForGeeks
+	</h1>
+
+	<div class="vertical"></div>
+
 </body>
+
 </html>

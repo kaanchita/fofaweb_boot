@@ -965,7 +965,7 @@ transition: all 0.35s;
 .artwork {
   position: relative;
   top: 0px !important;
-  margin-top: 500px;
+  /* margin-top: 500px; */
   left: 50%;
   width: 100%;
   transform: translateX(-50%);

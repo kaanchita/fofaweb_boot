@@ -150,7 +150,7 @@
       </div>
       
       
-      <div class="dataartist mb-5">
+      <div class="dataartist mb-5" id="box1_dataartist">
         <div class="row">
           <div class="col-md-6 firstcol d-flex justify-content-center">
             <img src="./images/artists/651b90d08b0fefc9763cf557_3 George Bolster-p-1080.jpg" class="img-fluid imageartists">
@@ -168,7 +168,7 @@
         </div>
       </div>
 
-      <div class="container mb-5 creativetext2" data-aos="fade-right"  data-aos-duration="2000">
+      <div class="container mb-5 creativetext2" data-aos="fade-right"  data-aos-duration="2000" id="creativetext2">
         <div class="col-md-12">
           <p class="textstyle1">CREATIVE WORK.<hr class="custom-hr"></p>
           <p class="textstyle2">"ARTWORK"</p>
@@ -394,6 +394,13 @@
              });
            });
      
+       </script>
+
+       <script>
+        const box1_dataartist = document.querySelector("#box1_dataartist")
+        const creativetext2 = document.querySelector("#creativetext2")
+        creativetext2.style.top = (box1_dataartist.clientHeight) +'px'
+        console.log('box1_dataartist',box1_dataartist.clientHeight);
        </script>
 
 </body>

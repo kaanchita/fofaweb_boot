@@ -916,9 +916,7 @@ transition: all 0.35s;
   -webkit-text-stroke: 1px;
   text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.3); 
 }
-.imageartwork {
-  width: 300px;
-}
+
 .firstname {
  margin-right: 100px;
 }
@@ -934,22 +932,13 @@ transition: all 0.35s;
   display: none; /* ซ่อนแถบเลื่อนสำหรับเบราว์เซอร์ที่รองรับแบบใช้งานนี้ */
 
 }
-.artwork {
+/* .artwork {
   overflow-x: auto;
-  /* background-color: #844635; */
 }
 .artwork::-webkit-scrollbar {
-  display: none; /* ซ่อนแถบเลื่อนสำหรับเบราว์เซอร์ที่รองรับแบบใช้งานนี้ */
-}
+  display: none; 
+} */
 
-.image-container {
-  display: flex;
-}
-
-.imageartwork {
-  flex: 0 0 auto;
-  margin-right: 30px;
-}
 .creativetext2 {
   position: fixed;
   /* top: 500px; */
@@ -961,14 +950,10 @@ transition: all 0.35s;
   z-index: -1;
   /* ปรับแต่งค่าต่างๆ ตามที่ต้องการ */
 }
-
+.imageartwork {
+  width: 450px;
+}
 .artwork {
-  position: relative;
-  top: 0px !important;
-  /* margin-top: 500px; */
-  left: 50%;
-  width: 100%;
-  transform: translateX(-50%);
   background-color: #0f0d0d15;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -978,6 +963,10 @@ transition: all 0.35s;
   /* background-color: #0f0d0d15;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px); */
+}
+#box1_dataartist {
+  background-color: #fffcf9;
+
 }
 /* Artists End */
 
@@ -1159,64 +1148,6 @@ border-radius: 10px;
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
-
-#enlargeImage:hover {
-transform: scale(1.0);
-transition: transform 0.3s;
-}
-
-/* template paper  */
-.template-text {
-font-size: 40px;
-margin-left: 10%;
-margin-bottom: 3%;
-}
-
-.template {
-font-size: 20px;
-width: 85%;
-height: 90%;
-display: inline-block;
-padding: 20px 20px;
-margin: 10px;
-text-align: center;
-text-decoration: none;
-color: #8A4A38;
-border: 2px solid #8A4A38;
-/* border-radius: 5px; */
-transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-}
-
-.template:hover {
-background-color: #9B1E2E;
-color: white;
-border-color: #9B1E2E;
-}
-
-/* accordian-music */
-.music .accordion-item  {
-background-color: #f8f9fa; /* สีพื้นหลังของแต่ละ accordion-item */
-border: 1px solid #dee2e6; /* เส้นขอบของแต่ละ accordion-item */
-border-radius: 5px; /* มุมของแต่ละ accordion-item */
-margin-bottom: 5px; /* ระยะห่างระหว่าง accordion-item */
-}
-
-.music .accordion-button {
-background-color: #9B1E2E; /* สีพื้นหลังของปุ่ม accordion-button */
-color: #dfb037
-}
-
-.music .accordion-button:hover {
-background-color: #dfb037; 
-color: #000000;
-}
-
-.music .accordion-body {
-background-color: #fff; /* สีพื้นหลังของ accordion-body */
-border-top: 1px solid #dee2e6; /* เส้นขอบด้านบนของ accordion-body */
-border-bottom: 1px solid #dee2e6; /* เส้นขอบด้านล่างของ accordion-body */
-}
-/* accordian-music */
 
 
 /* subtopic menu index */
@@ -2197,7 +2128,7 @@ main > section:nth-child(3):not(.site-menu), main > article:nth-child(3):not(.si
 .container-fluid {
 position: relative;
 z-index: 100; 
-background-color: #fffcf9;
+/* background-color: #fffcf9; */
 }
 /* index page */
 
@@ -2245,8 +2176,5 @@ font-size: 2rem; padding: .6rem;
     height: 500px;
 }
 
-#box1_dataartist {
-  background-color: #fffcf9;
 
-}
 

@@ -120,9 +120,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css
            <!-- multi-langue -->
            <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="">
-              <span id="languageFlagContainer" class="img-fluid m-2">
-                <img src="images/flags/engflag.png" style="max-width: 20px;">
-              </span>
+              <img id="languageFlag" src="images/flags/engflag.png" class="img-fluid m-2" style="max-width: 20px;">
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#" onclick="changeLanguage('th')"><img src="images/flags/thaiflag.png" class="img-fluid m-2" style="max-width: 20px;">Thai</a></li>
@@ -380,33 +378,26 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css
        
          <script>
         function changeLanguage(newLanguage) {
-  i18next.changeLanguage(newLanguage, (err, t) => {
-    if (err) return console.log('Error loading translation files:', err);
-    // Update textContent for each element
-    elementIds.forEach((elementId) => {
-      document.getElementById(elementId).textContent = t(elementId);
-    });
-    // Update flag image
-    const flagContainer = document.getElementById('languageFlagContainer');
-    if (newLanguage === 'en') {
-      flagContainer.innerHTML = '<img src="images/flags/engflag.png" style="max-width: 20px;">';
-      document.body.style.fontFamily = "'Poppins', sans-serif"; 
-    } else {
-      flagContainer.innerHTML = '<img src="images/flags/thaiflag.png" style="max-width: 20px;">';
-      document.body.style.fontFamily = "'Kanit', sans-serif";
-    }
-
-    // Save language settings to local storage
-    localStorage.setItem('language', newLanguage);
-    localStorage.setItem('fontFamily', document.body.style.fontFamily);
-  });
-}
-// เรียกค่าที่ถูกเก็บไว้ใน localStorage
-var storedLanguage = localStorage.getItem('language');
-var storedFontFamily = localStorage.getItem('fontFamily');
-
-console.log(storedLanguage); // แสดงค่าภาษาที่ถูกเก็บไว้ใน localStorage
-console.log(storedFontFamily); // แสดงค่า fontFamily ที่ถูกเก็บไว้ใน localStorage
+              i18next.changeLanguage(newLanguage, (err, t) => {
+                if (err) return console.log('Error loading translation files:', err);
+                // Update textContent for each element
+                elementIds.forEach((elementId) => {
+                  document.getElementById(elementId).textContent = t(elementId);
+                });
+                // Update flag image
+                const flagImage = document.getElementById('languageFlag');
+                if (newLanguage === 'en') {
+                  flagImage.src = 'images/flags/engflag.png';
+                  document.body.style.fontFamily = "'Poppins', sans-seri"; 
+                 
+                } else {
+                  flagImage.src = 'images/flags/thaiflag.png';
+                  document.body.style.fontFamily = "'Kanit', sans-serif";
+                  document.body.style.fontSize = "15px";
+                
+                }
+              });
+            }  
 
          const elementIds = ['Home', 'Project', 'Detail', 'Register', 'Announce', 'Creative Works', 'Contact',
            'Visual Art2', 'Music2', 'Performing Arts2',

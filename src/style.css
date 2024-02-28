@@ -3,7 +3,7 @@ body {
   font-family: 'Adam';
   font-family: 'Kanit', sans-serif;
   font-family: 'Poppins', sans-serif;
-  background-color: #fffcf9 ;
+  background-color: #f4f3ef;
 }
 
 .sticky-top{
@@ -16,7 +16,7 @@ body {
 }
 
 .navbar {
-background-color: #fffcf9;
+background-color: #f4f3ef;
 
 }
 
@@ -2086,7 +2086,7 @@ main > section:nth-child(3):not(.site-menu), main > article:nth-child(3):not(.si
   align-items: center;
   height: 90vh;
   width: 100%;
-  color: #fffcf9;
+  color: #f4f3ef;
   margin-bottom: 1em;
 }
 .mast:after {

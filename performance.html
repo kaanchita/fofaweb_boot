@@ -589,51 +589,61 @@
        <script src="https://cdn.jsdelivr.net/npm/i18next-xhr-backend/dist/umd/i18nextXHRBackend.js"></script>
        <script src="https://cdn.jsdelivr.net/npm/i18next-sprintf-postprocessor/dist/umd/i18nextSprintfPostProcessor.js"></script>
      
-       <script>
-            function changeLanguage(newLanguage) {
-              i18next.changeLanguage(newLanguage, (err, t) => {
-                if (err) return console.log('Error loading translation files:', err);
-                // Update textContent for each element
-                elementIds.forEach((elementId) => {
-                  document.getElementById(elementId).textContent = t(elementId);
-                });
-                // Update flag image
-                const flagImage = document.getElementById('languageFlag');
-                if (newLanguage === 'en') {
-                  flagImage.src = 'images/flags/engflag.png';
-                  document.body.style.fontFamily = "'Poppins', sans-seri"; 
-                 
-                } else {
-                  flagImage.src = 'images/flags/thaiflag.png';
-                  document.body.style.fontFamily = "'Kanit', sans-serif";
-                
-                }
-              });
-            }  
-         const elementIds = ['Home', 'Project', 'Detail', 'Register', 'Announce', 'Creative Works', 'Contact', 'Visual Art', 'Music', 'Performing Arts', 'Visual Art2', 'Music2', 'Performing Arts2','Visual Art3', 'Music3', 'Performing Arts3',,'pfm','va','ms','pma'];
-       
-         i18next.use(i18nextBrowserLanguageDetector)
-           .use(i18nextXHRBackend)
-           .use(i18nextSprintfPostProcessor)
-           .init({
-             debug: true,
-             fallbackLng: 'en',
-             backend: {
-               loadPath: '/locales/{{lng}}.json'
-             },
-             interpolation: {
-               escapeValue: false
-             }
-           }, (err, t) => {
-             if (err) return console.log('Error initializing i18next:', err);
-       
-             // Update textContent for each element
-             elementIds.forEach((elementId) => {
-               document.getElementById(elementId).textContent = t(elementId);
-             });
-           });
-     
-       </script>
+       <script> 
+        function changeLanguage(newLanguage) {
+          i18next.changeLanguage(newLanguage, (err, t) => {
+            if (err) return console.log('Error loading translation files:', err);
+      
+            // อัพเดต textContent 
+            elementIds.forEach((elementId) => {
+              document.getElementById(elementId).textContent = t(elementId);
+            });
+      
+            // flagImage และ font 
+            const flagImage = document.getElementById('languageFlag');
+            if (newLanguage === 'en') {
+              flagImage.src = 'images/flags/engflag.png';
+              document.body.style.fontFamily = "'Poppins', sans-serif";
+            } else {
+              flagImage.src = 'images/flags/thaiflag.png';
+              document.body.style.fontFamily = "'Kanit', sans-serif";
+              document.body.style.fontSize = "15px";
+            }
+      
+            // เก็บค่าภาษาใน Local Storage
+            localStorage.setItem('selectedLanguage', newLanguage);
+          });
+        }
+    
+        const elementIds = ['Home', 'Project', 'Detail', 'Register', 'Announce', 'Creative Works', 'Contact', 'Visual Art', 'Music', 'Performing Arts', 'Visual Art2', 'Music2', 'Performing Arts2','Visual Art3', 'Music3', 'Performing Arts3',,'pfm','va','ms','pma'];
+      
+        window.onload = function () {
+          const storedLanguage = localStorage.getItem('selectedLanguage');
+          if (storedLanguage) {
+            changeLanguage(storedLanguage);
+          }
+        };
+      
+        i18next.use(i18nextBrowserLanguageDetector)
+          .use(i18nextXHRBackend)
+          .use(i18nextSprintfPostProcessor)
+          .init({
+            debug: true,
+            fallbackLng: 'en',
+            backend: {
+              loadPath: '/locales/{{lng}}.json'
+            },
+            interpolation: {
+              escapeValue: false
+            }
+          }, (err, t) => {
+            if (err) return console.log('Error initializing i18next:', err);
+      
+            elementIds.forEach((elementId) => {
+              document.getElementById(elementId).textContent = t(elementId);
+            });
+          });
+      </script>
 
 </body>
 </html>

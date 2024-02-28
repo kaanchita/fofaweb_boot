@@ -700,69 +700,18 @@
          <script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector/dist/umd/i18nextBrowserLanguageDetector.js"></script>
          <script src="https://cdn.jsdelivr.net/npm/i18next-xhr-backend/dist/umd/i18nextXHRBackend.js"></script>
          <script src="https://cdn.jsdelivr.net/npm/i18next-sprintf-postprocessor/dist/umd/i18nextSprintfPostProcessor.js"></script>
-
-         <!-- <script>
-       function changeLanguage(newLanguage) {
-              i18next.changeLanguage(newLanguage, (err, t) => {
-                if (err) return console.log('Error loading translation files:', err);
-
-                // Update textContent for each element
-                elementIds.forEach((elementId) => {
-                  document.getElementById(elementId).textContent = t(elementId);
-                });
-
-                // Update flag image
-                const flagImage = document.getElementById('languageFlag');
-                if (newLanguage === 'en') {
-                  flagImage.src = 'images/flags/engflag.png';
-                  document.body.style.fontFamily = "'Poppins', sans-seri"; 
-                 
-                } else {
-                  flagImage.src = 'images/flags/thaiflag.png';
-                  document.body.style.fontFamily = "'Kanit', sans-serif";
-                
-                }
-              });
-            }  
-
-          const elementIds = ['Home', 'Project', 'Detail', 'Register', 'Announce',
-           'Creative Works', 'Contact',
-           'Visual Art2', 'Music2', 'Performing Arts2','Visual Art3', 'Music3', 
-           'Performing Arts3'];
-
-          i18next.use(i18nextBrowserLanguageDetector)
-            .use(i18nextXHRBackend)
-            .use(i18nextSprintfPostProcessor)
-            .init({
-              debug: true,
-              fallbackLng: 'en',
-              backend: {
-                loadPath: '/locales/{{lng}}.json'
-              },
-              interpolation: {
-                escapeValue: false
-              }
-            }, (err, t) => {
-              if (err) return console.log('Error initializing i18next:', err);
-        
-              // Update textContent for each element
-              elementIds.forEach((elementId) => {
-                document.getElementById(elementId).textContent = t(elementId);
-              });
-            });
-        </script> -->
         <script>
-          // ฟังก์ชันเปลี่ยนภาษา
+          
           function changeLanguage(newLanguage) {
             i18next.changeLanguage(newLanguage, (err, t) => {
               if (err) return console.log('Error loading translation files:', err);
         
-              // อัพเดต textContent สำหรับแต่ละ element
+              // อัพเดต textContent 
               elementIds.forEach((elementId) => {
                 document.getElementById(elementId).textContent = t(elementId);
               });
         
-              // อัพเดตภาพธงและ font ตามภาษาที่เลือก
+              // flagImage และ font 
               const flagImage = document.getElementById('languageFlag');
               if (newLanguage === 'en') {
                 flagImage.src = 'images/flags/engflag.png';
@@ -773,15 +722,13 @@
                 document.body.style.fontSize = "15px";
               }
         
-              // เก็บค่าภาษาที่ผู้ใช้เลือกไว้ใน Local Storage
+              // เก็บค่าภาษาใน Local Storage
               localStorage.setItem('selectedLanguage', newLanguage);
             });
           }
-        
-          // รายการ element ที่ต้องการอัพเดต textContent ของแต่ละ element เมื่อมีการเปลี่ยนภาษา
+      
           const elementIds = ['Home', 'Project', 'Detail', 'Register', 'Announce', 'Creative Works', 'Contact', 'Visual Art2', 'Music2', 'Performing Arts2', 'Visual Art3', 'Music3', 'Performing Arts3'];
         
-          // ตรวจสอบค่าภาษาที่ผู้ใช้เลือกไว้ใน Local Storage และเปลี่ยนภาษาตามนั้นเมื่อโหลดหน้าเพจ
           window.onload = function () {
             const storedLanguage = localStorage.getItem('selectedLanguage');
             if (storedLanguage) {
@@ -789,7 +736,6 @@
             }
           };
         
-          // การใช้งาน i18next ในส่วนนี้เราจะใช้เหมือนเดิม
           i18next.use(i18nextBrowserLanguageDetector)
             .use(i18nextXHRBackend)
             .use(i18nextSprintfPostProcessor)
@@ -805,7 +751,6 @@
             }, (err, t) => {
               if (err) return console.log('Error initializing i18next:', err);
         
-              // อัพเดต textContent สำหรับแต่ละ element เมื่อโหลดหน้าเพจ
               elementIds.forEach((elementId) => {
                 document.getElementById(elementId).textContent = t(elementId);
               });

@@ -902,11 +902,6 @@ transition: all 0.35s;
 /* GALLERY */
 
 /* Artists */
-.dataartist {
-  /* background-color: #0f0d0d15;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); */
-}
 .imageartists {
   width: 400px;
   justify-content: center;
@@ -941,7 +936,7 @@ transition: all 0.35s;
 }
 .artwork {
   overflow-x: auto;
-  background-color: #844635;
+  /* background-color: #844635; */
 }
 .artwork::-webkit-scrollbar {
   display: none; /* ซ่อนแถบเลื่อนสำหรับเบราว์เซอร์ที่รองรับแบบใช้งานนี้ */
@@ -955,8 +950,33 @@ transition: all 0.35s;
   flex: 0 0 auto;
   margin-right: 30px;
 }
+.creativetext2 {
+  position: fixed;
+  top: 300px !important; /* ปรับตำแหน่งให้ creative อยู่ล่าง breadcrumb */
+  left: 10%;
+  width: 100%;
+  transform: translateX(-50%);
+  z-index: -1;
+  /* ปรับแต่งค่าต่างๆ ตามที่ต้องการ */
+}
 
+.artwork {
+  position: relative;
+  top: 0px !important;
+  margin-top: 500px;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  background-color: #0f0d0d15;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
 
+.dataartist {
+  /* background-color: #0f0d0d15;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); */
+}
 /* Artists End */
 
 

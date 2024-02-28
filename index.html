@@ -704,26 +704,36 @@
          <script>
     // language.js
     function changeLanguage(newLanguage) {
-              i18next.changeLanguage(newLanguage, (err, t) => {
-                if (err) return console.log('Error loading translation files:', err);
-                // Update textContent for each element
-                elementIds.forEach((elementId) => {
-                  document.getElementById(elementId).textContent = t(elementId);
-                });
-                // Update flag image
-                const flagImage = document.getElementById('languageFlag');
-                if (newLanguage === 'en') {
-                  flagImage.src = 'images/flags/engflag.png';
-                  document.body.style.fontFamily = "'Poppins', sans-seri"; 
-                 
-                } else {
-                  flagImage.src = 'images/flags/thaiflag.png';
-                  document.body.style.fontFamily = "'Kanit', sans-serif";
-                  document.body.style.fontSize = "15px";
-                
-                }
-              });
-            }  
+  // ... existing code ...
+
+  // Store the selected language in local storage
+  localStorage.setItem('selectedLanguage', newLanguage);
+
+  // Apply styles based on stored language (call a separate function for styling)
+  applyLanguageStyles(newLanguage);
+}
+
+function applyLanguageStyles(newLanguage) {
+  const flagImage = document.getElementById('languageFlag');
+  const body = document.body;
+
+  if (newLanguage === 'en') {
+    flagImage.src = 'images/flags/engflag.png';
+    body.style.fontFamily = "'Poppins', sans-serif";
+  } else {
+    flagImage.src = 'images/flags/thaiflag.png';
+    body.style.fontFamily = "'Kanit', sans-serif";
+    body.style.fontSize = "15px";
+  }
+}
+
+// Inside the i18next initialization code:
+
+const storedLanguage = localStorage.getItem('selectedLanguage');
+if (storedLanguage) {
+  changeLanguage(storedLanguage);
+}
+
 
 
           const elementIds = ['Home', 'Project', 'Detail', 'Register', 'Announce',

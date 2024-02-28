@@ -218,28 +218,28 @@ document.querySelectorAll('.nav-link').forEach(item => {
   // });
 
 // parallax creative
-// window.addEventListener('scroll', function() {
-//   var scrollTop = window.scrollY;
-//   var creativeText = document.querySelector('.creativetext');
-//   var windowHeight = window.innerHeight;
-//   var documentHeight = document.body.scrollHeight;
+window.addEventListener('scroll', function() {
+  var scrollTop = window.scrollY;
+  var creativeText = document.querySelector('.creativetext');
+  var windowHeight = window.innerHeight;
+  var documentHeight = document.body.scrollHeight;
   
-//   // คำนวณความสูงของ creative ตามความสูงของหน้าเอกสาร
-//   var creativeHeight = creativeText.offsetHeight;
+  // คำนวณความสูงของ creative ตามความสูงของหน้าเอกสาร
+  var creativeHeight = creativeText.offsetHeight;
 
-//   if (scrollTop + windowHeight > documentHeight - creativeHeight) {
-//     creativeText.style.bottom = 0;
-//   } else {
-//     creativeText.style.bottom = '-' + creativeHeight + 'px';
-//   }
-// });
+  if (scrollTop + windowHeight > documentHeight - creativeHeight) {
+    creativeText.style.bottom = 0;
+  } else {
+    creativeText.style.bottom = '-' + creativeHeight + 'px';
+  }
+});
 
 // artwork
-// document.addEventListener("DOMContentLoaded", function() {
-//   const container = document.querySelector(".artwork");
-//   container.addEventListener("wheel", function(event) {
-//     event.preventDefault();
-//     container.scrollLeft += event.deltaY;
-//   });
-// });
+document.addEventListener("DOMContentLoaded", function() {
+  const container = document.querySelector(".artwork");
+  container.addEventListener("wheel", function(event) {
+    event.preventDefault();
+    container.scrollLeft += event.deltaY;
+  });
+});
 

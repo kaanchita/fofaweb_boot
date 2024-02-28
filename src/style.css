@@ -1329,7 +1329,8 @@ transition: all 0.3s ease;
 .cta:hover:before {
   width: 100%;
   /* opacity: 80%; */
-  background: linear-gradient(to right, #fff, #9B1E2E);
+  background-color: #9B1E2E;
+  /* background: linear-gradient(to right, #fff, #9B1E2E); */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* กำหนดเงา */
 }
 
@@ -2296,13 +2297,11 @@ color: #fff; width: 100%;
 font-size: 2rem; padding: .6rem; 
 }
 }
-.carousel-item img {
-    height: 500px;
-}
+
 
 .vertical {
   border-left: 2px solid black;
-  height: 600px;
+  height: 500px;
   position: absolute;
   left: 50%;
 }

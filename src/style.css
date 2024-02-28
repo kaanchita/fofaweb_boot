@@ -952,7 +952,9 @@ transition: all 0.35s;
 }
 .creativetext2 {
   position: fixed;
-  top: 300px !important; /* ปรับตำแหน่งให้ creative อยู่ล่าง breadcrumb */
+  /* top: 500px; */
+  /* top: 300px;  */
+  /* ปรับตำแหน่งให้ creative อยู่ล่าง breadcrumb */
   left: 10%;
   width: 100%;
   transform: translateX(-50%);
@@ -963,7 +965,7 @@ transition: all 0.35s;
 .artwork {
   position: relative;
   top: 0px !important;
-  margin-top: 500px;
+  /* margin-top: 500px; */
   left: 50%;
   width: 100%;
   transform: translateX(-50%);
@@ -2199,6 +2201,7 @@ background-color: #fffcf9;
 }
 /* index page */
 
+
     
 @keyframes slidy {
 0% { left: 0%; }
@@ -2241,3 +2244,9 @@ font-size: 2rem; padding: .6rem;
 .carousel-item img {
     height: 500px;
 }
+
+#box1_dataartist {
+  background-color: #fffcf9;
+
+}
+

@@ -376,38 +376,29 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css
          <script src="https://cdn.jsdelivr.net/npm/i18next-xhr-backend/dist/umd/i18nextXHRBackend.js"></script>
          <script src="https://cdn.jsdelivr.net/npm/i18next-sprintf-postprocessor/dist/umd/i18nextSprintfPostProcessor.js"></script>
        
-         <script>
-     function changeLanguage(newLanguage) {
-  // ... existing code ...
+         <!-- <script>
+          function changeLanguage(newLanguage) {
+              i18next.changeLanguage(newLanguage, (err, t) => {
+                if (err) return console.log('Error loading translation files:', err);
 
-  // Store the selected language in local storage
-  localStorage.setItem('selectedLanguage', newLanguage);
+                // Update textContent for each element
+                elementIds.forEach((elementId) => {
+                  document.getElementById(elementId).textContent = t(elementId);
+                });
 
-  // Apply styles based on stored language (call a separate function for styling)
-  applyLanguageStyles(newLanguage);
-}
-
-function applyLanguageStyles(newLanguage) {
-  const flagImage = document.getElementById('languageFlag');
-  const body = document.body;
-
-  if (newLanguage === 'en') {
-    flagImage.src = 'images/flags/engflag.png';
-    body.style.fontFamily = "'Poppins', sans-serif";
-  } else {
-    flagImage.src = 'images/flags/thaiflag.png';
-    body.style.fontFamily = "'Kanit', sans-serif";
-    body.style.fontSize = "15px";
-  }
-}
-
-// Inside the i18next initialization code:
-
-const storedLanguage = localStorage.getItem('selectedLanguage');
-if (storedLanguage) {
-  changeLanguage(storedLanguage);
-}
-
+                // Update flag image
+                const flagImage = document.getElementById('languageFlag');
+                if (newLanguage === 'en') {
+                  flagImage.src = 'images/flags/engflag.png';
+                  document.body.style.fontFamily = "'Poppins', sans-seri"; 
+                 
+                } else {
+                  flagImage.src = 'images/flags/thaiflag.png';
+                  document.body.style.fontFamily = "'Kanit', sans-serif";
+                
+                }
+              });
+            }  
 
          const elementIds = ['Home', 'Project', 'Detail', 'Register', 'Announce', 'Creative Works', 'Contact',
            'Visual Art2', 'Music2', 'Performing Arts2',
@@ -434,6 +425,73 @@ if (storedLanguage) {
                });
              });
        
-         </script>
+         </script> -->
+         <script>
+          // ฟังก์ชันเปลี่ยนภาษา
+          function changeLanguage(newLanguage) {
+            i18next.changeLanguage(newLanguage, (err, t) => {
+              if (err) return console.log('Error loading translation files:', err);
+        
+              // อัพเดต textContent สำหรับแต่ละ element
+              elementIds.forEach((elementId) => {
+                document.getElementById(elementId).textContent = t(elementId);
+              });
+        
+              // อัพเดตภาพธงและ font ตามภาษาที่เลือก
+              const flagImage = document.getElementById('languageFlag');
+              if (newLanguage === 'en') {
+                flagImage.src = 'images/flags/engflag.png';
+                document.body.style.fontFamily = "'Poppins', sans-serif";
+              } else {
+                flagImage.src = 'images/flags/thaiflag.png';
+                document.body.style.fontFamily = "'Kanit', sans-serif";
+                document.body.style.fontSize = "15px";
+              }
+        
+              // เก็บค่าภาษาที่ผู้ใช้เลือกไว้ใน Local Storage
+              localStorage.setItem('selectedLanguage', newLanguage);
+            });
+          }
+        
+          // รายการ element ที่ต้องการอัพเดต textContent ของแต่ละ element เมื่อมีการเปลี่ยนภาษา
+          const elementIds = ['Home', 'Project', 'Detail', 'Register', 'Announce', 'Creative Works', 'Contact',
+           'Visual Art2', 'Music2', 'Performing Arts2',
+           'Principles and Reasons','Project objectives',
+           'phrase1','phrase2','phrase3','objectives','Topic Project','pj','objectives2','objectives3','objectives4',
+           'Visual Art3', 'Music3', 'Performing Arts3',];
+        
+          // ตรวจสอบค่าภาษาที่ผู้ใช้เลือกไว้ใน Local Storage และเปลี่ยนภาษาตามนั้นเมื่อโหลดหน้าเพจ
+          window.onload = function () {
+            const storedLanguage = localStorage.getItem('selectedLanguage');
+            if (storedLanguage) {
+              changeLanguage(storedLanguage);
+            }
+          };
+        
+          // การใช้งาน i18next ในส่วนนี้เราจะใช้เหมือนเดิม
+          i18next.use(i18nextBrowserLanguageDetector)
+            .use(i18nextXHRBackend)
+            .use(i18nextSprintfPostProcessor)
+            .init({
+              debug: true,
+              fallbackLng: 'en',
+              backend: {
+                loadPath: '/locales/{{lng}}.json'
+              },
+              interpolation: {
+                escapeValue: false
+              }
+            }, (err, t) => {
+              if (err) return console.log('Error initializing i18next:', err);
+        
+              // อัพเดต textContent สำหรับแต่ละ element เมื่อโหลดหน้าเพจ
+              elementIds.forEach((elementId) => {
+                document.getElementById(elementId).textContent = t(elementId);
+              });
+            });
+        </script>
+        
+
+         
       </body>
 </html>

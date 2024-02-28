@@ -354,10 +354,12 @@
             function changeLanguage(newLanguage) {
               i18next.changeLanguage(newLanguage, (err, t) => {
                 if (err) return console.log('Error loading translation files:', err);
+
                 // Update textContent for each element
                 elementIds.forEach((elementId) => {
                   document.getElementById(elementId).textContent = t(elementId);
                 });
+
                 // Update flag image
                 const flagImage = document.getElementById('languageFlag');
                 if (newLanguage === 'en') {
@@ -371,8 +373,8 @@
                 }
               });
             }  
+
          const elementIds = ['Home', 'Project', 'Detail', 'Register', 'Announce', 'Creative Works', 'Contact', 'Visual Art', 'Music', 'Performing Arts', 'Visual Art2', 'Music2', 'Performing Arts2','Visual Art3', 'Music3', 'Performing Arts3',,'pfm','va','ms','pma'];
-       
          i18next.use(i18nextBrowserLanguageDetector)
            .use(i18nextXHRBackend)
            .use(i18nextSprintfPostProcessor)

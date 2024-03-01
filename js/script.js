@@ -17,9 +17,9 @@ $(document).ready(function(){
   function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
       document.getElementById("goToTop").style.display = "block";
-      document.getElementById("goToTop").style.opacity = 1; /* แสดงปุ่มเมื่อ scroll ลงมา */
+      document.getElementById("goToTop").style.opacity = 1; 
     } else {
-      document.getElementById("goToTop").style.opacity = 0; /* ซ่อนปุ่มเมื่อ scroll ไปด้านบน */
+      document.getElementById("goToTop").style.opacity = 0;
     }
   }
 

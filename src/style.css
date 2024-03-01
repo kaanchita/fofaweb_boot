@@ -2298,12 +2298,10 @@ font-size: 2rem; padding: .6rem;
 }
 }
 
-
 .vertical {
   border-left: 2px solid black;
   height: 500px;
   position: absolute;
   left: 50%;
 }
-
 

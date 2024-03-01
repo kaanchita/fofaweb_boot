@@ -1024,7 +1024,6 @@ transition: all 0.35s;
     letter-spacing: 15px; /* ปรับค่าตามที่ต้องการ */
     margin-top: -20px !important; /* ปรับค่าตามที่ต้องการ */
     margin-left: 0px !important;
-  
   }
 
 }
@@ -1033,6 +1032,36 @@ transition: all 0.35s;
 
 
 /* Detail Page */
+.title_text{
+  font-size:80px;
+  font-weight: 600;
+  letter-spacing: -7px;
+  margin-bottom: 0;
+  padding: 0;
+}
+.title_text2{
+  display: inline-block;
+  font-size: 120px;
+  font-weight: bold;
+  font-style: oblique 90deg;
+  font-family: 'Adam';
+  letter-spacing: -7px;
+  line-height: 1;
+  text-align: center;
+  -webkit-text-stroke: 2px #9B1E2E;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  margin-bottom: 0;
+  padding: 0;
+}
+.title_textunder{
+  font-style: oblique 90deg;
+  font-family: 'Adam';
+  font-size: 25px;
+  font-weight: bold;
+  color: #0F0D0D;
+  letter-spacing: 15px; /* ปรับค่าตามที่ต้องการ */;
+}
 .grid-wrapper > div {
 display: flex;
 justify-content: center;

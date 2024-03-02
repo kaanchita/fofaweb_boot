@@ -59,6 +59,26 @@
             font-weight: normal;
             font-style: normal;
           }
+         
+          hr.timeline {
+  margin-top: 0%;
+  border: none;
+  height: 100%;
+  width: 1px;
+  background-color: #3a3b3b; 
+  animation: grow 3s linear forwards;
+  animation-delay: calc(var(--scroll) * -3s);
+  animation-play-state: paused;
+}
+
+@keyframes grow {
+  from {
+    height: 0%;
+  }
+  to {
+    height: 100%;
+  }
+}
         </style>
 
 
@@ -385,68 +405,124 @@
   </div>
 <!-- branch -->
 
+<!-- agenda -->
+<section class="container-fluid">
+  <div class="row pt-5">
+    <div class="col-md-12">
+      <h1 class="text-center" style="font-size: 80px;" id="agenda">AGENDA</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <i class="fas fa-calendar-alt"></i>
+          </div>
+          <div class="timeline-content">
+            <h3 class="timeline-title" id="feb">February </h3>
+            <p style="text-indent: 4%;" id="feb-1">Open to creative works in 3 branch : visual art and design, performing arts, and music.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <i class="fas fa-calendar-alt"></i>
+          </div>
+          <div class="timeline-content">
+            <h3 class="timeline-title" id="mar">March</h3>
+            <p style="text-indent: 4%;" id="mar-1">Creative submission deadline.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <i class="fas fa-calendar-alt"></i>
+          </div>
+          <div class="timeline-content">
+            <h3 class="timeline-title" id="api">April</h3>
+            <p style="text-indent: 4%;" id="api-1">Announcement of shortlisted candidates.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-icon">
+                <i class="fas fa-calendar-alt"></i>
+            </div>
+            <div class="timeline-content">
+              <h3 class="timeline-title" id="may">May</h3>
+              <p style="text-indent: 4%;" id="may-1">Presentation of international artistic creations visual art on the website.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-icon">
+                <i class="fas fa-calendar-alt"></i>
+            </div>
+            <div class="timeline-content">
+              <h3 class="timeline-title" id="16 June">16 June</h3>
+              <p style="text-indent: 4%;" id="16 June-1">Presentation of international artistic creations : The 11th International Festival of Arts.</p>
+              <p id="16 June-2">
+                - Performing arts
+              </p>
+              <p id="16 June-3">
+                - Music
+              </p>
+            </div>
+          </div>
+          
+      </div>
+    </div>
+  </div>
+</section>
+<!-- agenda -->
+
 <!-- schedule -->
 <section class="container-fluid mt-5">
-  <div class="row pt-5">
-    <div class=" text-center" st>
-      <p style="font-size: 60px; font-family: 'Adam'; -webkit-text-stroke-width: 4px; letter-spacing: 4px; text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);" data-aos="fade-up" data-aos-duration="1000">
-        SCHEDULE
-      </p>
-      <h3 style="margin-top: -10px; font-size: 40px; font-family: 'Adam'; -webkit-text-stroke-width: 2px; letter-spacing: 4px; text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.5);" data-aos="fade-up" data-aos-duration="1000">
-        June 16, 2024
-      </h3>
-    </div>
-  </div>
+  <div class="row d-flex justify-content-center" style="height: 600px;">
 
-  <div class="row justify-content-center pt-5 pb-5" style="height: 100px;">
-    <div class="col-md-3 pt-5" data-aos="fade-up" data-aos-duration="1000">
-      
-    </div>
     <div class="col-md-1">
-      
-      <div class="vertical"></div>
-
     </div>
+
     <div class="col-md-3">
-      
-    </div>
-  </div>
-
-
-  <div class="row justify-content-center pt-5 pb-5" style="height: 200px;">
-    <div class="col-md-3 col-sm-4 pt-5" data-aos="fade-left" data-aos-duration="1000">
-      <p style="font-size: 22px; color:#0F0D0D; font-weight: 500;" >09.00 a.m. – 09.30 a.m</p>
-        <div style="text-indent: 2.5em; color: #0F0D0D; font-size: 18px;">Opening ceremony of the 11th International Festival of Arts (online).</div>
-
-    </div>
-    <div class="col-md-1 col-sm-4">
-      
-      <div class="vertical"></div>
-
-    </div>
-    <div class="col-md-3 col-sm-4">
-      
+      <img src="./images/artpic/198075_0.jpg" style="width: 100%; height: 600px;">
     </div>
 
-  </div>
+    <div class="col-md-7">
+      <div class="row">
+        <p style="font-size: 80px; text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);" data-aos="fade-up" data-aos-duration="1000">
+          SCHEDULE
+        </p>
+        <h3 style="font-size: 40px; font-family: 'Adam'; -webkit-text-stroke-width: 2px; letter-spacing: 4px; text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.5);" data-aos="fade-up" data-aos-duration="1000">
+          June 16, 2024
+        </h3>
+      </div>
 
-  <div class="row justify-content-center pt-5 pb-5">
-    <div class="col-md-3 col-sm-4">
+      <div class="row justify-content-center pt-5">
+        <div class="col-md-3 horizontal" style="height: 600px;"> <!-- ปรับความสูงของ col เพิ่มเติม -->
+          <hr class="timeline">
+        </div>
+        
+        <div class="col-md-7">
+          <div class="row">
+            <p style="font-size: 22px; color:#0F0D0D; font-weight: 500;">09.00 a.m. – 09.30 a.m</p>
+            <div style="text-indent: 2.5em; color: #0F0D0D; font-size: 18px;">Opening ceremony of the 11th International Festival of Arts (online).</div>
+          </div>
 
+          <div class="row">
+            <p style="font-size: 22px; font-weight: 500; color: #0F0D0D;">9:30 a.m. onwards</p>
+            <div style="text-indent: 2.5em; color: #0F0D0D; font-size: 18px;">Presentation of international artistic creations: The 11th International Festival of Arts.</div>
+            <div style="text-indent: 4em; color: #0F0D0D; font-size: 18px;">- Performing arts </div>
+            <div style="text-indent: 4em; color: #0F0D0D; font-size: 18px;">- Music</div> 
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="col-md-1 col-sm-4">
-      
-    </div>
 
-    <div class="col-md-3 col-sm-4 pt-5" data-aos="fade-right" data-aos-duration="1000">
-      <p style="font-size: 22px;  font-weight: 500; color: #0F0D0D">9:30 a.m. onwards</p>
-      <div style="text-indent: 2.5em; color: #0F0D0D; font-size: 18px;">Presentation of international artistic creations: The 11th International Festival of Arts.</div>
-      <div style="text-indent: 4em;  color: #0F0D0D; font-size: 18px;">- Performing arts </div>
-      <div style="text-indent: 4em;  color: #0F0D0D; font-size: 18px;">- Music</div> 
+    <div class="col-md-1">
     </div>
 
   </div>
 </section>
+
+
+
 <!-- schedule -->
 
 <section class="container-fluid ">
@@ -458,7 +534,7 @@
 <section class="container-fluid " >
   <div class="row d-flex justify-content-end align-items-end mt-5" style="height: 100px; width: auto;">
       <div class="col-md-5" data-aos="fade-up" data-aos-duration="1500">
-          <p style="-webkit-text-stroke-width: 9; font-size: 60px; padding: 0; font-family: 'Poppins', sans-serif; font-style: italic; text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);"> 
+          <p id="ab" style="font-size: 80px; padding: 0; text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);"> 
               ABOUT US
           </p>
       </div>
@@ -484,7 +560,15 @@
         </div>
         
         <div class="col-md-4 d-flex justify-content-center align-items-start " data-aos="fade-up" data-aos-duration="1500">
-            <p class="align-items-start " style="text-indent: 50px;">Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim. Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim. Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim. Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
+            <p id="about" class="align-items-start " style="text-indent: 50px;" id="about">The 11th International Festival of Arts (IFA) edition is a project that was held. Continuing
+              from the 10th International Festival of Arts and culture to bring art, music and performance
+              activities and promote knowledge and understanding of culture and fine arts to Thai society
+              and the world. Disseminate the valuable arts and culture of the Thai people and the
+              diversity of international cultures in the form of performances, music and art. Presentations
+              are shared and inherited and foster shared identities as well as create new opportunities for
+              creative development. Cross-cultural development and respect for cultural diversity
+              encountered in the practices of living cultural heritage contributes to effective and
+              sustainable strategies for restoring peace and stability in society.</p>
             
         </div>
 
@@ -583,27 +667,6 @@
 
     </div>
 </section>
-
-
-<!-- <section class="container-fluid mb-1 ">
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./images/elements/img14.jpg" class="d-block w-100" style="padding-bottom: -60px;">
-          </div>
-          <div class="carousel-item">
-            <img src="/images/elements/img9.jpg" class="d-block w-100" style="padding-bottom: -60px;">
-          </div>
-          <div class="carousel-item">
-            <img src="/images/elements/img6.jpg" class="d-block w-100" style="padding-bottom: -60px;">
-          </div>
-          <div class="carousel-item">
-            <img src="/images/elements/img2.jpg" class="d-block w-100" style="padding-bottom: -60px;">
-          </div>
-        </div>
-      </div>
-</section> -->
-
 <div class="go-to-top" id="goToTop">
   <a href="#">
     <p>GO <br>TO<br>TOP</p>
@@ -770,8 +833,13 @@
             });
           }
       
-          const elementIds = ['Home', 'Project', 'Detail', 'Register', 'Announce', 'Creative Works', 'Contact', 'Visual Art2', 'Music2', 'Performing Arts2', 'Visual Art3', 'Music3', 'Performing Arts3'];
+          const elementIds = ['Home', 'Project', 'Detail', 'Register', 'Announce', 'Creative Works', 'Contact',
+           'Visual Art2', 'Music2', 'Performing Arts2', 'Visual Art3', 'Music3', 'Performing Arts3','ab',
+          'about','agenda','feb','feb-1','mar','mar-1','api','api-1','may','may-1','16 June','16 June-1','16 June-2','16 June-3'];
         
+
+         
+
           window.onload = function () {
             const storedLanguage = localStorage.getItem('selectedLanguage');
             if (storedLanguage) {
@@ -845,6 +913,19 @@
 <script>
     AOS.init();
   </script>
+
+<script>
+  window.addEventListener(
+    "scroll",
+    () => {
+      document.body.style.setProperty(
+        "--scroll",
+        window.pageYOffset / (document.body.offsetHeight - window.innerHeight)
+      );
+    },
+    false
+  );
+</script>
 
 </body>
 </html>

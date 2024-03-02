@@ -276,11 +276,6 @@ transition: all 0.2s ease;
 }
 .body-branch {
 background-color: #CAD3D7;
-/* background-image: url("../images/background3.png");
-background-size: cover;
-background-repeat: no-repeat; */
-/* width: 50vw;
-height: 50vh; */
 }
 
 .h2-custom {
@@ -468,9 +463,6 @@ flex-direction: column;
 /* text-video */
 .body-video {
 display: flex;
-/* align-items: center; */
-/* background: rgb(225, 53, 16 ); */
-/* justify-content: center; */
 overflow: hidden;
 padding-top: 100px;
 }   
@@ -555,12 +547,12 @@ font-size: 90px;
 -webkit-text-stroke: 3px #9B1E2E;
 letter-spacing: 15px;
 line-height: 1.2;
-margin: 3; /* ลบ margin ที่อาจจะมีอยู่ */
+margin: 3; 
 z-index: 2;
 display: flex;
 align-items: center;
-animation: colorChange 5s infinite alternate; /* เพิ่ม animation */
-text-shadow: 5px 10px 4px rgba(0, 0, 0, 0.212); /* ปรับค่า shadow ตามที่ต้องการ */
+animation: colorChange 5s infinite alternate;
+text-shadow: 5px 10px 4px rgba(0, 0, 0, 0.212);
 }
 
 @keyframes colorChange {
@@ -568,7 +560,7 @@ text-shadow: 5px 10px 4px rgba(0, 0, 0, 0.212); /* ปรับค่า shadow 
   color: #9B1E2E;
 }
 50% {
-  color: #fff; /* สีที่ต้องการให้เปลี่ยนไป */
+  color: #fff; 
 }
 100% {
   color: #9B1E2E;
@@ -576,16 +568,16 @@ text-shadow: 5px 10px 4px rgba(0, 0, 0, 0.212); /* ปรับค่า shadow 
 }
 .text-title span {
 display: inline-block;
-animation: colorChange 8s infinite alternate; /* เปลี่ยนจาก 5s เป็น 8s */
+animation: colorChange 8s infinite alternate;
 }
 
 .text-title hr {
 flex: 1;
-height: 4px; /* ขนาดของเส้น */
-margin-left: 10px; /* ระยะห่างระหว่าง "MUSIC" กับ <hr> */
+height: 4px;
+margin-left: 10px;
 opacity: 0.7;
 border: none;
-background-color: #9B1E2E /* สีของเส้น */
+background-color: #9B1E2E 
 }
 
 @media (max-width: 768px) {
@@ -681,8 +673,8 @@ opacity: 80%;
   font-size: 100px;
   font-weight: bold;
   color: #0F0D0D;
-  letter-spacing: 15px; /* ปรับค่าตามที่ต้องการ */
-  margin-top: -30px; /* ปรับค่าตามที่ต้องการ */
+  letter-spacing: 15px; 
+  margin-top: -30px;
   -webkit-text-stroke: 1px;
   margin-left: 120px;
   text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.3); 
@@ -690,24 +682,24 @@ opacity: 80%;
 }
 
 .custom-hr {
-  display: inline-block; /* ทำให้ <hr> เป็น inline-block เพื่อให้อยู่บนบรรทัดเดียวกับ <p> */
+  display: inline-block;
   border: none;
-  border-top: 3px solid black; /* ปรับความหนาของเส้นตามต้องการ */
+  border-top: 3px solid black;
   opacity: 1;
-  width: calc(50% - 10px); /* ปรับค่าตามความต้องการให้เหมาะสม */
-  margin-top: -10px; /* ปรับค่าตามความต้องการให้เหมาะสม */
-  margin-bottom: 0; /* ปรับให้มีระยะห่างด้านล่างเป็น 0 */
+  width: calc(50% - 10px); 
+  margin-top: -10px;
+  margin-bottom: 0;
 }
 
 
 .creativetext {
   position: fixed;
-  top: 300px !important; /* ปรับตำแหน่งให้ creative อยู่ล่าง breadcrumb */
+  top: 300px !important;
   left: 10%;
   width: 100%;
   transform: translateX(-50%);
   z-index: -1;
-  /* ปรับแต่งค่าต่างๆ ตามที่ต้องการ */
+ 
 }
 
 .artiststype {
@@ -727,7 +719,7 @@ opacity: 80%;
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-8px); /* ปรับตำแหน่งของคลื่นให้ตัวหนังสือเลื่อนขึ้น */
+    transform: translateY(-8px); 
   }
   100% {
     transform: translateY(0);
@@ -735,12 +727,12 @@ opacity: 80%;
 }
 
 .textstyle1 {
-  animation: wave 1.8s infinite; /* ใช้ animation wave ทีละตัวที่มีความยาว 1.5 วินาที */
+  animation: wave 1.8s infinite;
 }
 
 .textstyle2 {
-  animation: wave 1.5s infinite; /* ใช้ animation wave ทีละตัวที่มีความยาว 1.5 วินาที */
-  animation-delay: 0.5s; /* หน่วงเวลาการเริ่มต้นของ animation อีก 0.5 วินาที */
+  animation: wave 1.5s infinite; 
+  animation-delay: 0.5s; 
 }
 
 .wrapper {
@@ -885,26 +877,25 @@ transition: all 0.35s;
     font-size: 40px;
     font-weight: bold;
     color: #0F0D0D;
-    letter-spacing: 15px; /* ปรับค่าตามที่ต้องการ */
-    margin-top: -20px !important; /* ปรับค่าตามที่ต้องการ */
+    letter-spacing: 15px; 
+    margin-top: -20px !important;
     margin-left: 0px !important;
   
   }
   .custom-hr {
-    display: inline-block; /* ทำให้ <hr> เป็น inline-block เพื่อให้อยู่บนบรรทัดเดียวกับ <p> */
+    display: inline-block; 
     border: none;
-    border-top: 3px solid black; /* ปรับความหนาของเส้นตามต้องการ */
+    border-top: 3px solid black; 
     opacity: 1;
-    width: calc(30% - 10px); /* ปรับค่าตามความต้องการให้เหมาะสม */
+    width: calc(30% - 10px); 
   }
   .creativetext {
     position: fixed;
-    top: 350px !important; /* ปรับตำแหน่งให้ creative อยู่ล่าง breadcrumb */
+    top: 350px !important;
     left: 0 !important;
     width: 100%;
     transform: translateX(-50%);
     z-index: -1;
-    /* ปรับแต่งค่าต่างๆ ตามที่ต้องการ */
   }
 }
 
@@ -921,16 +912,16 @@ transition: all 0.35s;
   font-size: 60px;
   font-weight: bold;
   color: #0F0D0D;
-  letter-spacing: 15px; /* ปรับค่าตามที่ต้องการ */
+  letter-spacing: 15px;
   -webkit-text-stroke: 1px;
   text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.3); 
 }
 .custom-hr {
-    display: inline-block; /* ทำให้ <hr> เป็น inline-block เพื่อให้อยู่บนบรรทัดเดียวกับ <p> */
+    display: inline-block; 
     border: none;
-    border-top: 3px solid black; /* ปรับความหนาของเส้นตามต้องการ */
+    border-top: 3px solid black; 
     opacity: 1;
-    width: calc(30% - 10px); /* ปรับค่าตามความต้องการให้เหมาะสม */
+    width: calc(30% - 10px); 
   }
 .firstname {
  margin-right: 100px;
@@ -940,24 +931,21 @@ transition: all 0.35s;
 }
 
 .secondcol {
-  overflow-y: auto; /* เพิ่มการเลื่อนแกน y เมื่อเนื้อหาเกินขนาด */
-  max-height: 500px; /* กำหนดความสูงสูงสุดของเนื้อหา */
+  overflow-y: auto;
+  max-height: 500px;
 }
 .secondcol::-webkit-scrollbar{
-  display: none; /* ซ่อนแถบเลื่อนสำหรับเบราว์เซอร์ที่รองรับแบบใช้งานนี้ */
+  display: none;
 
 }
 
 .creativetext2 {
-  position: fixed;
-  /* top: 500px; */
-  /* top: 300px;  */
-  /* ปรับตำแหน่งให้ creative อยู่ล่าง breadcrumb */
+  position: fixed; 
   left: 10%;
   width: 100%;
   transform: translateX(-50%);
   z-index: -1;
-  /* ปรับแต่งค่าต่างๆ ตามที่ต้องการ */
+ 
 }
 .imageartwork {
   width: 400px;
@@ -985,16 +973,16 @@ transition: all 0.35s;
     font-size: 30px;
     font-weight: bold;
     color: #0F0D0D;
-    letter-spacing: 15px; /* ปรับค่าตามที่ต้องการ */
+    letter-spacing: 15px;
     -webkit-text-stroke: 1px;
     text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.3); 
   }
   .custom-hr {
-    display: inline-block; /* ทำให้ <hr> เป็น inline-block เพื่อให้อยู่บนบรรทัดเดียวกับ <p> */
+    display: inline-block;
     border: none;
-    border-top: 3px solid black; /* ปรับความหนาของเส้นตามต้องการ */
+    border-top: 3px solid black; 
     opacity: 1;
-    width: calc(50% - 10px); /* ปรับค่าตามความต้องการให้เหมาะสม */
+    width: calc(50% - 10px);
     margin-left: 50px;
   }
   .firstname {
@@ -1021,8 +1009,8 @@ transition: all 0.35s;
     font-size: 30px;
     font-weight: bold;
     color: #0F0D0D;
-    letter-spacing: 15px; /* ปรับค่าตามที่ต้องการ */
-    margin-top: -20px !important; /* ปรับค่าตามที่ต้องการ */
+    letter-spacing: 15px;
+    margin-top: -20px !important; 
     margin-left: 0px !important;
   
   }
@@ -1064,28 +1052,28 @@ position: absolute;
 top: 100px;
 right: 20px;
 transform: translate(-50%, -50%);
-padding: 5px 20px; /* ปรับขนาดของพื้นที่ข้อความและขอบ */
-border-radius: 50px; /* ปรับรูปร่างของขอบ */
+padding: 5px 20px;
+border-radius: 50px;
 border: 2px solid #0F0D0D;
-color: #000; /* ปรับสีของข้อความ */
-font-weight: bold; /* ปรับแบบอักษร */
+color: #000;
+font-weight: bold;
 font-size: 54px;
 background-color: #ffffffca;
 font-style: italic;
 font-family: 'Adam';
 -webkit-text-stroke: 4px #0F0D0D;
-letter-spacing: 6px; /* กำหนดระยะห่างระหว่างตัวอักษรเป็น 2px */
+letter-spacing: 6px; 
 }
 .image-overlay2 {
 position: absolute;
 top: 220px;
 right: 200px;
 transform: translate(-50%, -50%);
-padding: 10px 20px; /* ปรับขนาดของพื้นที่ข้อความและขอบ */
-border-radius: 50px; /* ปรับรูปร่างของขอบ */
+padding: 10px 20px;
+border-radius: 50px;
 border: 2px solid #0F0D0D;
-color: #000; /* ปรับสีของข้อความ */
-font-weight: bold; /* ปรับแบบอักษร */
+color: #000;
+font-weight: bold;
 font-size: 54px;
 background-color: #ffffffca;
 font-style: italic;
@@ -1098,11 +1086,11 @@ position: absolute;
 top: 100px;
 right: 200px;
 transform: translate(-50%, -50%);
-padding: 10px 20px; /* ปรับขนาดของพื้นที่ข้อความและขอบ */
-border-radius: 50px; /* ปรับรูปร่างของขอบ */
+padding: 10px 20px; 
+border-radius: 50px;
 border: 2px solid #0F0D0D;
-color: #000; /* ปรับสีของข้อความ */
-font-weight: bold; /* ปรับแบบอักษร */
+color: #000;
+font-weight: bold;
 font-size: 54px;
 background-color: #ffffffca;
 font-style: italic;
@@ -1306,7 +1294,6 @@ z-index: 0;
 .cta span {
 position: relative;
 font-size: 22px;
-/* text-shadow: 2px 3px 2px rgba(255, 255, 255, 0.77); */
 line-height: 23px;
 font-weight: bold;
 letter-spacing: 5px;
@@ -1327,10 +1314,8 @@ transition: all 0.3s ease;
 }
 .cta:hover:before {
   width: 100%;
-  /* opacity: 80%; */
   background-color: #9B1E2E;
-  /* background: linear-gradient(to right, #fff, #9B1E2E); */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* กำหนดเงา */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .cta:hover svg {
@@ -1340,50 +1325,9 @@ transform: translateX(0);
 transform: scale(0.96);
 }
 
-
-/* hover square*/
-.btn {
-cursor: pointer;
-position: relative;
-/* padding: 50px 80px; */
-padding: 3rem;
-background: white;
-font-size: 28px;
-border-top-right-radius: 10px;
-border-bottom-left-radius: 10px;
-transition: all 1s;
-}
-.btn:after, .btn:before {
-content: " ";
-width: 10px;
-height: 10px;
-position: absolute;
-border: 0px solid #fff;
-transition: all 1s;
-}
-.btn:after {
-top: -1px;
-left: -1px;
-border-top: 3px solid black;
-border-left: 3px solid black;
-}
-.btn:before {
-bottom: -1px;
-right: -1px;
-border-bottom: 3px solid black;
-border-right: 3px solid black;
-}
-.btn:hover {
-border-top-right-radius: 0px;
-border-bottom-left-radius: 0px;
-}
-.btn:hover:before, .btn:hover:after {
-width: 100%;
-height: 100%;
-}
 /* gototop */
 .go-to-top {
-display: none; /* ซ่อนปุ่มเริ่มต้น */
+display: none; 
 position: fixed;
 bottom: 20px;
 right: 10px;
@@ -1394,7 +1338,7 @@ font-size: 18px;
 font-weight: bold;
 padding: 5px;
 z-index: 1000;
-transition: opacity 0.5s; /* เพิ่ม transition สำหรับ opacity */
+transition: opacity 0.5s;
 }
 .go-to-top  a{ 
 color: #8A4A38;
@@ -1405,7 +1349,6 @@ font-weight: 600;
 
 
 /* test carousel */
-
 .carousel-animate {
   margin: 0;
   padding: 0;
@@ -1460,7 +1403,6 @@ font-weight: 600;
   position: absolute;
   top: 38%;
   left: 15vw; 
-  /* transform: translateY(-50%); */
   font: 30vw 0.85rem;
   font-family: 'Adam';
   color: white;
@@ -1476,7 +1418,6 @@ font-weight: 600;
   }
 
   & .description-carousel {
-    /* font-size: 0.8rem; */
     font-size: 1.5vw; 
   }
 
@@ -1533,275 +1474,14 @@ font-weight: 600;
 
 
 /* schedule */        
-/* .color{
-  background: linear-gradient(to right, #e1e0ff, #d7fadd);
-} */
-
-/* .body-schedule{
-  background: #191919;
-  background: white;
-  user-select: none;
-  letter-spacing: 3px; */
-  /* color: #b9b9b9; */
-/* } */
-
-h1{
+/* h1{
   padding-bottom: 30px;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 20px;
   font-weight: 500;
   color: #ffffff;
-}
-
-p{
-  padding-bottom: 15px;
-}
-
-p:last-of-type{
-  padding-bottom: 0;
-}
-
-.try-again{
-  cursor: pointer;
-  position: relative;
-  font-size: 16px;
-}
-
-.try-again:after{
-  content: '';
-  position: absolute;
-  left: 15px;
-  right: 15px;
-  height: 1px;
-  top: 100%;
-  background: #ebebeb;
-  margin-top: 8px;
-  transition: all 0.3s ease;
-}
-
-.try-again:hover:after{
-  left: 40%;
-  right: 40%;
-}
-
-.wrapper-schedule{
-  position: absolute;
-  width: 50%;
-  height: 50%;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
-  background-color: #8A4A29;
-}
-
-.button{
-  cursor: pointer;
-  position: relative;
-  z-index: 2;
-  -webkit-appearance: none;
-  background: none;
-  outline: none;
-  border: none;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  /* border-radius: 2px; */
-  transition: all 0.5s ease;
-}
-
-.button-text{
-  display: inline-block;
-  position: relative;
-  z-index: 2;
-  background: #0F0D0D;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.button-circle{
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 6px;
-  width: 6px;
-  border-radius: 50%;
-  box-shadow: 0 0 10px #9B1E2E, 0 0 20px #9B1E2E, 0 0 30px #9B1E2E;
-  transition: all 0.5s ease;
-}
-
-.button-circle2{
-  top: auto;
-  bottom: 0;
-}
-
-.button-circle3{
-  left: auto;
-  right: 0;
-  box-shadow: 0 0 10px #8A4A38, 0 0 20px #8A4A38, 0 0 30px #8A4A38;
-}
-
-.button-circle4{
-  left: auto;
-  top: auto;
-  bottom: 0;
-  right: 0;
-  box-shadow: 0 0 10px #8A4A38, 0 0 20px #8A4A38, 0 0 30px #8A4A38;
-}
-
-
-.popup{
-  opacity: 0;
-  visibility: hidden;
-  height:80%;
-  width: 80%;
-  flex-shrink: 0;
-  border-radius: 3px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.2s ease
-
-}
-
-.popup-inside{
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  border-radius: 40%;
-  /* box-shadow: 0 0 0 black; */
-  transition: box-shadow 0.5s ease 0.7s, border-radius 0.35s ease 0.7s;
-  
-}
-
-.bgs{
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-}
-
-.bg{
-  --offset: 0;
-  position: absolute;
-  left: var(--offset);
-  right: var(--offset);
-  bottom: var(--offset);
-  top: var(--offset);
-  background: linear-gradient(to right, #9B1E2E, #8A4A38);
-  transform: scale(0);
-  transition: all 0.5s ease 0s;
-  border-radius: 50%;
-}
-
-.bg2{
-  --offset: 10%;
-  position: absolute;
-  left: var(--offset);
-  right: var(--offset);
-  bottom: var(--offset);
-  top: var(--offset);
-  background: linear-gradient(to right, #9a2030, #844635);
-  transform: scale(0);
-  transition: all 0.5s ease 0.1s;
-}
-
-.bg3{
-  --offset: 20%;
-  position: absolute;
-  left: var(--offset);
-  right: var(--offset);
-  bottom: var(--offset);
-  top: var(--offset);
-  background: linear-gradient(to right, #982433, #8A4A32);
-  z-index: 2;
-  transition: all 0.5s ease 0.2s;
-}
-
-.bg4{
-  --offset: 30%;
-  position: absolute;
-  left: var(--offset);
-  right: var(--offset);
-  bottom: var(--offset);
-  top: var(--offset);
-  background: linear-gradient(to right, rgb(147, 34, 49), #8A4A29);
-  z-index: 3;
-  transition: all 0.5s ease 0.3s;
-}
-
-.bg5{
-  --offset: 40%;
-  position: absolute;
-  left: var(--offset);
-  right: var(--offset);
-  bottom: var(--offset);
-  top: var(--offset);
-  background: linear-gradient(to right, rgb(143, 44, 57), #8A4A38);
-  z-index: 4;
-  transition: all 0.5s ease 0.4s;
-}
-
-/* .bg6{
-  --offset: 40%;
-  position: absolute;
-  left: var(--offset);
-  right: var(--offset);
-  bottom: var(--offset);
-  top: var(--offset);
-  background: #9B1E2E;
-  z-index: 5;
-  transition: all 0.8s ease 0.4s;
 } */
-
-.content-schedule{
-  --offset: 0;
-  position: absolute;
-  left: 70px;
-  right: 70px;
-  bottom: var(--offset);
-  top: var(--offset);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 3;
-  transition: all 0.35s ease 0.75s;
-  color: #0F0D0D;
-  letter-spacing: 0;
- 
-}
-
-.content-schedule-wrapper{
-  z-index: 1000;
-}
-
-body.active .content-schedule{
-  opacity: 3;
-  transform: none;
-}
-
-body.active .popup{
-  opacity: 3;
-  visibility: visible;
-}
-
-body.active .popup-inside{
-  border-radius: 0;
-  box-shadow: 0px 0px 3px 1px #000000, 0px 0px 3px 1px #000000;
-}
-
-body.active .bg{
-  transform: scale(1);
-}
-
-body.active .bg6{
-  transform: scale(8);
-}
 
 @media (max-width: 768px) {
   .text-title {
@@ -2297,10 +1977,93 @@ font-size: 2rem; padding: .6rem;
 }
 }
 
-.vertical {
+/* .vertical {
   border-left: 2px solid black;
   height: 500px;
   position: absolute;
   left: 50%;
+} */
+
+/* Agenda */
+          .timeline {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  padding: 20px;
+  width: 100%;
 }
 
+.timeline-item {
+  margin-right: 20px;
+  padding: 20px;
+  border: 1px solid #333;
+  box-shadow: 3px 3px 6px rgba(51, 51, 51, 0.3);
+  border-radius: 10px;
+ 
+}
+.timeline-item:hover {
+  border: 1px solid #f4f3ef;
+  background-color: #9B1E2E;
+
+  .timeline-icon {
+  background-color: #f4f3ef;
+  color: #9B1E2E;
+}
+.timeline-content {
+  width: 320px;
+  
+  transition: 0.2s ease-in-out;
+}
+h3{
+color: #f4f3ef;
+}
+p{
+    color: #f4f3ef;
+}
+}
+
+.timeline-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #9B1E2E;
+  color: #fff;
+}
+
+
+.timeline-content {
+  margin-left: 20px;
+  width: 300px;
+  height: 200px;
+}
+
+.timeline-title {
+  font-weight: bold;
+}
+/* Agenda */
+
+/* schedule */
+
+/* hr{ 
+  margin-top:0%;
+  border:none;
+  height: 3px; 
+  width:3px;
+  background-color: #3a3b3b; 
+  animation: grow 3s linear forwards;
+  animation-delay: calc(var(--scroll) * -3s);
+  animation-play-state: paused;
+}
+
+@keyframes grow {
+  from{
+    height:0%;
+  }
+  to {
+    height:100%;
+  }
+} */
+/* schedule */

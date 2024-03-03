@@ -1,5 +1,4 @@
 body {
-  /* margin-top:20px; */
   font-family: 'Adam';
   font-family: 'Kanit', sans-serif;
   font-family: 'Poppins', sans-serif;
@@ -8,7 +7,6 @@ body {
 
 .sticky-top{
   top: 0;
-  /* z-index: 999; */
   transition: top 0.8s ease-in-out; 
   opacity: 90%;
  
@@ -172,8 +170,8 @@ border: solid 1px #0F0D0D;
 }
 
 .breadcrumb-item a {
-text-decoration: none; /* Remove underline */
-color: rgb( 15, 13, 13); /* Set the desired color */
+text-decoration: none; 
+color: rgb( 15, 13, 13); 
 }
 
 .breadcrumb .breadcrumb-item {
@@ -200,23 +198,15 @@ opacity:0;
 
 font-size:55px;
 font-weight: bold;
-/* text-align:center; */
 height:750px;
-/* width:800px; */
 display:block;
-/* position:absolute; */
+
 color:rgb( 15, 13, 13) ;
-/* top:0;
-bottom:0;
-left:0;
-right:0; */
-/* margin:auto; */
 z-index: 200;
 }
 .console-underscore {
 display:inline-block;
 position:relative;
-/* top:-0.14em; */
 left:10px;
 }
 
@@ -531,11 +521,6 @@ object-fit: cover;
 }
 /* carousel */
 
-/* card */
-/* .card {
-border-radius: 20px;
-} */
-/* card */
 
 /* performance */
 .text-title {
@@ -640,7 +625,6 @@ width: 50px;
 
 }
 
-
 /* black and white */
 .grayscale-image {
 filter: grayscale(100%);
@@ -648,7 +632,7 @@ filter: grayscale(100%);
 
 .grayscale-image:hover {
 transition: filter 0.5s ease;
-filter: none; /* ยกเลิกเอฟเฟกต์ grayscale ขณะโฮเวอร์ */
+filter: none; 
 
 }
 
@@ -834,7 +818,7 @@ right: 5%;
 box-shadow: 0 1rem 3rem rgba(0,0,0,0.2);
 transition: all 0.35s;
 }
-/* สำหรับ iPad */
+/*  iPad */
 @media (max-width: 1024px) {
   .wrapper {
     padding: 0 1rem;
@@ -850,11 +834,11 @@ transition: all 0.35s;
     font-size: 65px;
   }
   .custom-hr {
-    width: calc(40% - 10px); /* ปรับค่าตามความต้องการให้เหมาะสม */
+    width: calc(40% - 10px); 
   }
 }
 
-/* สำหรับ iPhone */
+/*  iPhone */
 @media (max-width: 768px) {
   .wrapper {
     padding: 0 0.5rem;
@@ -961,7 +945,8 @@ transition: all 0.35s;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px); */
 }
-/* สำหรับ iPhone */
+
+/* iPhone */
 @media (max-width: 768px) {
   .imageartists {
     width: 300px;
@@ -1049,7 +1034,7 @@ transition: all 0.35s;
   font-size: 25px;
   font-weight: bold;
   color: #0F0D0D;
-  letter-spacing: 15px; /* ปรับค่าตามที่ต้องการ */;
+  letter-spacing: 15px;
 }
 .grid-wrapper > div {
 display: flex;
@@ -1103,32 +1088,32 @@ grid-row: span 2;
     grid-gap: 10px;
   }
   .title_text {
-    font-size: 6vw; /* Adjust font size based on viewport width */
+    font-size: 6vw; 
     font-family: 'Kanit', sans-serif;
     font-weight: 500;
-    letter-spacing: -0.5vw; /* Adjust letter spacing based on viewport width */
+    letter-spacing: -0.5vw; 
     
   }
   .title_text2 {
     display: inline-block;
-    font-size: 8vw; /* Adjust font size based on viewport width */
+    font-size: 8vw;
     font-weight: bold;
     font-style: oblique 90deg;
     font-family: 'Adam';
-    letter-spacing: -0.7vw; /* Adjust letter spacing based on viewport width */
+    letter-spacing: -0.7vw; 
     line-height: 1;
     text-align: center;
-    -webkit-text-stroke: 0.2vw #9B1E2E; /* Adjust stroke width based on viewport width */
+    -webkit-text-stroke: 0.2vw #9B1E2E; 
     -webkit-text-fill-color: transparent;
     color: transparent;
   }
   .title_textunder {
     font-style: oblique 90deg;
     font-family: 'Adam';
-    font-size: 2.5vw; /* Adjust font size based on viewport width */
+    font-size: 2.5vw; 
     font-weight: bold;
     color: #0F0D0D;
-    letter-spacing: 1.5vw; /* Adjust letter spacing based on viewport width */
+    letter-spacing: 1.5vw; 
   }
   .img-background {
     position: absolute;
@@ -1137,8 +1122,8 @@ grid-row: span 2;
     width: 100%;
     height: auto;
     object-fit: cover;
-    opacity: 0.5; /* เปลี่ยนค่า opacity ตามที่ต้องการ */
-    z-index: -1; /* ย้ายระดับ z-index ไปที่ -1 เพื่อให้ส่งไปไว้หลัง */
+    opacity: 0.5;
+    z-index: -1; 
   }
   .img-background2 {
     position: absolute;
@@ -1149,8 +1134,8 @@ grid-row: span 2;
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
-    opacity: 0.5; /* เปลี่ยนค่า opacity ตามที่ต้องการ */
-    z-index: -1; /* ย้ายระดับ z-index ไปที่ -2 เพื่อให้ส่งไปไว้หลัง */
+    opacity: 0.5;
+    z-index: -1; 
   }
 }
 
@@ -1162,18 +1147,18 @@ grid-row: span 2;
   }
 
   .title_text {
-    font-size: 5vw; /* Adjust font size based on viewport width */
-    letter-spacing: -0.3vw; /* Adjust letter spacing based on viewport width */
+    font-size: 5vw; 
+    letter-spacing: -0.3vw;
   }
 
   .title_text2 {
-    font-size: 7vw; /* Adjust font size based on viewport width */
-    letter-spacing: -0.3vw; /* Adjust letter spacing based on viewport width */
+    font-size: 7vw; 
+    letter-spacing: -0.3vw; 
   }
 
   .title_textunder {
-    font-size: 2vw; /* Adjust font size based on viewport width */
-    letter-spacing: 1vw; /* Adjust letter spacing based on viewport width */
+    font-size: 2vw; 
+    letter-spacing: 1vw; 
   }
  .contentbox h4{
   font-size: 18px !important;

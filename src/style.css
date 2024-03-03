@@ -2010,7 +2010,8 @@ font-size: 2rem; padding: .6rem;
   color: #9B1E2E;
 }
 .timeline-content {
-  width: 320px;
+  /* width: 320px; */
+  
   transition: 0.2s ease-in-out;
 }
 h3{
@@ -2031,8 +2032,6 @@ p{
   background-color: #9B1E2E;
   color: #fff;
 }
-
-
 .timeline-content {
   margin-left: 20px;
   width: 300px;

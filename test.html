@@ -1,101 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- AOS CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <!-- Custom CSS -->
+    <title>Downloading Page</title>
+    <!-- เพิ่ม CSS หรือสไตล์ที่คุณต้องการ -->
     <style>
-        /* Custom styles */
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%;
-            /* 16:9 */
-            padding-top: 25px;
-            height: 0;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
         }
-
-        .video-container video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-        #ab{
-            font-size: 80px;
-        }
-
-        @media (max-width: 768px) {
-            .video-container {
-                padding-bottom: 75%;
-            }
-        }
-
-        /* Responsive font size */
-        @media (max-width: 768px) {
-            #about
-             {
-                font-size: 3vw; 
-            }
-            #ab{
-                font-size: 6vw; 
-            }
+        .loading-message {
+            text-align: center;
         }
     </style>
 </head>
-
 <body>
-    <section class="container-fluid">
-        <div class="row d-flex justify-content-end align-items-end mt-5">
-            <div class="col-md-5" data-aos="fade-up" data-aos-duration="1500">
-                <p id="ab" style=" padding: 0; text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);">
-                    ABOUT US
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Video section -->
-    <section class="container-fluid">
-        <div class="row justify-content-center pb-5">
-            <div class="col-lg-5 col-md-6 col-sm-10 col-11" data-aos="fade-down" data-aos-duration="1500">
-                <div class="video-container">
-                    <video controls>
-                        <source src="./images/video.mov" type="video/mp4">
-                    </video>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-sm-10 col-11 d-flex align-items-start" data-aos="fade-up"
-                data-aos-duration="1500">
-                <p id="about" class="align-items-start" style="text-indent: 50px;">The 11th International Festival of
-                    Arts (IFA) edition is a project that was held. Continuing from the 10th International Festival of
-                    Arts and culture to bring art, music and performance activities and promote knowledge and
-                    understanding of culture and fine arts to Thai society and the world. Disseminate the valuable arts
-                    and culture of the Thai people and the diversity of international cultures in the form of
-                    performances, music and art. Presentations are shared and inherited and foster shared identities as
-                    well as create new opportunities for creative development. Cross-cultural development and respect
-                    for cultural diversity encountered in the practices of living cultural heritage contributes to
-                    effective and sustainable strategies for restoring peace and stability in society.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- AOS JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <div class="loading-message">
+        <h1>Loading...</h1>
+        <p>Please wait while your download is starting.</p>
+    </div>
+    <!-- เพิ่ม JavaScript สำหรับการเปิดหน้าเว็บหลักหลังจากการดาวน์โหลด -->
     <script>
-        AOS.init();
+        // กำหนดเวลาที่ต้องการรอ (ในมิลลิวินาที)
+        const loadingTime = 3000; // เช่น 3000 มิลลิวินาที (3 วินาที)
+
+        // รอเวลาแล้วเปลี่ยนไปยังหน้าหลัก
+        setTimeout(function() {
+            window.location.href = "index.html"; // เปลี่ยนเป็น URL ของหน้าหลักของคุณ
+        }, loadingTime);
     </script>
 </body>
-
 </html>

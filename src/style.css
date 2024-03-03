@@ -1077,118 +1077,181 @@ grid-column: span 2;
 .grid-wrapper .tall {
 grid-row: span 2;
 }
-.image-overlay1 {
-position: absolute;
-top: 100px;
-right: 20px;
-transform: translate(-50%, -50%);
-padding: 5px 20px;
-border-radius: 50px;
-border: 2px solid #0F0D0D;
-color: #000;
-font-weight: bold;
-font-size: 54px;
-background-color: #ffffffca;
-font-style: italic;
-font-family: 'Adam';
--webkit-text-stroke: 4px #0F0D0D;
-letter-spacing: 6px; 
-}
-.image-overlay2 {
-position: absolute;
-top: 220px;
-right: 200px;
-transform: translate(-50%, -50%);
-padding: 10px 20px;
-border-radius: 50px;
-border: 2px solid #0F0D0D;
-color: #000;
-font-weight: bold;
-font-size: 54px;
-background-color: #ffffffca;
-font-style: italic;
-font-family: 'Adam';
--webkit-text-stroke: 4px #0F0D0D;
 
+@media only screen and (min-width: 1025px) {
+  .img-background {
+    position: absolute; 
+    top: 30px; left: 0; 
+    z-index: -2; width: 100%; 
+    height: 100%;
+  }
+  .img-background2 {
+    position: absolute; 
+    top: 350px; right: 
+    100px; z-index: -2; 
+    width: 100%; 
+    height: 100%; 
+    object-fit: fit ; 
+    opacity: 50%;
+  }
 }
-.image-overlay3 {
-position: absolute;
-top: 100px;
-right: 200px;
-transform: translate(-50%, -50%);
-padding: 10px 20px; 
-border-radius: 50px;
-border: 2px solid #0F0D0D;
-color: #000;
-font-weight: bold;
-font-size: 54px;
-background-color: #ffffffca;
-font-style: italic;
-font-family: 'Adam';
--webkit-text-stroke: 4px #0F0D0D;
-}
+
 @media only screen and (max-width: 1024px) {
   .grid-wrapper {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-auto-rows: 150px;
     grid-gap: 10px;
   }
+  .title_text {
+    font-size: 6vw; /* Adjust font size based on viewport width */
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+    letter-spacing: -0.5vw; /* Adjust letter spacing based on viewport width */
+    
+  }
+  .title_text2 {
+    display: inline-block;
+    font-size: 8vw; /* Adjust font size based on viewport width */
+    font-weight: bold;
+    font-style: oblique 90deg;
+    font-family: 'Adam';
+    letter-spacing: -0.7vw; /* Adjust letter spacing based on viewport width */
+    line-height: 1;
+    text-align: center;
+    -webkit-text-stroke: 0.2vw #9B1E2E; /* Adjust stroke width based on viewport width */
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+  .title_textunder {
+    font-style: oblique 90deg;
+    font-family: 'Adam';
+    font-size: 2.5vw; /* Adjust font size based on viewport width */
+    font-weight: bold;
+    color: #0F0D0D;
+    letter-spacing: 1.5vw; /* Adjust letter spacing based on viewport width */
+  }
+  .img-background {
+    position: absolute;
+    top: 300px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    opacity: 0.5; /* เปลี่ยนค่า opacity ตามที่ต้องการ */
+    z-index: -1; /* ย้ายระดับ z-index ไปที่ -1 เพื่อให้ส่งไปไว้หลัง */
+  }
+  .img-background2 {
+    position: absolute;
+    top: 350px;
+    right: 50px;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    opacity: 0.5; /* เปลี่ยนค่า opacity ตามที่ต้องการ */
+    z-index: -1; /* ย้ายระดับ z-index ไปที่ -2 เพื่อให้ส่งไปไว้หลัง */
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .grid-wrapper {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     grid-auto-rows: 100px;
     grid-gap: 5px;
   }
-  .image-overlay1 {
-    top: 50px;
-    right: -40px;
-    font-size: 30px;
-    -webkit-text-stroke: 1px #0F0D0D;
+
+  .title_text {
+    font-size: 5vw; /* Adjust font size based on viewport width */
+    letter-spacing: -0.3vw; /* Adjust letter spacing based on viewport width */
   }
-  
-  .image-overlay2 {
-    top: 120px;
-    right: -30px;
-    font-size: 30px;
-    -webkit-text-stroke: 1px #0F0D0D;
+
+  .title_text2 {
+    font-size: 7vw; /* Adjust font size based on viewport width */
+    letter-spacing: -0.3vw; /* Adjust letter spacing based on viewport width */
   }
-  
-  .image-overlay3 {
-    top: 50px;
-    right: 60px;
-    font-size: 30px;
-    -webkit-text-stroke: 1px #0F0D0D;
+
+  .title_textunder {
+    font-size: 2vw; /* Adjust font size based on viewport width */
+    letter-spacing: 1vw; /* Adjust letter spacing based on viewport width */
   }
+ .contentbox h4{
+  font-size: 18px !important;
+ }
+ .contentbox a{
+  font-size: 12px !important;
+ }
+ .contentbox p{
+  font-size: 14px !important;
+ }
+ .smallcontent {
+  font-size: 12px !important;
+ }
+ .img-background {
+  position: absolute;
+  top: 300px;
+  left: 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  opacity: 0.5; /* เปลี่ยนค่า opacity ตามที่ต้องการ */
+  z-index: -1; /* ย้ายระดับ z-index ไปที่ -1 เพื่อให้ส่งไปไว้หลัง */
+}
+.img-background2 {
+  position: absolute;
+  top: 350px;
+  right: 50px;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  opacity: 0.5; /* เปลี่ยนค่า opacity ตามที่ต้องการ */
+  z-index: -1; /* ย้ายระดับ z-index ไปที่ -2 เพื่อให้ส่งไปไว้หลัง */
+}
 }
 
 @media only screen and (max-width: 414px) {
   .grid-wrapper {
     grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-    grid-auto-rows: 80px;
-    grid-gap: 3px;
+    grid-auto-rows: 60px;
+    grid-gap: 2px;
   }
-  .image-overlay1 {
-    top: 50px;
-    right: -40px;
-    font-size: 20px;
-    -webkit-text-stroke: 1px #0F0D0D;
+  .contentbox h4{
+    font-size: 14px !important;
+   }
+   .contentbox a{
+    font-size: 8px !important;
+   }
+   .contentbox p{
+    font-size: 8px !important;
+   }
+   .smallcontent {
+    font-size: 6px !important;
+   }
+   .img-background {
+    position: absolute;
+    top: 300px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    opacity: 0.5; /* เปลี่ยนค่า opacity ตามที่ต้องการ */
+    z-index: -1; /* ย้ายระดับ z-index ไปที่ -1 เพื่อให้ส่งไปไว้หลัง */
+  }
+  .img-background2 {
+    position: absolute;
+    top: 350px;
+    right: 50px;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    opacity: 0.5; /* เปลี่ยนค่า opacity ตามที่ต้องการ */
+    z-index: -1; /* ย้ายระดับ z-index ไปที่ -2 เพื่อให้ส่งไปไว้หลัง */
   }
   
-  .image-overlay2 {
-    top: 120px;
-    right: -30px;
-    font-size: 20px;
-    -webkit-text-stroke: 1px #0F0D0D;
-  }
-  
-  .image-overlay3 {
-    top: 40px;
-    right: 20px;
-    font-size: 20px;
-    -webkit-text-stroke: 1px #0F0D0D;
-  }
 }
 
 /* detail Animation */

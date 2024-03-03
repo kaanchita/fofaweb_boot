@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home | IFOA 2024</title>
+        
+        <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R9D7VRKFN3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-R9D7VRKFN3');
+    </script>
+    
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./src/style.css" rel="stylesheet">
+    <!-- <link href="./src/swiper.css" rel="stylesheet"> -->
+    <link href="./src/footer.css" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="./images/LogoIFOA_1x.png" />
+    
+        <style>
+           @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');     
+           @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    
+           @font-face {
+            font-family: 'Adam';
+            src: url('fonts/Adam-Bold.ttf');
+            font-weight: bold;
+            font-style: normal;
+          }
+          @font-face {
+            font-family: 'Adam';
+            src: url('fonts/Adam-Light.ttf');
+            font-weight: lighter;
+            font-style: normal;
+          }
+          @font-face {
+            font-family: 'Adam';
+            src: url('fonts/Adam-Medium.ttf');
+            font-weight: normal;
+            font-style: normal;
+          }
+        </style>
+
+
+    </head>
+<body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-sm shadow-sm" style="border-bottom: 1.5px solid #0F0D0D; ">
+         <div class="container">
+          <a class="navbar-brand" href="./home.html"><img src="./images/logo/LogoIFOA.png" class="img-fluid" style="max-width: 64px;" alt="logo"></a>
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             <div id="nav-icon3">
+               <span></span>
+               <span></span>
+               <span></span>
+               <span></span>
+             </div>
+           </button>
+           <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+             <ul class="navbar-nav ml-auto mb-2 mb-lg-0 mt-3">
+               <li class="nav-item hoverelement">
+                 <a class="nav-link" id="Home" href="./home.html">Home</a>
+               </li>
+               <li class="nav-item hoverelement">
+                 <a class="nav-link" id="Project" href="./project.html">Project</a>
+               </li>
+               <li class="nav-item hoverelement">
+                 <a class="nav-link" id="Detail" href="./detail-en.html" >
+                  Format & Details
+                 </a>
+               </li>
+               <li class="nav-item dropdown hoverelement">
+                 <a class="nav-link dropdown-toggle" id="Register" href="#">Registration</a>
+                 <ul class="dropdown-menu">
+                 <li><a class="dropdown-item" href="https://forms.gle/Dsww6jcWwqMVUor7A" id="Visual Art3">Visual Art & Design</a></li>
+                 <li><a class="dropdown-item"  href="https://forms.gle/qmr3jN7hNRuqQYWr7" id= "Music3">Music</a></li>
+                 <li><a class="dropdown-item"  href="https://forms.gle/7DRdxVvbhvqgKGy27" id="Performing Arts3">Performing Arts & Dance</a></li>
+               </ul>
+               </li>
+               <li class="nav-item hoverelement">
+                 <a class="nav-link" id="Announce" href="#">Announcement</a>
+               </li>
+               <li class="nav-item dropdown hoverelement">
+                 <a class="nav-link dropdown-toggle" id="Creative Works" href="#">
+                  Creative Works
+                 </a>
+                 <ul class="dropdown-menu">
+                   <li><a class="dropdown-item" href="#" id="Visual Art2">Visual Art & Design</a></li>
+                   <li><a class="dropdown-item"  href="#" id= "Music2">Music</a></li>
+                   <li><a class="dropdown-item"  href="#" id="Performing Arts2">Performing Arts & Dance</a></li>
+                 </ul>
+               </li>
+
+               <!-- <li class="nav-item hoverelement">
+                <a class="nav-link" id="Contact" href="#" >Contact</a>
+              </li> -->
+
+              <li class="nav-item hoverelement">
+                <a class="nav-link" id="Contact" href="contact.html">Contact</a>
+              </li>
+              <!-- Modal -->
+              <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Contact</h1>
+                      <a type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></a>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                    <div class="modal-footer">
+                      <a  class=" btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+             
+              
+               <!-- multi-langue -->
+               <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="">
+                  <img id="languageFlag" src="images/flags/engflag.png" class="img-fluid m-2" style="max-width: 20px;">
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#" onclick="changeLanguage('th')"><img src="images/flags/thaiflag.png" class="img-fluid m-2" style="max-width: 20px;">Thai</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="changeLanguage('en')"><img src="images/flags/engflag.png" class="img-fluid m-2" style="max-width: 20px;">English</a></li>
+                </ul>
+              </li>
+              
+               <!-- multi-langue -->
+            
+             </ul>
+               </div>
+           </div>
+         </div>
+       </nav>
+       </div>
+     </header>
+
+   <!-- section1 -->
+   <section class="index-page">   
+    <main>
+        <section class="mast">
+           <figure class="mast__bg" style="background-image:url(./images/elements/img7.jpg)"></figure>
+          <header class="mast__header  js-clippy">
+              <h5 class="mast__pretitle">welcome to</h5>
+              <h2 class="mast__title">International Festival of Arts</h2>
+              <hr class="sep">
+          </header>
+        </section>
+        
+        <section class="mast">
+           <figure class="mast__bg" style="background-image:url(./images/elements/img1.jpg)"></figure>
+          <header class="mast__header  js-clippy">
+            <h5 class="mast__pretitle">presented by</h5>
+            <h2 class="mast__title">Srinakharinwirot University</h2>
+            <hr class="sep">
+          </header>
+        </section>
+          
+        <section class="mast">
+           <figure class="mast__bg" style="background-image:url(./images/elements/img5.jpg)"></figure>
+        <header class="mast__header  js-clippy">
+          <h5 class="mast__pretitle">Collaborate with</h5>
+          <h2 class="mast__title">Faculty of Fine Arts </h2>
+          <h2 class="mast__title">Council Of Arts And Design Deans Of Thailand</h2>
+          <hr class="sep">
+        </header>
+        </section>
+        <div class="border-top"></div>
+        <div class="border-left"></div>      
+        </main>
+    </section>
+    <!-- section1 -->
+
+    <section class="container-fluid " style="margin-top: -40px;">
+        <div class="row" style="height: 100px; width: auto;">
+    
+        </div>
+    </section>
+
+        <!-- section logo -->
+    <div class="container-fluid" data-aos="fade-up" data-aos-duration="1500">
+        <div class="row justify-content-center align-items-center pb-5">
+          <div class="col-6 col-md-2 d-flex justify-content-center align-items-center">
+            <div class="grayscale-image d-flex justify-content-center align-items-center">
+              <img src="images/logo/LogoIFOA.png" class="w-50 h-auto">
+            </div>
+          </div>
+      
+          <div class="col-6 col-md-2 d-flex justify-content-center align-items-center">
+            <div class="grayscale-image d-flex justify-content-center align-items-center">
+              <img src="images/logo/LOGO-FOFA.png" class="w-75 h-auto">
+            </div>
+          </div>
+      
+          <div class="col-6 col-md-2 d-flex justify-content-center align-items-center">
+            <div class="grayscale-image d-flex justify-content-center align-items-center">
+              <img src="images/logo/Srinakharinwirot_Logo_EN_Color.png" class="w-75 h-auto">
+            </div>
+          </div>
+      
+          <div class="col-6 col-md-2 d-flex justify-content-center align-items-center"> 
+            <div class="grayscale-image d-flex justify-content-center align-items-center">
+              <img src="images/logo/S__30532871.png" class="w-75 h-auto">
+            </div>
+          </div>
+        </div>
+      </div>
+ <!-- section logo -->
+
+ <section class="container-fluid ">
+    <div class="row" style="height: 70px; width: auto;">
+
+    </div>
+</section>
+
+
+<!-- branch -->
+<div class="container-fluid h-100 w-100 pt-5 pb-5" style=" background-color: #CAD3D7;" id="branch">
+    <div class="row pt-5 d-flex justify-content-center align-items-center" data-aos="fade-right" data-aos-duration="1000">
+      <div class="col-10 align-items-center">
+        <div class="text-branch">BRANCHES <hr> </div>
+      </div>
+    </div>
+  
+    <div class="row d-flex justify-content-center" style="margin-top: 100px;  margin-bottom: 120px;" >
+      <div class="col-8">
+        <div class="body-branch" data-aos="zoom-in-left" data-aos-duration="1000">
+          <div class="container-branch">
+              <div class="card">
+                  <h2 class=".h2-custom ">Visual Art &</h2>
+                  <h2 class=".h2-custom " style="margin-top: 40px;">Design</h2>
+                  <i class="fas fa-arrow-right description"></i>
+                  <p>Artist : Sitthidham Rohitasuk</p>
+                    <div class="pic"></div>
+                  <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <button>
+                  </button>
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="row d-flex justify-content-center" style=" margin-bottom: 120px;">
+      <div class="col-8">
+        <div class="body-branch" data-aos="zoom-in-right" data-aos-duration="1000" >
+          <div class="container-branch">
+        <div class="card card2">
+          <h2 class=".h2-custom ">Music</h2>
+          <i class="fas fa-arrow-right description"></i>
+          <p>(IFA:2024)</p>
+          <div class="pic"></div>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <button>
+          </button>
+      </div>
+      </div>
+        </div>
+      </div>
+      </div>
+  
+      <div class="row d-flex justify-content-center" style=" margin-bottom: 120px;">
+        <div class="col-8">
+          <div class="body-branch" data-aos="zoom-in-right" data-aos-duration="1000" >
+            <div class="container-branch">
+          <div class="card card3">
+            <h2 class=".h2-custom ">Performing Arts</h2>
+            <h2 class=".h2-custom " style="margin-top: 45px;">& Dance</h2>
+            <i class="fas fa-arrow-right description"></i>
+            <p>(IFA:2024)</p>
+            <div class="pic"></div>
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <button>
+            </button>
+        </div>
+        </div>
+          </div>
+        </div>
+        </div>
+  
+  </div>
+<!-- branch -->
+
+<section class="container-fluid ">
+  <div class="row" style="height: 200px; width: auto;">
+
+  </div>
+</section>
+
+<!-- agenda -->
+<section class="container-fluid" data-aos="fade-up" data-aos-duration="1000">
+  <div class="row pt-5">
+    <div class="col-md-12">
+      <h1 class="text-center" id="agenda">AGENDA</h1>
+    </div>
+  </div>
+  <div class="row mx-auto">
+    <div class="col-md-12 col-sm-12">
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <i class="fas fa-calendar-alt"></i>
+          </div>
+          <div class="timeline-content">
+            <h3 class="timeline-title" id="feb">February </h3>
+            <p style="text-indent: 4%;" id="feb-1">Open to creative works in 3 branch : visual art and design, performing arts, and music.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <i class="fas fa-calendar-alt"></i>
+          </div>
+          <div class="timeline-content">
+            <h3 class="timeline-title" id="mar">March</h3>
+            <p style="text-indent: 4%;" id="mar-1">Creative submission deadline.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <i class="fas fa-calendar-alt"></i>
+          </div>
+          <div class="timeline-content">
+            <h3 class="timeline-title" id="api">April</h3>
+            <p style="text-indent: 4%;" id="api-1">Announcement of shortlisted candidates.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-icon">
+                <i class="fas fa-calendar-alt"></i>
+            </div>
+            <div class="timeline-content">
+              <h3 class="timeline-title" id="may">May</h3>
+              <p style="text-indent: 4%;" id="may-1">Presentation of international artistic creations visual art on the website.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-icon">
+                <i class="fas fa-calendar-alt"></i>
+            </div>
+            <div class="timeline-content">
+              <h3 class="timeline-title" id="16 June">16 June</h3>
+              <p style="text-indent: 4%;" id="16 June-1">Presentation of international artistic creations : The 11th International Festival of Arts.</p>
+              <p id="16 June-2">
+                - Performing arts
+              </p>
+              <p id="16 June-3">
+                - Music
+              </p>
+            </div>
+          </div>
+          
+      </div>
+    </div>
+  </div>
+
+</section>
+<!-- agenda -->
+
+<section class="container-fluid ">
+  <div class="row" style="height: 150px; width: auto;">
+
+  </div>
+</section>
+
+<!-- schedule -->
+<section class="container-fluid mt-5">
+  <div class="row d-flex justify-content-center">
+
+    <div class="col-md-1"></div>
+
+    <div class="col-md-3 justify-content-center">
+      <div class="row grayscale-image" style="padding: 10%;">
+        <img src="./images/artpic/198074_0.jpg" class="img-fluid" alt="Image 1">
+      </div>
+      <div class="row grayscale-image" style="padding: 10%;">
+        <img src="./images/artpic/198075_0.jpg" class="img-fluid" alt="Image 2">
+      </div>
+    </div>
+
+    <div class="col-md-7">
+      <div class="row text-center">
+        <h1 id="schedule" data-aos="fade-up" data-aos-duration="1000">
+          SCHEDULE
+        </h1>
+        <h3 style="font-family: 'Kanit', sans-serif; font-weight: 400;" data-aos="fade-up" data-aos-duration="1000" id="June 16, 2024">
+          June 16, 2024
+        </h3>
+      </div>
+
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-3 d-flex justify-content-center">
+          <div class="vertical"></div>
+        </div>
+        
+        <div class="col-md-7">
+          <div class="row" data-aos="fade-left" data-aos-duration="1000">
+            <div class="col">
+              <div class="border rounded p-3 shadow-sm">
+                <p style=" color:#0F0D0D; font-weight: 500;" id="time1">09.00 a.m. – 09.30 a.m</p>
+                <div style="text-indent: 2.5em; color: #0F0D0D; " id="time1-1">Opening ceremony of the 11th International Festival of Arts (online).</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-3 mb-3">
+
+          </div>
+
+          <div class="row mt-4" data-aos="fade-left" data-aos-duration="1000">
+            <div class="col">
+              <div class="border rounded p-3 shadow-sm">
+                <p style="font-weight: 500; color: #0F0D0D;" id="time2">9:30 a.m. onwards</p>
+                <div style="text-indent: 2.5em; color: #0F0D0D; " id="time2-2">Presentation of international artistic creations: The 11th International Festival of Arts.</div>
+                <div style="text-indent: 4em; color: #0F0D0D; " id="time-performing">- Performing arts </div>
+                <div style="text-indent: 4em; color: #0F0D0D; " id="time-music">- Music</div> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-1"></div>
+
+  </div>
+</section>
+<!-- schedule -->
+
+<section class="container-fluid ">
+  <div class="row" style="height: 100px; width: auto;">
+
+  </div>
+</section>
+
+<section class="container-fluid">
+  <div class="row d-flex justify-content-end align-items-end mt-5 mb-3">
+      <div class="col-md-5" data-aos="fade-up" data-aos-duration="1500">
+          <h1 id="ab" style=" padding: 0; text-transform: uppercase;">
+             ABOUT US
+          </h1>
+      </div>
+  </div>
+</section>
+
+<!-- Video section -->
+<section class="container-fluid">
+  <div class="row justify-content-center pb-5">
+      <div class="col-lg-5 col-md-6 col-sm-10 col-11" data-aos="fade-down" data-aos-duration="1500">
+          <div class="video-container">
+              <video controls>
+                  <source src="./images/video.mov" type="video/mp4">
+              </video>
+          </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-10 col-11 d-flex align-items-start" data-aos="fade-up"
+          data-aos-duration="1500">
+          <p id="about" class="align-items-start" style="text-indent: 50px;">The 11th International Festival of
+              Arts (IFA) edition is a project that was held. Continuing from the 10th International Festival of
+              Arts and culture to bring art, music and performance activities and promote knowledge and
+              understanding of culture and fine arts to Thai society and the world. Disseminate the valuable arts
+              and culture of the Thai people and the diversity of international cultures in the form of
+              performances, music and art. Presentations are shared and inherited and foster shared identities as
+              well as create new opportunities for creative development. Cross-cultural development and respect
+              for cultural diversity encountered in the practices of living cultural heritage contributes to
+              effective and sustainable strategies for restoring peace and stability in society.</p>
+      </div>
+  </div>
+</section>
+<!-- video -->
+
+<section class="container-fluid " >
+    <div class="row" style="height: 200px; width: auto;">
+
+    </div>
+</section>
+
+<!-- subtopic -->
+<div class="container-fluid">
+  <section class="row d-flex align-items-center justify-content-center">     
+    <div class="col-md-2 index"> 
+
+    </div>
+    
+    <div class="col-md-6 index">
+      <div class="row justify-content-start d-flex">
+         <div class="col-md-7 col-sm-3 " style="padding: 5px; padding-bottom: -10%;" data-aos="fade-right" data-aos-duration="1000">
+          <a href="#" class="cta">  
+            <span>Certification</span>
+            <svg width="13px" height="10px" viewBox="0 0 13 10">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+      
+      <div class="row justify-content-end d-flex">      
+        <div class="col-md-7 col-sm-3 d-flex justify-content-end " style="padding: 5px; padding-bottom: -10%;"  data-aos="fade-left" data-aos-duration="1200">
+         <a href="#" class="cta"><span>Program</span>
+          <svg width="13px" height="10px" viewBox="0 0 13 10">
+         <path d="M1,5 L11,5"></path>
+         <polyline points="8 1 12 5 8 9"></polyline>
+         </svg>
+         </a>
+         </div>
+        </div>
+         
+    <div class="row justify-content-start d-flex">
+      <div class="col-md-8 col-sm-3 " style="padding: 5px; padding-bottom: -10%;" data-aos="fade-right" data-aos-duration="1400">
+        <a href="#" class="cta">
+         <span>Event Photos</span>
+         <svg width="13px" height="10px" viewBox="0 0 13 10">
+         <path d="M1,5 L11,5"></path>
+         <polyline points="8 1 12 5 8 9"></polyline>
+         </svg>
+         </a>
+      </div>
+    </div>
+
+    <div class="row justify-content-end d-flex">
+      <div class="col-md-7 col-sm-3 d-flex justify-content-end" style="padding: 5px; padding-bottom: -10%;" data-aos="fade-left" data-aos-duration="1600">
+        <a href="#" class="cta">
+         <span>KEYNOTE</span>
+         <svg width="13px" height="10px" viewBox="0 0 13 10">
+         <path d="M1,5 L11,5"></path>
+         <polyline points="8 1 12 5 8 9"></polyline>
+        </svg>     
+      </a>    
+    </div>
+    </div>
+
+    <div class="row justify-content-start d-flex">  
+      <div class="col-md-7 col-sm-3 " style="padding: 5px; padding-bottom: -10%;" data-aos="fade-right" data-aos-duration="1800">
+        <a href="#" class="cta">
+         <span>Peer Review</span>
+         <svg width="13px" height="10px" viewBox="0 0 13 10">
+          <path d="M1,5 L11,5"></path>
+         <polyline points="8 1 12 5 8 9"></polyline>
+        </svg>
+        </a>
+    </div>
+    </div>
+  </div>
+         
+    <div class="col-md-2 index">
+         
+    </div>
+             
+    </section>
+    </div>
+<!-- subtopic -->
+
+ <section class="container-fluid" >
+    <div class="row" style="height: 200px; width: auto;">
+
+    </div>
+</section>
+<div class="go-to-top" id="goToTop">
+  <a href="#">
+    <p>GO <br>TO<br>TOP</p>
+    <i class="fas fa-arrow-up"></i>
+  </a>
+</div>
+
+<footer class="footer" >
+  <div class="container">
+    <div class="footer_inner">
+      <div class="c-footer">
+        <div class="container-fluid">
+          <div class="row">
+          <!-- Work -->
+            <div class="col-12 col-md-6 mb-3"  style="margin-right: 30px;">
+              <hr class="mx-auto" style="color:#0F0D0D; width: 100%;">
+              <div class="newsletter">
+                <h3 class="newsletter_title" style="font-weight: bold;">The 11th International Festival Of Arts and Culture (IFA:2024)</h3>
+                <p style="font-size: 14px; text-align: center;">Jun 16th, 2024 at Music and Performing Arts Hall (4th Floor)</p>
+                <p style="font-size: 14px;  text-align: center;">Prof.Dr.Saroj Buasri SWU Innovation Building Srinakharinwirot University</p>
+              </div>
+              <hr class="mx-auto" style="color:#0F0D0D; width: 100%;">
+            </div>
+            
+            <!-- menu -->
+            <div class="col-5 col-md-2">
+              <nav class="c-nav-tool">
+                <h4 class="c-nav-tool_title" style="font-weight: bold;">Menu</h4>
+                <ul class="c-nav-tool_list">
+                  <li>
+                    <a href="home.html" class="c-link">Home</a>
+                  </li>
+  
+                  <li>
+                    <a href="project.html" class="c-link">Project</a>
+                  </li>
+  
+                  <li>
+                    <a href="detail-en.html" class="c-link">Format & Details</a>
+                  </li>
+                  <li>
+                    <a href="#" class="c-link">Announcement</a>
+                  </li>
+                  <li>
+                    <a href="#" class="c-link">Creative Works</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+  
+            <!-- contact -->
+            <div class="col-7 col-md-3 " id="contact">
+              <nav class="c-nav-tool">
+                <h4 class="c-nav-tool_title" style="font-weight: bold;">Contact</h4>
+                <ul class="c-nav-tool_list">
+  
+                  <li class="c-nav-tool_item">
+                    <a href="">
+                        <p >
+                            <i class="fas fa-envelope" style="font-size:24px; margin-right: 5px;"></i> 
+                            fofafest@g.swu.ac.th
+                        </p>
+                    </a>
+                </li>
+                
+                <li class="c-nav-tool_item">
+                    <a href="">
+                      <i class="fas fa-phone" style="font-size:24px; margin-right: 5px;"></i><p>091-825-5866</p>
+                    </a>
+                </li>
+
+                <li class="c-nav-tool_item">
+                  <a href="https://www.facebook.com/profile.php?id=61556648603260&mibextid=LQQJ4d">
+                  <i class='fab fa-facebook' style="font-size:28px; margin-right: 5px;"></i><p>International Festival of Arts-IFA</p>
+                </a>
+                </li>
+
+                </ul>
+              </nav>
+            </div>
+            
+          </div>
+        </div>  
+      
+        <div class="container">
+          <div class="row-6 justify-content-center">  
+            <div class="col-2 text-center">
+              <a href="./home.html"><img src="./images/logo/LogoIFOA.png" style="max-width: 64px;" class="img-fluid"></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="layout_item w-50">
+                <ul style="display: flex; align-items: center; list-style-type: none; padding: 0;">
+                  <li style="margin-right: 5px;"> 
+                    <img src="./images/logo/LOGO-FOFA.png" style="width: 70px;" class="img-fluid">
+                  </li>
+                  <li style="margin-right: 5px;"> 
+                    <img src="./images/logo/Srinakharinwirot_Logo_EN_Color.png" style="width: 54px;" class="img-fluid">
+                  </li>
+                  <li>
+                    <!-- <img src="./images/S__30532871.jpg" style="width: 64px;"> -->
+                    <img src="./images/logo_cfadt.png" style="width: 120px;" class="img-fluid">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 "> 
+              <div class="footer_copyright justify-content-end">
+                <p>&copy; 2024 FACULTY OF FINE ARTS.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+   
+  </div>
+</footer>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="./js/script.js"></script>
+
+         <!-- multi-langue -->
+         <script src="https://cdn.jsdelivr.net/npm/i18next/dist/umd/i18next.js"></script>
+         <script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector/dist/umd/i18nextBrowserLanguageDetector.js"></script>
+         <script src="https://cdn.jsdelivr.net/npm/i18next-xhr-backend/dist/umd/i18nextXHRBackend.js"></script>
+         <script src="https://cdn.jsdelivr.net/npm/i18next-sprintf-postprocessor/dist/umd/i18nextSprintfPostProcessor.js"></script>
+        <script>
+          
+          function changeLanguage(newLanguage) {
+            i18next.changeLanguage(newLanguage, (err, t) => {
+              if (err) return console.log('Error loading translation files:', err);
+        
+              // อัพเดต textContent 
+              elementIds.forEach((elementId) => {
+                document.getElementById(elementId).textContent = t(elementId);
+              });
+        
+              // flagImage และ font 
+              const flagImage = document.getElementById('languageFlag');
+              if (newLanguage === 'en') {
+                flagImage.src = 'images/flags/engflag.png';
+                document.body.style.fontFamily = "'Poppins', sans-serif";
+              } else {
+                flagImage.src = 'images/flags/thaiflag.png';
+                document.body.style.fontFamily = "'Kanit', sans-serif";
+                document.body.style.fontSize = "15px";
+              }
+
+              localStorage.setItem('selectedLanguage', newLanguage);
+            });
+          }
+      
+          const elementIds = ['Home', 'Project', 'Detail', 'Register', 'Announce', 'Creative Works', 'Contact',
+           'Visual Art2', 'Music2', 'Performing Arts2', 'Visual Art3', 'Music3', 'Performing Arts3','ab',
+          'about','agenda','feb','feb-1','mar','mar-1','api','api-1','may','may-1','16 June','16 June-1','16 June-2','16 June-3',
+        'schedule','June 16, 2024','time1','time1-1','time2-2','time-music','time-performing',];
+        
+
+         
+
+          window.onload = function () {
+            const storedLanguage = localStorage.getItem('selectedLanguage');
+            if (storedLanguage) {
+              changeLanguage(storedLanguage);
+            }
+          };
+        
+          i18next.use(i18nextBrowserLanguageDetector)
+            .use(i18nextXHRBackend)
+            .use(i18nextSprintfPostProcessor)
+            .init({
+              debug: true,
+              fallbackLng: 'en',
+              backend: {
+                loadPath: '/locales/{{lng}}.json'
+              },
+              interpolation: {
+                escapeValue: false
+              }
+            }, (err, t) => {
+              if (err) return console.log('Error initializing i18next:', err);
+        
+              elementIds.forEach((elementId) => {
+                document.getElementById(elementId).textContent = t(elementId);
+              });
+            });
+
+            console.log('ค่าเร่ิมต้น',i18next.options.fallbackLng);
+        </script>
+    <script>
+       (function($) {
+  var s,
+  clippy = {
+    settings: {
+      heading: $('.js-clippy'),
+    },
+    init: function() {
+      s = this.settings;
+      this.bindEvents();
+    },
+    bindEvents: function(){
+      $(window).on("load resize scroll", $.proxy(this.getClippy, this));
+    },
+
+    getClippy: function(){
+    s.heading.each(function() {
+        var layerOffset = $(this).closest('.mast').offset(), // เปลี่ยนเป็น .mast
+            containerOffset = layerOffset.top - $(window).scrollTop(),
+            clippy = containerOffset - $(this).css("top").replace(/[^-\d\.]/g, '') - $(this).css("margin-top").replace(/[^-\d\.]/g, '');
+
+        // Check if the current element is within the range of the logo section
+        var logoSection = $('.container-fluid');
+        var logoSectionTop = logoSection.offset().top;
+        var logoSectionBottom = logoSectionTop + logoSection.outerHeight();
+
+        // Check if the current element's bottom is below the top of the logo section
+        // and if the current element's top is above the bottom of the logo section
+        if (layerOffset.top + $(this).outerHeight() > logoSectionTop && layerOffset.top < logoSectionBottom) {
+            // Adjust clippy value to ensure it doesn't overlap with the logo section
+            clippy = Math.min(clippy, logoSectionBottom - layerOffset.top);
+        }
+
+        $(this).css('clip', 'rect('+ clippy +'px, auto, auto, auto)');
+    });
+},
+  };
+   clippy.init();
+})(jQuery);
+    </script>
+
+<script>
+    AOS.init();
+  </script>
+
+<script>
+  window.addEventListener(
+    "scroll",
+    () => {
+      document.body.style.setProperty(
+        "--scroll",
+        window.pageYOffset / (document.body.offsetHeight - window.innerHeight)
+      );
+    },
+    false
+  );
+</script>
+
+</body>
+</html>

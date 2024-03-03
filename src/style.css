@@ -1985,7 +1985,7 @@ font-size: 2rem; padding: .6rem;
 } */
 
 /* Agenda */
-          .timeline {
+  .timeline {
   display: flex;
   flex-direction: row;
   overflow-x: scroll;
@@ -2011,7 +2011,6 @@ font-size: 2rem; padding: .6rem;
 }
 .timeline-content {
   width: 320px;
-  
   transition: 0.2s ease-in-out;
 }
 h3{
@@ -2047,23 +2046,43 @@ p{
 
 /* schedule */
 
-/* hr{ 
-  margin-top:0%;
-  border:none;
-  height: 3px; 
-  width:3px;
-  background-color: #3a3b3b; 
-  animation: grow 3s linear forwards;
-  animation-delay: calc(var(--scroll) * -3s);
-  animation-play-state: paused;
+ /* Custom styles */
+ .video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
 }
 
-@keyframes grow {
-  from{
-    height:0%;
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#ab,#schedule,#agenda{
+  font-size: 80px;
+}
+
+@media (max-width: 768px) {
+  .video-container {
+      padding-bottom: 75%;
   }
-  to {
-    height:100%;
+}
+
+/* Responsive font size */
+@media (max-width: 768px) {
+  #about,#time1,#time1-1,#time2,#time2-2,#time-music,#time-performing
+   {
+      font-size: 3vw; 
   }
-} */
-/* schedule */
+  #ab,#schedule,#agenda{
+      font-size: 6vw; 
+  }
+}
+
+.vertical {
+  border-left: 2px solid #333;
+  height: 100%;
+}
